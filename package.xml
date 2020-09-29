@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<Package name="replaceme">
+<Package name="gfx_apps_pic32mz_da">
     <Dependencies>
+        <Dependency name="gfx" version="v3.8.0"/>
+        <Dependency name="usb" version="v3.6.0"/>
     </Dependencies>
 </Package>
