@@ -336,7 +336,7 @@ virtual leResult setSelected(leRadioButtonWidget* _this);
 
 // *****************************************************************************
 /* Virtual Member Function:
-    void select(leRadioButtonWidget* _this)
+    void selected(leRadioButtonWidget* _this)
 
   Summary:
      internal use only
@@ -344,7 +344,7 @@ virtual leResult setSelected(leRadioButtonWidget* _this);
 
 // *****************************************************************************
 /* Virtual Member Function:
-    void deselect(leRadioButtonWidget* _this)
+    void deselected(leRadioButtonWidget* _this)
 
   Summary:
      internal use only

@@ -4,18 +4,18 @@
 
 
 project: legato_climate_control
-creation_date: 2020-09-28T16:16:32.335-07:00[America/Phoenix]    # ISO 8601 format: https://www.w3.org/TR/NOTE-datetime
-operating_system: Windows 10
+creation_date: 2020-10-11T17:01:17.807-07:00[America/Phoenix]    # ISO 8601 format: https://www.w3.org/TR/NOTE-datetime
+operating_system: Windows 7
 mhc_mode: IDE            # [IDE|Standalone|Headless]
-mplabx_version: v5.40        # if MPLAB X plugin only
+mplabx_version: v5.45        # if MPLAB X plugin only
 plugin_version: v3.6.0        # if MPLAB X plugin only
-compiler: XC32 (2.41)
+compiler: XC32 (2.50)
 
 modules:
     - {name: "core", version: "v3.8.1"}
     - {name: "csp", version: "v3.8.1"}
     - {name: "dev_packs", version: "v3.8.0"}
-    - {name: "gfx", version: "v3.8.0"}
+    - {name: "gfx", version: "v3.8.1"}
     - {name: "mhc", version: "v3.5.1"}
     - {name: "bsp", version: "v3.8.1"}
 

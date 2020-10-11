@@ -3,7 +3,7 @@
   <Configurator>
     <Name dnOrder="0" value="glcd_rgba8888_mxt_mzda_intddr_sk"/>
     <Processor dnOrder="1" value="PIC32MZ2064DAR169"/>
-    <Harmony dnOrder="2" path="../../.."/>
+    <Harmony dnOrder="2" path="../../../../harmony3_dev"/>
     <Folder_Name dnOrder="3" value=""/>
     <Manifest dnOrder="4">
       <Files dnOrder="0">
@@ -346,8 +346,8 @@
           <Security dnOrder="2">NON_SECURE</Security>
           <LogicalPath dnOrder="3">config/glcd_rgba8888_mxt_mzda_intddr_sk/gfx/driver/2dgpu</LogicalPath>
           <PhysicalPath dnOrder="4">/gfx/driver/processor/2dgpu/</PhysicalPath>
-          <GeneratedChecksum dnOrder="5">453F7CDF765BE6792017FDDC13A83CBB</GeneratedChecksum>
-          <UserChecksum dnOrder="6">453F7CDF765BE6792017FDDC13A83CBB</UserChecksum>
+          <GeneratedChecksum dnOrder="5">771FDEAB37262ADEC4B4FF9D341D3D9D</GeneratedChecksum>
+          <UserChecksum dnOrder="6">771FDEAB37262ADEC4B4FF9D341D3D9D</UserChecksum>
         </File>
         <File dnOrder="38">
           <Type dnOrder="0">HEADER</Type>
@@ -418,8 +418,8 @@
           <Security dnOrder="2">NON_SECURE</Security>
           <LogicalPath dnOrder="3">config/glcd_rgba8888_mxt_mzda_intddr_sk/gfx/driver/glcd</LogicalPath>
           <PhysicalPath dnOrder="4">/gfx/driver/controller/glcd/</PhysicalPath>
-          <GeneratedChecksum dnOrder="5">BFFC8C83AB5B873F6D2E1958E5A69F84</GeneratedChecksum>
-          <UserChecksum dnOrder="6">BFFC8C83AB5B873F6D2E1958E5A69F84</UserChecksum>
+          <GeneratedChecksum dnOrder="5">7F658185A682EEB3E20A713742107A1B</GeneratedChecksum>
+          <UserChecksum dnOrder="6">7F658185A682EEB3E20A713742107A1B</UserChecksum>
         </File>
         <File dnOrder="46">
           <Type dnOrder="0">HEADER</Type>
@@ -629,8 +629,8 @@
       <Setting dnOrder="1" key="DFPPath" value=".\dev_packs\Microchip\PIC32MZ-DA_DFP\1.3.111\atdf\PIC32MZ2064DAR169.atdf"/>
       <Setting dnOrder="2" key="FORCE_OPTIMIZATION" value="false"/>
       <Setting dnOrder="3" key="GENERATE_BACKUP" value="true"/>
-      <Setting dnOrder="4" key="MERGE_STRATEGY" value="USER_ALL"/>
-      <Setting dnOrder="5" key="PackageFilter" value="audio;bootloader;bsp;core;crypto;csp;gfx;gfx_apps;net;touch;usb;"/>
+      <Setting dnOrder="4" key="MERGE_STRATEGY" value="OVERWRITE"/>
+      <Setting dnOrder="5" key="PackageFilter" value="aerospace;audio;bsp;core;csp;gfx;gfx_apps_pic32mz_da;gfx_apps_pic32mz_da;gfx_apps_pic32mz_da;gfx_apps_pic32mz_da;gfx_apps_pic32mz_da;gfx_apps_pic32mz_da;gfx_apps_pic32mz_da;touch;usb;"/>
     </Settings>
   </Configurator>
   <MHGC>

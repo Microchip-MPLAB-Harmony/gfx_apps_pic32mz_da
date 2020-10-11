@@ -61,6 +61,9 @@ void EVIC_Initialize( void )
     IPC48SET = 0x4 | 0x0;  /* GLCD:  Priority 1 / Subpriority 0 */
 
 
+
+    /* Configure Shadow Register Set */
+    PRISS = 0x76543210;
 }
 
 void EVIC_SourceEnable( INT_SOURCE source )

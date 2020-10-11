@@ -534,7 +534,7 @@ gfxResult DRV_2DGPU_SetTransparency(
  */
 static const gfxGraphicsProcessor gfxGPUInterface =
 {
-    DRV_2DGPU_Line,
+    NULL,
     DRV_2DGPU_Fill,
     DRV_2DGPU_Blit,
     DRV_2DGPU_SetBlend,

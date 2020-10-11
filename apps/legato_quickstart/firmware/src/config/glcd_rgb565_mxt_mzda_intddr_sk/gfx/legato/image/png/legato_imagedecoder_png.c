@@ -57,7 +57,7 @@ static leResult _draw(const leImage* img,
 {
     leRect imgRect, sourceClipRect;
     uint32_t itr, clr;
-    uint8_t* ptr;
+    uint8_t* ptr = NULL;
     int32_t pngError;
 
 #if LE_STREAMING_ENABLED == 1
@@ -65,7 +65,7 @@ static leResult _draw(const leImage* img,
 #endif
 
     uint8_t* encodedData = NULL;
-    uint8_t* decodedData;
+    uint8_t* decodedData = NULL;
     uint32_t width;
     uint32_t height;
 
@@ -189,7 +189,7 @@ static leResult _render(const leImage* src,
     leRect imgRect, sourceClipRect;
 
     uint8_t* encodedData = NULL;
-    uint8_t* decodedData;
+    uint8_t* decodedData = NULL;
     uint32_t width;
     uint32_t height;
     (void)ignoreMask; // unused

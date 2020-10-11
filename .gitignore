@@ -6,6 +6,7 @@
 **/nbproject/private
 **/nbproject/Makefile-*
 **/nbproject/Package-*
+**/*.X/.generated_files
 **/*.X/debug
 **/*.X/dist
 **/*.X/build
@@ -30,3 +31,19 @@
 /apps/aria_thermostat/firmware/aria_th_mzef_cu_tm5000_ssd1963.X/dist/
 /apps/legato_showcase/firmware/legato_sc_e54_cu_cpro_parallel.X/build/
 /apps/legato_showcase/firmware/legato_sc_e54_cu_cpro_parallel.X/dist/
+/apps/blank_quickstart/firmware/blank_qs_mzda_extddr_sk_meb2_wqvga_freertos.X/build/
+/apps/blank_quickstart/firmware/blank_qs_mzda_extddr_sk_meb2_wqvga_freertos.X/dist/
+/apps/blank_quickstart/firmware/blank_qs_mzda_intddr_sk_meb2_wqvga.X/build/
+/apps/blank_quickstart/firmware/blank_qs_mzda_intddr_sk_meb2_wqvga.X/dist/
+/apps/legato_climate_control/firmware/legato_cc_mzda_cu_tm5000.X/build/
+/apps/legato_climate_control/firmware/legato_cc_mzda_cu_tm5000.X/dist/
+/apps/legato_dashboard/firmware/legato_db_mzda_cu_tm5000.X/build/
+/apps/legato_dashboard/firmware/legato_db_mzda_cu_tm5000.X/dist/
+/apps/legato_quickstart/firmware/legato_qs_mzda_cu_tm5000.X/build/
+/apps/legato_quickstart/firmware/legato_qs_mzda_cu_tm5000.X/dist/
+/apps/legato_quickstart/firmware/legato_qs_mzda_cu_tm4301b.X/build/
+/apps/legato_quickstart/firmware/legato_qs_mzda_cu_tm4301b.X/dist/
+/apps/legato_quickstart/firmware/legato_qs_mzda_intddr_sk_meb2_tm4301b.X/build/
+/apps/legato_quickstart/firmware/legato_qs_mzda_intddr_sk_meb2_tm4301b.X/dist/
+/apps/legato_quickstart/firmware/legato_qs_mzda_extddr_sk_meb2_tm4301b.X/build/
+/apps/legato_quickstart/firmware/legato_qs_mzda_extddr_sk_meb2_tm4301b.X/dist/

@@ -46,10 +46,6 @@
 #define CMD_BUFFER_SIZE  8192
 uint32_t __attribute__((coherent, aligned(32))) commandBuffer[CMD_BUFFER_SIZE];
 
-#define SCRATCH_SIZE 4096
-
-static volatile uint8_t __attribute__ ((coherent, aligned (32))) scratchBuffer[SCRATCH_SIZE];
-
 // GPU command buffer seems to work better when placed in DDR
 #define CMD_BUFFER_DDR_ADDRESS 0xA9E00000
 
@@ -121,6 +117,48 @@ n2d_error_t n2d_blit(
     n2d_rectangle_t *source_rectangle,
     n2d_blend_t blend);
 
+// *****************************************************************************
+/* Function:
+    n2d_error_t n2d_blit_async()
+
+   Summary:
+    Copy a source buffer to the the destination buffer
+
+   Description:
+    The specified region of the source buffer is copied to the specified region
+    of the destination buffer. If the regions are different in size, simple low-quality
+    scaling will automatically be performed.
+
+    An optional blend mode can be specified that defines the blending of the
+    source onto the destination.
+
+   Precondition:
+
+   Parameters:
+    destination           - Pointer to a n2d_buffer_t structure that describes the destination of the
+                            blit
+    destination_rectangle - Optional pointer to the rectangle that defines the region inside the
+                            destination buffer. If this rectangle is not specified, the entire destination
+                            buffer is used as the destination region
+    source                - Pointer to a n2d_buffer_t structure that describes the source of the blit
+    source_rectangle      - Optional pointer to the rectangle that defines the region inside the source buffer.
+                            If this rectangle is not specified, the entire source buffer is used as the source
+                            region
+    blend                 - Optional blending mode to be applied to each pixel. If no blending is required, set this
+                            value to N2D_BLEND_NONE (0)
+
+  Returns:
+    Returns GENERIC_IO as defined by n2d_error_t if the GPU does not immediately return acknowledgement status as defined by n2d_error_t
+
+  Remarks:
+    This function will not wait until the hardware is complete, i.e. it is asynchronous.
+  */
+n2d_error_t n2d_blit_async(
+    n2d_buffer_t *destination,
+    n2d_rectangle_t *destination_rectangle,
+    n2d_buffer_t *source,
+    n2d_rectangle_t *source_rectangle,
+    n2d_blend_t blend);
 // *****************************************************************************
 /* Function:
     n2d_error_t n2d_dither()
@@ -478,34 +516,12 @@ gfxResult DRV_2DGPU_Fill(gfxPixelBuffer * dest,
     return GFX_SUCCESS;
 }
 
-static gfxBool createPaddedBuffer(const gfxPixelBuffer* src)
-{
-    int pixelSize = gfxColorInfoTable[src->mode].size;
-    int rowSize = src->size.width;
-    int newRowSize = rowSize + (4 - (src->size.width % 4));
-    int totalSize = newRowSize * src->size.height * pixelSize;
-    int row;
-    
-    if(totalSize > SCRATCH_SIZE)
-        return GFX_FALSE;
-    
-    memset((uint8_t*)scratchBuffer, 0, SCRATCH_SIZE);
-
-    for(row = 0; row < src->size.height; ++row)
-    {
-        memcpy(((uint8_t*)scratchBuffer) + (newRowSize * row * pixelSize),
-               ((uint8_t*)src->pixels) + (rowSize * row * pixelSize),
-               rowSize * pixelSize);
-    }
-    
-    return GFX_TRUE;
-}
-
 gfxResult DRV_2DGPU_Blit(const gfxPixelBuffer* source,
                            const gfxRect* srcRect,
                            const gfxPixelBuffer* dest,
                          const gfxRect* destRect)
 {
+    n2d_error_t err;
     n2d_buffer_t src_buffer, dest_buffer;
 
     // craft source buffer descriptor
@@ -518,18 +534,11 @@ gfxResult DRV_2DGPU_Blit(const gfxPixelBuffer* source,
     src_buffer.memory = source->pixels;
     src_buffer.gpu = KVA_TO_PA(source->pixels);
 
-    // the source address must reside in KSEG1 (cache coherent) memory
-    // and the source buffer must be padded properly
-    if(IS_KVA1(source->pixels) == GFX_FALSE || 
-       (source->size.width) % 4 > 0)
+    if(IS_KVA1(source->pixels) == GFX_FALSE ||    //not coherent
+       (source->size.width) % 4 > 0 ||            //not width aligned
+       (((uint32_t) src_buffer.memory) & 0x3))    //not 32-bit address aligned
     {
-        if(createPaddedBuffer(source) == GFX_FALSE)
-            return GFX_FAILURE;
-        
-        src_buffer.width = source->size.width + (4 - (source->size.width % 4));
-        src_buffer.stride = (src_buffer.width * gfxColorInfoTable[source->mode].size);
-        src_buffer.memory = (uint8_t*)scratchBuffer;
-        src_buffer.gpu = KVA_TO_PA((uint8_t*)scratchBuffer);
+        return GFX_FAILURE;
     }
     
     // craft dest buffer descriptor
@@ -542,13 +551,14 @@ gfxResult DRV_2DGPU_Blit(const gfxPixelBuffer* source,
     dest_buffer.memory = dest->pixels;
     dest_buffer.gpu = KVA_TO_PA(dest->pixels);
 
-    n2d_blit(&dest_buffer,
-             (n2d_rectangle_t*)destRect,
-             &src_buffer,
-             (n2d_rectangle_t*)srcRect,
-             blendState);
-
-    return GFX_SUCCESS;
+    
+    err = n2d_blit(&dest_buffer,
+                  (n2d_rectangle_t*)destRect,
+                  &src_buffer,
+                  (n2d_rectangle_t*)srcRect,
+                  blendState);
+        
+    return ((err == N2D_SUCCESS) ? GFX_SUCCESS : GFX_FAILURE);
 }
 
 gfxResult DRV_2DGPU_SetBlend(

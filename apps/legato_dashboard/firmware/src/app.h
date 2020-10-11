@@ -311,7 +311,7 @@ void appSetLayerFrame(uint32_t layerID,
 
 void APP_PreprocessSplashImages(void);
 void APP_PreprocessNeedleImages(void);
-void StartAnimTimer();
+void StartAnimTimer(void);
 
 void appSetLeftNeedleImageData(leImage * imgAst,
                            uint32_t angle,

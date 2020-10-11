@@ -111,7 +111,7 @@
           <Name dnOrder="1">le_gen_fonts.c</Name>
           <Security dnOrder="2">NON_SECURE</Security>
           <LogicalPath dnOrder="3">config/glcd_rgb565_mxt_mzda_extddr_sk/gfx/legato/generated/font/</LogicalPath>
-          <PhysicalPath dnOrder="4">/gfx/legato\generated\font\</PhysicalPath>
+          <PhysicalPath dnOrder="4">/gfx/legato/generated/font/</PhysicalPath>
           <GeneratedChecksum dnOrder="5">C423E524B6BEE2076CBADBC7A375CE0F</GeneratedChecksum>
           <UserChecksum dnOrder="6">C423E524B6BEE2076CBADBC7A375CE0F</UserChecksum>
         </File>
@@ -120,7 +120,7 @@
           <Name dnOrder="1">le_gen_globalpalette.c</Name>
           <Security dnOrder="2">NON_SECURE</Security>
           <LogicalPath dnOrder="3">config/glcd_rgb565_mxt_mzda_extddr_sk/gfx/legato/generated/</LogicalPath>
-          <PhysicalPath dnOrder="4">/gfx/legato\generated\</PhysicalPath>
+          <PhysicalPath dnOrder="4">/gfx/legato/generated/</PhysicalPath>
           <GeneratedChecksum dnOrder="5">2D48DB8AD17CFF23FA87412540899BA2</GeneratedChecksum>
           <UserChecksum dnOrder="6">2D48DB8AD17CFF23FA87412540899BA2</UserChecksum>
         </File>
@@ -129,7 +129,7 @@
           <Name dnOrder="1">le_gen_harmony.c</Name>
           <Security dnOrder="2">NON_SECURE</Security>
           <LogicalPath dnOrder="3">config/glcd_rgb565_mxt_mzda_extddr_sk/gfx/legato/generated/</LogicalPath>
-          <PhysicalPath dnOrder="4">/gfx/legato\generated\</PhysicalPath>
+          <PhysicalPath dnOrder="4">/gfx/legato/generated/</PhysicalPath>
           <GeneratedChecksum dnOrder="5">4A852E591E91A90DD2355DE79C5A38BF</GeneratedChecksum>
           <UserChecksum dnOrder="6">4A852E591E91A90DD2355DE79C5A38BF</UserChecksum>
         </File>
@@ -138,7 +138,7 @@
           <Name dnOrder="1">le_gen_images.c</Name>
           <Security dnOrder="2">NON_SECURE</Security>
           <LogicalPath dnOrder="3">config/glcd_rgb565_mxt_mzda_extddr_sk/gfx/legato/generated/image/</LogicalPath>
-          <PhysicalPath dnOrder="4">/gfx/legato\generated\image\</PhysicalPath>
+          <PhysicalPath dnOrder="4">/gfx/legato/generated/image/</PhysicalPath>
           <GeneratedChecksum dnOrder="5">B64EDBE3DEB42D8F33176F18D12CAC2F</GeneratedChecksum>
           <UserChecksum dnOrder="6">B64EDBE3DEB42D8F33176F18D12CAC2F</UserChecksum>
         </File>
@@ -147,7 +147,7 @@
           <Name dnOrder="1">le_gen_init.c</Name>
           <Security dnOrder="2">NON_SECURE</Security>
           <LogicalPath dnOrder="3">config/glcd_rgb565_mxt_mzda_extddr_sk/gfx/legato/generated/</LogicalPath>
-          <PhysicalPath dnOrder="4">/gfx/legato\generated\</PhysicalPath>
+          <PhysicalPath dnOrder="4">/gfx/legato/generated/</PhysicalPath>
           <GeneratedChecksum dnOrder="5">2017D36E20B633092E5BAB1D5ED64A28</GeneratedChecksum>
           <UserChecksum dnOrder="6">2017D36E20B633092E5BAB1D5ED64A28</UserChecksum>
         </File>
@@ -156,7 +156,7 @@
           <Name dnOrder="1">le_gen_scheme.c</Name>
           <Security dnOrder="2">NON_SECURE</Security>
           <LogicalPath dnOrder="3">config/glcd_rgb565_mxt_mzda_extddr_sk/gfx/legato/generated/</LogicalPath>
-          <PhysicalPath dnOrder="4">/gfx/legato\generated\</PhysicalPath>
+          <PhysicalPath dnOrder="4">/gfx/legato/generated/</PhysicalPath>
           <GeneratedChecksum dnOrder="5">FA87AE3753CC0A5C22408397492B611A</GeneratedChecksum>
           <UserChecksum dnOrder="6">FA87AE3753CC0A5C22408397492B611A</UserChecksum>
         </File>
@@ -165,7 +165,7 @@
           <Name dnOrder="1">le_gen_screen_Screen0.c</Name>
           <Security dnOrder="2">NON_SECURE</Security>
           <LogicalPath dnOrder="3">config/glcd_rgb565_mxt_mzda_extddr_sk/gfx/legato/generated/screen/</LogicalPath>
-          <PhysicalPath dnOrder="4">/gfx/legato\generated\screen\</PhysicalPath>
+          <PhysicalPath dnOrder="4">/gfx/legato/generated/screen/</PhysicalPath>
           <GeneratedChecksum dnOrder="5">312DBD0469EBD2D35C09E3929B84DC87</GeneratedChecksum>
           <UserChecksum dnOrder="6">312DBD0469EBD2D35C09E3929B84DC87</UserChecksum>
         </File>
@@ -174,7 +174,7 @@
           <Name dnOrder="1">le_gen_stringtable.c</Name>
           <Security dnOrder="2">NON_SECURE</Security>
           <LogicalPath dnOrder="3">config/glcd_rgb565_mxt_mzda_extddr_sk/gfx/legato/generated/</LogicalPath>
-          <PhysicalPath dnOrder="4">/gfx/legato\generated\</PhysicalPath>
+          <PhysicalPath dnOrder="4">/gfx/legato/generated/</PhysicalPath>
           <GeneratedChecksum dnOrder="5">01BEC615ED13BF8B02C873FE23C4BDB0</GeneratedChecksum>
           <UserChecksum dnOrder="6">01BEC615ED13BF8B02C873FE23C4BDB0</UserChecksum>
         </File>
@@ -382,8 +382,8 @@
           <Security dnOrder="2">NON_SECURE</Security>
           <LogicalPath dnOrder="3">config/glcd_rgb565_mxt_mzda_extddr_sk/gfx/legato/image/png</LogicalPath>
           <PhysicalPath dnOrder="4">/gfx/legato/image/png/</PhysicalPath>
-          <GeneratedChecksum dnOrder="5">85D2B735C949FF93ECB067A6460216D6</GeneratedChecksum>
-          <UserChecksum dnOrder="6">85D2B735C949FF93ECB067A6460216D6</UserChecksum>
+          <GeneratedChecksum dnOrder="5">FEB5748641CE0FD5D554340A360536FF</GeneratedChecksum>
+          <UserChecksum dnOrder="6">FEB5748641CE0FD5D554340A360536FF</UserChecksum>
         </File>
         <File dnOrder="42">
           <Type dnOrder="0">SOURCE</Type>
@@ -634,8 +634,8 @@
           <Security dnOrder="2">NON_SECURE</Security>
           <LogicalPath dnOrder="3">config/glcd_rgb565_mxt_mzda_extddr_sk/gfx/legato/renderer</LogicalPath>
           <PhysicalPath dnOrder="4">/gfx/legato/renderer/</PhysicalPath>
-          <GeneratedChecksum dnOrder="5">4199778F7F2047F123065351B0989C36</GeneratedChecksum>
-          <UserChecksum dnOrder="6">4199778F7F2047F123065351B0989C36</UserChecksum>
+          <GeneratedChecksum dnOrder="5">EA4C50EA7F1C27719403775D9633FDFD</GeneratedChecksum>
+          <UserChecksum dnOrder="6">EA4C50EA7F1C27719403775D9633FDFD</UserChecksum>
         </File>
         <File dnOrder="70">
           <Type dnOrder="0">SOURCE</Type>
@@ -1165,8 +1165,8 @@
           <Security dnOrder="2">NON_SECURE</Security>
           <LogicalPath dnOrder="3">config/glcd_rgb565_mxt_mzda_extddr_sk/gfx/legato/widget/radiobutton</LogicalPath>
           <PhysicalPath dnOrder="4">/gfx/legato/widget/radiobutton/</PhysicalPath>
-          <GeneratedChecksum dnOrder="5">1EAA24791970653AC83DF13BDA71D05A</GeneratedChecksum>
-          <UserChecksum dnOrder="6">1EAA24791970653AC83DF13BDA71D05A</UserChecksum>
+          <GeneratedChecksum dnOrder="5">1C784862C50ED1C8F14EE68ACAECC2B5</GeneratedChecksum>
+          <UserChecksum dnOrder="6">1C784862C50ED1C8F14EE68ACAECC2B5</UserChecksum>
         </File>
         <File dnOrder="129">
           <Type dnOrder="0">SOURCE</Type>
@@ -1560,7 +1560,7 @@
           <Name dnOrder="1">le_gen_assets.h</Name>
           <Security dnOrder="2">NON_SECURE</Security>
           <LogicalPath dnOrder="3">config/glcd_rgb565_mxt_mzda_extddr_sk/gfx/legato/generated/</LogicalPath>
-          <PhysicalPath dnOrder="4">/gfx/legato\generated\</PhysicalPath>
+          <PhysicalPath dnOrder="4">/gfx/legato/generated/</PhysicalPath>
           <GeneratedChecksum dnOrder="5">7E3BB86B97B83C5EA2D213B98EC50C17</GeneratedChecksum>
           <UserChecksum dnOrder="6">7E3BB86B97B83C5EA2D213B98EC50C17</UserChecksum>
         </File>
@@ -1569,7 +1569,7 @@
           <Name dnOrder="1">le_gen_harmony.h</Name>
           <Security dnOrder="2">NON_SECURE</Security>
           <LogicalPath dnOrder="3">config/glcd_rgb565_mxt_mzda_extddr_sk/gfx/legato/generated/</LogicalPath>
-          <PhysicalPath dnOrder="4">/gfx/legato\generated\</PhysicalPath>
+          <PhysicalPath dnOrder="4">/gfx/legato/generated/</PhysicalPath>
           <GeneratedChecksum dnOrder="5">B304831F3C1AFA7F7A497602EDC016F8</GeneratedChecksum>
           <UserChecksum dnOrder="6">B304831F3C1AFA7F7A497602EDC016F8</UserChecksum>
         </File>
@@ -1578,7 +1578,7 @@
           <Name dnOrder="1">le_gen_init.h</Name>
           <Security dnOrder="2">NON_SECURE</Security>
           <LogicalPath dnOrder="3">config/glcd_rgb565_mxt_mzda_extddr_sk/gfx/legato/generated/</LogicalPath>
-          <PhysicalPath dnOrder="4">/gfx/legato\generated\</PhysicalPath>
+          <PhysicalPath dnOrder="4">/gfx/legato/generated/</PhysicalPath>
           <GeneratedChecksum dnOrder="5">13EFC04C0D230052AEBB6FC4CA1D204F</GeneratedChecksum>
           <UserChecksum dnOrder="6">13EFC04C0D230052AEBB6FC4CA1D204F</UserChecksum>
         </File>
@@ -1587,7 +1587,7 @@
           <Name dnOrder="1">le_gen_scheme.h</Name>
           <Security dnOrder="2">NON_SECURE</Security>
           <LogicalPath dnOrder="3">config/glcd_rgb565_mxt_mzda_extddr_sk/gfx/legato/generated/</LogicalPath>
-          <PhysicalPath dnOrder="4">/gfx/legato\generated\</PhysicalPath>
+          <PhysicalPath dnOrder="4">/gfx/legato/generated/</PhysicalPath>
           <GeneratedChecksum dnOrder="5">BEADA587A58C7271F02FEC7212745AFB</GeneratedChecksum>
           <UserChecksum dnOrder="6">BEADA587A58C7271F02FEC7212745AFB</UserChecksum>
         </File>
@@ -1596,7 +1596,7 @@
           <Name dnOrder="1">le_gen_screen_Screen0.h</Name>
           <Security dnOrder="2">NON_SECURE</Security>
           <LogicalPath dnOrder="3">config/glcd_rgb565_mxt_mzda_extddr_sk/gfx/legato/generated/screen/</LogicalPath>
-          <PhysicalPath dnOrder="4">/gfx/legato\generated\screen\</PhysicalPath>
+          <PhysicalPath dnOrder="4">/gfx/legato/generated/screen/</PhysicalPath>
           <GeneratedChecksum dnOrder="5">166D82A87A8433E509E4CFE9714D3ED2</GeneratedChecksum>
           <UserChecksum dnOrder="6">166D82A87A8433E509E4CFE9714D3ED2</UserChecksum>
         </File>
@@ -1641,7 +1641,7 @@
           <Name dnOrder="1">legato_config.h</Name>
           <Security dnOrder="2">NON_SECURE</Security>
           <LogicalPath dnOrder="3">config/glcd_rgb565_mxt_mzda_extddr_sk/gfx/legato/</LogicalPath>
-          <PhysicalPath dnOrder="4">/gfx/legato\</PhysicalPath>
+          <PhysicalPath dnOrder="4">/gfx/legato/</PhysicalPath>
           <GeneratedChecksum dnOrder="5">FD8E321B8EBE7BDDAC7CA4C1DB88BB6F</GeneratedChecksum>
           <UserChecksum dnOrder="6">FD8E321B8EBE7BDDAC7CA4C1DB88BB6F</UserChecksum>
         </File>
@@ -2173,8 +2173,8 @@
           <Security dnOrder="2">NON_SECURE</Security>
           <LogicalPath dnOrder="3">config/glcd_rgb565_mxt_mzda_extddr_sk/gfx/legato/widget/radiobutton</LogicalPath>
           <PhysicalPath dnOrder="4">/gfx/legato/widget/radiobutton/</PhysicalPath>
-          <GeneratedChecksum dnOrder="5">BBD5078A2FE931E74C61318239F2BE87</GeneratedChecksum>
-          <UserChecksum dnOrder="6">BBD5078A2FE931E74C61318239F2BE87</UserChecksum>
+          <GeneratedChecksum dnOrder="5">CF44E658CC8F3A2D92F2BF72D59412C2</GeneratedChecksum>
+          <UserChecksum dnOrder="6">CF44E658CC8F3A2D92F2BF72D59412C2</UserChecksum>
         </File>
         <File dnOrder="241">
           <Type dnOrder="0">HEADER</Type>
@@ -2245,8 +2245,8 @@
           <Security dnOrder="2">NON_SECURE</Security>
           <LogicalPath dnOrder="3">config/glcd_rgb565_mxt_mzda_extddr_sk/gfx/driver/2dgpu</LogicalPath>
           <PhysicalPath dnOrder="4">/gfx/driver/processor/2dgpu/</PhysicalPath>
-          <GeneratedChecksum dnOrder="5">453F7CDF765BE6792017FDDC13A83CBB</GeneratedChecksum>
-          <UserChecksum dnOrder="6">453F7CDF765BE6792017FDDC13A83CBB</UserChecksum>
+          <GeneratedChecksum dnOrder="5">035F684AFACA44347A8C685EBD27A93E</GeneratedChecksum>
+          <UserChecksum dnOrder="6">035F684AFACA44347A8C685EBD27A93E</UserChecksum>
         </File>
         <File dnOrder="249">
           <Type dnOrder="0">HEADER</Type>
@@ -2533,12 +2533,12 @@
       </Settings>
     </Manifest>
     <Settings dnOrder="5">
-      <Setting dnOrder="0" key="CMSISPath" value=".\dev_packs\arm\CMSIS\5.7.0"/>
-      <Setting dnOrder="1" key="DFPPath" value=".\dev_packs\Microchip\PIC32MZ-DA_DFP\1.3.111\atdf\PIC32MZ2064DAA288.atdf"/>
+      <Setting dnOrder="0" key="CMSISPath" value="./dev_packs/arm/CMSIS/5.7.0"/>
+      <Setting dnOrder="1" key="DFPPath" value="./dev_packs/Microchip/PIC32MZ-DA_DFP/1.3.111/atdf/PIC32MZ2064DAA288.atdf"/>
       <Setting dnOrder="2" key="FORCE_OPTIMIZATION" value="false"/>
       <Setting dnOrder="3" key="GENERATE_BACKUP" value="true"/>
       <Setting dnOrder="4" key="MERGE_STRATEGY" value="USER_ALL"/>
-      <Setting dnOrder="5" key="PackageFilter" value="audio;bootloader;bsp;core;crypto;csp;gfx;gfx_apps;net;touch;usb;"/>
+      <Setting dnOrder="5" key="PackageFilter" value="gfx_apps_pic32mz_da;gfx_apps_pic32mz_da;gfx_apps_pic32mz_da;gfx;bsp;usb;gfx;csp;gfx_apps_pic32mz_da;gfx_apps_pic32mz_da;core;"/>
       <Setting dnOrder="6" key="TRUSTZONE" value="false"/>
     </Settings>
   </Configurator>

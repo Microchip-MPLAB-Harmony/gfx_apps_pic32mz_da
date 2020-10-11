@@ -6,8 +6,8 @@ leWidget* root1;
 leWidget* root2;
 
 leWidget* Splash_Layer_0_FillPanel;
-leImageWidget* Splash_ImageWidget;
-leImageWidget* Splash_ImageWidget;
+leImageWidget* Splash_ImageWidget0;
+leImageWidget* Splash_ImageWidget1;
 
 static leBool initialized = LE_FALSE;
 static leBool showing = LE_FALSE;
@@ -41,21 +41,21 @@ leResult screenShow_Splash(void)
     Splash_Layer_0_FillPanel->fn->setScheme(Splash_Layer_0_FillPanel, &AriaImport_LayerFillScheme);
     root0->fn->addChild(root0, (leWidget*)Splash_Layer_0_FillPanel);
 
-    Splash_ImageWidget = leImageWidget_New();
-    Splash_ImageWidget->fn->setPosition(Splash_ImageWidget, 216, 111);
-    Splash_ImageWidget->fn->setSize(Splash_ImageWidget, 339, 241);
-    Splash_ImageWidget->fn->setBackgroundType(Splash_ImageWidget, LE_WIDGET_BACKGROUND_NONE);
-    Splash_ImageWidget->fn->setBorderType(Splash_ImageWidget, LE_WIDGET_BORDER_NONE);
-    Splash_ImageWidget->fn->setImage(Splash_ImageWidget, (leImage*)&MHGC_200x200_white);
-    root0->fn->addChild(root0, (leWidget*)Splash_ImageWidget);
+    Splash_ImageWidget0 = leImageWidget_New();
+    Splash_ImageWidget0->fn->setPosition(Splash_ImageWidget0, 216, 111);
+    Splash_ImageWidget0->fn->setSize(Splash_ImageWidget0, 339, 241);
+    Splash_ImageWidget0->fn->setBackgroundType(Splash_ImageWidget0, LE_WIDGET_BACKGROUND_NONE);
+    Splash_ImageWidget0->fn->setBorderType(Splash_ImageWidget0, LE_WIDGET_BORDER_NONE);
+    Splash_ImageWidget0->fn->setImage(Splash_ImageWidget0, (leImage*)&MHGC_200x200_white);
+    root0->fn->addChild(root0, (leWidget*)Splash_ImageWidget0);
 
-    Splash_ImageWidget = leImageWidget_New();
-    Splash_ImageWidget->fn->setPosition(Splash_ImageWidget, 20, 20);
-    Splash_ImageWidget->fn->setSize(Splash_ImageWidget, 197, 42);
-    Splash_ImageWidget->fn->setBackgroundType(Splash_ImageWidget, LE_WIDGET_BACKGROUND_NONE);
-    Splash_ImageWidget->fn->setBorderType(Splash_ImageWidget, LE_WIDGET_BORDER_NONE);
-    Splash_ImageWidget->fn->setImage(Splash_ImageWidget, (leImage*)&Microchip_logo_150x30);
-    root0->fn->addChild(root0, (leWidget*)Splash_ImageWidget);
+    Splash_ImageWidget1 = leImageWidget_New();
+    Splash_ImageWidget1->fn->setPosition(Splash_ImageWidget1, 20, 20);
+    Splash_ImageWidget1->fn->setSize(Splash_ImageWidget1, 197, 42);
+    Splash_ImageWidget1->fn->setBackgroundType(Splash_ImageWidget1, LE_WIDGET_BACKGROUND_NONE);
+    Splash_ImageWidget1->fn->setBorderType(Splash_ImageWidget1, LE_WIDGET_BORDER_NONE);
+    Splash_ImageWidget1->fn->setImage(Splash_ImageWidget1, (leImage*)&Microchip_logo_150x30);
+    root0->fn->addChild(root0, (leWidget*)Splash_ImageWidget1);
 
     leAddRootWidget(root0, 0);
     leSetLayerColorMode(0, LE_COLOR_MODE_INDEX_8);
@@ -104,8 +104,8 @@ void screenHide_Splash(void)
     root0 = NULL;
 
     Splash_Layer_0_FillPanel = NULL;
-    Splash_ImageWidget = NULL;
-    Splash_ImageWidget = NULL;
+    Splash_ImageWidget0 = NULL;
+    Splash_ImageWidget1 = NULL;
 
     leRemoveRootWidget(root1, 1);
     leWidget_Delete(root1);

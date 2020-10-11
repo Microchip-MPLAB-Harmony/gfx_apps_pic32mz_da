@@ -80,7 +80,6 @@ typedef short               n2d_int16_t;
 typedef unsigned short      n2d_uint16_t;
 typedef int                 n2d_int32_t;
 typedef unsigned int        n2d_uint32_t;
-typedef unsigned long long  n2d_uint64_t;
 typedef unsigned int        n2d_size_t;
 typedef float               n2d_float_t;
 typedef void*               n2d_pointer;
@@ -534,7 +533,7 @@ gfxResult DRV_2DGPU_SetTransparency(
  */
 static const gfxGraphicsProcessor gfxGPUInterface =
 {
-    DRV_2DGPU_Line,
+    NULL,
     DRV_2DGPU_Fill,
     DRV_2DGPU_Blit,
     DRV_2DGPU_SetBlend,

@@ -433,7 +433,7 @@ static void invalidateWidget(leWidget* wgt, leRect* rect)
 static void preRect(void)
 {
     int32_t idx;
-    struct leScratchBuffer* buf;
+    struct leScratchBuffer* buf = NULL;
 
     if(_rendererState.frameRectIdx == _rendererState.layerStates[_rendererState.layerIdx].frameRectList.size)
     {

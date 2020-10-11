@@ -241,6 +241,7 @@
       </logicalFolder>
       <itemPath>../src/main.c</itemPath>
       <itemPath>../src/app_glcd.c</itemPath>
+      <itemPath>../src/app_gfx_assets_16.c</itemPath>
     </logicalFolder>
     <logicalFolder name="ExternalFiles"
                    displayName="Important Files"
@@ -250,7 +251,6 @@
       <itemPath>../src/config/glcd_rgba8888_mxt_mzda_extddr_sk_freertos_wvga/glcd_rgba8888_mxt_mzda_extddr_sk_freertos_wvga.xml</itemPath>
       <itemPath>../src/config/glcd_rgba8888_mxt_mzda_extddr_sk_freertos_wvga/harmony-manifest-success.yml</itemPath>
     </logicalFolder>
-    <itemPath>../src/app_gfx_assets_16.c</itemPath>
   </logicalFolder>
   <sourceRootList>
     <Elem>../src</Elem>
@@ -263,13 +263,13 @@
         <targetDevice>PIC32MZ2064DAA288</targetDevice>
         <targetHeader></targetHeader>
         <targetPluginBoard></targetPluginBoard>
-        <platformTool>ICD4Tool</platformTool>
+        <platformTool>RealICEPlatformTool</platformTool>
         <languageToolchain>XC32</languageToolchain>
-        <languageToolchainVersion>2.41</languageToolchainVersion>
+        <languageToolchainVersion>2.50</languageToolchainVersion>
         <platform>3</platform>
       </toolsSet>
       <packs>
-        <pack name="PIC32MZ-DA_DFP" vendor="Microchip" version="1.2.102"/>
+        <pack name="PIC32MZ-DA_DFP" vendor="Microchip" version="1.3.114"/>
       </packs>
       <ScriptingSettings>
       </ScriptingSettings>
@@ -291,6 +291,7 @@
       </compileType>
       <makeCustomizationType>
         <makeCustomizationPreStepEnabled>false</makeCustomizationPreStepEnabled>
+        <makeUseCleanTarget>false</makeUseCleanTarget>
         <makeCustomizationPreStep></makeCustomizationPreStep>
         <makeCustomizationPostStepEnabled>false</makeCustomizationPostStepEnabled>
         <makeCustomizationPostStep></makeCustomizationPostStep>
@@ -324,6 +325,7 @@
         <property key="use-cci" value="false"/>
         <property key="use-iar" value="false"/>
         <property key="use-indirect-calls" value="false"/>
+        <appendMe value="-Wformat=2 -Wshadow -Wpointer-arith -Wbad-function-cast -Wwrite-strings -Waggregate-return -Wno-deprecated-declarations -Wredundant-decls -Winline -Wlong-long -Wunreachable-code"/>
       </C32>
       <C32-AR>
         <property key="additional-options-chop-files" value="false"/>
@@ -756,6 +758,7 @@
         <property key="UART5" value="true"/>
         <property key="UART6" value="true"/>
         <property key="debugoptions.useswbreakpoints" value="false"/>
+        <property key="firmware.download.all" value="false"/>
         <property key="hwtoolclock.frcindebug" value="false"/>
         <property key="hwtoolclock.instructionspeed" value="4"/>
         <property key="hwtoolclock.units" value="mips"/>

@@ -14,8 +14,8 @@ extern "C" {
 
 // screen member widget declarations
 extern leWidget* Splash_Layer_0_FillPanel;
-extern leImageWidget* Splash_ImageWidget;
-extern leImageWidget* Splash_ImageWidget;
+extern leImageWidget* Splash_ImageWidget0;
+extern leImageWidget* Splash_ImageWidget1;
 
 // screen lifecycle functions
 // DO NOT CALL THESE DIRECTLY

@@ -37,7 +37,7 @@
           <logicalFolder name="f6" displayName="osal" projectFiles="true">
             <itemPath>../src/config/glcd_rgba8888_mxt_mzda_extddr_sk/osal/osal.h</itemPath>
             <itemPath>../src/config/glcd_rgba8888_mxt_mzda_extddr_sk/osal/osal_definitions.h</itemPath>
-            <itemPath>../src/config/glcd_rgba8888_mxt_mzda_extddr_sk/osal/osal_freertos.h</itemPath>
+            <itemPath>../src/config/glcd_rgba8888_mxt_mzda_extddr_sk/osal/osal_impl_basic.h</itemPath>
           </logicalFolder>
           <logicalFolder name="f2" displayName="peripheral" projectFiles="true">
             <logicalFolder name="f1" displayName="clk" projectFiles="true">
@@ -90,39 +90,8 @@
           <itemPath>../src/config/glcd_rgba8888_mxt_mzda_extddr_sk/toolchain_specifics.h</itemPath>
           <itemPath>../src/config/glcd_rgba8888_mxt_mzda_extddr_sk/definitions.h</itemPath>
           <itemPath>../src/config/glcd_rgba8888_mxt_mzda_extddr_sk/device.h</itemPath>
-          <itemPath>../src/config/glcd_rgba8888_mxt_mzda_extddr_sk/FreeRTOSConfig.h</itemPath>
           <itemPath>../src/config/glcd_rgba8888_mxt_mzda_extddr_sk/user.h</itemPath>
           <itemPath>../src/config/glcd_rgba8888_mxt_mzda_extddr_sk/configuration.h</itemPath>
-        </logicalFolder>
-      </logicalFolder>
-      <logicalFolder name="f2" displayName="FreeRTOS" projectFiles="true">
-        <logicalFolder name="f1" displayName="Source" projectFiles="true">
-          <logicalFolder name="f1" displayName="include" projectFiles="true">
-            <itemPath>../src/third_party/rtos/FreeRTOS/Source/include/croutine.h</itemPath>
-            <itemPath>../src/third_party/rtos/FreeRTOS/Source/include/event_groups.h</itemPath>
-            <itemPath>../src/third_party/rtos/FreeRTOS/Source/include/FreeRTOS.h</itemPath>
-            <itemPath>../src/third_party/rtos/FreeRTOS/Source/include/list.h</itemPath>
-            <itemPath>../src/third_party/rtos/FreeRTOS/Source/include/mpu_wrappers.h</itemPath>
-            <itemPath>../src/third_party/rtos/FreeRTOS/Source/include/portable.h</itemPath>
-            <itemPath>../src/third_party/rtos/FreeRTOS/Source/include/projdefs.h</itemPath>
-            <itemPath>../src/third_party/rtos/FreeRTOS/Source/include/queue.h</itemPath>
-            <itemPath>../src/third_party/rtos/FreeRTOS/Source/include/semphr.h</itemPath>
-            <itemPath>../src/third_party/rtos/FreeRTOS/Source/include/stack_macros.h</itemPath>
-            <itemPath>../src/third_party/rtos/FreeRTOS/Source/include/deprecated_definitions.h</itemPath>
-            <itemPath>../src/third_party/rtos/FreeRTOS/Source/include/task.h</itemPath>
-            <itemPath>../src/third_party/rtos/FreeRTOS/Source/include/timers.h</itemPath>
-            <itemPath>../src/third_party/rtos/FreeRTOS/Source/include/mpu_prototypes.h</itemPath>
-            <itemPath>../src/third_party/rtos/FreeRTOS/Source/include/stream_buffer.h</itemPath>
-            <itemPath>../src/third_party/rtos/FreeRTOS/Source/include/message_buffer.h</itemPath>
-          </logicalFolder>
-          <logicalFolder name="f2" displayName="portable" projectFiles="true">
-            <logicalFolder name="f1" displayName="MPLAB" projectFiles="true">
-              <logicalFolder name="f1" displayName="PIC32MZ" projectFiles="true">
-                <itemPath>../src/third_party/rtos/FreeRTOS/Source/portable/MPLAB/PIC32MZ/portmacro.h</itemPath>
-                <itemPath>../src/third_party/rtos/FreeRTOS/Source/portable/MPLAB/PIC32MZ/ISR_Support.h</itemPath>
-              </logicalFolder>
-            </logicalFolder>
-          </logicalFolder>
         </logicalFolder>
       </logicalFolder>
       <itemPath>../src/app_glcd.h</itemPath>
@@ -169,9 +138,6 @@
               </logicalFolder>
             </logicalFolder>
           </logicalFolder>
-          <logicalFolder name="f7" displayName="osal" projectFiles="true">
-            <itemPath>../src/config/glcd_rgba8888_mxt_mzda_extddr_sk/osal/osal_freertos.c</itemPath>
-          </logicalFolder>
           <logicalFolder name="f3" displayName="peripheral" projectFiles="true">
             <logicalFolder name="f1" displayName="clk" projectFiles="true">
               <itemPath>../src/config/glcd_rgba8888_mxt_mzda_extddr_sk/peripheral/clk/plib_clk.c</itemPath>
@@ -211,32 +177,8 @@
           </logicalFolder>
           <itemPath>../src/config/glcd_rgba8888_mxt_mzda_extddr_sk/initialization.c</itemPath>
           <itemPath>../src/config/glcd_rgba8888_mxt_mzda_extddr_sk/interrupts.c</itemPath>
-          <itemPath>../src/config/glcd_rgba8888_mxt_mzda_extddr_sk/interrupts_a.S</itemPath>
           <itemPath>../src/config/glcd_rgba8888_mxt_mzda_extddr_sk/exceptions.c</itemPath>
-          <itemPath>../src/config/glcd_rgba8888_mxt_mzda_extddr_sk/freertos_hooks.c</itemPath>
           <itemPath>../src/config/glcd_rgba8888_mxt_mzda_extddr_sk/tasks.c</itemPath>
-        </logicalFolder>
-      </logicalFolder>
-      <logicalFolder name="f2" displayName="FreeRTOS" projectFiles="true">
-        <logicalFolder name="f1" displayName="Source" projectFiles="true">
-          <logicalFolder name="f1" displayName="portable" projectFiles="true">
-            <logicalFolder name="f1" displayName="MemMang" projectFiles="true">
-              <itemPath>../src/third_party/rtos/FreeRTOS/Source/portable/MemMang/heap_1.c</itemPath>
-            </logicalFolder>
-            <logicalFolder name="f2" displayName="MPLAB" projectFiles="true">
-              <logicalFolder name="f1" displayName="PIC32MZ" projectFiles="true">
-                <itemPath>../src/third_party/rtos/FreeRTOS/Source/portable/MPLAB/PIC32MZ/port.c</itemPath>
-                <itemPath>../src/third_party/rtos/FreeRTOS/Source/portable/MPLAB/PIC32MZ/port_asm.S</itemPath>
-              </logicalFolder>
-            </logicalFolder>
-          </logicalFolder>
-          <itemPath>../src/third_party/rtos/FreeRTOS/Source/croutine.c</itemPath>
-          <itemPath>../src/third_party/rtos/FreeRTOS/Source/list.c</itemPath>
-          <itemPath>../src/third_party/rtos/FreeRTOS/Source/queue.c</itemPath>
-          <itemPath>../src/third_party/rtos/FreeRTOS/Source/FreeRTOS_tasks.c</itemPath>
-          <itemPath>../src/third_party/rtos/FreeRTOS/Source/timers.c</itemPath>
-          <itemPath>../src/third_party/rtos/FreeRTOS/Source/event_groups.c</itemPath>
-          <itemPath>../src/third_party/rtos/FreeRTOS/Source/stream_buffer.c</itemPath>
         </logicalFolder>
       </logicalFolder>
       <itemPath>../src/app_gfx_assets_16.c</itemPath>
@@ -264,13 +206,13 @@
         <targetDevice>PIC32MZ2064DAA288</targetDevice>
         <targetHeader></targetHeader>
         <targetPluginBoard></targetPluginBoard>
-        <platformTool>ICD4Tool</platformTool>
+        <platformTool>RealICEPlatformTool</platformTool>
         <languageToolchain>XC32</languageToolchain>
-        <languageToolchainVersion>2.41</languageToolchainVersion>
+        <languageToolchainVersion>2.50</languageToolchainVersion>
         <platform>3</platform>
       </toolsSet>
       <packs>
-        <pack name="PIC32MZ-DA_DFP" vendor="Microchip" version="1.2.102"/>
+        <pack name="PIC32MZ-DA_DFP" vendor="Microchip" version="1.3.114"/>
       </packs>
       <ScriptingSettings>
       </ScriptingSettings>
@@ -292,6 +234,7 @@
       </compileType>
       <makeCustomizationType>
         <makeCustomizationPreStepEnabled>false</makeCustomizationPreStepEnabled>
+        <makeUseCleanTarget>false</makeUseCleanTarget>
         <makeCustomizationPreStep></makeCustomizationPreStep>
         <makeCustomizationPostStepEnabled>false</makeCustomizationPostStepEnabled>
         <makeCustomizationPostStep></makeCustomizationPostStep>
@@ -308,7 +251,7 @@
         <property key="enable-unroll-loops" value="false"/>
         <property key="exclude-floating-point" value="false"/>
         <property key="extra-include-directories"
-                  value="../src/third_party/rtos/FreeRTOS/Source/portable/MPLAB/PIC32MZ;../src/third_party/rtos/FreeRTOS/Source/include;../src;../src/config/glcd_rgba8888_mxt_mzda_extddr_sk;../src/packs/PIC32MZ2064DAA288_DFP;../src/config/glcd_rgba8888_mxt_mzda_extddr_sk/third_party/gfx"/>
+                  value="../src;../src/config/glcd_rgba8888_mxt_mzda_extddr_sk;../src/packs/PIC32MZ2064DAA288_DFP;../src/config/glcd_rgba8888_mxt_mzda_extddr_sk/third_party/gfx"/>
         <property key="generate-16-bit-code" value="false"/>
         <property key="generate-micro-compressed-code" value="false"/>
         <property key="isolate-each-function" value="true"/>
@@ -325,6 +268,7 @@
         <property key="use-cci" value="false"/>
         <property key="use-iar" value="false"/>
         <property key="use-indirect-calls" value="false"/>
+        <appendMe value="-Wformat=2 -Wundef -Wshadow -Wpointer-arith -Wbad-function-cast -Wwrite-strings -Waggregate-return -Wstrict-prototypes -Wmissing-format-attribute -Wno-deprecated-declarations -Wredundant-decls -Wnested-externs -Winline -Wlong-long -Wunreachable-code -Wmissing-noreturn"/>
       </C32>
       <C32-AR>
         <property key="additional-options-chop-files" value="false"/>
@@ -334,10 +278,8 @@
         <property key="enable-symbols" value="true"/>
         <property key="exclude-floating-point-library" value="false"/>
         <property key="expand-macros" value="false"/>
-        <property key="extra-include-directories-for-assembler"
-                  value="../src/third_party/rtos/FreeRTOS/Source/portable/MPLAB/PIC32MZ;../src/third_party/rtos/FreeRTOS/Source/include;../src/config/glcd_rgba8888_mxt_mzda_extddr_sk;"/>
-        <property key="extra-include-directories-for-preprocessor"
-                  value="../src/third_party/rtos/FreeRTOS/Source/portable/MPLAB/PIC32MZ;../src/third_party/rtos/FreeRTOS/Source/include;../src/config/glcd_rgba8888_mxt_mzda_extddr_sk;"/>
+        <property key="extra-include-directories-for-assembler" value=""/>
+        <property key="extra-include-directories-for-preprocessor" value=""/>
         <property key="false-conditionals" value="false"/>
         <property key="generate-16-bit-code" value="false"/>
         <property key="generate-micro-compressed-code" value="false"/>
@@ -406,7 +348,7 @@
         <property key="exceptions" value="true"/>
         <property key="exclude-floating-point" value="false"/>
         <property key="extra-include-directories"
-                  value="../src/third_party/rtos/FreeRTOS/Source/portable/MPLAB/PIC32MZ;../src/third_party/rtos/FreeRTOS/Source/include;../src;../src/config/glcd_rgba8888_mxt_mzda_extddr_sk;../src/packs/PIC32MZ2064DAA288_DFP"/>
+                  value="../src;../src/config/glcd_rgba8888_mxt_mzda_extddr_sk;../src/packs/PIC32MZ2064DAA288_DFP"/>
         <property key="generate-16-bit-code" value="false"/>
         <property key="generate-micro-compressed-code" value="false"/>
         <property key="isolate-each-function" value="true"/>

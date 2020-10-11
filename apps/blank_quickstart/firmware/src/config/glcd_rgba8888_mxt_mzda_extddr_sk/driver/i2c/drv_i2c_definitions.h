@@ -217,6 +217,15 @@ typedef struct
     /* Number of clients */
     uint32_t                                numClients;
 
+    /* Size of buffer objects queue */
+    uint32_t                                transferObjPoolSize;
+
+    /* Pointer to the buffer pool */
+    uintptr_t                               transferObjPool;
+
+
+    const DRV_I2C_INTERRUPT_SOURCES*        interruptSources;
+
     /* peripheral clock speed */
     uint32_t                                clockSpeed;
 

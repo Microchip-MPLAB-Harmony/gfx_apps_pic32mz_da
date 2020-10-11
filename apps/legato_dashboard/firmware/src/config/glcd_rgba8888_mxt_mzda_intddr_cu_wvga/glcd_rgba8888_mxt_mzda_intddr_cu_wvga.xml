@@ -1327,12 +1327,17 @@
     </UniqueComponent>
     <UniqueComponent dnOrder="9" id="gfx_legato">
       <Symbols dnOrder="0">
-        <String dnOrder="0" id="driverInitName">
+        <Boolean dnOrder="0" id="LeGPUConnected">
+          <Values dnOrder="0">
+            <Dynamic dnOrder="0" id="gfx_legato" value="true"/>
+          </Values>
+        </Boolean>
+        <String dnOrder="1" id="driverInitName">
           <Values dnOrder="0">
             <Dynamic dnOrder="0" id="gfx_legato" value="gfxcVirtualDisplayDriver"/>
           </Values>
         </String>
-        <Menu dnOrder="1" id="rtosMenu">
+        <Menu dnOrder="2" id="rtosMenu">
           <Attributes dnOrder="0">
             <Boolean dnOrder="0" id="visible">
               <Value dnOrder="0">false</Value>
@@ -1348,6 +1353,16 @@
             </String>
             <String dnOrder="1" id="targetAttachmentID">
               <Value dnOrder="0">gfx_canvas</Value>
+            </String>
+          </Attributes>
+        </DirectDependency>
+        <DirectDependency dnOrder="1" id="gpu_driver">
+          <Attributes dnOrder="0">
+            <String dnOrder="0" id="targetComponentID">
+              <Value dnOrder="0">le_gfx_driver_2dgpu</Value>
+            </String>
+            <String dnOrder="1" id="targetAttachmentID">
+              <Value dnOrder="0">gfx_driver_2dgpu</Value>
             </String>
           </Attributes>
         </DirectDependency>
@@ -1683,7 +1698,21 @@
         </DirectCapability>
       </Attachments>
     </UniqueComponent>
-    <UniqueComponent dnOrder="13" id="le_gfx_driver_glcd">
+    <UniqueComponent dnOrder="13" id="le_gfx_driver_2dgpu">
+      <Attachments dnOrder="0">
+        <DirectCapability dnOrder="0" id="gfx_driver_2dgpu">
+          <Attributes dnOrder="0">
+            <String dnOrder="0" id="targetComponentID">
+              <Value dnOrder="0">gfx_legato</Value>
+            </String>
+            <String dnOrder="1" id="targetAttachmentID">
+              <Value dnOrder="0">gpu_driver</Value>
+            </String>
+          </Attributes>
+        </DirectCapability>
+      </Attachments>
+    </UniqueComponent>
+    <UniqueComponent dnOrder="14" id="le_gfx_driver_glcd">
       <Symbols dnOrder="0">
         <Boolean dnOrder="0" id="CanvasModeOnly">
           <Values dnOrder="0">
@@ -1731,15 +1760,8 @@
         </Integer>
         <Boolean dnOrder="8" id="UseGPU">
           <Values dnOrder="0">
-            <User dnOrder="0" value="false"/>
+            <User dnOrder="0" value="true"/>
           </Values>
-        </Boolean>
-        <Boolean dnOrder="9" id="VblankBlit">
-          <Attributes dnOrder="0">
-            <Boolean dnOrder="0" id="visible">
-              <Value dnOrder="0">false</Value>
-            </Boolean>
-          </Attributes>
         </Boolean>
       </Symbols>
       <Attachments dnOrder="1">
@@ -1765,8 +1787,8 @@
         </DirectCapability>
       </Attachments>
     </UniqueComponent>
-    <UniqueComponent dnOrder="14" id="legato_gfx_pda_tm5000"/>
-    <UniqueComponent dnOrder="15" id="ocmp1">
+    <UniqueComponent dnOrder="15" id="legato_gfx_pda_tm5000"/>
+    <UniqueComponent dnOrder="16" id="ocmp1">
       <Symbols dnOrder="0">
         <KeyValueSet dnOrder="0" id="OCMP_OCxCON_OCM">
           <Values dnOrder="0">
@@ -1792,7 +1814,7 @@
         </Hex>
       </Symbols>
     </UniqueComponent>
-    <UniqueComponent dnOrder="16" id="sys_input">
+    <UniqueComponent dnOrder="17" id="sys_input">
       <Symbols dnOrder="0">
         <Boolean dnOrder="0" id="RTOSEnabled">
           <Values dnOrder="0">
@@ -1801,7 +1823,7 @@
         </Boolean>
       </Symbols>
     </UniqueComponent>
-    <UniqueComponent dnOrder="17" id="sys_time">
+    <UniqueComponent dnOrder="18" id="sys_time">
       <Symbols dnOrder="0">
         <Combo dnOrder="0" id="SYS_TIME_OPERATING_MODE">
           <Attributes dnOrder="0">
@@ -1840,7 +1862,7 @@
         </DirectDependency>
       </Attachments>
     </UniqueComponent>
-    <UniqueComponent dnOrder="18" id="tmr2">
+    <UniqueComponent dnOrder="19" id="tmr2">
       <Symbols dnOrder="0">
         <Hex dnOrder="0" id="TCON_REG_VALUE">
           <Values dnOrder="0">
@@ -1897,16 +1919,17 @@
         <ElementPosition dnOrder="6" id="drv_i2c" x="230" y="247"/>
         <ElementPosition dnOrder="7" id="gfx_canvas" x="699" y="137"/>
         <ElementPosition dnOrder="8" id="gfx_disp_pdatm5000_800x480" x="224" y="126"/>
-        <ElementPosition dnOrder="9" id="gfx_hal_le" x="942" y="92"/>
-        <ElementPosition dnOrder="10" id="gfx_legato" x="1073" y="202"/>
+        <ElementPosition dnOrder="9" id="gfx_hal_le" x="886" y="145"/>
+        <ElementPosition dnOrder="10" id="gfx_legato" x="853" y="289"/>
         <ElementPosition dnOrder="11" id="gfx_maxtouch_controller" x="458" y="261"/>
         <ElementPosition dnOrder="12" id="i2c2" x="84" y="234"/>
-        <ElementPosition dnOrder="13" id="le_gfx_driver_glcd" x="469" y="121"/>
-        <ElementPosition dnOrder="14" id="legato_gfx_pda_tm5000" x="164" y="65"/>
-        <ElementPosition dnOrder="15" id="ocmp1" x="33" y="338"/>
-        <ElementPosition dnOrder="16" id="sys_input" x="688" y="9"/>
-        <ElementPosition dnOrder="17" id="sys_time" x="456" y="391"/>
-        <ElementPosition dnOrder="18" id="tmr2" x="30" y="120"/>
+        <ElementPosition dnOrder="13" id="le_gfx_driver_2dgpu" x="655" y="412"/>
+        <ElementPosition dnOrder="14" id="le_gfx_driver_glcd" x="469" y="121"/>
+        <ElementPosition dnOrder="15" id="legato_gfx_pda_tm5000" x="164" y="65"/>
+        <ElementPosition dnOrder="16" id="ocmp1" x="33" y="338"/>
+        <ElementPosition dnOrder="17" id="sys_input" x="688" y="9"/>
+        <ElementPosition dnOrder="18" id="sys_time" x="456" y="391"/>
+        <ElementPosition dnOrder="19" id="tmr2" x="30" y="120"/>
       </ElementPositions>
     </ComponentGraph>
     <GraphSettings canvasHeight="400" canvasWidth="400" dnOrder="1"/>
