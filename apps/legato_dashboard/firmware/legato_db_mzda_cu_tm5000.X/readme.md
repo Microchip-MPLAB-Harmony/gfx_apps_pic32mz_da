@@ -1,15 +1,5 @@
----
-title: legato\_qs\_mzda\_cu\_tm5000.X
-has_children: true
-has_toc: false
-nav_order: 2
 
-family: PIC32MZDA
-market:
-  - graphics
----
-
-legato\_db\_mzda\_cu\_tm5000.X
+![](../../../../docs/images/mhgs.png) legato\_db\_mzda\_cu\_tm5000.X
 
 Defining the Architecture
 -------------------------

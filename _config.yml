@@ -1,3 +1,4 @@
+
 # Welcome to Jekyll!
 #
 # This config file is meant for settings that affect your whole site, values
@@ -19,7 +20,7 @@ title: MPLAB® Harmony 3 Graphics Application Examples for PIC32MZ DA Family
 lang: en-US
 timezone: America/Phoenix
 
-description: Harmony 3 Graphics Application Examples for PIC32MZ DA Family package
+description: Harmony 3 Graphics Application Examples for PIC32MZ DA Family Package
 url: "https://microchip-mplab-harmony.github.io"
 baseurl: "/gfx_apps_pic32mz_da"
 remote_theme: "Microchip-MPLAB-Harmony/just-the-docs@mchp-harmony"
@@ -73,17 +74,15 @@ exclude:
   - "*.ftl"
   - "*.c"
   - "*.h"
-  - "*.X"
   - "*.IAR"
   - "Gem*"
   - "*.S"
   - "*.ld"
   - "*.jar"
   - "*.prj"
-  - "*.dll"
-  - "*.exe"
-  - "*.a"
   - "*.zip"
+  - "*.a"
+  - "*.dll"
 
 # Aux links for the upper right navigation
 aux_links:
@@ -94,7 +93,7 @@ aux_links:
     - "https://support.microchip.com"
 
 # Set a path/url to a logo that will be displayed instead of the title
-logo: "/docs/images/mhgs_transparent.png"
+logo: "/assets/images/vendor/microchip_mplab_harmony_logo_150_transparent.png"
 
 # Footer content appears at the bottom of every page's main content
 footer_content: "<img src='https://raw.githubusercontent.com/wiki/Microchip-MPLAB-Harmony/Microchip-MPLAB-Harmony.github.io/images/microchip_logo.png' /><br />Copyright &copy; 2020 Microchip Technology."

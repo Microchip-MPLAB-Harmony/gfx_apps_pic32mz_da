@@ -1,7 +1,7 @@
----
+﻿---
 parent: Example Applications
 title: Legato Climate Control
-nav_order: 4
+nav_order: 1
 ---
 
 # Legato Climate Control

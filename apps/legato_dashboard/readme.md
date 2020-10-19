@@ -1,7 +1,7 @@
----
+﻿---
 parent: Example Applications
 title: Legato Dashboard
-nav_order: 5
+nav_order: 2
 ---
 
 # Legato Dashboard

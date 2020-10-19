@@ -1,5 +1,5 @@
----
-title: MPLAB® Harmony 3 Graphics Application Examples for PIC32MZ DA Family
+﻿---
+title: Harmony 3 Graphics PIC32MZ DA Applications Package
 nav_order: 1
 ---
 

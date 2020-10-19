@@ -1,13 +1,3 @@
----
-title: blank\_qs\_mzda\_intddr\_sk\_meb2\_wqvga.X
-has_children: true
-has_toc: false
-nav_order: 2
-
-family: PIC32MZDA
-market:
-  - graphics
----
 
 ![](../../../../docs/images/mhgs.png) blank\_quickstart\_mzda\_intddr\_sk\_meb2\_wqvga.X
 

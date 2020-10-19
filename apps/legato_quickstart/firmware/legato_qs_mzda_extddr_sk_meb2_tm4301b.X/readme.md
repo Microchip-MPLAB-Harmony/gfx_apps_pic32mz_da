@@ -1,13 +1,3 @@
----
-title: legato\_qs\_mzda\_extddr\_sk\_meb2\_tm4301b.X
-has_children: true
-has_toc: false
-nav_order: 2
-
-family: PIC32MZDA
-market:
-  - graphics
----
 
 ![](../../../../docs/images/mhgs.png) legato\_quickstart\_mzda\_extddr\_sk\_meb2\_tm4301b.X
 
