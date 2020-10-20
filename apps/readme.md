@@ -36,6 +36,13 @@ This application presents a vehicle dashboard User Interface (UI). It has a gaug
 ![](./../docs/html/legato_dashboard.png)
 
 
+* [Legato Benchmark](./legato_benchmark/readme.md)
+
+This demonstration is used to benchmark the draw performance of the Legato Graphics Library on the device.
+
+![](./../docs/html/legato_benchmark.png)
+
+
 ## Blank Library Examples
 
 This application demonstrates a simple way to create and run a custom graphics application that directly uses Legato-based GLCD graphics controller driver

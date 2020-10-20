@@ -14,7 +14,7 @@ Following table provides number of peripheral library examples available for dif
 
 | Development Kits  | MPLABx applications |
 |:-----------------|:-------------------:|
-| PIC32MZ DA Curiosity     | 4 |
+| PIC32MZ DA Curiosity     | 5 |
 | PIC32MZ DAR Int DDR Starter Kit + MEB-2     | 3 |
 | PIC32MZ DAA Ext DDR Starter Kit + MEB-2     | 3 |
 |

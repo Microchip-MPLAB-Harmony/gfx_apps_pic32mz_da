@@ -21,7 +21,7 @@ User touch input on the display panel is received thru the PCAP capacitive touch
 Creating the Project Graph
 --------------------------
 
-![](../../../../docs/html/legato_qs_mzda_cu_tm5000_pg.png)
+![](../../../../docs/html/legato_qs_mzda_intddr_sk_meb2_tm4301b_pg.png)
 
 The Project Graph diagram shows the Harmony components that are included in this application. Lines between components are drawn to satisfy components that depend on a capability that another component provides.
 
