@@ -1,7 +1,7 @@
 ﻿---
 parent: Example Applications
 title: Legato Benchmark
-nav_order: 2
+nav_order: 4
 ---
 
 # Legato Benchmark

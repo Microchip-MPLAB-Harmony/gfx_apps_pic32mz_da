@@ -30,13 +30,13 @@ Adding the **PIC32MZ DA Curiosity 2.0 BSP** and **Legato Graphics w/ PDA TM4301b
 Building the Application
 ------------------------
 
-The parent directory for this application is gfx/apps/legato\_benchmark. To build this application, use MPLAB X IDE to open the gfx/apps/legato\_benchmark/firmware/legato\_qs\_mzda\_cu\_tm4301b.X project file.
+The parent directory for this application is gfx/apps/legato\_benchmark. To build this application, use MPLAB X IDE to open the gfx/apps/legato\_benchmark/firmware/legato\_bm\_mzda\_cu\_tm4301b.X project file.
 
 The following table lists configuration properties:
 
 |Project Name|BSP Used|Graphics Template Used|Description|
 |:-----------|:-------|:---------------------|:----------|
-|legato\_qs\_mzda\_cu\_tm4301b.X|PIC32MZ DA Curiosity 2.0|Legato Graphics w/ PDA TM4301b Display|PIC32MZ DA Curiosity 2.0 with RGBA8888 GFX Interface and 4.3" WQVGA PCAP Touch display|
+|legato\_bm\_mzda\_cu\_tm4301b.X|PIC32MZ DA Curiosity 2.0|Legato Graphics w/ PDA TM4301b Display|PIC32MZ DA Curiosity 2.0 with RGBA8888 GFX Interface and 4.3" WQVGA PCAP Touch display|
 
 > \*\*\_NOTE:\_\*\* This application may contain custom code that is marked by the comments // START OF CUSTOM CODE ... and // END OF CUSTOM CODE. When using the MPLAB Harmony Configurator to regenerate the application code, use the "ALL" merging strategy and do not remove or replace the custom code.
 

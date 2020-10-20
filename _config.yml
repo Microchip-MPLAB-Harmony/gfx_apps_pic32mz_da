@@ -83,6 +83,7 @@ exclude:
   - "*.zip"
   - "*.a"
   - "*.dll"
+  - "*.bin"
 
 # Aux links for the upper right navigation
 aux_links:

@@ -1,4 +1,4 @@
----
+﻿---
 parent: Example Applications
 title: Legato Quickstart
 nav_order: 3

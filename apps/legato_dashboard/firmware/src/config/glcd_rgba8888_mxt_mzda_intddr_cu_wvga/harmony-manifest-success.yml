@@ -15,7 +15,7 @@ modules:
     - {name: "core", version: "v3.8.1"}
     - {name: "csp", version: "v3.8.1"}
     - {name: "dev_packs", version: "v3.8.0"}
-    - {name: "gfx", version: "v3.8.1"}
-    - {name: "mhc", version: "v3.5.1"}
+    - {name: "gfx", version: "v3.8.2"}
+    - {name: "mhc", version: "v3.6.0"}
     - {name: "bsp", version: "v3.8.1"}
 
