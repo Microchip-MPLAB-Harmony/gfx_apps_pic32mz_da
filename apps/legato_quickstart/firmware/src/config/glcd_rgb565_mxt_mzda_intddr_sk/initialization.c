@@ -290,9 +290,9 @@ void SYS_Initialize ( void* data )
 
 	GPIO_Initialize();
 
-    CORETIMER_Initialize();
     I2C1_Initialize();
 
+    CORETIMER_Initialize();
 	BSP_Initialize();
 
     /* Initialize I2C0 Driver Instance */

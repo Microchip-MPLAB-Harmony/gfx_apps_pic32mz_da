@@ -21,6 +21,12 @@
 * THAT YOU HAVE PAID DIRECTLY TO MICROCHIP FOR THIS SOFTWARE.
 *******************************************************************************/
 
+/** \file legato_tablestring.h
+* @brief Definition for the table string feature.
+*
+* @details .
+*/
+
 #ifndef LEGATO_TABLESTRING_H
 #define LEGATO_TABLESTRING_H
 

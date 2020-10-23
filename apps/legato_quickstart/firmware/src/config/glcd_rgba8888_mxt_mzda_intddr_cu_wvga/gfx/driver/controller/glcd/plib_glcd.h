@@ -39,6 +39,11 @@
     The GLCD PLIB provides a simple interface to manage the GLCD controller.
 *******************************************************************************/
 
+/** \file plib_glcd.h
+* @brief  GLCD function implementations for the GLCD PLIB.
+*
+* @details The GLCD PLIB provides a simple interface to manage the GLCD controller.
+*/
 
 #ifndef PLIB_GLCD_H
 #define PLIB_GLCD_H
