@@ -1,8 +1,9 @@
 #include "gfx/legato/generated/le_gen_init.h"
 
-static uint32_t currentScreen;
+static int32_t currentScreen;
+static int32_t changingToScreen;
 
-void legato_initialize(void)
+void legato_initializeScreenState(void)
 {
     leSetStringTable(&stringTable);
 
@@ -11,6 +12,7 @@ void legato_initialize(void)
     screenInit_default();
 
     currentScreen = -1;
+    changingToScreen = -1;
 
     legato_showScreen(screenID_default);
 }
@@ -20,7 +22,7 @@ uint32_t legato_getCurrentScreen(void)
     return currentScreen;
 }
 
-void legato_hideCurrentScreen()
+static void legato_hideCurrentScreen(void)
 {
     switch(currentScreen)
     {
@@ -35,21 +37,31 @@ void legato_hideCurrentScreen()
 
 void legato_showScreen(uint32_t id)
 {
-    legato_hideCurrentScreen();
+    if(changingToScreen >= 0)
+        return;
 
-    switch(id)
-    {
-        case screenID_default:
-        {
-            screenShow_default();
-            currentScreen = id;
-            break;
-        }
-    }
+    changingToScreen = id;
 }
 
-void legato_updateCurrentScreen(void)
+void legato_updateScreenState(void)
 {
+    if(changingToScreen >= 0)
+    {
+        legato_hideCurrentScreen();
+
+        switch(changingToScreen)
+        {
+            case screenID_default:
+            {
+                screenShow_default();
+                break;
+            }
+        }
+
+        currentScreen = changingToScreen;
+        changingToScreen = -1;
+    }
+
     switch(currentScreen)
     {
         case screenID_default:
@@ -58,5 +70,10 @@ void legato_updateCurrentScreen(void)
             break;
         }
     }
+}
+
+leBool legato_isChangingScreens(void)
+{
+    return changingToScreen != -1;
 }
 

@@ -80,7 +80,6 @@ typedef short               n2d_int16_t;
 typedef unsigned short      n2d_uint16_t;
 typedef int                 n2d_int32_t;
 typedef unsigned int        n2d_uint32_t;
-typedef unsigned long long  n2d_uint64_t;
 typedef unsigned int        n2d_size_t;
 typedef float               n2d_float_t;
 typedef void*               n2d_pointer;
@@ -278,6 +277,9 @@ n2d_buffer_format_t;
  * @brief This enum represents orientations.
  * @details List of of buffer orientations. Orientation is orthogonal.
  * Rotation which is not parallel to the x or y axis is not supported.
+ * @attention These are part specific register definitions. <span class="param">gfx_orientation</span>
+ * enumeration in gfx_driver, is dependent on the position of these definitions. If these are changed, you must also
+ * update gfx_orientation accordingly.
 */
 typedef enum n2d_orientation
 {

@@ -52,7 +52,7 @@ void Legato_Initialize(void)
     gfxDriverInterface.ioctl(GFX_IOCTL_SET_PALETTE, &pal);
 
 
-    legato_initialize();
+    legato_initializeScreenState();
 
 
     inputListener.handleTouchDown = &touchDownHandler;
@@ -78,7 +78,7 @@ void Legato_Tasks(void)
         {
             //Legato_DemoModeProcessEvents();
 
-            legato_updateCurrentScreen();
+            legato_updateScreenState();
 
             leUpdate(0);
 

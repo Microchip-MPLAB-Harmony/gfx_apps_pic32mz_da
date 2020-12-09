@@ -18,6 +18,7 @@
 *.zip binary
 *.bmp binary
 *.ttf binary
+*.bin binary
 *.a binary
 *.so binary
 *.otf binary

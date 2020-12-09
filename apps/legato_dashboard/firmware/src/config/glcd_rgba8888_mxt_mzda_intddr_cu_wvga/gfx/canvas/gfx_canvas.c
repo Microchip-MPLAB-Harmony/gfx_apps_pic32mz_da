@@ -285,7 +285,7 @@ GFXC_RESULT _gfxcCanvasUpdate(unsigned int canvasID)
         //Lock layer and apply layer properties
         gfxDispCtrlr->ioctl(GFX_IOCTL_SET_LAYER_LOCK, (gfxIOCTLArg_LayerValue *) &setBaseAddressParm);
 
-        if (setBaseAddressParm.value.v_uint != NULL)
+        if (setBaseAddressParm.value.v_uint != 0)
             gfxDispCtrlr->ioctl(GFX_IOCTL_SET_LAYER_BASE_ADDRESS, (gfxIOCTLArg_LayerValue *) &setBaseAddressParm);
         
         gfxDispCtrlr->ioctl(GFX_IOCTL_SET_LAYER_COLOR_MODE, (gfxIOCTLArg_LayerValue *) &setColorModeParm);

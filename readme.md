@@ -41,6 +41,8 @@ The following applications are provided to demonstrate a subset of the capabilit
 |  apps | [legato_climate_control](./apps/legato_climate_control/readme.md) | Climate Control UI Example | ![app-beta](https://img.shields.io/badge/application-beta-orange?style=plastic) |
 |     | [legato_dashboard](./apps/legato_dashboard/readme.md) | Vehicle Dashboard Example | ![app-beta](https://img.shields.io/badge/application-beta-orange?style=plastic) |
 |     | [legato_quickstart](./apps/legato_quickstart/readme.md) | Legato Graphics Library Quickstart Examples | ![app-beta](https://img.shields.io/badge/application-beta-orange?style=plastic) |
+|     | [legato_quickstart_external_resources](./legato_quickstart_ext_res/readme.md) | Legato Graphics Library Externally Stored Resources Example | ![app-beta](https://img.shields.io/badge/application-beta-orange?style=plastic) |
+|     | [legato_video_player](./legato_video_player/readme.md) | Video Player Example | ![app-beta](https://img.shields.io/badge/application-beta-orange?style=plastic) |
 |     | [legato_benchmark](./apps/legato_benchmark/readme.md) | Legato Graphics Library Performance Benchmarking Example | ![app-beta](https://img.shields.io/badge/application-beta-orange?style=plastic) |
 |     | [blank_quickstart](./apps/blank_quickstart/readme.md) | "Blank" Graphics Library Quickstart Examples | ![app-beta](https://img.shields.io/badge/application-beta-orange?style=plastic) |
 

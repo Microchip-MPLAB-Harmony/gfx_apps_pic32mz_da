@@ -41,12 +41,17 @@ static leStringVTable stringVTable;
 #define LE_STRING_SPACE     0x20 // ' '
 #define LE_STRING_LINEBREAK 0xA // '\n'
 
-void _leString_Constructor(leString* _this)
+void leString_Delete(leString* str)
 {
-    (void)_this; // unused
+    if(str == NULL)
+        return;
+
+    str->fn->destructor(str);
+
+    LE_FREE(str);
 }
 
-void _leString_Destructor(leString* _this)
+void _leString_Constructor(leString* _this)
 {
     _this->preCBUserData = NULL;
     _this->preInvCallback = NULL;
@@ -54,6 +59,10 @@ void _leString_Destructor(leString* _this)
     _this->invCallback = NULL;
 }
 
+void _leString_Destructor(leString* _this)
+{
+    (void)_this; // unused
+}
 
 leResult _leString_GetRect(const leString* _this,
                            leRect* rect)

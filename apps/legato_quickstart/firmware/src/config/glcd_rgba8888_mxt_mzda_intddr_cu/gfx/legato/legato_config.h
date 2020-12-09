@@ -77,7 +77,7 @@ extern "C" {
 #define LE_ASSET_DECODER_MASK_CACHE_SIZE     128
 #define LE_ASSET_DECODER_BLEND_CACHE_SIZE    128
 #define LE_JPEG_DECODER_CACHE_SIZE           2048
-#define LE_RASTERFONT_GLYPH_CACHE_SIZE       256
+#define LE_RASTERFONT_GLYPH_CACHE_SIZE       1024
 #endif
 
 // default Font Support
@@ -143,7 +143,7 @@ extern "C" {
 // renderer configuration
 //#define LE_VSYNC_STALL
 
-#define LE_LAYER_COUNT                     1
+#define LE_LAYER_COUNT                     3
 
 #if LE_LAYER_COUNT <= 0
 #error LE_LAYER_COUNT must be greater than or equal to 1
@@ -155,7 +155,7 @@ extern "C" {
 #define LE_ALPHA_BLENDING_ENABLED          1
 #define LE_SCRATCH_BUFFER_COUNT            1
 #define LE_SCRATCH_BUFFER_SIZE_KB          64
-#define LE_SCRATCH_BUFFER_PADDING          0
+#define LE_SCRATCH_BUFFER_PADDING          1
 #define LE_USE_ARC_SCAN_FILL               1
 #define LE_ARC_SMOOTH_EDGE                 LE_FALSE
 

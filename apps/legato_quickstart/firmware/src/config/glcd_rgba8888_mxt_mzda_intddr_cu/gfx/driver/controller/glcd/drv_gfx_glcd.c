@@ -62,7 +62,7 @@
 // *****************************************************************************
 // *****************************************************************************
 
-#define BUFFER_PER_LAYER    1
+#define BUFFER_PER_LAYER    2
 
 #define DISPLAY_WIDTH  480
 #define DISPLAY_HEIGHT 272
@@ -114,6 +114,7 @@ static volatile DRV_STATE state;
 static gfxRect srcRect, destRect;
 static unsigned int vsyncCount = 0;
 static unsigned int activeLayer = 0;
+static volatile unsigned int syncLayer = 0;
 
 volatile int32_t waitForAlphaSetting[GFX_GLCD_LAYERS] = {0};
 
@@ -142,6 +143,9 @@ typedef struct __display_layer {
     gfxPixelBuffer pixelBuffer[BUFFER_PER_LAYER];
     volatile unsigned int frontBufferIdx;
     volatile unsigned int backBufferIdx;
+    gfxRect syncRect[SYNC_RECT_COUNT + 1];
+    volatile unsigned int syncRectIndex;
+    volatile bool swapPending;
 } DISPLAY_LAYER;
 static DISPLAY_LAYER drvLayer[GFX_GLCD_LAYERS];
 
@@ -153,7 +157,32 @@ void DRV_GLCD_Update()
     {
         case INIT:
         {
+            syncLayer = 0;
             state = DRAW;
+            break;
+        }
+        case SYNC:
+        {
+            if (drvLayer[syncLayer].syncRectIndex == 0)
+            {
+                syncLayer++;
+            }
+            else
+            {
+                drvLayer[syncLayer].syncRectIndex--;
+
+                gfxGPUInterface.blitBuffer(&drvLayer[syncLayer].pixelBuffer[drvLayer[syncLayer].frontBufferIdx],
+                                 &drvLayer[syncLayer].syncRect[drvLayer[syncLayer].syncRectIndex],
+                                 &drvLayer[syncLayer].pixelBuffer[drvLayer[syncLayer].backBufferIdx],
+                                 &drvLayer[syncLayer].syncRect[drvLayer[syncLayer].syncRectIndex]);
+            }
+            
+            if (syncLayer == GFX_GLCD_LAYERS)
+            {
+                syncLayer = 0;
+                state = DRAW;
+            }
+
             break;
         }
         case DRAW:
@@ -306,8 +335,11 @@ void DRV_GLCD_Initialize()
     PLIB_GLCD_Enable();
 
     drvLayer[0].baseaddr[0] = (FRAMEBUFFER_PTR_TYPE)GFX_GLCD_LAYER0_BASEADDR;
+    drvLayer[0].baseaddr[1] = (FRAMEBUFFER_PTR_TYPE)GFX_GLCD_LAYER0_DBL_BASEADDR;
     drvLayer[1].baseaddr[0] = (FRAMEBUFFER_PTR_TYPE)GFX_GLCD_LAYER1_BASEADDR;
+    drvLayer[1].baseaddr[1] = (FRAMEBUFFER_PTR_TYPE)GFX_GLCD_LAYER1_DBL_BASEADDR;
     drvLayer[2].baseaddr[0] = (FRAMEBUFFER_PTR_TYPE)GFX_GLCD_LAYER2_BASEADDR;
+    drvLayer[2].baseaddr[1] = (FRAMEBUFFER_PTR_TYPE)GFX_GLCD_LAYER2_DBL_BASEADDR;
 
     for (layerCount = 0; layerCount < GFX_GLCD_LAYERS; layerCount++)
     {
@@ -343,7 +375,6 @@ void DRV_GLCD_Initialize()
         PLIB_GLCD_LayerEnable(layerCount);
 
         drvLayer[layerCount].frontBufferIdx = 0;
-        drvLayer[layerCount].backBufferIdx = 0;
         drvLayer[layerCount].updateLock = LAYER_UNLOCKED;
 
         gfxPixelBufferCreate(xResolution,
@@ -352,6 +383,15 @@ void DRV_GLCD_Initialize()
                              drvLayer[layerCount].baseaddr[0],
                              &drvLayer[layerCount].pixelBuffer[drvLayer[layerCount].frontBufferIdx]);
 
+        drvLayer[layerCount].backBufferIdx = 1;
+        gfxPixelBufferCreate(xResolution,
+                            yResolution,
+                            getGFXColorModeFromGLCD(LCDC_DEFAULT_GFX_COLOR_MODE),
+                            drvLayer[layerCount].baseaddr[1],
+                            &drvLayer[layerCount].pixelBuffer[drvLayer[layerCount].backBufferIdx]);
+        
+        drvLayer[layerCount].syncRectIndex = 0;
+        drvLayer[layerCount].swapPending = false;
 
     }
 
@@ -374,6 +414,26 @@ void GLCD_Interrupt_Handler(void)
     //Update GLCD during blanking period
     for (i = 0; i < GFX_GLCD_LAYERS; i++)
     {
+        switch (state)
+        {
+            case SWAP:
+            {
+                if (drvLayer[i].swapPending == false)
+                    break;
+        
+                drvLayer[i].frontBufferIdx = drvLayer[i].backBufferIdx;
+                drvLayer[i].backBufferIdx = (drvLayer[i].backBufferIdx == 0) ? 1 : 0;
+
+                PLIB_GLCD_LayerBaseAddressSet(i,
+                                            (uint32_t) drvLayer[i].baseaddr[drvLayer[i].frontBufferIdx]);
+
+                drvLayer[i].swapPending = false;
+                
+                break;
+            }
+            default:
+                break;
+        }
 
         if (drvLayer[i].updateLock == LAYER_LOCKED_PENDING)
         {
@@ -382,6 +442,10 @@ void GLCD_Interrupt_Handler(void)
         }
     }
 
+    if (state == SWAP)
+    {
+        state = SYNC;
+    }
 }
 
 /**** End Hardware Abstraction Interfaces ****/
@@ -394,6 +458,24 @@ gfxResult DRV_GLCD_BlitBuffer(int32_t x,
     if (state != DRAW)
         return GFX_FAILURE;
 
+    if (drvLayer[activeLayer].syncRectIndex < SYNC_RECT_COUNT)
+    {
+        drvLayer[activeLayer].syncRect[drvLayer[activeLayer].syncRectIndex].x = x;
+        drvLayer[activeLayer].syncRect[drvLayer[activeLayer].syncRectIndex].y = y;
+        drvLayer[activeLayer].syncRect[drvLayer[activeLayer].syncRectIndex].width = buf->size.width;
+        drvLayer[activeLayer].syncRect[drvLayer[activeLayer].syncRectIndex].height = buf->size.height;
+
+        drvLayer[activeLayer].syncRectIndex++;
+    }
+    else
+    {
+        drvLayer[activeLayer].syncRect[SYNC_RECT_COUNT].x = 0;
+        drvLayer[activeLayer].syncRect[SYNC_RECT_COUNT].y = 0;
+        drvLayer[activeLayer].syncRect[SYNC_RECT_COUNT].width = 
+                drvLayer[activeLayer].pixelBuffer[drvLayer[activeLayer].backBufferIdx].size.width;
+        drvLayer[activeLayer].syncRect[SYNC_RECT_COUNT].height = 
+                drvLayer[activeLayer].pixelBuffer[drvLayer[activeLayer].backBufferIdx].size.height;
+    }
 
     srcRect.x = 0;
     srcRect.y = 0;
@@ -405,7 +487,7 @@ gfxResult DRV_GLCD_BlitBuffer(int32_t x,
     destRect.height = buf->size.height;
     destRect.width = buf->size.width;
 
-    gfxGPUInterface.blitBuffer(buf, &srcRect, &drvLayer[activeLayer].pixelBuffer[drvLayer[activeLayer].frontBufferIdx], &destRect);
+    gfxGPUInterface.blitBuffer(buf, &srcRect, &drvLayer[activeLayer].pixelBuffer[drvLayer[activeLayer].backBufferIdx], &destRect);
 
     return GFX_SUCCESS;
 }
@@ -572,10 +654,14 @@ gfxDriverIOCTLResponse DRV_GLCD_IOCTL(gfxDriverIOCTLRequest request,
     {
         case GFX_IOCTL_LAYER_SWAP:
         {
+            if (drvLayer[activeLayer].syncRectIndex > 0)
+                drvLayer[activeLayer].swapPending = true;
             return GFX_IOCTL_OK;
         }
         case GFX_IOCTL_FRAME_END:
         {
+            state = SWAP;
+            PLIB_GLCD_VSyncInterruptEnable();
             
             return GFX_IOCTL_OK;
         }
@@ -664,7 +750,7 @@ gfxDriverIOCTLResponse DRV_GLCD_IOCTL(gfxDriverIOCTLRequest request,
         default:
         {
             if (request >= GFX_IOCTL_LAYER_REQ_START && 
-                request < GFX_IOCTL_LAYER_REQ_END)
+                request <= GFX_IOCTL_LAYER_REQ_END)
             {
                 return DRV_GLCD_LayerConfig(request, (gfxIOCTLArg_LayerArg*)arg);
             }

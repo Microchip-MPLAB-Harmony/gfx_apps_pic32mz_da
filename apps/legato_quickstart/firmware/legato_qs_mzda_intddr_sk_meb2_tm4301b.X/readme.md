@@ -25,7 +25,7 @@ Creating the Project Graph
 
 The Project Graph diagram shows the Harmony components that are included in this application. Lines between components are drawn to satisfy components that depend on a capability that another component provides.
 
-Adding the **PIC32MZ DA Internal DDR Starter Kit + MEB-II BSP** and **Legato Graphics w/ PDA TM4301b Display** Graphics Template component into the project graph will automatically add the components needed for a graphics project and resolve their dependencies. It will also configure the pins needed to drive the external peripherals like the display and the touch controller.
+Adding the **PIC32MZ DA Internal DDR Starter Kit BSP** and **Legato Graphics w/ PDA TM4301b Display** Graphics Template component into the project graph will automatically add the components needed for a graphics project and resolve their dependencies. It will also configure the pins needed to drive the external peripherals like the display and the touch controller.
 
 Building the Application
 ------------------------
@@ -36,7 +36,7 @@ The following table lists configuration properties:
 
 |Project Name|BSP Used|Graphics Template Used|Description|
 |:-----------|:-------|:---------------------|:----------|
-|legato\_qs\_mzda\_intddr\_sk\_meb2\_tm4301b.X|PIC32MZ DA Internal DDR Starter Kit + MEB-II|Legato Graphics w/ PDA TM4301b Display|PIC32MZ DA Internal DDR Starter Kit + MEB-II with RGBA8888 GFX Interface and 4.3" WQVGA PCAP Touch display|
+|legato\_qs\_mzda\_intddr\_sk\_meb2\_tm4301b.X|PIC32MZ DA Internal DDR Starter Kit + MEB-II|Legato Graphics w/ PDA TM4301b Display|PIC32MZ DA Internal DDR Starter Kit + MEB-II with 4.3" WQVGA PCAP Touch display|
 
 > \*\*\_NOTE:\_\*\* This application may contain custom code that is marked by the comments // START OF CUSTOM CODE ... and // END OF CUSTOM CODE. When using the MPLAB Harmony Configurator to regenerate the application code, use the "ALL" merging strategy and do not remove or replace the custom code.
 

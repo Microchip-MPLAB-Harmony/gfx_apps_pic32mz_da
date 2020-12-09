@@ -50,7 +50,7 @@ The following table lists configuration properties:
 
 |Project Name|BSP Used|Graphics Template Used|Description|
 |:-----------|:-------|:---------------------|:----------|
-|legato\_cc\_mzda\_cu\_tm5000.X|PIC32MZ DA Curiosity 2.0|Legato Graphics w/ PDA TM5000 Display|PIC32MZ DA Curiosity 2.0 with 24bit GFX Interface and 5" WVGA PCAP Touch display|
+|legato\_cc\_mzda\_cu\_tm5000.X|PIC32MZ DA Curiosity|Legato Graphics w/ PDA TM5000 Display|PIC32MZ DA Curiosity with 24bit GFX Interface and 5" WVGA PCAP Touch display|
 
 > \*\*\_NOTE:\_\*\* This application may contain custom code that is marked by the comments // START OF CUSTOM CODE... and // END OF CUSTOM CODE. When using the MPLAB Harmony Configurator to regenerate the application code, use the "ALL" merging strategy and do not remove or replace the custom code.
 
@@ -61,9 +61,9 @@ The final setup should be:
 
 Configure the hardware as follows:
 
--   Attach the 24-bit passthrough graphics interface card to the J601 connector on the PIC32MZ DA Curiosity 2.0 board.
+-   Attach the 24-bit passthrough graphics interface card to the J601 connector on the PIC32MZ DA Curiosity board.
 -   Connect the ribbon cable from the WQVGA display to the J2 connector on the 24-bit passthrough graphics interface card.
--   Connect a USB cable from the host computer to the DEBUG USB port on the PIC32MZ DA Curiosity 2.0 board. This USB connection is used for power, code download and debugging.
+-   Connect a USB cable from the host computer to the DEBUG USB port on the PIC32MZ DA Curiosity board. This USB connection is used for power, code download and debugging.
 
 The final hardware setup should be:
 

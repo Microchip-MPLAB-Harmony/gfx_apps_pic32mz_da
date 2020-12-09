@@ -13,13 +13,15 @@ extern "C" {
 // DOM-IGNORE-END
 
 // screen member widget declarations
+extern leWidget* Screen0_BackgroundPanel;
+extern leImageWidget* Screen0_mhgsLogo;
+extern leButtonWidget* Screen0_qsButton;
 extern leWidget* Screen0_PanelWidget0;
-extern leImageWidget* Screen0_ImageWidget0;
-extern leImageWidget* Screen0_ImageWidget1;
-extern leButtonWidget* Screen0_ButtonWidget0;
-extern leLabelWidget* Screen0_LabelWidget0;
-extern leLabelWidget* Screen0_LabelWidget1;
-extern leLabelWidget* Screen0_LabelWidget2;
+extern leLabelWidget* Screen0_fastLabel;
+extern leLabelWidget* Screen0_smartLabel;
+extern leLabelWidget* Screen0_easyLabel;
+extern leWidget* Screen0_PanelWidget1;
+extern leImageWidget* Screen0_mchpLogo;
 
 // screen lifecycle functions
 // DO NOT CALL THESE DIRECTLY

@@ -63,12 +63,21 @@ extern const lePalette leGlobalPalette;
  *****************************************************************************/
 /*********************************
  * Legato Image Asset
- * Name:   mchpLogo_light
- * Size:   152x40 pixels
+ * Name:   mchpLogo_small
+ * Size:   120x28 pixels
  * Type:   RGB Data
  * Format: RGBA_8888
  ***********************************/
-extern leImage mchpLogo_light;
+extern leImage mchpLogo_small;
+
+/*********************************
+ * Legato Image Asset
+ * Name:   MHGS_logo_smaller
+ * Size:   180x169 pixels
+ * Type:   RGB Data
+ * Format: RGBA_8888
+ ***********************************/
+extern leImage MHGS_logo_smaller;
 
 /*********************************
  * Legato Image Asset
@@ -88,15 +97,6 @@ extern leImage QuickstartDown_WQVGA;
  ***********************************/
 extern leImage QuickstartUp_WQVGA;
 
-/*********************************
- * Legato Image Asset
- * Name:   MHGS_logo_smaller
- * Size:   180x169 pixels
- * Type:   RGB Data
- * Format: RGBA_8888
- ***********************************/
-extern leImage MHGS_logo_smaller;
-
 /*****************************************************************************
  * Legato Graphics Font Assets
  *****************************************************************************/
@@ -104,16 +104,11 @@ extern leImage MHGS_logo_smaller;
  * Legato Font Asset
  * Name:         NotoSans_Regular
  * Height:       21
- * Baseline:     20
+ * Baseline:     22
  * Style:        Antialias
- * Glyph Count:  9
- * Range Count:  6
- * Glyph Ranges: 0x45-0x46
-                 0x53
-                 0x61
-                 0x6D
-                 0x72-0x74
-                 0x79
+ * Glyph Count:  95
+ * Range Count:  8
+ * Glyph Ranges: 0x20-0x7E
 ***********************************/
 extern leRasterFont NotoSans_Regular;
 
@@ -125,20 +120,20 @@ extern leRasterFont NotoSans_Regular;
  *****************************************************************************/
 
 // language IDs
-#define language_default    0
+#define language_Default    0
 
 // string IDs
-#define stringID_Fast    0
-#define stringID_Smart    1
-#define stringID_Easy    2
+#define stringID_Easy    0
+#define stringID_Fast    1
+#define stringID_Smart    2
 
 extern const leStringTable stringTable;
 
 
 // string list
+extern leTableString string_Easy;
 extern leTableString string_Fast;
 extern leTableString string_Smart;
-extern leTableString string_Easy;
 
 void initializeStrings(void);
 //DOM-IGNORE-BEGIN

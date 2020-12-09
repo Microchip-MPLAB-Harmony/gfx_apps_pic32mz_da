@@ -1,0 +1,22 @@
+format_version: v1.0
+type: UniqueComponent
+attributes: {id: ddr}
+children:
+- type: Symbols
+  children:
+  - type: Integer
+    attributes: {id: DDR_SIZE_MB}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: legato_gfx_pda_tm4301b, value: '128'}
+  - type: KeyValueSet
+    attributes: {id: DDR_TYPE}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: legato_gfx_pda_tm4301b, value: '1'}
+- type: ElementPosition
+  attributes: {x: '560', y: '35', id: ddr}

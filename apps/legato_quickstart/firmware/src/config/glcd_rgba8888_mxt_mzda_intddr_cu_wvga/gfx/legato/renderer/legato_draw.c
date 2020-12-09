@@ -23,7 +23,7 @@
 *******************************************************************************/
 // DOM-IGNORE-END
 
-
+#include "gfx/legato/common/legato_math.h"
 #include "gfx/legato/renderer/legato_renderer.h"
 #include "gfx/legato/renderer/legato_gpu.h"
 
@@ -178,27 +178,49 @@ leResult blendPixel(int32_t x, int32_t y, leColor clr, uint32_t a)
     leColor rgbaSource;
     leColor rgbaDest;
     leColor resultClr;
-    
+    uint32_t currentAlpha;
+    uint32_t alphaPercent;
+
+    // upscale to alpha channel type
     nativeSource = lePixelBufferGet_Unsafe(leGetRenderBuffer(), x, y);
-    
-    rgbaSource = leColorConvert(leRenderer_CurrentColorMode(),
-                                 LE_COLOR_MODE_RGBA_8888, clr);
-    
-    // blend with alpha channel
-    
-    
-    // blend with alpha argument value
-    rgbaSource &= ~(RGBA_8888_ALPHA_MASK);
-    rgbaSource |= a;
-    
+
     rgbaDest = leColorConvert(leRenderer_CurrentColorMode(),
                               LE_COLOR_MODE_RGBA_8888,
                               nativeSource);
 
-    rgbaDest |= RGBA_8888_ALPHA_MASK;
+    rgbaSource = leColorConvert(leRenderer_CurrentColorMode(),
+                                LE_COLOR_MODE_RGBA_8888,
+                                clr);
     
+    // blend existing alpha channel value with alpha argument value
+    switch(leRenderer_CurrentColorMode())
+    {
+        case LE_COLOR_MODE_ARGB_8888:
+        case LE_COLOR_MODE_RGBA_8888:
+        case LE_COLOR_MODE_RGBA_5551:
+        {
+
+            currentAlpha = rgbaSource & 0xFF;
+            alphaPercent = lePercentWholeRounded(a, 255);
+            currentAlpha = lePercentOf(currentAlpha, alphaPercent);
+
+            rgbaSource &= ~(RGBA_8888_ALPHA_MASK);
+            rgbaSource |= currentAlpha;
+
+            break;
+        }
+        default:
+        {
+            rgbaSource &= ~(RGBA_8888_ALPHA_MASK);
+            rgbaSource |= a;
+        }
+    }
+
+    if((rgbaSource & RGBA_8888_ALPHA_MASK) == 0)
+        return LE_SUCCESS;
+
     resultClr = leColorBlend_RGBA_8888(rgbaSource, rgbaDest);
-    
+
     // convert to destination format
     clr = leColorConvert(LE_COLOR_MODE_RGBA_8888,
                          leRenderer_CurrentColorMode(),

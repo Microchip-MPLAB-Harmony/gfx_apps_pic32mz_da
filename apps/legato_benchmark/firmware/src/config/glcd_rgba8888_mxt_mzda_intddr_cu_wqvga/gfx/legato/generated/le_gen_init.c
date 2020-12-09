@@ -1,8 +1,9 @@
 #include "gfx/legato/generated/le_gen_init.h"
 
-static uint32_t currentScreen;
+static int32_t currentScreen;
+static int32_t changingToScreen;
 
-void legato_initialize(void)
+void legato_initializeScreenState(void)
 {
     leSetStringTable(&stringTable);
 
@@ -14,6 +15,7 @@ void legato_initialize(void)
     screenInit_Screen3();
 
     currentScreen = -1;
+    changingToScreen = -1;
 
     legato_showScreen(screenID_Screen0);
 }
@@ -23,7 +25,7 @@ uint32_t legato_getCurrentScreen(void)
     return currentScreen;
 }
 
-void legato_hideCurrentScreen()
+static void legato_hideCurrentScreen(void)
 {
     switch(currentScreen)
     {
@@ -56,39 +58,46 @@ void legato_hideCurrentScreen()
 
 void legato_showScreen(uint32_t id)
 {
-    legato_hideCurrentScreen();
+    if(changingToScreen >= 0)
+        return;
 
-    switch(id)
-    {
-        case screenID_Screen0:
-        {
-            screenShow_Screen0();
-            currentScreen = id;
-            break;
-        }
-        case screenID_Screen1:
-        {
-            screenShow_Screen1();
-            currentScreen = id;
-            break;
-        }
-        case screenID_Screen2:
-        {
-            screenShow_Screen2();
-            currentScreen = id;
-            break;
-        }
-        case screenID_Screen3:
-        {
-            screenShow_Screen3();
-            currentScreen = id;
-            break;
-        }
-    }
+    changingToScreen = id;
 }
 
-void legato_updateCurrentScreen(void)
+void legato_updateScreenState(void)
 {
+    if(changingToScreen >= 0)
+    {
+        legato_hideCurrentScreen();
+
+        switch(changingToScreen)
+        {
+            case screenID_Screen0:
+            {
+                screenShow_Screen0();
+                break;
+            }
+            case screenID_Screen1:
+            {
+                screenShow_Screen1();
+                break;
+            }
+            case screenID_Screen2:
+            {
+                screenShow_Screen2();
+                break;
+            }
+            case screenID_Screen3:
+            {
+                screenShow_Screen3();
+                break;
+            }
+        }
+
+        currentScreen = changingToScreen;
+        changingToScreen = -1;
+    }
+
     switch(currentScreen)
     {
         case screenID_Screen0:
@@ -112,5 +121,10 @@ void legato_updateCurrentScreen(void)
             break;
         }
     }
+}
+
+leBool legato_isChangingScreens(void)
+{
+    return changingToScreen != -1;
 }
 

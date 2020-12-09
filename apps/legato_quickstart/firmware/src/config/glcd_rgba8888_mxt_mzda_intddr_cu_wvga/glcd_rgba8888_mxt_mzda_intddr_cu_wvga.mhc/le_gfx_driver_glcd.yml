@@ -1,0 +1,78 @@
+format_version: v1.0
+type: UniqueComponent
+attributes: {id: le_gfx_driver_glcd}
+children:
+- type: Symbols
+  children:
+  - type: Integer
+    attributes: {id: DisplayHeight}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: le_gfx_driver_glcd, value: '480'}
+  - type: Integer
+    attributes: {id: DisplayWidth}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: le_gfx_driver_glcd, value: '800'}
+  - type: Boolean
+    attributes: {id: DoubleBuffer}
+    children:
+    - type: Values
+      children:
+      - type: User
+        attributes: {value: 'true'}
+  - type: Integer
+    attributes: {id: PixelClock}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: le_gfx_driver_glcd, value: '20000000'}
+  - type: Integer
+    attributes: {id: PixelClockDivider}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: legato_gfx_pda_tm5000, value: '10'}
+  - type: Integer
+    attributes: {id: TotalNumLayers}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: le_gfx_driver_glcd, value: '3'}
+- type: Attachments
+  children:
+  - type: DirectDependency
+    attributes: {id: Graphics Display}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: targetComponentID}
+        children:
+        - {type: Value, value: gfx_disp_pdatm5000_800x480}
+      - type: String
+        attributes: {id: targetAttachmentID}
+        children:
+        - {type: Value, value: gfx_display}
+  - type: DirectCapability
+    attributes: {id: gfx_driver_glcd}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: targetComponentID}
+        children:
+        - {type: Value, value: gfx_legato}
+      - type: String
+        attributes: {id: targetAttachmentID}
+        children:
+        - {type: Value, value: gfx_driver}
+- type: ElementPosition
+  attributes: {x: '479', y: '411', id: le_gfx_driver_glcd}
