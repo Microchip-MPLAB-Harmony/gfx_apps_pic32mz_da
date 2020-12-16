@@ -1,0 +1,79 @@
+{
+	"metaDataVersion": "1.0.0",
+	"category": "com.microchip.ide.project",
+	"content": {
+		"metaDataVersion": "1.1.0",
+		"name": "com.microchip.mcu32.mplabx.project.gfx_apps_pic32mz_da_blank_quickstart_blank_qs_mzda_extddr_sk_meb2_wqvga_freertos",
+		"version": "3.9.0",
+		"displayName": "Blank Quickstart Example for PIC32MZ DA Family",
+		"projectName": "blank_qs_mzda_extddr_sk_meb2_wqvga_freertos",
+		"shortDescription": "This application demonstrates a simple way to create and run a custom graphics application that directly uses Legato-based GLCD graphics controller driver",
+		"ide": {
+			"name": "MPLABX",
+			"semverRange": ">=5.45.0"
+		},
+		"compiler": [
+			{
+				"name": "XC32",
+				"semverRange": ">=2.50.0"
+			}
+		],
+		"dfp": {
+			"name": "PIC32MZ-DA_DFP",
+			"semverRange": "^1.2.102"
+		},
+		"configurator": {
+			"name": "MHC",
+			"semverRange": ">=3.6.2"
+		},
+		"device": {
+			"metaDataVersion": "1.0.0",
+			"category": "com.microchip.portal.contentRef",
+			"content": {
+				"metaDataVersion": "1.0.0",
+				"category": "com.microchip.device",
+				"name": "PIC32MZ2064DAA288",
+				"versionRange": "*"
+			}
+		},
+		"author": "Microchip",
+		"subcategories": [
+			[
+				"Development Kit", "PIC32MZ Embedded Graphics with Stacked DRAM (DA) Starter Kit (Crypto)"
+			],
+			[
+				"Harmony", "Middleware", "Graphics", "BLANK_QUICKSTART"
+			],
+			[
+				"Middleware", "Graphics", "BLANK_QUICKSTART"
+			]
+		],
+		"peripherals": [
+			"GPU"
+		],
+		"keywords": [
+			"MHC",
+			"Harmony",
+			"Middleware",
+			"Graphics",
+			"PIC32MZ2064DAA288",
+			"PIC32MZ DA Family",
+			"GPU",
+			"External Bus Interface",
+			"External Memory",
+			"Memory",
+			"Graphics"
+		],
+		"additionalData": {
+			"longDescription": {
+				"metaDataVersion": "1.0.0",
+				"category": "com.microchip.portal.fileRef",
+				"content": {
+					"metaDataVersion": "1.0.0",
+					"fileName": "./../../readme.md",
+					"mimeType": "text/markdown"
+				}
+			}
+		}
+	}
+}
