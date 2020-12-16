@@ -54,7 +54,7 @@ SUBSTITUTE GOODS, TECHNOLOGY, SERVICES, OR ANY CLAIMS BY THIRD PARTIES
 // *****************************************************************************
 #include <stdio.h>
 #include "definitions.h"
-#include "gfx/driver/processor/2dgpu/libnano2D.h"
+#include "gfx/driver/processor/2dgpu/libnano2d.h"
 #include <sys/kmem.h>
 #include "app.h"
 // *****************************************************************************
