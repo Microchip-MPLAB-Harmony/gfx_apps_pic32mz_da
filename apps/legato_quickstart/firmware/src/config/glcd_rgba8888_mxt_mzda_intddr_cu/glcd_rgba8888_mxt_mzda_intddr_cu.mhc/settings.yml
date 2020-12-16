@@ -5,7 +5,7 @@ frameworkPath: ../../..
 processor: PIC32MZ2064DAR176
 projectName: ''
 settings:
-  PackageFilter: audio;bootloader;bsp;core;crypto;csp;gfx;gfx_apps;gfx;net;touch;usb;
+  PackageFilter: bsp;core;csp;gfx;quick_docs;touch;usb;
   FORCE_OPTIMIZATION: 'false'
   GENERATE_BACKUP: 'true'
   TRUSTZONE: 'false'

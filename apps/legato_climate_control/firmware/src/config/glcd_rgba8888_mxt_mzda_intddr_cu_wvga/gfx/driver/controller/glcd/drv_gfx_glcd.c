@@ -55,7 +55,6 @@
 #include "gfx/driver/controller/glcd/plib_glcd.h"
 #include "gfx/driver/controller/glcd/drv_gfx_glcd.h"
 #include "definitions.h"
-#include "gfx/driver/processor/2dgpu/libnano2d.h"
 // *****************************************************************************
 // *****************************************************************************
 // Section: Global Data
@@ -102,7 +101,6 @@ const char* DRIVER_NAME = "GLCD";
 
 
 static volatile DRV_STATE state;
-static gfxRect srcRect, destRect;
 static unsigned int vsyncCount = 0;
 static unsigned int activeLayer = 0;
 
@@ -372,22 +370,23 @@ gfxResult DRV_GLCD_BlitBuffer(int32_t x,
                              int32_t y,
                              gfxPixelBuffer* buf)
 {
+    void* srcPtr;
+    void* destPtr;
+    uint32_t row, rowSize;
 
     if (state != DRAW)
         return GFX_FAILURE;
 
 
-    srcRect.x = 0;
-    srcRect.y = 0;
-    srcRect.height = buf->size.height;
-    srcRect.width = buf->size.width;
+    rowSize = buf->size.width * gfxColorInfoTable[buf->mode].size;
 
-    destRect.x = x;
-    destRect.y = y;
-    destRect.height = buf->size.height;
-    destRect.width = buf->size.width;
+    for(row = 0; row < buf->size.height; row++)
+    {
+        srcPtr = gfxPixelBufferOffsetGet(buf, 0, row);
+        destPtr = gfxPixelBufferOffsetGet(&drvLayer[activeLayer].pixelBuffer[drvLayer[activeLayer].backBufferIdx], x, y + row);
 
-    gfxGPUInterface.blitBuffer(buf, &srcRect, &drvLayer[activeLayer].pixelBuffer[drvLayer[activeLayer].frontBufferIdx], &destRect);
+        memcpy(destPtr, srcPtr, rowSize);
+    }
 
     return GFX_SUCCESS;
 }

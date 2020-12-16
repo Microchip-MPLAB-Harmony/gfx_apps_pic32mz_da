@@ -586,26 +586,26 @@
       <logicalFolder name="f1"
                      displayName="glcd_rgb565_mxt_mzda_extddr_sk.mhc"
                      projectFiles="true">
-        <itemPath>..\src\config\glcd_rgb565_mxt_mzda_extddr_sk\glcd_rgb565_mxt_mzda_extddr_sk.mhc\BSP_PIC32MZ_DA_Starter_Kit.yml</itemPath>
-        <itemPath>..\src\config\glcd_rgb565_mxt_mzda_extddr_sk\glcd_rgb565_mxt_mzda_extddr_sk.mhc\core.yml</itemPath>
-        <itemPath>..\src\config\glcd_rgb565_mxt_mzda_extddr_sk\glcd_rgb565_mxt_mzda_extddr_sk.mhc\core_timer.yml</itemPath>
-        <itemPath>..\src\config\glcd_rgb565_mxt_mzda_extddr_sk\glcd_rgb565_mxt_mzda_extddr_sk.mhc\ddr.yml</itemPath>
-        <itemPath>..\src\config\glcd_rgb565_mxt_mzda_extddr_sk\glcd_rgb565_mxt_mzda_extddr_sk.mhc\dfp.yml</itemPath>
-        <itemPath>..\src\config\glcd_rgb565_mxt_mzda_extddr_sk\glcd_rgb565_mxt_mzda_extddr_sk.mhc\drv_i2c.yml</itemPath>
-        <itemPath>..\src\config\glcd_rgb565_mxt_mzda_extddr_sk\glcd_rgb565_mxt_mzda_extddr_sk.mhc\gfx_disp_pdatm4301b_480x272.yml</itemPath>
-        <itemPath>..\src\config\glcd_rgb565_mxt_mzda_extddr_sk\glcd_rgb565_mxt_mzda_extddr_sk.mhc\gfx_hal_le.yml</itemPath>
-        <itemPath>..\src\config\glcd_rgb565_mxt_mzda_extddr_sk\glcd_rgb565_mxt_mzda_extddr_sk.mhc\gfx_legato.yml</itemPath>
-        <itemPath>..\src\config\glcd_rgb565_mxt_mzda_extddr_sk\glcd_rgb565_mxt_mzda_extddr_sk.mhc\gfx_maxtouch_controller.yml</itemPath>
-        <itemPath>..\src\config\glcd_rgb565_mxt_mzda_extddr_sk\glcd_rgb565_mxt_mzda_extddr_sk.mhc\GraphSettings.yml</itemPath>
-        <itemPath>..\src\config\glcd_rgb565_mxt_mzda_extddr_sk\glcd_rgb565_mxt_mzda_extddr_sk.mhc\HarmonyCore.yml</itemPath>
-        <itemPath>..\src\config\glcd_rgb565_mxt_mzda_extddr_sk\glcd_rgb565_mxt_mzda_extddr_sk.mhc\i2c1.yml</itemPath>
-        <itemPath>..\src\config\glcd_rgb565_mxt_mzda_extddr_sk\glcd_rgb565_mxt_mzda_extddr_sk.mhc\legato_gfx_pda_tm4301b.yml</itemPath>
-        <itemPath>..\src\config\glcd_rgb565_mxt_mzda_extddr_sk\glcd_rgb565_mxt_mzda_extddr_sk.mhc\le_gfx_driver_2dgpu.yml</itemPath>
-        <itemPath>..\src\config\glcd_rgb565_mxt_mzda_extddr_sk\glcd_rgb565_mxt_mzda_extddr_sk.mhc\le_gfx_driver_glcd.yml</itemPath>
-        <itemPath>..\src\config\glcd_rgb565_mxt_mzda_extddr_sk\glcd_rgb565_mxt_mzda_extddr_sk.mhc\project.yml</itemPath>
-        <itemPath>..\src\config\glcd_rgb565_mxt_mzda_extddr_sk\glcd_rgb565_mxt_mzda_extddr_sk.mhc\settings.yml</itemPath>
-        <itemPath>..\src\config\glcd_rgb565_mxt_mzda_extddr_sk\glcd_rgb565_mxt_mzda_extddr_sk.mhc\sys_input.yml</itemPath>
-        <itemPath>..\src\config\glcd_rgb565_mxt_mzda_extddr_sk\glcd_rgb565_mxt_mzda_extddr_sk.mhc\sys_time.yml</itemPath>
+        <itemPath>../src/config/glcd_rgb565_mxt_mzda_extddr_sk/glcd_rgb565_mxt_mzda_extddr_sk.mhc/BSP_PIC32MZ_DA_Starter_Kit.yml</itemPath>
+        <itemPath>../src/config/glcd_rgb565_mxt_mzda_extddr_sk/glcd_rgb565_mxt_mzda_extddr_sk.mhc/core.yml</itemPath>
+        <itemPath>../src/config/glcd_rgb565_mxt_mzda_extddr_sk/glcd_rgb565_mxt_mzda_extddr_sk.mhc/core_timer.yml</itemPath>
+        <itemPath>../src/config/glcd_rgb565_mxt_mzda_extddr_sk/glcd_rgb565_mxt_mzda_extddr_sk.mhc/ddr.yml</itemPath>
+        <itemPath>../src/config/glcd_rgb565_mxt_mzda_extddr_sk/glcd_rgb565_mxt_mzda_extddr_sk.mhc/dfp.yml</itemPath>
+        <itemPath>../src/config/glcd_rgb565_mxt_mzda_extddr_sk/glcd_rgb565_mxt_mzda_extddr_sk.mhc/drv_i2c.yml</itemPath>
+        <itemPath>../src/config/glcd_rgb565_mxt_mzda_extddr_sk/glcd_rgb565_mxt_mzda_extddr_sk.mhc/gfx_disp_pdatm4301b_480x272.yml</itemPath>
+        <itemPath>../src/config/glcd_rgb565_mxt_mzda_extddr_sk/glcd_rgb565_mxt_mzda_extddr_sk.mhc/gfx_hal_le.yml</itemPath>
+        <itemPath>../src/config/glcd_rgb565_mxt_mzda_extddr_sk/glcd_rgb565_mxt_mzda_extddr_sk.mhc/gfx_legato.yml</itemPath>
+        <itemPath>../src/config/glcd_rgb565_mxt_mzda_extddr_sk/glcd_rgb565_mxt_mzda_extddr_sk.mhc/gfx_maxtouch_controller.yml</itemPath>
+        <itemPath>../src/config/glcd_rgb565_mxt_mzda_extddr_sk/glcd_rgb565_mxt_mzda_extddr_sk.mhc/GraphSettings.yml</itemPath>
+        <itemPath>../src/config/glcd_rgb565_mxt_mzda_extddr_sk/glcd_rgb565_mxt_mzda_extddr_sk.mhc/HarmonyCore.yml</itemPath>
+        <itemPath>../src/config/glcd_rgb565_mxt_mzda_extddr_sk/glcd_rgb565_mxt_mzda_extddr_sk.mhc/i2c1.yml</itemPath>
+        <itemPath>../src/config/glcd_rgb565_mxt_mzda_extddr_sk/glcd_rgb565_mxt_mzda_extddr_sk.mhc/legato_gfx_pda_tm4301b.yml</itemPath>
+        <itemPath>../src/config/glcd_rgb565_mxt_mzda_extddr_sk/glcd_rgb565_mxt_mzda_extddr_sk.mhc/le_gfx_driver_2dgpu.yml</itemPath>
+        <itemPath>../src/config/glcd_rgb565_mxt_mzda_extddr_sk/glcd_rgb565_mxt_mzda_extddr_sk.mhc/le_gfx_driver_glcd.yml</itemPath>
+        <itemPath>../src/config/glcd_rgb565_mxt_mzda_extddr_sk/glcd_rgb565_mxt_mzda_extddr_sk.mhc/project.yml</itemPath>
+        <itemPath>../src/config/glcd_rgb565_mxt_mzda_extddr_sk/glcd_rgb565_mxt_mzda_extddr_sk.mhc/settings.yml</itemPath>
+        <itemPath>../src/config/glcd_rgb565_mxt_mzda_extddr_sk/glcd_rgb565_mxt_mzda_extddr_sk.mhc/sys_input.yml</itemPath>
+        <itemPath>../src/config/glcd_rgb565_mxt_mzda_extddr_sk/glcd_rgb565_mxt_mzda_extddr_sk.mhc/sys_time.yml</itemPath>
       </logicalFolder>
       <itemPath>Makefile</itemPath>
       <itemPath>../src/config/glcd_rgb565_mxt_mzda_extddr_sk/harmony-manifest-success.yml</itemPath>
@@ -622,7 +622,7 @@
         <targetDevice>PIC32MZ2064DAA288</targetDevice>
         <targetHeader></targetHeader>
         <targetPluginBoard></targetPluginBoard>
-        <platformTool>RealICEPlatformTool</platformTool>
+        <platformTool>ICD4Tool</platformTool>
         <languageToolchain>XC32</languageToolchain>
         <languageToolchainVersion>2.50</languageToolchainVersion>
         <platform>3</platform>
@@ -667,7 +667,7 @@
         <property key="enable-unroll-loops" value="false"/>
         <property key="exclude-floating-point" value="false"/>
         <property key="extra-include-directories"
-                  value="../src;../src/config/glcd_rgb565_mxt_mzda_extddr_sk;../src/packs/PIC32MZ2064DAA288_DFP"/>
+                  value="../src;../src/config/glcd_rgb565_mxt_mzda_extddr_sk;../src/packs/PIC32MZ2064DAA288_DFP;"/>
         <property key="generate-16-bit-code" value="false"/>
         <property key="generate-micro-compressed-code" value="false"/>
         <property key="isolate-each-function" value="true"/>
@@ -764,7 +764,7 @@
         <property key="exceptions" value="true"/>
         <property key="exclude-floating-point" value="false"/>
         <property key="extra-include-directories"
-                  value="../src;../src/config/glcd_rgb565_mxt_mzda_extddr_sk;../src/packs/PIC32MZ2064DAA288_DFP"/>
+                  value="../src;../src/config/glcd_rgb565_mxt_mzda_extddr_sk;../src/packs/PIC32MZ2064DAA288_DFP;"/>
         <property key="generate-16-bit-code" value="false"/>
         <property key="generate-micro-compressed-code" value="false"/>
         <property key="isolate-each-function" value="true"/>

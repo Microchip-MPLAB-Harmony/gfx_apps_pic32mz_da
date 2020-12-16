@@ -123,8 +123,8 @@ children:
       children:
       - type: Dynamic
         attributes: {id: gfx_canvas, value: glcdDisplayDriver}
-  - type: String
-    attributes: {id: GraphicsProcessorDriverName}
+  - type: Menu
+    attributes: {id: rtosMenu}
     children:
     - type: Attributes
       children:

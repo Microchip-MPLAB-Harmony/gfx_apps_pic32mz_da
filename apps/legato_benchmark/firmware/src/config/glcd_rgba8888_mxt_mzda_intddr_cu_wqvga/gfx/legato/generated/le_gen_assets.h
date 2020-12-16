@@ -66,7 +66,7 @@ extern const lePalette leGlobalPalette;
  * Name:   RAW_GFX_mchp_200x200
  * Size:   200x200 pixels
  * Type:   RGB Data
- * Format: RGBA_8888
+ * Format: RGB_565
  ***********************************/
 extern leImage RAW_GFX_mchp_200x200;
 
@@ -84,7 +84,7 @@ extern leImage RAW_GFX_mchp_480x270;
  * Name:   RAW_GFX_mplab_200x200
  * Size:   200x200 pixels
  * Type:   RGB Data
- * Format: RGBA_8888
+ * Format: RGB_565
  ***********************************/
 extern leImage RAW_GFX_mplab_200x200;
 
@@ -102,7 +102,7 @@ extern leImage RAW_GFX_mplab_480x270;
  * Name:   RAW_GFX_mchp_100x100
  * Size:   100x100 pixels
  * Type:   RGB Data
- * Format: RGBA_8888
+ * Format: RGB_565
  ***********************************/
 extern leImage RAW_GFX_mchp_100x100;
 
@@ -111,7 +111,7 @@ extern leImage RAW_GFX_mchp_100x100;
  * Name:   RAW_GFX_mchp_40x40
  * Size:   40x40 pixels
  * Type:   RGB Data
- * Format: RGBA_8888
+ * Format: RGB_565
  ***********************************/
 extern leImage RAW_GFX_mchp_40x40;
 
@@ -120,7 +120,7 @@ extern leImage RAW_GFX_mchp_40x40;
  * Name:   RAW_GFX_mplab_100x100
  * Size:   100x100 pixels
  * Type:   RGB Data
- * Format: RGBA_8888
+ * Format: RGB_565
  ***********************************/
 extern leImage RAW_GFX_mplab_100x100;
 
@@ -129,7 +129,7 @@ extern leImage RAW_GFX_mplab_100x100;
  * Name:   RAW_GFX_mplab_40x40
  * Size:   40x40 pixels
  * Type:   RGB Data
- * Format: RGBA_8888
+ * Format: RGB_565
  ***********************************/
 extern leImage RAW_GFX_mplab_40x40;
 

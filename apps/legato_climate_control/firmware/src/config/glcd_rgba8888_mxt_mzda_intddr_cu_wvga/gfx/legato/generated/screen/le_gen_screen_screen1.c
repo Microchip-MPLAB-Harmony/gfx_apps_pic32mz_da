@@ -478,7 +478,6 @@ leResult screenShow_screen1(void)
     screen1_HourTimeWidget = leImageSequenceWidget_New();
     screen1_HourTimeWidget->fn->setPosition(screen1_HourTimeWidget, 251, 0);
     screen1_HourTimeWidget->fn->setSize(screen1_HourTimeWidget, 55, 50);
-    screen1_HourTimeWidget->fn->setBackgroundType(screen1_HourTimeWidget, LE_WIDGET_BACKGROUND_NONE);
     screen1_HourTimeWidget->fn->setHAlignment(screen1_HourTimeWidget, LE_HALIGN_RIGHT);
     screen1_HourTimeWidget->fn->setVAlignment(screen1_HourTimeWidget, LE_VALIGN_BOTTOM);
     screen1_HourTimeWidget->fn->setRepeat(screen1_HourTimeWidget, LE_TRUE);
@@ -513,6 +512,7 @@ leResult screenShow_screen1(void)
     screen1_ColonImage->fn->setPosition(screen1_ColonImage, 307, 16);
     screen1_ColonImage->fn->setSize(screen1_ColonImage, 10, 23);
     screen1_ColonImage->fn->setScheme(screen1_ColonImage, &BlackBack);
+    screen1_ColonImage->fn->setBackgroundType(screen1_ColonImage, LE_WIDGET_BACKGROUND_NONE);
     screen1_ColonImage->fn->setBorderType(screen1_ColonImage, LE_WIDGET_BORDER_NONE);
     screen1_ColonImage->fn->setImage(screen1_ColonImage, (leImage*)&colon);
     root2->fn->addChild(root2, (leWidget*)screen1_ColonImage);

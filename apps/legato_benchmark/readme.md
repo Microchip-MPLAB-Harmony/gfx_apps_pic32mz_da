@@ -14,7 +14,7 @@ This demonstration runs on:
 
 |MPLABX Configuration|Board Configuration|
 |:-------------------|:------------------|
-|[legato\_bm\_mzda\_cu\_tm4301b.X](./firmware/legato_bm_mzda_cu_tm4301b.X/readme.md)|Curiosity PIC32MZ DA Curosity Development Board using GLCD peripheral display controller to drive the [High-Performance 4.3" WQVGA Display Module with maXTouch® Technology](https://www.microchip.com/DevelopmentTools/ProductDetails/PartNO/AC320005-4)|
+|[legato\_bm\_mzda\_cu\_tm4301b.X](./firmware/legato_bm_mzda_cu_tm4301b.X/readme.md)| [Curiosity PIC32MZ DA Curosity Development Board](https://www.microchip.com/DevelopmentTools/ProductDetails/PartNO/EV87D54A) using GLCD peripheral display controller to drive the [High-Performance 4.3" WQVGA Display Module with maXTouch® Technology](https://www.microchip.com/DevelopmentTools/ProductDetails/PartNO/AC320005-4)|
 
 
  

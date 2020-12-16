@@ -44,7 +44,7 @@ leRenderState _rendererState;
 #define LE_NO_CACHE_ATTR
 #endif
 
-static uint8_t LE_COHERENT_ATTR LE_NO_CACHE_ATTR _dataBuffers[SCRATCH_BUFFER_SZ];
+static uint8_t LE_COHERENT_ATTR LE_NO_CACHE_ATTR __ALIGNED(64) _dataBuffers[SCRATCH_BUFFER_SZ];
 
 struct leScratchBuffer
 {
@@ -295,7 +295,7 @@ leResult leRenderer_DamageArea(const leRect* rect,
     
     // make sure rect is inside the layer
     if(leRectIntersects(&_state->rootWidget[layerIdx].rect, rect) == LE_FALSE)
-        return LE_FAILURE;    
+        return LE_FAILURE;
     
     // clip the incoming rectangle
     leRectClip(&_state->rootWidget[layerIdx].rect, rect, &clipRect);
@@ -304,7 +304,7 @@ leResult leRenderer_DamageArea(const leRect* rect,
     if(_rendererState.frameState <= LE_FRAME_PREFRAME)
     {
         _rendererState.frameState = LE_FRAME_PREFRAME;
-        
+
         // drawing not in progress, add the rectangle to the current list
         addDamageRectToList(&_rendererState.layerStates[layerIdx].currentDamageRects, &clipRect);
     }
@@ -495,8 +495,14 @@ static void preRect(void)
                      &_rendererState.layerStates[_rendererState.layerIdx].frameRectList.rects[_rendererState.frameRectIdx]);
 
     // set up render buffer to match damaged rectangle size
+#if LE_RENDER_ORIENTATION == 0 || LE_RENDER_ORIENTATION == 180
     buf->renderBuffer.size.width = _rendererState.layerStates[_rendererState.layerIdx].frameRectList.rects[_rendererState.frameRectIdx].width;
     buf->renderBuffer.size.height = _rendererState.layerStates[_rendererState.layerIdx].frameRectList.rects[_rendererState.frameRectIdx].height;
+#else
+    buf->renderBuffer.size.width = _rendererState.layerStates[_rendererState.layerIdx].frameRectList.rects[_rendererState.frameRectIdx].height;
+    buf->renderBuffer.size.height = _rendererState.layerStates[_rendererState.layerIdx].frameRectList.rects[_rendererState.frameRectIdx].width;
+#endif
+
     buf->renderBuffer.pixel_count = buf->renderBuffer.size.width * buf->renderBuffer.size.height;
     buf->renderBuffer.mode = leGetLayerColorMode(_rendererState.layerIdx);
     buf->renderBuffer.buffer_length = buf->renderBuffer.pixel_count * leColorInfoTable[buf->renderBuffer.mode].size;
@@ -733,7 +739,23 @@ static void _nextRect(void)
 
 static leResult postRect(void)
 {
+    int32_t rotX, rotY;
+
     leRect frameRect = _rendererState.layerStates[_rendererState.layerIdx].frameRectList.rects[_rendererState.frameRectIdx];
+
+#if LE_RENDER_ORIENTATION == 0
+    rotX = frameRect.x;
+    rotY = frameRect.y;
+#elif LE_RENDER_ORIENTATION == 90
+    rotY = frameRect.x;
+    rotX = _state->rootWidget[_rendererState.layerIdx].rect.height - frameRect.y - frameRect.height;
+#elif LE_RENDER_ORIENTATION == 180
+    rotX = _state->rootWidget[_rendererState.layerIdx].rect.width - frameRect.x - frameRect.width;
+    rotY = _state->rootWidget[_rendererState.layerIdx].rect.height - frameRect.y - frameRect.height;
+#elif LE_RENDER_ORIENTATION == 270
+    rotX = frameRect.y;
+    rotY = _state->rootWidget[_rendererState.layerIdx].rect.width - frameRect.x - frameRect.width;
+#endif
 
     _scratchBuffers[_rendererState.currentScratchBuffer].gfxBuffer.pixel_count = _scratchBuffers[_rendererState.currentScratchBuffer].renderBuffer.pixel_count;
     _scratchBuffers[_rendererState.currentScratchBuffer].gfxBuffer.size.width = _scratchBuffers[_rendererState.currentScratchBuffer].renderBuffer.size.width;
@@ -744,8 +766,8 @@ static leResult postRect(void)
     _scratchBuffers[_rendererState.currentScratchBuffer].gfxBuffer.pixels = (gfxBuffer)_scratchBuffers[_rendererState.currentScratchBuffer].renderBuffer.pixels;
 
     /* render buffer may be locked by something or display driver may not be ready */
-    if(_rendererState.dispDriver->blitBuffer(frameRect.x,
-                                             frameRect.y,
+    if(_rendererState.dispDriver->blitBuffer(rotX,
+                                             rotY,
                                              &_scratchBuffers[_rendererState.currentScratchBuffer].gfxBuffer) == GFX_FAILURE)
     {
         return LE_FAILURE;

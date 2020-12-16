@@ -48,7 +48,6 @@
 #include <stdint.h>
 #include <stddef.h>
 #include <stdbool.h>
-#include "gfx/driver/processor/2dgpu/libnano2d.h"
 #include "gfx/driver/controller/glcd/drv_gfx_glcd.h"
 #include "gfx/legato/generated/le_gen_harmony.h"
 #include "peripheral/clk/plib_clk.h"

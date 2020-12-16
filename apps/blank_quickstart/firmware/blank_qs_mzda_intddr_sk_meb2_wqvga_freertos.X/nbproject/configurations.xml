@@ -248,26 +248,26 @@
       <logicalFolder name="f1"
                      displayName="glcd_rgba8888_mxt_mzda_intddr_sk_freertos_wvga.mhc"
                      projectFiles="true">
-        <itemPath>..\src\config\glcd_rgba8888_mxt_mzda_intddr_sk_freertos_wvga\glcd_rgba8888_mxt_mzda_intddr_sk_freertos_wvga.mhc\BSP_PIC32MZ_DA_Starter_Kit.yml</itemPath>
-        <itemPath>..\src\config\glcd_rgba8888_mxt_mzda_intddr_sk_freertos_wvga\glcd_rgba8888_mxt_mzda_intddr_sk_freertos_wvga.mhc\core.yml</itemPath>
-        <itemPath>..\src\config\glcd_rgba8888_mxt_mzda_intddr_sk_freertos_wvga\glcd_rgba8888_mxt_mzda_intddr_sk_freertos_wvga.mhc\core_timer.yml</itemPath>
-        <itemPath>..\src\config\glcd_rgba8888_mxt_mzda_intddr_sk_freertos_wvga\glcd_rgba8888_mxt_mzda_intddr_sk_freertos_wvga.mhc\ddr.yml</itemPath>
-        <itemPath>..\src\config\glcd_rgba8888_mxt_mzda_intddr_sk_freertos_wvga\glcd_rgba8888_mxt_mzda_intddr_sk_freertos_wvga.mhc\dfp.yml</itemPath>
-        <itemPath>..\src\config\glcd_rgba8888_mxt_mzda_intddr_sk_freertos_wvga\glcd_rgba8888_mxt_mzda_intddr_sk_freertos_wvga.mhc\drv_i2c.yml</itemPath>
-        <itemPath>..\src\config\glcd_rgba8888_mxt_mzda_intddr_sk_freertos_wvga\glcd_rgba8888_mxt_mzda_intddr_sk_freertos_wvga.mhc\FreeRTOS.yml</itemPath>
-        <itemPath>..\src\config\glcd_rgba8888_mxt_mzda_intddr_sk_freertos_wvga\glcd_rgba8888_mxt_mzda_intddr_sk_freertos_wvga.mhc\gfx_disp_pdatm4301b_480x272.yml</itemPath>
-        <itemPath>..\src\config\glcd_rgba8888_mxt_mzda_intddr_sk_freertos_wvga\glcd_rgba8888_mxt_mzda_intddr_sk_freertos_wvga.mhc\gfx_hal_le.yml</itemPath>
-        <itemPath>..\src\config\glcd_rgba8888_mxt_mzda_intddr_sk_freertos_wvga\glcd_rgba8888_mxt_mzda_intddr_sk_freertos_wvga.mhc\gfx_maxtouch_controller.yml</itemPath>
-        <itemPath>..\src\config\glcd_rgba8888_mxt_mzda_intddr_sk_freertos_wvga\glcd_rgba8888_mxt_mzda_intddr_sk_freertos_wvga.mhc\GraphSettings.yml</itemPath>
-        <itemPath>..\src\config\glcd_rgba8888_mxt_mzda_intddr_sk_freertos_wvga\glcd_rgba8888_mxt_mzda_intddr_sk_freertos_wvga.mhc\HarmonyCore.yml</itemPath>
-        <itemPath>..\src\config\glcd_rgba8888_mxt_mzda_intddr_sk_freertos_wvga\glcd_rgba8888_mxt_mzda_intddr_sk_freertos_wvga.mhc\i2c1.yml</itemPath>
-        <itemPath>..\src\config\glcd_rgba8888_mxt_mzda_intddr_sk_freertos_wvga\glcd_rgba8888_mxt_mzda_intddr_sk_freertos_wvga.mhc\legato_gfx_pda_tm4301b.yml</itemPath>
-        <itemPath>..\src\config\glcd_rgba8888_mxt_mzda_intddr_sk_freertos_wvga\glcd_rgba8888_mxt_mzda_intddr_sk_freertos_wvga.mhc\le_gfx_driver_2dgpu.yml</itemPath>
-        <itemPath>..\src\config\glcd_rgba8888_mxt_mzda_intddr_sk_freertos_wvga\glcd_rgba8888_mxt_mzda_intddr_sk_freertos_wvga.mhc\le_gfx_driver_glcd.yml</itemPath>
-        <itemPath>..\src\config\glcd_rgba8888_mxt_mzda_intddr_sk_freertos_wvga\glcd_rgba8888_mxt_mzda_intddr_sk_freertos_wvga.mhc\project.yml</itemPath>
-        <itemPath>..\src\config\glcd_rgba8888_mxt_mzda_intddr_sk_freertos_wvga\glcd_rgba8888_mxt_mzda_intddr_sk_freertos_wvga.mhc\settings.yml</itemPath>
-        <itemPath>..\src\config\glcd_rgba8888_mxt_mzda_intddr_sk_freertos_wvga\glcd_rgba8888_mxt_mzda_intddr_sk_freertos_wvga.mhc\sys_input.yml</itemPath>
-        <itemPath>..\src\config\glcd_rgba8888_mxt_mzda_intddr_sk_freertos_wvga\glcd_rgba8888_mxt_mzda_intddr_sk_freertos_wvga.mhc\sys_time.yml</itemPath>
+        <itemPath>../src/config/glcd_rgba8888_mxt_mzda_intddr_sk_freertos_wvga/glcd_rgba8888_mxt_mzda_intddr_sk_freertos_wvga.mhc/BSP_PIC32MZ_DA_Starter_Kit.yml</itemPath>
+        <itemPath>../src/config/glcd_rgba8888_mxt_mzda_intddr_sk_freertos_wvga/glcd_rgba8888_mxt_mzda_intddr_sk_freertos_wvga.mhc/core.yml</itemPath>
+        <itemPath>../src/config/glcd_rgba8888_mxt_mzda_intddr_sk_freertos_wvga/glcd_rgba8888_mxt_mzda_intddr_sk_freertos_wvga.mhc/core_timer.yml</itemPath>
+        <itemPath>../src/config/glcd_rgba8888_mxt_mzda_intddr_sk_freertos_wvga/glcd_rgba8888_mxt_mzda_intddr_sk_freertos_wvga.mhc/ddr.yml</itemPath>
+        <itemPath>../src/config/glcd_rgba8888_mxt_mzda_intddr_sk_freertos_wvga/glcd_rgba8888_mxt_mzda_intddr_sk_freertos_wvga.mhc/dfp.yml</itemPath>
+        <itemPath>../src/config/glcd_rgba8888_mxt_mzda_intddr_sk_freertos_wvga/glcd_rgba8888_mxt_mzda_intddr_sk_freertos_wvga.mhc/drv_i2c.yml</itemPath>
+        <itemPath>../src/config/glcd_rgba8888_mxt_mzda_intddr_sk_freertos_wvga/glcd_rgba8888_mxt_mzda_intddr_sk_freertos_wvga.mhc/FreeRTOS.yml</itemPath>
+        <itemPath>../src/config/glcd_rgba8888_mxt_mzda_intddr_sk_freertos_wvga/glcd_rgba8888_mxt_mzda_intddr_sk_freertos_wvga.mhc/gfx_disp_pdatm4301b_480x272.yml</itemPath>
+        <itemPath>../src/config/glcd_rgba8888_mxt_mzda_intddr_sk_freertos_wvga/glcd_rgba8888_mxt_mzda_intddr_sk_freertos_wvga.mhc/gfx_hal_le.yml</itemPath>
+        <itemPath>../src/config/glcd_rgba8888_mxt_mzda_intddr_sk_freertos_wvga/glcd_rgba8888_mxt_mzda_intddr_sk_freertos_wvga.mhc/gfx_maxtouch_controller.yml</itemPath>
+        <itemPath>../src/config/glcd_rgba8888_mxt_mzda_intddr_sk_freertos_wvga/glcd_rgba8888_mxt_mzda_intddr_sk_freertos_wvga.mhc/GraphSettings.yml</itemPath>
+        <itemPath>../src/config/glcd_rgba8888_mxt_mzda_intddr_sk_freertos_wvga/glcd_rgba8888_mxt_mzda_intddr_sk_freertos_wvga.mhc/HarmonyCore.yml</itemPath>
+        <itemPath>../src/config/glcd_rgba8888_mxt_mzda_intddr_sk_freertos_wvga/glcd_rgba8888_mxt_mzda_intddr_sk_freertos_wvga.mhc/i2c1.yml</itemPath>
+        <itemPath>../src/config/glcd_rgba8888_mxt_mzda_intddr_sk_freertos_wvga/glcd_rgba8888_mxt_mzda_intddr_sk_freertos_wvga.mhc/legato_gfx_pda_tm4301b.yml</itemPath>
+        <itemPath>../src/config/glcd_rgba8888_mxt_mzda_intddr_sk_freertos_wvga/glcd_rgba8888_mxt_mzda_intddr_sk_freertos_wvga.mhc/le_gfx_driver_2dgpu.yml</itemPath>
+        <itemPath>../src/config/glcd_rgba8888_mxt_mzda_intddr_sk_freertos_wvga/glcd_rgba8888_mxt_mzda_intddr_sk_freertos_wvga.mhc/le_gfx_driver_glcd.yml</itemPath>
+        <itemPath>../src/config/glcd_rgba8888_mxt_mzda_intddr_sk_freertos_wvga/glcd_rgba8888_mxt_mzda_intddr_sk_freertos_wvga.mhc/project.yml</itemPath>
+        <itemPath>../src/config/glcd_rgba8888_mxt_mzda_intddr_sk_freertos_wvga/glcd_rgba8888_mxt_mzda_intddr_sk_freertos_wvga.mhc/settings.yml</itemPath>
+        <itemPath>../src/config/glcd_rgba8888_mxt_mzda_intddr_sk_freertos_wvga/glcd_rgba8888_mxt_mzda_intddr_sk_freertos_wvga.mhc/sys_input.yml</itemPath>
+        <itemPath>../src/config/glcd_rgba8888_mxt_mzda_intddr_sk_freertos_wvga/glcd_rgba8888_mxt_mzda_intddr_sk_freertos_wvga.mhc/sys_time.yml</itemPath>
       </logicalFolder>
       <itemPath>Makefile</itemPath>
       <itemPath>../src/config/glcd_rgba8888_mxt_mzda_intddr_sk_freertos_wvga/harmony-manifest-success.yml</itemPath>
@@ -285,7 +285,7 @@
         <targetDevice>PIC32MZ2064DAR169</targetDevice>
         <targetHeader></targetHeader>
         <targetPluginBoard></targetPluginBoard>
-        <platformTool>RealICEPlatformTool</platformTool>
+        <platformTool>ICD4Tool</platformTool>
         <languageToolchain>XC32</languageToolchain>
         <languageToolchainVersion>2.50</languageToolchainVersion>
         <platform>3</platform>
@@ -358,9 +358,9 @@
         <property key="exclude-floating-point-library" value="false"/>
         <property key="expand-macros" value="false"/>
         <property key="extra-include-directories-for-assembler"
-                  value="../src/third_party/rtos/FreeRTOS/Source/portable/MPLAB/PIC32MZ;../src/third_party/rtos/FreeRTOS/Source/include;../src/config/glcd_rgba8888_mxt_mzda_intddr_sk_freertos_wvga"/>
+                  value="../src/third_party/rtos/FreeRTOS/Source/portable/MPLAB/PIC32MZ;../src/third_party/rtos/FreeRTOS/Source/include;../src/config/glcd_rgba8888_mxt_mzda_intddr_sk_freertos_wvga;"/>
         <property key="extra-include-directories-for-preprocessor"
-                  value="../src/third_party/rtos/FreeRTOS/Source/portable/MPLAB/PIC32MZ;../src/third_party/rtos/FreeRTOS/Source/include;../src/config/glcd_rgba8888_mxt_mzda_intddr_sk_freertos_wvga"/>
+                  value="../src/third_party/rtos/FreeRTOS/Source/portable/MPLAB/PIC32MZ;../src/third_party/rtos/FreeRTOS/Source/include;../src/config/glcd_rgba8888_mxt_mzda_intddr_sk_freertos_wvga;"/>
         <property key="false-conditionals" value="false"/>
         <property key="generate-16-bit-code" value="false"/>
         <property key="generate-micro-compressed-code" value="false"/>

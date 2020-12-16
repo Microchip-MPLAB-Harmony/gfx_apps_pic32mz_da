@@ -38,7 +38,7 @@ The current known issues are as follows:
 
 - [MPLAB® X IDE v5.45](https://www.microchip.com/mplab/mplab-x-ide)
 - MPLAB® X IDE plug-ins:
-  - MPLAB® Harmony Configurator (MHC) v3.6.2
+  - MPLAB® Harmony Configurator (MHC) v3.6.5
 - [MPLAB® XC32 C/C++ Compiler v2.50](https://www.microchip.com/mplab/compilers)
 
 ### Dependent Components
