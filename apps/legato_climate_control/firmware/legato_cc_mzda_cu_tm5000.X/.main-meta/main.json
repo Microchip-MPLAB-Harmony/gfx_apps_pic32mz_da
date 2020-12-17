@@ -42,14 +42,17 @@
 				"Development Kit", "PIC32MZ Embedded Graphics with Stacked DRAM (DA) Starter Kit (Crypto)"
 			],
 			[
-				"Harmony", "Middleware", "Graphics", "LEGATO_CLIMATE_CONTROL"
+				"Harmony", "Middleware", "Graphics", "Legato", "LEGATO_CLIMATE_CONTROL"
 			],
 			[
-				"Middleware", "Graphics", "LEGATO_CLIMATE_CONTROL"
+				"Middleware", "Graphics", "Legato", "LEGATO_CLIMATE_CONTROL"
 			]
 		],
 		"peripherals": [
-			"GPU"
+			"GPU",
+			"Touch",
+			"I2C",
+			"Display Controller"
 		],
 		"keywords": [
 			"MHC",
@@ -62,7 +65,10 @@
 			"External Bus Interface",
 			"External Memory",
 			"Memory",
-			"Graphics"
+			"Legato",
+			"Touch",
+			"I2C",
+			"Display Controller"
 		],
 		"additionalData": {
 			"longDescription": {

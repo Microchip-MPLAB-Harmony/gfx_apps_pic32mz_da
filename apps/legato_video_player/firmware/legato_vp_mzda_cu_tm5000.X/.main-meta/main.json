@@ -42,14 +42,20 @@
 				"Development Kit", "PIC32MZ Embedded Graphics with Stacked DRAM (DA) Starter Kit (Crypto)"
 			],
 			[
-				"Harmony", "Middleware", "Graphics", "LEGATO_VIDEO_PLAYER"
+				"Harmony", "Middleware", "Graphics", "Legato", "LEGATO_VIDEO_PLAYER"
 			],
 			[
-				"Middleware", "Graphics", "LEGATO_VIDEO_PLAYER"
+				"Middleware", "Graphics", "Legato", "LEGATO_VIDEO_PLAYER"
 			]
 		],
 		"peripherals": [
-			"GPU"
+			"GPU",
+			"Touch",
+			"I2C",
+			"Display Controller",
+            "Memory Card",
+            "File System",
+            "USB",
 		],
 		"keywords": [
 			"MHC",
@@ -62,7 +68,13 @@
 			"External Bus Interface",
 			"External Memory",
 			"Memory",
-			"Graphics"
+			"Legato",
+			"Touch",
+			"I2C",
+			"Display Controller",
+            "USB",
+            "Memory Card",
+            "File System"  
 		],
 		"additionalData": {
 			"longDescription": {
