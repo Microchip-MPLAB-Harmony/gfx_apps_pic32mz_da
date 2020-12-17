@@ -68,6 +68,7 @@
 			"Legato",
 			"Touch",
 			"I2C",
+            "MaxTouch 4.3in"
 		],
 		"additionalData": {
 			"longDescription": {

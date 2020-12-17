@@ -68,7 +68,8 @@
 			"Legato",
 			"Touch",
 			"I2C",
-			"Display Controller"
+			"Display Controller",
+            "MaxTouch 5in"
 		],
 		"additionalData": {
 			"longDescription": {

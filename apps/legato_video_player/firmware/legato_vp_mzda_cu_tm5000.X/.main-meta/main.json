@@ -55,7 +55,7 @@
 			"Display Controller",
             "Memory Card",
             "File System",
-            "USB",
+            "USB"
 		],
 		"keywords": [
 			"MHC",
@@ -74,7 +74,8 @@
 			"Display Controller",
             "USB",
             "Memory Card",
-            "File System"  
+            "File System",
+            "MaxTouch 5in"
 		],
 		"additionalData": {
 			"longDescription": {

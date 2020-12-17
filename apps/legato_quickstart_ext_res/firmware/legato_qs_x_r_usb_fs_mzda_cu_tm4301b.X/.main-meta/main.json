@@ -73,7 +73,8 @@
 			"Display Controller",
             "Memory Card",
             "USB",
-            "File System"
+            "File System",
+            "MaxTouch 4.3in"
 		],
 		"additionalData": {
 			"longDescription": {
