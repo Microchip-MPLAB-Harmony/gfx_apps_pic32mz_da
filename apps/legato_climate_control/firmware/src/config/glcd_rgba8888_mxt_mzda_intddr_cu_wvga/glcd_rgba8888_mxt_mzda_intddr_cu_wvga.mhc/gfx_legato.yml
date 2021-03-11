@@ -43,4 +43,4 @@ children:
         children:
         - {type: Value, value: gfx_canvas}
 - type: ElementPosition
-  attributes: {x: '943', y: '344', id: gfx_legato}
+  attributes: {x: '721', y: '364', id: gfx_legato}

@@ -262,6 +262,7 @@
           <itemPath>../src/config/glcd_rgba8888_mxt_mzda_intddr_cu_wqvga/device.h</itemPath>
           <itemPath>../src/config/glcd_rgba8888_mxt_mzda_intddr_cu_wqvga/user.h</itemPath>
           <itemPath>../src/config/glcd_rgba8888_mxt_mzda_intddr_cu_wqvga/configuration.h</itemPath>
+          <itemPath>../src/config/glcd_rgba8888_mxt_mzda_intddr_cu_wqvga/interrupts.h</itemPath>
         </logicalFolder>
       </logicalFolder>
       <itemPath>../src/app.h</itemPath>
@@ -677,7 +678,7 @@
         <property key="enable-unroll-loops" value="false"/>
         <property key="exclude-floating-point" value="false"/>
         <property key="extra-include-directories"
-                  value="../src;../src/config/glcd_rgba8888_mxt_mzda_intddr_cu_wqvga;../src/packs/PIC32MZ2064DAR176_DFP;"/>
+                  value="../src;../src/config/glcd_rgba8888_mxt_mzda_intddr_cu_wqvga;../src/packs/PIC32MZ2064DAR176_DFP"/>
         <property key="generate-16-bit-code" value="false"/>
         <property key="generate-micro-compressed-code" value="false"/>
         <property key="isolate-each-function" value="true"/>
@@ -773,7 +774,7 @@
         <property key="exceptions" value="true"/>
         <property key="exclude-floating-point" value="false"/>
         <property key="extra-include-directories"
-                  value="../src;../src/config/glcd_rgba8888_mxt_mzda_intddr_cu_wqvga;../src/packs/PIC32MZ2064DAR176_DFP;"/>
+                  value="../src;../src/config/glcd_rgba8888_mxt_mzda_intddr_cu_wqvga;../src/packs/PIC32MZ2064DAR176_DFP"/>
         <property key="generate-16-bit-code" value="false"/>
         <property key="generate-micro-compressed-code" value="false"/>
         <property key="isolate-each-function" value="true"/>

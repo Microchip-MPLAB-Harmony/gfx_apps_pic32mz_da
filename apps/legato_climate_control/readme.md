@@ -16,7 +16,7 @@ This demonstration runs on:
 
 |MPLABX Configuration|Board Configuration|
 |:-------------------|:------------------|
-|[legato\_cc\_mzda\_cu\_tm5000.X](./firmware/legato_cc_mzda_cu_tm5000.X/readme.md)| [PIC32MZ DA Curiosity Development Board](https://www.microchip.com/DevelopmentTools/ProductDetails/PartNO/EV87D54A) using GLCD peripheral display controller to drive the [High-Performance WVGA LCD Display Module with maXTouch ® Technology](https://www.microchip.com/DevelopmentTools/ProductDetails/PartNO/AC320005-4)|
+|[legato\_cc\_mzda\_cu\_tm5000.X](./firmware/legato_cc_mzda_cu_tm5000.X/readme.md)| [PIC32MZ DA Curiosity Development Board](https://www.microchip.com/DevelopmentTools/ProductDetails/PartNO/EV87D54A) using GLCD peripheral display controller to drive the [High-Performance WVGA LCD Display Module with maXTouch ® Technology](https://www.microchip.com/DevelopmentTools/ProductDetails/PartNO/AC320005-5)|
 
 * * * * *
 

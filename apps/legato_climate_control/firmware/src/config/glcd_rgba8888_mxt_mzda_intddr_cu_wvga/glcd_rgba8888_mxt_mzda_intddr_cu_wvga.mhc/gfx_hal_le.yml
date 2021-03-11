@@ -138,4 +138,4 @@ children:
       - type: Dynamic
         attributes: {id: le_gfx_driver_glcd, value: le_gfx_driver_glcd}
 - type: ElementPosition
-  attributes: {x: '1124', y: '131', id: gfx_hal_le}
+  attributes: {x: '718', y: '255', id: gfx_hal_le}

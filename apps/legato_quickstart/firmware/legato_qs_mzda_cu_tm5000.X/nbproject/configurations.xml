@@ -259,6 +259,7 @@
           <itemPath>../src/config/glcd_rgba8888_mxt_mzda_intddr_cu_wvga/device.h</itemPath>
           <itemPath>../src/config/glcd_rgba8888_mxt_mzda_intddr_cu_wvga/user.h</itemPath>
           <itemPath>../src/config/glcd_rgba8888_mxt_mzda_intddr_cu_wvga/configuration.h</itemPath>
+          <itemPath>../src/config/glcd_rgba8888_mxt_mzda_intddr_cu_wvga/interrupts.h</itemPath>
         </logicalFolder>
       </logicalFolder>
       <itemPath>../src/app.h</itemPath>
@@ -624,7 +625,7 @@
         <targetPluginBoard></targetPluginBoard>
         <platformTool>pkob4hybrid</platformTool>
         <languageToolchain>XC32</languageToolchain>
-        <languageToolchainVersion>2.41</languageToolchainVersion>
+        <languageToolchainVersion>2.50</languageToolchainVersion>
         <platform>3</platform>
       </toolsSet>
       <packs>
@@ -667,7 +668,7 @@
         <property key="enable-unroll-loops" value="false"/>
         <property key="exclude-floating-point" value="false"/>
         <property key="extra-include-directories"
-                  value="../src;../src/config/glcd_rgba8888_mxt_mzda_intddr_cu_wvga;../src/packs/PIC32MZ2064DAR176_DFP;"/>
+                  value="../src;../src/config/glcd_rgba8888_mxt_mzda_intddr_cu_wvga;../src/packs/PIC32MZ2064DAR176_DFP"/>
         <property key="generate-16-bit-code" value="false"/>
         <property key="generate-micro-compressed-code" value="false"/>
         <property key="isolate-each-function" value="true"/>
@@ -764,7 +765,7 @@
         <property key="exceptions" value="true"/>
         <property key="exclude-floating-point" value="false"/>
         <property key="extra-include-directories"
-                  value="../src;../src/config/glcd_rgba8888_mxt_mzda_intddr_cu_wvga;../src/packs/PIC32MZ2064DAR176_DFP;"/>
+                  value="../src;../src/config/glcd_rgba8888_mxt_mzda_intddr_cu_wvga;../src/packs/PIC32MZ2064DAR176_DFP"/>
         <property key="generate-16-bit-code" value="false"/>
         <property key="generate-micro-compressed-code" value="false"/>
         <property key="isolate-each-function" value="true"/>
@@ -909,7 +910,7 @@
       <pkob4hybrid>
         <property key="memories.programmemory.ranges" value="1d000000-1d1fffff"/>
         <property key="programmerToGoFilePath"
-                  value="C:/Harmony/H3_APPS/gfx/pic32mz_das/apps/legato_quickstart/firmware/legato_qs_mzda_cu_tm5000.X/debug/glcd_rgba8888_mxt_mzda_intddr_cu_wvga/legato_qs_mzda_cu_tm5000_ptg"/>
+                  value="D:/Harmony3Dev/apps/gfx/pic32mz_da/apps/legato_quickstart/firmware/legato_qs_mzda_cu_tm5000.X/debug/glcd_rgba8888_mxt_mzda_intddr_cu_wvga/legato_qs_mzda_cu_tm5000_ptg"/>
       </pkob4hybrid>
     </conf>
   </confs>

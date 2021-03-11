@@ -748,33 +748,6 @@ children:
         attributes: {id: core, value: '200000000'}
       - type: User
         attributes: {value: '200000000'}
-  - type: Combo
-    attributes: {id: CONFIG_SYS_CLK_REFCLK_SOURCE5}
-    children:
-    - type: Attributes
-      children:
-      - type: Boolean
-        attributes: {id: visible}
-        children:
-        - {type: Value, value: 'true'}
-  - type: Integer
-    attributes: {id: CONFIG_SYS_CLK_RODIV5}
-    children:
-    - type: Attributes
-      children:
-      - type: Boolean
-        attributes: {id: visible}
-        children:
-        - {type: Value, value: 'true'}
-  - type: Integer
-    attributes: {id: CONFIG_SYS_CLK_ROTRIM5}
-    children:
-    - type: Attributes
-      children:
-      - type: Boolean
-        attributes: {id: visible}
-        children:
-        - {type: Value, value: 'true'}
   - type: Boolean
     attributes: {id: CORE_SOFTWARE_0_INTERRUPT_ENABLE_UPDATE}
     children:

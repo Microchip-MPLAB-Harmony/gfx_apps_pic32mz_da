@@ -259,6 +259,7 @@
           <itemPath>../src/config/glcd_rgba8888_mxt_mzda_intddr_cu/device.h</itemPath>
           <itemPath>../src/config/glcd_rgba8888_mxt_mzda_intddr_cu/user.h</itemPath>
           <itemPath>../src/config/glcd_rgba8888_mxt_mzda_intddr_cu/configuration.h</itemPath>
+          <itemPath>../src/config/glcd_rgba8888_mxt_mzda_intddr_cu/interrupts.h</itemPath>
         </logicalFolder>
       </logicalFolder>
       <itemPath>../src/app.h</itemPath>
@@ -624,7 +625,7 @@
         <targetPluginBoard></targetPluginBoard>
         <platformTool>pkob4hybrid</platformTool>
         <languageToolchain>XC32</languageToolchain>
-        <languageToolchainVersion>2.41</languageToolchainVersion>
+        <languageToolchainVersion>2.50</languageToolchainVersion>
         <platform>3</platform>
       </toolsSet>
       <packs>
@@ -667,7 +668,7 @@
         <property key="enable-unroll-loops" value="false"/>
         <property key="exclude-floating-point" value="false"/>
         <property key="extra-include-directories"
-                  value="../src;../src/config/glcd_rgba8888_mxt_mzda_intddr_cu;../src/packs/PIC32MZ2064DAR176_DFP;"/>
+                  value="../src;../src/config/glcd_rgba8888_mxt_mzda_intddr_cu;../src/packs/PIC32MZ2064DAR176_DFP"/>
         <property key="generate-16-bit-code" value="false"/>
         <property key="generate-micro-compressed-code" value="false"/>
         <property key="isolate-each-function" value="true"/>
@@ -764,7 +765,7 @@
         <property key="exceptions" value="true"/>
         <property key="exclude-floating-point" value="false"/>
         <property key="extra-include-directories"
-                  value="../src;../src/config/glcd_rgba8888_mxt_mzda_intddr_cu;../src/packs/PIC32MZ2064DAR176_DFP;"/>
+                  value="../src;../src/config/glcd_rgba8888_mxt_mzda_intddr_cu;../src/packs/PIC32MZ2064DAR176_DFP"/>
         <property key="generate-16-bit-code" value="false"/>
         <property key="generate-micro-compressed-code" value="false"/>
         <property key="isolate-each-function" value="true"/>

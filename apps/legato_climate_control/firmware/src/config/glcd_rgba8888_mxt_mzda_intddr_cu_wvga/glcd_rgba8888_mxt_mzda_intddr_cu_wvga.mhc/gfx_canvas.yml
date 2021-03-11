@@ -161,4 +161,4 @@ children:
         children:
         - {type: Value, value: gfx_driver_glcd}
 - type: ElementPosition
-  attributes: {x: '701', y: '301', id: gfx_canvas}
+  attributes: {x: '499', y: '303', id: gfx_canvas}

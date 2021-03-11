@@ -256,6 +256,7 @@
           <itemPath>../src/config/glcd_rgb565_mxt_mzda_intddr_sk/device.h</itemPath>
           <itemPath>../src/config/glcd_rgb565_mxt_mzda_intddr_sk/user.h</itemPath>
           <itemPath>../src/config/glcd_rgb565_mxt_mzda_intddr_sk/configuration.h</itemPath>
+          <itemPath>../src/config/glcd_rgb565_mxt_mzda_intddr_sk/interrupts.h</itemPath>
         </logicalFolder>
       </logicalFolder>
       <itemPath>../src/app.h</itemPath>
@@ -683,7 +684,7 @@
         <property key="enable-unroll-loops" value="false"/>
         <property key="exclude-floating-point" value="false"/>
         <property key="extra-include-directories"
-                  value="../src;../src/config/glcd_rgb565_mxt_mzda_intddr_sk;../src/packs/PIC32MZ2064DAS169_DFP;"/>
+                  value="../src;../src/config/glcd_rgb565_mxt_mzda_intddr_sk;../src/packs/PIC32MZ2064DAS169_DFP"/>
         <property key="generate-16-bit-code" value="false"/>
         <property key="generate-micro-compressed-code" value="false"/>
         <property key="isolate-each-function" value="true"/>
@@ -780,7 +781,7 @@
         <property key="exceptions" value="true"/>
         <property key="exclude-floating-point" value="false"/>
         <property key="extra-include-directories"
-                  value="../src;../src/config/glcd_rgb565_mxt_mzda_intddr_sk;../src/packs/PIC32MZ2064DAS169_DFP;"/>
+                  value="../src;../src/config/glcd_rgb565_mxt_mzda_intddr_sk;../src/packs/PIC32MZ2064DAS169_DFP"/>
         <property key="generate-16-bit-code" value="false"/>
         <property key="generate-micro-compressed-code" value="false"/>
         <property key="isolate-each-function" value="true"/>

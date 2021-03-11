@@ -7,6 +7,8 @@ void legato_initializeScreenState(void)
 {
     leSetStringTable(&stringTable);
 
+    legato_preprocessImages();
+
     screenInit_Screen0();
 
     currentScreen = -1;

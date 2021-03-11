@@ -4,7 +4,7 @@
 	"content": {
 		"metaDataVersion": "1.1.0",
 		"name": "com.microchip.mcu32.mplabx.project.gfx_apps_pic32mz_da_blank_quickstart_blank_qs_mzda_extddr_sk_meb2_wqvga",
-		"version": "3.9.0",
+		"version": "3.9.1",
 		"displayName": "Blank Quickstart Example for PIC32MZ DA Family",
 		"projectName": "blank_qs_mzda_extddr_sk_meb2_wqvga",
 		"shortDescription": "This application demonstrates a simple way to create and run a custom graphics application that directly uses Legato-based GLCD graphics controller driver",

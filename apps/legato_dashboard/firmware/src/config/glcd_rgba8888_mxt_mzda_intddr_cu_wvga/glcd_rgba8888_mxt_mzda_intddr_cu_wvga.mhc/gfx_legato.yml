@@ -56,4 +56,4 @@ children:
         children:
         - {type: Value, value: gfx_driver_2dgpu}
 - type: ElementPosition
-  attributes: {x: '853', y: '289', id: gfx_legato}
+  attributes: {x: '755', y: '271', id: gfx_legato}

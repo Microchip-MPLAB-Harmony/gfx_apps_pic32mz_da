@@ -94,4 +94,4 @@ children:
         children:
         - {type: Value, value: touch_panel}
 - type: ElementPosition
-  attributes: {x: '464', y: '174', id: gfx_maxtouch_controller}
+  attributes: {x: '452', y: '170', id: gfx_maxtouch_controller}

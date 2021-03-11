@@ -134,7 +134,7 @@ void APP_Initialize ( void )
     appData.state = APP_STATE_INIT;
 
     /* Early pre-process splash screen images */
-    APP_PreprocessSplashImages();
+//    APP_PreprocessSplashImages();
     
     /* Initialize canvas objects */
     gfxcSetLayer(BACKGROUND_CANVAS_ID, BACKGROUND_LAYER_ID);
@@ -312,7 +312,7 @@ void APP_Tasks ( void )
             OCMP1_Enable();
             
             APP_SetBacklightBrightness(ON_BRIGHTNESS);
-            APP_PreprocessNeedleImages();
+//            APP_PreprocessNeedleImages();
 
             if (appInitialized)
             {

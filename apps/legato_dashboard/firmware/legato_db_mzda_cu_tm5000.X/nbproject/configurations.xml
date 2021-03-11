@@ -271,6 +271,7 @@
           <itemPath>../src/config/glcd_rgba8888_mxt_mzda_intddr_cu_wvga/device.h</itemPath>
           <itemPath>../src/config/glcd_rgba8888_mxt_mzda_intddr_cu_wvga/user.h</itemPath>
           <itemPath>../src/config/glcd_rgba8888_mxt_mzda_intddr_cu_wvga/configuration.h</itemPath>
+          <itemPath>../src/config/glcd_rgba8888_mxt_mzda_intddr_cu_wvga/interrupts.h</itemPath>
         </logicalFolder>
       </logicalFolder>
       <itemPath>../src/app.h</itemPath>
@@ -366,6 +367,7 @@
                 <itemPath>../src/config/glcd_rgba8888_mxt_mzda_intddr_cu_wvga/gfx/legato/generated/le_gen_init.c</itemPath>
                 <itemPath>../src/config/glcd_rgba8888_mxt_mzda_intddr_cu_wvga/gfx/legato/generated/le_gen_scheme.c</itemPath>
                 <itemPath>../src/config/glcd_rgba8888_mxt_mzda_intddr_cu_wvga/gfx/legato/generated/le_gen_stringtable.c</itemPath>
+                <itemPath>../src/config/glcd_rgba8888_mxt_mzda_intddr_cu_wvga/gfx/legato/generated/le_gen_preprocess.c</itemPath>
               </logicalFolder>
               <logicalFolder name="f5" displayName="image" projectFiles="true">
                 <logicalFolder name="f2" displayName="jpeg" projectFiles="true">
@@ -694,7 +696,7 @@
         <property key="enable-unroll-loops" value="false"/>
         <property key="exclude-floating-point" value="false"/>
         <property key="extra-include-directories"
-                  value="../src;../src/config/glcd_rgba8888_mxt_mzda_intddr_cu_wvga;../src/packs/PIC32MZ2064DAR176_DFP;"/>
+                  value="../src;../src/config/glcd_rgba8888_mxt_mzda_intddr_cu_wvga;../src/packs/PIC32MZ2064DAR176_DFP"/>
         <property key="generate-16-bit-code" value="false"/>
         <property key="generate-micro-compressed-code" value="false"/>
         <property key="isolate-each-function" value="true"/>
@@ -791,7 +793,7 @@
         <property key="exceptions" value="true"/>
         <property key="exclude-floating-point" value="false"/>
         <property key="extra-include-directories"
-                  value="../src;../src/config/glcd_rgba8888_mxt_mzda_intddr_cu_wvga;../src/packs/PIC32MZ2064DAR176_DFP;"/>
+                  value="../src;../src/config/glcd_rgba8888_mxt_mzda_intddr_cu_wvga;../src/packs/PIC32MZ2064DAR176_DFP"/>
         <property key="generate-16-bit-code" value="false"/>
         <property key="generate-micro-compressed-code" value="false"/>
         <property key="isolate-each-function" value="true"/>
@@ -1031,6 +1033,8 @@
         <property key="memories.programmemory" value="true"/>
         <property key="memories.programmemory.ranges" value="1d000000-1d1fffff"/>
         <property key="memories.rww" value="true"/>
+        <property key="programmerToGoFilePath"
+                  value="D:/Harmony3Dev/apps/gfx/pic32mz_da/apps/legato_dashboard/firmware/legato_db_mzda_cu_tm5000.X/debug/glcd_rgba8888_mxt_mzda_intddr_cu_wvga/legato_db_mzda_cu_tm5000_ptg"/>
         <property key="programoptions.donoteraseauxmem" value="false"/>
         <property key="programoptions.eraseb4program" value="true"/>
         <property key="programoptions.pgmentry.voltage" value="low"/>
@@ -1046,7 +1050,6 @@
         <property key="programoptions.programcalmem" value="false"/>
         <property key="programoptions.programuserotp" value="false"/>
         <property key="programoptions.testmodeentrymethod" value="VDDFirst"/>
-        <property key="programoptionsedbg.eraseb4program" value="true"/>
         <property key="toolpack.updateoptions"
                   value="toolpack.updateoptions.uselatestoolpack"/>
         <property key="toolpack.updateoptions.packversion"

@@ -4,7 +4,7 @@
 	"content": {
 		"metaDataVersion": "1.1.0",
 		"name": "com.microchip.mcu32.mplabx.project.gfx_apps_pic32mz_da_legato_climate_control_legato_cc_mzda_cu_tm5000",
-		"version": "3.9.0",
+		"version": "3.9.1",
 		"displayName": "Legato Climate Control Example for PIC32MZ DA Family",
 		"projectName": "legato_climate_control_mzda_cu_tm5000",
 		"shortDescription": "This demonstration emulates an interactive, touch-enabled vehicle climate control User Interface (UI).",
@@ -39,7 +39,7 @@
 		"author": "Microchip",
 		"subcategories": [
 			[
-				"Development Kit", "PIC32MZ Embedded Graphics with Stacked DRAM (DA) Starter Kit (Crypto)"
+				"Development Kit", "PIC32MZ DA Curiosity Development Kit"
 			],
 			[
 				"Harmony", "Middleware", "Graphics", "Legato", "LEGATO_CLIMATE_CONTROL"
