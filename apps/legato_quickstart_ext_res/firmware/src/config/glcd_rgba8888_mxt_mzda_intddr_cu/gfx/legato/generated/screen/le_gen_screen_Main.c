@@ -1,7 +1,7 @@
 #include "gfx/legato/generated/screen/le_gen_screen_Main.h"
 
 // screen member widget declarations
-leWidget* root0;
+static leWidget* root0;
 
 leWidget* Main_Layer0_FillPanel;
 leLabelWidget* Main_TitleLabel;
@@ -85,6 +85,7 @@ leResult screenShow_Main(void)
 
 void screenUpdate_Main(void)
 {
+    root0->fn->setSize(root0, root0->parent->rect.width, root0->parent->rect.height);
 }
 
 void screenHide_Main(void)

@@ -309,22 +309,23 @@ typedef enum gfxColorMask
  */
 typedef enum gfxColorMode
 {
-    GFX_COLOR_MODE_GS_8       = 0x0,
+    GFX_COLOR_MODE_GS_8       = 0,
     GFX_COLOR_MODE_PALETTE    = GFX_COLOR_MODE_GS_8,
-    GFX_COLOR_MODE_RGB_332    = 0x1,
-    GFX_COLOR_MODE_RGB_565    = 0x2,
-    GFX_COLOR_MODE_RGBA_5551  = 0x3,
-    GFX_COLOR_MODE_RGB_888    = 0x4,
-    GFX_COLOR_MODE_RGBA_8888  = 0x5,
-    GFX_COLOR_MODE_ARGB_8888  = 0x6,
-    GFX_COLOR_MODE_INDEX_1    = 0x7,
-    GFX_COLOR_MODE_INDEX_4    = 0x8,
-    GFX_COLOR_MODE_INDEX_8    = 0x9,
-    GFX_COLOR_MODE_LAST = GFX_COLOR_MODE_INDEX_8
+    GFX_COLOR_MODE_RGB_332    = 1,
+    GFX_COLOR_MODE_RGB_565    = 2,
+    GFX_COLOR_MODE_RGBA_5551  = 3,
+    GFX_COLOR_MODE_RGB_888    = 4,
+    GFX_COLOR_MODE_RGBA_8888  = 5,
+    GFX_COLOR_MODE_ARGB_8888  = 6,
+    GFX_COLOR_MODE_INDEX_1    = 7,
+    GFX_COLOR_MODE_INDEX_4    = 8,
+    GFX_COLOR_MODE_INDEX_8    = 9,
+    GFX_COLOR_MODE_MONOCHROME = 10,
+	GFX_COLOR_MODE_LAST = GFX_COLOR_MODE_MONOCHROME
 } gfxColorMode;
 
-#define GFX_COLOR_MODE_LAST_COLOR     (GFX_COLOR_MODE_ARGB_8888)
-#define GFX_COLOR_MODE_COUNT          (GFX_COLOR_MODE_LAST + 1)
+#define GFX_COLOR_MODE_LAST_COLOR     (GFX_COLOR_MODE_MONOCHROME)
+#define GFX_COLOR_MODE_COUNT          (GFX_COLOR_MODE_LAST_COLOR + 1)
 
 #define GFX_COLOR_MODE_IS_PIXEL(mode) ((mode >= GFX_COLOR_MODE_GS_8) && (mode <= GFX_COLOR_MODE_ARGB_8888))
 #define GFX_COLOR_MODE_IS_INDEX(mode) ((mode >= GFX_COLOR_MODE_INDEX_1) && (mode <= GFX_COLOR_MODE_INDEX_8))
@@ -531,7 +532,7 @@ typedef struct gfxPixelBuffer
     uint32_t flags;
 } gfxPixelBuffer;
 
-
+typedef void (*gfxIRQCallBack) (uintptr_t layerID);
 
 // *****************************************************************************
 // *****************************************************************************
@@ -1029,6 +1030,7 @@ typedef enum gfxDriverIOCTLRequest
     GFX_IOCTL_GET_COLOR_MODE, // returns the supported color mode for the driver, arg = gfxIOCTLArg_Value
     GFX_IOCTL_GET_BUFFER_COUNT, // returns the driver buffer count, arg = gfxIOCTLArg_Value
     GFX_IOCTL_GET_DISPLAY_SIZE, // returns the driver buffer count, arg = gfxIOCTLArg_DisplaySize
+    GFX_IOCTL_GET_STATUS, // returns the driver status. 0 = idle/ready, arg = gfxIOCTLArg_Value
     GFX_IOCTL_ENABLE_GPU, // tells the driver to utilize a GPU if possible, arg = gfxIOCTLArg_Value
     
     GFX_IOCTL_LAYER_SWAP, // indicates that the driver should swap the current layer, arg = NULL
@@ -1042,6 +1044,8 @@ typedef enum gfxDriverIOCTLRequest
     GFX_IOCTL_GET_LAYER_COUNT, // gets the driver layer count, arg = gfxIOCTLArg_Value
     GFX_IOCTL_GET_ACTIVE_LAYER, // gets the active driver layer, arg = gfxIOCTLArg_Value
     GFX_IOCTL_SET_ACTIVE_LAYER, // sets the active driver layer, arg = gfxIOCTLArg_Value
+	
+    GFX_IOCTL_SET_BRIGHTNESS, // sets the screen backlight brightness, arg = gfxIOCTLArg_Value
 
     GFX_IOCTL_SET_LAYER_LOCK, // locks a layer, arg = gfxIOCTLArg_LayerValue
     GFX_IOCTL_GET_LAYER_ENABLED, // get layer enabled, arg = gfxIOCTLArg_LayerValue
@@ -1054,6 +1058,9 @@ typedef enum gfxDriverIOCTLRequest
     GFX_IOCTL_SET_LAYER_ALPHA, // set layer alpha value, arg = gfxIOCTLArg_LayerValue
     GFX_IOCTL_SET_LAYER_BASE_ADDRESS, // set layer base address, arg = gfxIOCTLArg_LayerValue
     GFX_IOCTL_SET_LAYER_COLOR_MODE, // set layer color mode, arg = gfxIOCTLArg_LayerValue
+
+    GFX_IOCTL_SET_IRQ_CALLBACK, // set a callback for the driver IRQ, arg = gfxIOCTLArg_LayerValue
+
 } gfxDriverIOCTLRequest;
 
 #define GFX_IOCTL_LAYER_REQ_START GFX_IOCTL_SET_LAYER_LOCK
@@ -1116,6 +1123,17 @@ typedef struct
 {
     uint32_t id;
 } gfxIOCTLArg_LayerArg;
+
+/**
+ * @brief This struct represents layer IRQ callback.
+ * @details Allows the caller of the driver to set an IRQ callback.
+ */
+typedef struct
+{
+    gfxIOCTLArg_LayerArg base;
+
+    gfxIRQCallBack callback;
+} gfxIOCTLArg_LayerIRQCallback;
 
 /**
  * @brief This struct represents layer position.

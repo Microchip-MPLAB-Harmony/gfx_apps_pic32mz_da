@@ -204,6 +204,7 @@ const DRV_I2C_INIT drvI2C0InitData =
 const DRV_MAXTOUCH_INIT drvMAXTOUCHInitData =
 {
     .drvOpen                     = DRV_I2C_Open,
+    .drvClose                    = DRV_I2C_Close,
     .orientation                 = 0,
     .horizontalResolution        = 480,
     .verticalResolution          = 272,
@@ -395,13 +396,15 @@ const SYS_FS_FUNCTIONS FatFsFunctions =
 };
 
 
+
 const SYS_FS_REGISTRATION_TABLE sysFSInit [ SYS_FS_MAX_FILE_SYSTEM_TYPE ] =
 {
     {
         .nativeFileSystemType = FAT,
         .nativeFileSystemFunctions = &FatFsFunctions
-    }
+    },
 };
+
 
 // </editor-fold>
 
@@ -460,7 +463,6 @@ void SYS_Initialize ( void* data )
 
   
     CLK_Initialize();
-    
     /* Configure Prefetch, Wait States and ECC */
     PRECONbits.PREFEN = 3;
     PRECONbits.PFMWS = 2;

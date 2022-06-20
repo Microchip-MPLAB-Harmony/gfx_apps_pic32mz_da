@@ -55,9 +55,9 @@ void _leButtonWidget_GetImageRect(const leButtonWidget* _this,
                                   leRect* imgRect,
                                   leRect* imgSrcRect);
 
-void _leButtonWidget_GetTextRect(const leButtonWidget* _this,
-                                 leRect* textRect,
-                                 leRect* drawRect);
+void _leButtonWidget_GetTextRects(const leButtonWidget* btn,
+                                  leRect* boundingRect,
+                                  leRect* kerningRect);
 
 void _leButtonWidget_InvalidateBorderAreas(const leButtonWidget* _this);
 
@@ -72,11 +72,11 @@ static void invalidateImageRect(const leButtonWidget* _this)
 
 static void invalidateTextRect(const leButtonWidget* _this)
 {
-    leRect textRect, drawRect;
+    leRect boundingRect, kerningRect;
     
-    _leButtonWidget_GetTextRect(_this, &textRect, &drawRect);
+    _leButtonWidget_GetTextRects(_this, &boundingRect, &kerningRect);
     
-    _this->fn->_damageArea(_this, &drawRect);
+    _this->fn->_damageArea(_this, &boundingRect);
 }
 
 static void stringPreinvalidate(const leString* str,
@@ -261,8 +261,6 @@ static leResult setString(leButtonWidget* _this,
 
     if(_this->string != NULL)
     {
-        invalidateTextRect(_this);
-
         _this->string->fn->setPreInvalidateCallback((leString*)_this->string,
                                                     NULL,
                                                     NULL);
@@ -283,10 +281,10 @@ static leResult setString(leButtonWidget* _this,
         _this->string->fn->setInvalidateCallback((leString*) _this->string,
                                                  (leString_InvalidateCallback) stringInvalidate,
                                                  _this);
-
-        invalidateTextRect(_this);
     }
-    
+
+    _this->fn->invalidate(_this);
+
     return LE_SUCCESS;
 }
 
@@ -495,7 +493,13 @@ static void touchDown(leButtonWidget* _this,
         }
     }
 
-    _this->fn->invalidate(_this);
+    if (_this->pressedOffset != 0 || 
+        (_this->pressedImage != _this->releasedImage) ||
+        (_this->widget.style.backgroundType != LE_WIDGET_BACKGROUND_NONE) || 
+        (_this->widget.style.borderType != LE_WIDGET_BORDER_NONE))
+    {
+        _this->fn->invalidate(_this);
+    }
 
     //printf("button touch down\n");
 }
@@ -572,7 +576,13 @@ static void touchUp(leButtonWidget* _this,
         }
     }
     
-    _this->fn->invalidate(_this);
+    if (_this->pressedOffset != 0 || 
+        (_this->pressedImage != _this->releasedImage) ||
+        (_this->widget.style.backgroundType != LE_WIDGET_BACKGROUND_NONE) || 
+        (_this->widget.style.borderType != LE_WIDGET_BORDER_NONE))
+    {
+        _this->fn->invalidate(_this);
+    }
 
     //printf("button touch up\n");
 }
@@ -608,7 +618,13 @@ static void touchMoved(leButtonWidget* _this,
         {
             _this->state = LE_BUTTON_STATE_UP;
             
-            _this->fn->invalidate(_this);
+            if (_this->pressedOffset != 0 || 
+                (_this->pressedImage != _this->releasedImage) ||
+                (_this->widget.style.backgroundType != LE_WIDGET_BACKGROUND_NONE) || 
+                (_this->widget.style.borderType != LE_WIDGET_BORDER_NONE))
+            {
+                _this->fn->invalidate(_this);
+            }
         }
     }
     else if(_this->state == LE_BUTTON_STATE_UP)
@@ -620,7 +636,13 @@ static void touchMoved(leButtonWidget* _this,
         {
             _this->state = LE_BUTTON_STATE_DOWN;
 
-            _this->fn->invalidate(_this);
+            if (_this->pressedOffset != 0 || 
+                (_this->pressedImage != _this->releasedImage) ||
+                (_this->widget.style.backgroundType != LE_WIDGET_BACKGROUND_NONE) || 
+                (_this->widget.style.borderType != LE_WIDGET_BORDER_NONE))
+            {
+                _this->fn->invalidate(_this);
+            }
         }
     }
 }

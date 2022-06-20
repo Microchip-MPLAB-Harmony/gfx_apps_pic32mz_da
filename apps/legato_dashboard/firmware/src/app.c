@@ -181,7 +181,7 @@ void StartAnimTimer(void)
     SYS_TIME_TimerDestroy(animTimer);
     
     animTimer = SYS_TIME_CallbackRegisterUS(animTimer_Callback, 
-                    NULL,
+                    (uintptr_t)NULL,
                     ANIM_TIMER_PERIOD_US,
                     SYS_TIME_PERIODIC); 
 }

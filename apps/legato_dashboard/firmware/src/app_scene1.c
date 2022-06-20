@@ -917,7 +917,7 @@ void APP_Process_Scene1(void)
                     
                     //start self demo timer, triggers every second
                     selfDemoTimer = SYS_TIME_CallbackRegisterMS(animTimer_DemoMode, 
-                                    NULL,
+                                    (uintptr_t)NULL,
                                     ANIM_DEMO_MODE_TIMER_PERIOD_MS,
                                     SYS_TIME_PERIODIC);                    
                 }

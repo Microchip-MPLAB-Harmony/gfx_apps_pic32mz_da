@@ -116,6 +116,13 @@ children:
       children:
       - type: User
         attributes: {value: GS_8}
+  - type: Integer
+    attributes: {id: DefaultNumLayers}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: gfx_canvas, value: '3'}
   - type: String
     attributes: {id: DisplayDriverName}
     children:

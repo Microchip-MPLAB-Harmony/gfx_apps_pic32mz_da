@@ -3,4 +3,4 @@ type: UniqueComponent
 attributes: {id: le_gfx_driver_2dgpu}
 children:
 - type: ElementPosition
-  attributes: {x: '650', y: '118', id: le_gfx_driver_2dgpu}
+  attributes: {x: '660', y: '126', id: le_gfx_driver_2dgpu}

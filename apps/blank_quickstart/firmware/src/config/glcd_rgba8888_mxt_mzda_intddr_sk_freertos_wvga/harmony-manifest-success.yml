@@ -4,19 +4,19 @@
 
 
 project: blank_quickstart
-creation_date: 2021-03-01T09:35:58.206-07:00[America/Phoenix]    # ISO 8601 format: https://www.w3.org/TR/NOTE-datetime
+creation_date: 2022-05-20T10:01:26.937-07:00[America/Phoenix]    # ISO 8601 format: https://www.w3.org/TR/NOTE-datetime
 operating_system: Windows 10
 mhc_mode: IDE            # [IDE|Standalone|Headless]
-mhc_version: v3.7.0
-mplabx_version: v5.45        # if MPLAB X plugin only
-plugin_version: v3.6.3        # if MPLAB X plugin only
+mhc_version: v3.8.5
+mplabx_version: v6.00        # if MPLAB X plugin only
+plugin_version: v3.6.4        # if MPLAB X plugin only
 compiler: XC32 (2.50)
 
 modules:
-    - {name: "core", version: "v3.9.0"}
-    - {name: "csp", version: "v3.9.0"}
-    - {name: "dev_packs", version: "v3.9.0"}
-    - {name: "gfx", version: "v3.9.2"}
-    - {name: "bsp", version: "v3.9.0"}
+    - {name: "csp", version: "v3.12.0"}
+    - {name: "core", version: "v3.10.0"}
+    - {name: "dev_packs", version: "v3.12.0"}
+    - {name: "gfx", version: "v3.10.0"}
+    - {name: "bsp", version: "v3.12.0"}
     - {name: "CMSIS-FreeRTOS", version: "v10.3.1"}
 

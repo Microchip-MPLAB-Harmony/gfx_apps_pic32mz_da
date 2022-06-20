@@ -148,6 +148,41 @@ static DISPLAY_LAYER drvLayer[GFX_GLCD_LAYERS];
 
 static gfxResult DRV_GLCD_UpdateLayer(unsigned int layer);
 
+static gfxResult DRV_GLCD_BufferBlit(const gfxPixelBuffer* source,
+                            const gfxRect* rectSrc,
+                            const gfxPixelBuffer* dest,
+                            const gfxRect* rectDest)
+{
+    void* srcPtr;
+    void* destPtr;
+    uint32_t row, rowSize;
+    unsigned int width, height;
+    gfxResult res;
+	
+	res = gfxGPUInterface.blitBuffer(source,
+                                     rectSrc,
+                                     dest,
+                                     rectDest);
+    if (res != GFX_SUCCESS)
+    {
+        width = (rectSrc->width < rectDest->width) ? 
+                 rectSrc->width : rectDest->width;
+        height = (rectSrc->height < rectDest->height) ? 
+                 rectSrc->height : rectDest->height;
+        rowSize = width * gfxColorInfoTable[dest->mode].size;
+
+        for(row = 0; row < height; row++)
+        {
+            srcPtr = gfxPixelBufferOffsetGet(source, rectSrc->x, rectSrc->y + row);
+            destPtr = gfxPixelBufferOffsetGet(dest, rectDest->x, rectDest->y + row);
+
+            memcpy(destPtr, srcPtr, rowSize);
+        }        
+    }
+
+    return GFX_SUCCESS;
+}
+
 void DRV_GLCD_Update()
 {
     switch(state)
@@ -270,11 +305,6 @@ void DRV_GLCD_Initialize()
     uint32_t      layerCount;
     uint32_t      bufferCount;
 
-    // general default initialization
-    //if(defInitialize(context) == LE_FAILURE)
-    //        return LE_FAILURE;
-
-
     /* set temporary information */
     xResolution     = 480;
     yResolution     = 272;
@@ -395,9 +425,10 @@ gfxResult DRV_GLCD_BlitBuffer(int32_t x,
                              int32_t y,
                              gfxPixelBuffer* buf)
 {
-
     if (state != DRAW)
         return GFX_FAILURE;
+		
+    gfxPixelBuffer_SetLocked(buf, GFX_TRUE);		
 
 
     srcRect.x = 0;
@@ -410,7 +441,9 @@ gfxResult DRV_GLCD_BlitBuffer(int32_t x,
     destRect.height = buf->size.height;
     destRect.width = buf->size.width;
 
-    gfxGPUInterface.blitBuffer(buf, &srcRect, &drvLayer[activeLayer].pixelBuffer[drvLayer[activeLayer].frontBufferIdx], &destRect);
+   	DRV_GLCD_BufferBlit(buf, &srcRect, &drvLayer[activeLayer].pixelBuffer[drvLayer[activeLayer].backBufferIdx], &destRect);
+	
+	gfxPixelBuffer_SetLocked(buf, GFX_FALSE);
 
     return GFX_SUCCESS;
 }
@@ -670,6 +703,25 @@ gfxDriverIOCTLResponse DRV_GLCD_IOCTL(gfxDriverIOCTLRequest request,
         {
             vblankSync = ((gfxIOCTLArg_Value*)arg)->value.v_bool;
             
+            return GFX_IOCTL_OK;
+        }
+        case GFX_IOCTL_GET_STATUS:
+        {
+            unsigned int i;
+            val = (gfxIOCTLArg_Value*)arg;
+            
+            val->value.v_uint = 0;
+            
+            for (i = 0; i < GFX_GLCD_LAYERS; i++)
+            {
+                if (drvLayer[i].updateLock != LAYER_UNLOCKED)
+                {
+                    val->value.v_uint = 1;
+
+                    break;
+                }
+            }
+
             return GFX_IOCTL_OK;
         }		
         default:

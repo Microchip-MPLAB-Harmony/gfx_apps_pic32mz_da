@@ -33,6 +33,8 @@
 #include "gfx/legato/core/legato_state.h"
 #include "gfx/legato/memory/legato_memory.h"
 #include "gfx/legato/string/legato_string.h"
+#include "gfx/legato/string/legato_stringutils.h"
+#include "gfx/legato/string/legato_string_renderer.h"
 #include "gfx/legato/widget/legato_widget.h"
 
 #include "gfx/legato/widget/legato_widget_skin_classic_common.h"
@@ -122,21 +124,26 @@ void _leButtonWidget_GetImageRect(const leButtonWidget* btn,
     leUtils_RectToScreenSpace((leWidget*)btn, imgRect);                         
 }
 
-void _leButtonWidget_GetTextRect(const leButtonWidget* btn,
-                                 leRect* textRect,
-								 leRect* drawRect)
+void _leButtonWidget_GetTextRects(const leButtonWidget* btn,
+                                  leRect* boundingRect,
+                                  leRect* kerningRect)
 {
     leRect bounds;
     
     leRect imgRect = leRect_Zero;
     
-    *textRect = leRect_Zero;
+    *boundingRect = leRect_Zero;
     
     if(btn->string == NULL)
         return;
         
-    btn->string->fn->getRect(btn->string, textRect);
-    
+    btn->string->fn->getRect(btn->string, boundingRect);
+
+    *kerningRect = *boundingRect;
+
+    leStringUtils_KerningRect((leRasterFont*)btn->string->fn->getFont(btn->string),
+                              kerningRect);
+
     btn->fn->localRect(btn, &bounds);
     
     if(btn->state != LE_BUTTON_STATE_UP)
@@ -157,7 +164,7 @@ void _leButtonWidget_GetTextRect(const leButtonWidget* btn,
     }
     
     // arrange relative to image rect
-    leUtils_ArrangeRectangleRelative(textRect,
+    leUtils_ArrangeRectangleRelative(kerningRect,
                                      imgRect,
                                      bounds,
                                      btn->widget.style.halign,
@@ -171,15 +178,17 @@ void _leButtonWidget_GetTextRect(const leButtonWidget* btn,
 
     if(btn->state != LE_BUTTON_STATE_UP)
     {
-        textRect->x += btn->pressedOffset;
-        textRect->y += btn->pressedOffset;
+        kerningRect->x += btn->pressedOffset;
+        kerningRect->y += btn->pressedOffset;
     }
-                                     
-    leRectClip(textRect, &bounds, drawRect);
+
+    boundingRect->x = kerningRect->x;
+    boundingRect->y = kerningRect->y;
+
+    leRectClip(kerningRect, &bounds, kerningRect);
 
 	// move the rects to screen space
-	leUtils_RectToScreenSpace((leWidget*)btn, textRect);
-    leUtils_RectToScreenSpace((leWidget*)btn, drawRect);
+    leUtils_RectToScreenSpace((leWidget*)btn, kerningRect);
 }
 
 void _leButtonWidget_InvalidateBorderAreas(const leButtonWidget* btn)
@@ -421,20 +430,36 @@ static void onStringStreamFinished(leStreamManager* strm)
 
 static void drawString(leButtonWidget* btn)
 {
-    leRect textRect, drawRect;
+    leRect boundingRect, kerningRect;
+    leStringRenderRequest req;
+    leColor background;
 
-    _leButtonWidget_GetTextRect(btn, &textRect, &drawRect);
+    _leButtonWidget_GetTextRects(btn, &boundingRect, &kerningRect);
     
     /*leRenderer_RectLine(&textRect,
                         leColorValue(LE_COLOR_MODE_RGB_565, LE_COLOR_RED),
                         255);*/
-    
-    btn->string->fn->_draw(btn->string,
-                           textRect.x,
-                           textRect.y,
-                           btn->widget.style.halign,
-                           leScheme_GetRenderColor(btn->widget.scheme, LE_SCHM_TEXT),
-                           paintState.alpha);
+
+    if(btn->state != LE_BUTTON_STATE_UP)
+    {
+        background = leScheme_GetRenderColor(btn->widget.scheme, LE_SCHM_BACKGROUND);
+    }
+    else
+    {
+        background = leScheme_GetRenderColor(btn->widget.scheme, LE_SCHM_BASE);
+    }
+
+    req.str = btn->string;
+    req.x = kerningRect.x;
+    req.y = kerningRect.y;
+    req.align = btn->widget.style.halign;
+    req.color = leScheme_GetRenderColor(btn->widget.scheme, LE_SCHM_TEXT);
+    req.alpha = paintState.alpha;
+    req.lookupTable = leUtils_GetSchemeLookupTable(btn->widget.scheme,
+                                                   req.color,
+                                                   background);
+
+    leStringRenderer_DrawString(&req);
 
 #if LE_STREAMING_ENABLED == 1
     if(leGetActiveStream() != NULL)

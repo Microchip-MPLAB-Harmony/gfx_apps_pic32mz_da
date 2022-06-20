@@ -105,7 +105,7 @@ static leResult _draw(const leImage* img,
         stream.flags |= SF_BLOCKING;
 
         if(leStream_Read(&stream,
-                         (uint32_t)img->header.address,
+                         (size_t)img->header.address,
                          img->header.size,
                          encodedData,
                          NULL) == LE_FAILURE)
@@ -175,7 +175,9 @@ static leResult _draw(const leImage* img,
                  y,
                  a);
 
+#if defined LE_PNG_USE_SCRATCH && LE_PNG_USE_SCRATCH == 0
     LE_FREE(decodedData);
+#endif
 
     return LE_SUCCESS;
 }
@@ -235,7 +237,7 @@ static leResult _render(const leImage* src,
         stream.flags |= SF_BLOCKING;
 
         if(leStream_Read(&stream,
-                         (uint32_t)src->header.address,
+                         (size_t)src->header.address,
                          src->header.size,
                          encodedData,
                          NULL) == LE_FAILURE)
@@ -267,7 +269,9 @@ static leResult _render(const leImage* src,
 
     lePixelBufferCopy(&dst->buffer, x, y, &src->buffer, srcRect);
 
+#if defined LE_PNG_USE_SCRATCH && LE_PNG_USE_SCRATCH == 0
     LE_FREE(decodedData);
+#endif
 
     return LE_SUCCESS;
 }

@@ -57,6 +57,8 @@ extern "C" {
     This enumeration defines the valid application states.  These states
     determine the behavior of the application at various times.
 */
+    
+#define SDCARD_MOUNT_NAME           "/mnt/myDrive1"
 
 typedef enum
 {

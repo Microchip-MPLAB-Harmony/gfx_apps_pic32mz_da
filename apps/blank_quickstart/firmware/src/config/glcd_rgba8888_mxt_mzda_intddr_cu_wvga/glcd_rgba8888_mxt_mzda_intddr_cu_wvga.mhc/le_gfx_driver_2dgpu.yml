@@ -1,0 +1,6 @@
+format_version: v1.0
+type: UniqueComponent
+attributes: {id: le_gfx_driver_2dgpu}
+children:
+- type: ElementPosition
+  attributes: {x: '664', y: '401', id: le_gfx_driver_2dgpu}

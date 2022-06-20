@@ -106,6 +106,24 @@ IntVectorI2C1_MASTER_Handler:
     nop
     portRESTORE_CONTEXT
     .end   IntVectorI2C1_MASTER_Handler
+    .extern  SDHC_Handler
+
+    .section   .vector_191,code, keep
+    .equ     __vector_dispatch_191, IntVectorSDHC_Handler
+    .global  __vector_dispatch_191
+    .set     nomicromips
+    .set     noreorder
+    .set     nomips16
+    .set     noat
+    .ent  IntVectorSDHC_Handler
+
+IntVectorSDHC_Handler:
+    portSAVE_CONTEXT
+    la    s6,  SDHC_Handler
+    jalr  s6
+    nop
+    portRESTORE_CONTEXT
+    .end   IntVectorSDHC_Handler
     .extern  GLCD_Handler
 
     .section   .vector_192,code, keep

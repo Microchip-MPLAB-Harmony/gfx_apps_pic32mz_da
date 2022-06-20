@@ -73,6 +73,7 @@ enum leSchemeColorModes
     LE_SCHM_COLOR_MODE_RGBA_8888 = LE_COLOR_MODE_RGBA_8888,
     LE_SCHM_COLOR_MODE_ARGB_8888 = LE_COLOR_MODE_ARGB_8888,
     LE_SCHM_COLOR_MODE_GLOBALPALETTE = LE_COLOR_MODE_PALETTE,
+    LE_SCHM_COLOR_MODE_MONOCHROME = LE_COLOR_MODE_MONOCHROME,
 };
 
 typedef enum leSchemeColor
@@ -153,6 +154,8 @@ typedef union leSchemeColorTable
 typedef struct leScheme
 {
     leSchemeColorTable tables[LE_SCHEME_COLOR_MODE_COUNT];
+    uint32_t blendTableCount;
+    const leBlendLookupTable** blendTables;
 } leScheme;
 
 extern const struct leScheme leDefaultScheme;

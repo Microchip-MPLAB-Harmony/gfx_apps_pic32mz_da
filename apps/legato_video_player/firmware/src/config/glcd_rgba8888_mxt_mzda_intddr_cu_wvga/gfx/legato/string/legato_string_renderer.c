@@ -58,6 +58,9 @@ static leResult drawString(leStringRenderRequest* req)
 
     req->str->fn->getRect(req->str, &stringRect);
 
+    leStringUtils_KerningRect(font,
+                              &stringRect);
+
     //drawRect = stringRect;
     //drawRect.x += x;
     //drawRect.y += y;
@@ -94,12 +97,23 @@ static leResult drawString(leStringRenderRequest* req)
             }
             else
             {
-                leFont_DrawGlyph((leFont*)font,
-                                 &glyphInfo,
-                                 req->x + lineX + glyphInfo.bearingX,
-                                 stringY + (font->baseline - glyphInfo.bearingY),
-                                 req->color,
-                                 req->alpha);
+                if(req->lookupTable != NULL)
+                {
+                    leFont_DrawGlyph_Lookup((leFont*)font,
+                                            &glyphInfo,
+                                            req->x + lineX + glyphInfo.bearingX,
+                                            stringY + (font->baseline - glyphInfo.bearingY),
+                                            req->lookupTable);
+                }
+                else
+                {
+                    leFont_DrawGlyph((leFont*)font,
+                                     &glyphInfo,
+                                     req->x + lineX + glyphInfo.bearingX,
+                                     stringY + (font->baseline - glyphInfo.bearingY),
+                                     req->color,
+                                     req->alpha);
+                }
             }
 
             lineX += glyphInfo.advance;
@@ -157,6 +171,8 @@ static leResult drawUString(leUStringRenderRequest* req)
     lines = leStringUtils_GetLineCount(req->str, req->length);
 
     leStringUtils_GetRect(req->str, req->length, req->font, &stringRect);
+
+    leStringUtils_KerningRect((leRasterFont*)req->font, &stringRect);
 
     for(lineItr = 0; lineItr < lines; lineItr++)
     {
@@ -248,6 +264,8 @@ static leResult drawCString(leCStringRenderRequest* req)
     lines = leStringUtils_GetLineCountCStr(req->str);
 
     leStringUtils_GetRectCStr(req->str, req->font, &stringRect);
+
+    leStringUtils_KerningRect((leRasterFont*)req->font, &stringRect);
 
     for(lineItr = 0; lineItr < lines; lineItr++)
     {

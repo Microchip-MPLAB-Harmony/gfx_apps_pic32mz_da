@@ -65,6 +65,13 @@ children:
       - type: User
         attributes: {value: 'false'}
   - type: Integer
+    attributes: {id: MasterClockSourceValue}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: le_gfx_driver_glcd, value: '200000000'}
+  - type: Integer
     attributes: {id: PixelClock}
     children:
     - type: Values

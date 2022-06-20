@@ -27,6 +27,7 @@
 
 #include "gfx/legato/core/legato_state.h"
 #include "gfx/legato/string/legato_stringtable.h"
+#include "gfx/legato/string/legato_stringutils.h"
 
 #if LE_STREAMING_ENABLED == 1
 
@@ -76,6 +77,7 @@ static struct
     leHAlignment align;
     leColor color;
     uint32_t alpha;
+    const leBlendLookupTable* lookupTable;
 
     uint8_t stringData[LE_STRING_MAX_CHAR_WIDTH];
 
@@ -149,6 +151,7 @@ static leResult draw(void)
                                      renderState.stringY + (renderState.font->baseline - renderState.glyphInfo.bearingY),
                                      renderState.color,
                                      renderState.alpha,
+                                     renderState.lookupTable,
                                      drawDone) == LE_FAILURE)
     {
         drawDone(renderState.glyphInfo.codePoint);
@@ -172,6 +175,7 @@ static leResult draw_blocking(void)
                                   renderState.stringY + (renderState.font->baseline - renderState.glyphInfo.bearingY),
                                   renderState.color,
                                   renderState.alpha,
+                                  renderState.lookupTable,
                                   NULL);
 
     drawDone_blocking(renderState.glyphInfo.codePoint);
@@ -353,6 +357,7 @@ leResult _leStringStreamRenderer_Draw(leStringRenderRequest* req)
     renderState.align = req->align;
     renderState.color = req->color;
     renderState.alpha = req->alpha;
+    renderState.lookupTable = req->lookupTable;
 
     renderState.len = req->str->fn->length(req->str);
     renderState.font = (leRasterFont*)req->str->fn->getFont(req->str);
@@ -370,6 +375,9 @@ leResult _leStringStreamRenderer_Draw(leStringRenderRequest* req)
 
     req->str->fn->getRect(req->str, &renderState.stringRect);
 
+    leStringUtils_KerningRect(renderState.font,
+                              &renderState.stringRect);
+
     getLineMetrics();
 
     renderState.stream = leFont_GetStream((leFont*)renderState.font);
@@ -384,7 +392,6 @@ leResult _leStringStreamRenderer_Draw(leStringRenderRequest* req)
     codepoint = renderState.string->fn->charAt(renderState.string, renderState.charItr);
 
     leFont_GetGlyphInfo((leFont*)renderState.font, codepoint, &renderState.glyphInfo);
-
 
     renderState.manager.isDone = isDone;
     renderState.manager.abort = abortDraw;

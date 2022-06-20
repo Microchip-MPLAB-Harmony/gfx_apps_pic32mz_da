@@ -1,7 +1,7 @@
 #include "gfx/legato/generated/screen/le_gen_screen_Launch.h"
 
 // screen member widget declarations
-leWidget* root0;
+static leWidget* root0;
 
 leWidget* Launch_PanelWidget0;
 leButtonWidget* Launch_ButtonWidget_LaunchLabel;
@@ -68,6 +68,7 @@ leResult screenShow_Launch(void)
 
 void screenUpdate_Launch(void)
 {
+    root0->fn->setSize(root0, root0->parent->rect.width, root0->parent->rect.height);
 }
 
 void screenHide_Launch(void)

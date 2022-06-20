@@ -77,6 +77,10 @@ void __ISR(_CORE_TIMER_VECTOR, ipl1SRS) CORE_TIMER_Handler (void)
     CORE_TIMER_InterruptHandler();
 }
 
+void __ISR(_TIMER_1_VECTOR, ipl1SRS) TIMER_1_Handler (void)
+{
+}
+
 void __ISR(_USB_VECTOR, ipl1SRS) USB_Handler (void)
 {
     DRV_USBHS_InterruptHandler();

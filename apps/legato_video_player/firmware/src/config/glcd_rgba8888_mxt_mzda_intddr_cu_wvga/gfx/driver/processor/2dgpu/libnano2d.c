@@ -535,7 +535,7 @@ gfxResult DRV_2DGPU_Blit(const gfxPixelBuffer* source,
     src_buffer.gpu = KVA_TO_PA(source->pixels);
 
     if(IS_KVA1(source->pixels) == GFX_FALSE ||    //not coherent
-       (source->size.width) % 4 > 0 ||            //not width aligned
+       (source->size.width) % 8 > 0 ||            //not width aligned
        (((uint32_t) src_buffer.memory) & 0x3))    //not 32-bit address aligned
     {
         return GFX_FAILURE;
@@ -618,7 +618,7 @@ gfxResult DRV_2DGPU_SetTransparency(
 void DRV_2DGPU_Initialize(void)
 {
     /* initialize gpu hardware and peripheral software */
-    memset((void*)commandBuffer, 0, CMD_BUFFER_SIZE);
+    memset((void*)commandBuffer, 0, sizeof(commandBuffer));
 
     gpu_params.contiguousBase = (n2d_uint32_t)commandBuffer;
     gpu_params.registerMemBase2D = 0xBF8EB000;

@@ -1,8 +1,8 @@
 #include "gfx/legato/generated/screen/le_gen_screen_Screen0.h"
 
 // screen member widget declarations
-leWidget* root0;
-leWidget* root1;
+static leWidget* root0;
+static leWidget* root1;
 
 leImageWidget* Screen0_ImageWidget0;
 leImageWidget* Screen0_ImageWidget1;
@@ -95,6 +95,9 @@ leResult screenShow_Screen0(void)
 
 void screenUpdate_Screen0(void)
 {
+    root0->fn->setSize(root0, root0->parent->rect.width, root0->parent->rect.height);
+    root1->fn->setSize(root1, root1->parent->rect.width, root1->parent->rect.height);
+
     Screen0_OnUpdate(); // raise event
 }
 

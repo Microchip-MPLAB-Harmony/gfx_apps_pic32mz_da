@@ -17,7 +17,19 @@ Following table provides number of peripheral library examples available for dif
 | PIC32MZ DA Curiosity     | 8 |
 | PIC32MZ DAR Int DDR Starter Kit + MEB-2     | 4 |
 | PIC32MZ DAA Ext DDR Starter Kit + MEB-2     | 3 |
+| Radial Graphics Development Board           | 3 |
 |
+
+## Release v3.10.0
+
+### New Features
+
+New features added in this release are as follows:
+
+- Added MCC configurations to all applications
+- Added Legato Quickstart application for Radial Graphics Development Board
+- Added Legato Dashboard Round application for Radial Graphics Development Board
+- Added Legato Showcase Round application for Radial Graphics Development Board
 
 ## Release v3.9.1
 
@@ -39,18 +51,17 @@ New features added in this release are as follows:
 
 ### Known Issues
 
-The current known issues are as follows:
-
-- None
+No Known Issues
 
 ### Development Tools
 
-- [MPLAB® X IDE v5.45 and above](https://www.microchip.com/mplab/mplab-x-ide)
+- [MPLAB® X IDE v6.00 and above](https://www.microchip.com/mplab/mplab-x-ide)
 - MPLAB® X IDE plug-ins:
-    - [MPLAB® Harmony Configurator (MHC) v3.6.3 and above](https://github.com/Microchip-MPLAB-Harmony/mplabx-plugin).
-- [MPLAB® XC32 C/C++ Compiler v2.50 and above](https://www.microchip.com/mplab/compilers)
+    - [MPLAB® Harmony Configurator (MHC) v3.8.4 and above](https://github.com/Microchip-MPLAB-Harmony/mplabx-plugin).
+    - [MPLAB® Code Configurator (MCC) v5.1.4](https://github.com/Microchip-MPLAB-Harmony/mplabx-plugin).
+- [MPLAB® XC32 C/C++ Compiler v4.10 and above](https://www.microchip.com/mplab/compilers)
 
 ### Dependent Components
 
-* [GFX v3.9.2](https://github.com/Microchip-MPLAB-Harmony/gfx/releases/tag/v3.9.2)
-* [Harmony 3 USB v3.7.1](https://github.com/Microchip-MPLAB-Harmony/usb/releases/tag/v3.7.1)
+* [GFX v3.10.0](https://github.com/Microchip-MPLAB-Harmony/gfx/releases/tag/v3.10.0)
+* [Harmony 3 USB v3.9.0](https://github.com/Microchip-MPLAB-Harmony/usb/releases/tag/v3.9.0)

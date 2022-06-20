@@ -2,9 +2,9 @@
 	"metaDataVersion": "1.0.0",
 	"category": "com.microchip.ide.project",
 	"content": {
-		"metaDataVersion": "1.1.0",
+		"metaDataVersion": "1.3.0",
 		"name": "com.microchip.mcu32.mplabx.project.gfx_apps_pic32mz_da_legato_benchmark_legato_bm_mzda_cu_tm4301b",
-		"version": "3.9.1",
+		"version": "3.10.0",
 		"displayName": "Legato Benchmark Example for PIC32MZ DA Family",
 		"projectName": "legato_benchmark_mzda_cu_wqvga",
 		"shortDescription": "This application shows the frame update rates for various operations in the Legato Graphics Library, including string rendering, area fills and image decode and rendering. The benchmarks can be configured for different text sizes, number and size of discrete area fills and different image formats. The instantaneous and averaged frame update rates are shown at real-time on the demo.",
@@ -37,17 +37,6 @@
 			}
 		},
 		"author": "Microchip",
-		"subcategories": [
-			[
-				"Development Kit", "PIC32MZ DA Curiosity Development Kit"
-			],
-			[
-				"Harmony", "Middleware", "Graphics", "Legato", "LEGATO_BENCHMARK"
-			],
-			[
-				"Middleware", "Graphics", "Legato", "LEGATO_BENCHMARK"
-			]
-		],
 		"peripherals": [
 			"GPU",
 			"Touch",
@@ -66,6 +55,8 @@
 			"External Memory",
 			"Memory",
 			"Legato",
+			"Benchmark",
+			"Legato Benchmark",
 			"Touch",
 			"I2C",
 			"Display Controller",

@@ -57,6 +57,13 @@ children:
         attributes: {id: visible}
         children:
         - {type: Value, value: 'true'}
+  - type: Integer
+    attributes: {id: MasterClockSourceValue}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: le_gfx_driver_glcd, value: '200000000'}
   - type: Boolean
     attributes: {id: PaletteMode}
     children:

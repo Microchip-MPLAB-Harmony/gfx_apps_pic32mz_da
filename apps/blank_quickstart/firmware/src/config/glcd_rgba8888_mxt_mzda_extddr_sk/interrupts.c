@@ -64,6 +64,7 @@
 void CORE_TIMER_InterruptHandler( void );
 void I2C1_BUS_InterruptHandler( void );
 void I2C1_MASTER_InterruptHandler( void );
+void SDHC_InterruptHandler( void );
 void GLCD_Interrupt_Handler( void );
 
 
@@ -82,6 +83,11 @@ void __ISR(_I2C1_BUS_VECTOR, ipl1SRS) I2C1_BUS_Handler (void)
 void __ISR(_I2C1_MASTER_VECTOR, ipl1SRS) I2C1_MASTER_Handler (void)
 {
     I2C1_MASTER_InterruptHandler();
+}
+
+void __ISR(_SDHC_VECTOR, ipl1SRS) SDHC_Handler (void)
+{
+    SDHC_InterruptHandler();
 }
 
 void __ISR(_GLCD_VECTOR, ipl1SRS) GLCD_Handler (void)

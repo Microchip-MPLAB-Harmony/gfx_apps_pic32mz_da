@@ -101,6 +101,7 @@ const char* DRIVER_NAME = "GLCD";
 
 
 static volatile DRV_STATE state;
+static gfxRect srcRect, destRect;
 static unsigned int vsyncCount = 0;
 static unsigned int activeLayer = 0;
 static bool vblankSync = true;
@@ -136,6 +137,32 @@ typedef struct __display_layer {
 static DISPLAY_LAYER drvLayer[GFX_GLCD_LAYERS];
 
 static gfxResult DRV_GLCD_UpdateLayer(unsigned int layer);
+
+static gfxResult DRV_GLCD_BufferBlit(const gfxPixelBuffer* source,
+                            const gfxRect* rectSrc,
+                            const gfxPixelBuffer* dest,
+                            const gfxRect* rectDest)
+{
+    void* srcPtr;
+    void* destPtr;
+    uint32_t row, rowSize;
+    unsigned int width, height;
+        width = (rectSrc->width < rectDest->width) ? 
+                 rectSrc->width : rectDest->width;
+        height = (rectSrc->height < rectDest->height) ? 
+                 rectSrc->height : rectDest->height;
+        rowSize = width * gfxColorInfoTable[dest->mode].size;
+
+        for(row = 0; row < height; row++)
+        {
+            srcPtr = gfxPixelBufferOffsetGet(source, rectSrc->x, rectSrc->y + row);
+            destPtr = gfxPixelBufferOffsetGet(dest, rectDest->x, rectDest->y + row);
+
+            memcpy(destPtr, srcPtr, rowSize);
+        }        
+
+    return GFX_SUCCESS;
+}
 
 void DRV_GLCD_Update()
 {
@@ -258,11 +285,6 @@ void DRV_GLCD_Initialize()
     uint32_t      stride;
     uint32_t      layerCount;
 
-    // general default initialization
-    //if(defInitialize(context) == LE_FAILURE)
-    //        return LE_FAILURE;
-
-
     /* set temporary information */
     xResolution     = 800;
     yResolution     = 480;
@@ -321,7 +343,6 @@ void DRV_GLCD_Initialize()
         PLIB_GLCD_LayerSrcBlendFuncSet(layerCount, drvLayer[layerCount].sblend );
         PLIB_GLCD_LayerColorModeSet(layerCount, drvLayer[layerCount].colorspace );
 
-        PLIB_GLCD_LayerEnable(layerCount);
 
         drvLayer[layerCount].frontBufferIdx = 0;
         drvLayer[layerCount].backBufferIdx = 0;
@@ -375,23 +396,25 @@ gfxResult DRV_GLCD_BlitBuffer(int32_t x,
                              int32_t y,
                              gfxPixelBuffer* buf)
 {
-    void* srcPtr;
-    void* destPtr;
-    uint32_t row, rowSize;
-
     if (state != DRAW)
         return GFX_FAILURE;
+		
+    gfxPixelBuffer_SetLocked(buf, GFX_TRUE);		
 
 
-    rowSize = buf->size.width * gfxColorInfoTable[buf->mode].size;
+    srcRect.x = 0;
+    srcRect.y = 0;
+    srcRect.height = buf->size.height;
+    srcRect.width = buf->size.width;
 
-    for(row = 0; row < buf->size.height; row++)
-    {
-        srcPtr = gfxPixelBufferOffsetGet(buf, 0, row);
-        destPtr = gfxPixelBufferOffsetGet(&drvLayer[activeLayer].pixelBuffer[drvLayer[activeLayer].backBufferIdx], x, y + row);
+    destRect.x = x;
+    destRect.y = y;
+    destRect.height = buf->size.height;
+    destRect.width = buf->size.width;
 
-        memcpy(destPtr, srcPtr, rowSize);
-    }
+   	DRV_GLCD_BufferBlit(buf, &srcRect, &drvLayer[activeLayer].pixelBuffer[drvLayer[activeLayer].backBufferIdx], &destRect);
+	
+	gfxPixelBuffer_SetLocked(buf, GFX_FALSE);
 
     return GFX_SUCCESS;
 }
@@ -674,6 +697,25 @@ gfxDriverIOCTLResponse DRV_GLCD_IOCTL(gfxDriverIOCTLRequest request,
         {
             vblankSync = ((gfxIOCTLArg_Value*)arg)->value.v_bool;
             
+            return GFX_IOCTL_OK;
+        }
+        case GFX_IOCTL_GET_STATUS:
+        {
+            unsigned int i;
+            val = (gfxIOCTLArg_Value*)arg;
+            
+            val->value.v_uint = 0;
+            
+            for (i = 0; i < GFX_GLCD_LAYERS; i++)
+            {
+                if (drvLayer[i].updateLock != LAYER_UNLOCKED)
+                {
+                    val->value.v_uint = 1;
+
+                    break;
+                }
+            }
+
             return GFX_IOCTL_OK;
         }		
         default:

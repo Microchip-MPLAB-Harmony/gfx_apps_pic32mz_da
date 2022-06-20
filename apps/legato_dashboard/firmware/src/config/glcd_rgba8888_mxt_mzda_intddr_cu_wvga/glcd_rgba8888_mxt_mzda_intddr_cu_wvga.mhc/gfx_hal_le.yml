@@ -117,14 +117,14 @@ children:
     - type: Values
       children:
       - type: Dynamic
-        attributes: {id: le_gfx_driver_glcd, value: '20000000'}
+        attributes: {id: le_gfx_driver_glcd, value: '25000000'}
   - type: Integer
     attributes: {id: RefreshRate}
     children:
     - type: Values
       children:
       - type: Dynamic
-        attributes: {id: gfx_hal_le, value: '40'}
+        attributes: {id: gfx_hal_le, value: '50'}
   - type: String
     attributes: {id: gfx_display}
     children:

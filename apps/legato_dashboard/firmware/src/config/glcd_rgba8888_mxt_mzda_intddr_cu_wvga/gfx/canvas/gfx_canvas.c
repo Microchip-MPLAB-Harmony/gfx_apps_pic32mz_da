@@ -173,27 +173,58 @@ gfxPixelBuffer * GFXC_GetPixelBuffer(int32_t idx)
     return &canvas[baseCanvasID + activeCanvasID].pixelBuffer;
 }
 
+static gfxResult GFXC_BufferBlit(const gfxPixelBuffer* source,
+                            const gfxRect* rectSrc,
+                            const gfxPixelBuffer* dest,
+                            const gfxRect* rectDest)
+{
+    void* srcPtr;
+    void* destPtr;
+    uint32_t row, rowSize;
+    unsigned int width, height;
+    width = (rectSrc->width < rectDest->width) ? 
+                 rectSrc->width : rectDest->width;
+    height = (rectSrc->height < rectDest->height) ? 
+                 rectSrc->height : rectDest->height;
+    rowSize = width * gfxColorInfoTable[dest->mode].size;
+
+    for(row = 0; row < height; row++)
+    {
+        srcPtr = gfxPixelBufferOffsetGet(source, rectSrc->x, rectSrc->y + row);
+        destPtr = gfxPixelBufferOffsetGet(dest, rectDest->x, rectDest->y + row);
+
+        memcpy(destPtr, srcPtr, rowSize);
+    }        
+
+    return GFX_SUCCESS;
+}
+
 gfxResult GFXC_BlitBuffer(int32_t x,
                           int32_t y,
                           gfxPixelBuffer* buf)
 {
-    void* srcPtr;
-    void* destPtr;
-    uint32_t row, rowSize;    
+    gfxRect srcRect, destRect;   
 
-    if (gfxcState != GFXC_RUNNING)
-        return GFX_FAILURE;
+	if (gfxcState != GFXC_RUNNING)
+	{
+		return GFX_FAILURE;
+	}
 
-    rowSize = buf->size.width * gfxColorInfoTable[buf->mode].size;
+	srcRect.x = 0;
+    srcRect.y = 0;
+    srcRect.height = buf->size.height;
+    srcRect.width = buf->size.width;
 
-    for(row = 0; row < buf->size.height; row++)
-    {
-        srcPtr = gfxPixelBufferOffsetGet(buf, 0, row);
-        destPtr = gfxPixelBufferOffsetGet(&canvas[baseCanvasID + activeCanvasID].pixelBuffer,
-                                          x, y + row);
+    destRect.x = x;
+    destRect.y = y;
+    destRect.height = buf->size.height;
+    destRect.width = buf->size.width;
+	
+	GFXC_BufferBlit(buf, 
+					&srcRect, 
+					&canvas[baseCanvasID + activeCanvasID].pixelBuffer,
+					&destRect);
 
-        memcpy(destPtr, srcPtr, rowSize);
-    }
 
     return GFX_SUCCESS;
 }
@@ -281,6 +312,7 @@ GFXC_RESULT _gfxcCanvasUpdate(unsigned int canvasID)
         setColorModeParm.base.id = canvas[canvasID].layer.id;
         setColorModeParm.value.v_uint = (unsigned int) canvas[canvasID].pixelBuffer.mode;
         
+		//This is the physical resolution of the layer pixel buffer
         setResParm.base.id = canvas[canvasID].layer.id;
         setResParm.width = canvas[canvasID].pixelBuffer.size.width;
         setResParm.height = canvas[canvasID].pixelBuffer.size.height;
@@ -296,12 +328,12 @@ GFXC_RESULT _gfxcCanvasUpdate(unsigned int canvasID)
         setAlphaParm.base.id = canvas[canvasID].layer.id;
         setAlphaParm.value.v_uint = canvas[canvasID].layer.alpha;   
 
+		//align offsets for non-32bpp frames
+        if (gfxColorInfoTable[canvas[canvasID].pixelBuffer.mode].size != 4)
+            setPositionParm.x &= ~0x3;
+			
         if (setPositionParm.x < 0)
         {
-            //align offsets for 8bpp frames
-            if (gfxColorInfoTable[canvas[canvasID].pixelBuffer.mode].size == 1)
-                setPositionParm.x = -(abs(setPositionParm.x) & ~0x3);
-
             setBaseAddressParm.value.v_uint += abs(setPositionParm.x) * 
                     gfxColorInfoTable[canvas[canvasID].pixelBuffer.mode].size; 
 
@@ -540,6 +572,15 @@ static GFXC_RESULT gfxcProcessMoveEffect(GFXC_CANVAS * cnvs)
     return retval;
 }
 
+GFXC_STATUS _gfxcGetStatus(void)
+{
+    gfxIOCTLArg_Value val;
+    
+    GFX_CANVAS_IOCTL(GFX_IOCTL_GET_STATUS, &val);
+            
+    return (val.value.v_uint == 0) ? GFXC_STAT_IDLE : GFXC_STAT_BUSY;
+}
+
 void GFX_CANVAS_Task(void)
 {
     switch(gfxcState)
@@ -715,6 +756,33 @@ gfxDriverIOCTLResponse GFX_CANVAS_IOCTL(gfxDriverIOCTLRequest request,
             else
                 return GFX_FAILURE;
         }
+        case GFX_IOCTL_GET_STATUS:
+        {
+            unsigned int i = CANVAS_ID_INVALID;
+            val = (gfxIOCTLArg_Value*)arg;
+            
+            val->value.v_uint = 0;
+
+            //Try to allocate from static canvas objects
+            for (i = 0; i < CONFIG_NUM_CANVAS_OBJ; i++)
+            {
+                if (canvas[i].effects.fade.status != GFXC_FX_IDLE ||
+                    canvas[i].effects.move.status != GFXC_FX_IDLE)
+                {
+                    val->value.v_uint = 1;
+                    break;
+                }
+
+                if (canvas[i].active == GFX_TRUE)
+                {
+                    if (gfxDispCtrlr != NULL)
+                        return gfxDispCtrlr->ioctl(GFX_IOCTL_GET_STATUS, 
+                                                   (gfxIOCTLArg_Value*) arg);
+                }
+            }
+
+            return GFX_IOCTL_OK;        
+        }		
         default:
         {
             if (request >= GFX_IOCTL_LAYER_REQ_START && 

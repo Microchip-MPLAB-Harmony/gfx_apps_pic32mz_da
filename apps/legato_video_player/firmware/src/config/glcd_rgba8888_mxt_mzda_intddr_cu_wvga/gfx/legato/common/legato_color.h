@@ -144,22 +144,22 @@ typedef enum leColorMask
  */
 typedef enum leColorMode
 {
-    LE_COLOR_MODE_GS_8       = 0x0,
+    LE_COLOR_MODE_GS_8       = 0,
     LE_COLOR_MODE_PALETTE    = LE_COLOR_MODE_GS_8,
-    LE_COLOR_MODE_RGB_332    = 0x1,
-    LE_COLOR_MODE_RGB_565    = 0x2,
-    LE_COLOR_MODE_RGBA_5551  = 0x3,
-    LE_COLOR_MODE_RGB_888    = 0x4,
-    LE_COLOR_MODE_RGBA_8888  = 0x5,
-    LE_COLOR_MODE_ARGB_8888  = 0x6,
-    LE_COLOR_MODE_INDEX_1    = 0x7,
-    LE_COLOR_MODE_INDEX_4    = 0x8,
-    LE_COLOR_MODE_INDEX_8    = 0x9,
-    LE_COLOR_MODE_LAST = LE_COLOR_MODE_INDEX_8
+    LE_COLOR_MODE_RGB_332    = 1,
+    LE_COLOR_MODE_RGB_565    = 2,
+    LE_COLOR_MODE_RGBA_5551  = 3,
+    LE_COLOR_MODE_RGB_888    = 4,
+    LE_COLOR_MODE_RGBA_8888  = 5,
+    LE_COLOR_MODE_ARGB_8888  = 6,
+    LE_COLOR_MODE_INDEX_1    = 7,
+    LE_COLOR_MODE_INDEX_4    = 8,
+    LE_COLOR_MODE_INDEX_8    = 9,
+    LE_COLOR_MODE_MONOCHROME = 10
 } leColorMode;
 
-#define LE_COLOR_MODE_LAST_COLOR     (LE_COLOR_MODE_ARGB_8888)
-#define LE_COLOR_MODE_COUNT          (LE_COLOR_MODE_LAST + 1)
+#define LE_COLOR_MODE_LAST_COLOR     (LE_COLOR_MODE_MONOCHROME)
+#define LE_COLOR_MODE_COUNT          (LE_COLOR_MODE_LAST_COLOR + 1)
 
 #define LE_COLOR_MODE_IS_PIXEL(mode) ((mode >= LE_COLOR_MODE_GS_8) && (mode <= LE_COLOR_MODE_ARGB_8888))
 #define LE_COLOR_MODE_IS_INDEX(mode) ((mode >= LE_COLOR_MODE_INDEX_1) && (mode <= LE_COLOR_MODE_INDEX_8))
@@ -280,6 +280,21 @@ typedef enum leColorName
     LE_COLOR_NAVY,
     LE_COLOR_LAST
 } leColorName;
+
+/**
+ * @brief This struct represents a blend color lookup table.
+ * @details A blend color lookup table is allows for a fast blending
+ * result based on a lookup table versus having to perform the calculation
+ * mathematically.
+ */
+typedef struct leBlendLookupTable
+{
+    leColor foreground;   /**< The table foreground color */
+    leColor background;   /**< The table background color */
+    leColorMode mode;     /**< The table color mode. */
+
+    const void* data;     /**< Pointer to a buffer which holds the lookup values. */
+} leBlendLookupTable;
 
 // *****************************************************************************
 // *****************************************************************************
@@ -673,7 +688,18 @@ leColor leColorBilerp(leColor c00,
                       uint32_t yper,
                       leColorMode mode);
 
+/**
+ * @brief Swaps the red and blue channels for a given color value.
+ * @details Swaps the red and blue channels for a given color value.
+ *  This can change an RGB color to BGR and vice versa.
+ * @code
+ * @endcode
+ * @param clr is the color value.
+ * @param mode is the color value mode.
+ * @return the result color.
+ */
 leColor leColorSwap(leColor clr,
                     leColorMode mode);
+
 
 #endif /* LE_COLOR_H */

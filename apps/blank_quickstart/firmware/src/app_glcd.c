@@ -67,7 +67,7 @@ SUBSTITUTE GOODS, TECHNOLOGY, SERVICES, OR ANY CLAIMS BY THIRD PARTIES
 // *****************************************************************************
 // *****************************************************************************
 extern const uint8_t StartWithBlankText_data[32000];
-extern const uint8_t NewHarmonyLogo_data[41280];
+extern const uint8_t NewHarmonyLogo_data[121680];
 // *****************************************************************************
 /* Application Data
 
@@ -86,6 +86,7 @@ extern const uint8_t NewHarmonyLogo_data[41280];
 APP_GLCD_DATA appData;
 gfxPixelBuffer imageBuffer;
 gfxPixelBuffer textBuffer;
+SYS_INP_InputListener appInputListener;
 
 // *****************************************************************************
 // *****************************************************************************
@@ -93,8 +94,67 @@ gfxPixelBuffer textBuffer;
 // *****************************************************************************
 // *****************************************************************************
 
-/* TODO:  Add any necessary callback functions.
-*/
+void APP_SYSFSEventHandler(SYS_FS_EVENT event, void * eventData, uintptr_t context)
+{
+    switch(event)
+    {
+        case SYS_FS_EVENT_MOUNT:
+        {
+            if (strcmp((const char *)eventData, SDCARD_MOUNT_NAME) == 0)
+            {
+#ifdef RGB_LED_G_On               
+                RGB_LED_G_On();
+#else
+                LED3_On();
+#endif                
+            }
+            break;
+        }   
+        case SYS_FS_EVENT_UNMOUNT:
+        {
+            if (strcmp((const char *)eventData, SDCARD_MOUNT_NAME) == 0)
+            {
+#ifdef RGB_LED_G_Off               
+                RGB_LED_G_Off();
+#else
+                LED3_Off();
+#endif                
+            }         
+            break;
+        }   
+        default:
+            break;
+    }
+}
+
+static void touchDownHandler(const SYS_INP_TouchStateEvent* const evt)
+{
+#ifdef RGB_LED_B_On               
+    RGB_LED_B_On();
+#else
+    LED2_On();
+#endif                
+}
+
+static void touchUpHandler(const SYS_INP_TouchStateEvent* const evt)
+{
+#ifdef RGB_LED_B_Off               
+    RGB_LED_B_Off();
+    RGB_LED_R_Off();
+#else
+    LED2_Off();
+    LED1_Off();
+#endif                
+}
+
+static void touchMoveHandler(const SYS_INP_TouchMoveEvent* const evt)
+{
+#ifdef RGB_LED_R_On               
+    RGB_LED_R_On();
+#else
+    LED1_On();
+#endif                
+}
 
 // *****************************************************************************
 // *****************************************************************************
@@ -103,8 +163,71 @@ gfxPixelBuffer textBuffer;
 // *****************************************************************************
 
 
-/* TODO:  Add any necessary local functions.
-*/
+static void APP_PaintFrameWithBuffer(
+	gfxPixelBuffer* buf,
+	int x,
+	int y)
+{
+	gfxPixelBuffer* frameBuff;
+	gfxBuffer pixel;
+	gfxColor clr;
+	gfxPoint pnt;
+	int i, j;
+	gfxIOCTLArg_Value ioctlArg;
+
+	ioctlArg.value.v_uint = 0; //set active layer to the first layer
+
+	if (gfxDriverInterface.ioctl(GFX_IOCTL_SET_ACTIVE_LAYER, &ioctlArg) != GFX_IOCTL_OK ||
+		gfxDriverInterface.ioctl(GFX_IOCTL_GET_FRAMEBUFFER, &ioctlArg) != GFX_IOCTL_OK)
+	{
+		return;
+	}
+
+	frameBuff = ioctlArg.value.v_pbuffer;
+
+	for (i = 0; i < buf->size.height; i++)
+	{
+		for (j = 0; j < buf->size.width; j++)
+		{
+			pnt.x = j;
+			pnt.y = i;
+
+			clr = gfxColorConvert(buf->mode,
+				frameBuff->mode,
+				gfxPixelBufferGet(buf, pnt.x, pnt.y));
+
+			pixel = gfxPixelBufferOffsetGet(frameBuff, pnt.x + x, pnt.y + y);
+
+			memcpy(pixel, &clr, gfxColorInfoTable[frameBuff->mode].size);
+		}
+	}
+}
+
+static void APP_PaintFrameWithColor(
+	gfxColor color,
+	uint32_t x,
+	uint32_t y,
+	uint32_t width,
+	uint32_t height)
+{
+	gfxPixelBuffer * frameBuff;
+	gfxIOCTLArg_Value ioctlArg;
+	gfxBuffer pixel;
+
+	ioctlArg.value.v_uint = 0; //set active layer to the first layer
+
+	if (gfxDriverInterface.ioctl(GFX_IOCTL_SET_ACTIVE_LAYER, &ioctlArg) != GFX_IOCTL_OK)
+		return;
+
+	if (gfxDriverInterface.ioctl(GFX_IOCTL_GET_FRAMEBUFFER, &ioctlArg) == GFX_IOCTL_OK)
+	{
+		frameBuff = ioctlArg.value.v_pbuffer;
+
+		pixel = gfxPixelBufferOffsetGet(frameBuff, x, y);
+
+		memset(pixel, color, width * height * gfxColorInfoTable[frameBuff->mode].size);
+	}
+}
 
 
 // *****************************************************************************
@@ -133,74 +256,6 @@ void APP_GLCD_Initialize ( void )
      */
 }
 
-/*******************************************************************************
-  Function:
-    void APP_Initialize ( void )
-
- */
-static void APP_PaintFrameWithBuffer(
-                    gfxPixelBuffer* buf,
-                    int x,
-                    int y)
-{
-    gfxPixelBuffer* frameBuff;
-    gfxBuffer pixel;
-    gfxColor clr;
-    gfxPoint pnt;
-    int i, j;
-    gfxIOCTLArg_Value ioctlArg;
-
-    ioctlArg.value.v_uint = 0; //set active layer to the first layer
-    
-    if (gfxDriverInterface.ioctl(GFX_IOCTL_SET_ACTIVE_LAYER, &ioctlArg) != GFX_IOCTL_OK ||
-            gfxDriverInterface.ioctl(GFX_IOCTL_GET_FRAMEBUFFER, &ioctlArg) != GFX_IOCTL_OK)
-    {
-        return;
-    }
-    
-    frameBuff = ioctlArg.value.v_pbuffer;
-
-    for (i = 0; i < buf->size.height; i++) 
-    {
-        for (j = 0; j < buf->size.width; j++) 
-        {
-            pnt.x = j;
-            pnt.y = i;
-            
-            clr = gfxColorConvert(buf->mode,
-                                  frameBuff->mode,
-                                  gfxPixelBufferGet(buf, pnt.x, pnt.y));
-            
-            pixel = gfxPixelBufferOffsetGet(frameBuff, pnt.x + x, pnt.y + y);
-            
-            memcpy(pixel, &clr, gfxColorInfoTable[frameBuff->mode].size);
-        }
-    }
-}
-
-static void APP_PaintFrameWithColor(
-                    uint16_t color,
-                    uint32_t x,
-                    uint32_t y,
-                    uint32_t width,
-                    uint32_t height)
-{
-    gfxPixelBuffer * frameBuff;
-    gfxIOCTLArg_Value ioctlArg;
-    
-    ioctlArg.value.v_uint = 0; //set active layer to the first layer
-    
-    if (gfxDriverInterface.ioctl(GFX_IOCTL_SET_ACTIVE_LAYER, &ioctlArg) != GFX_IOCTL_OK)
-        return;
-    
-    if (gfxDriverInterface.ioctl(GFX_IOCTL_GET_FRAMEBUFFER, &ioctlArg) == GFX_IOCTL_OK)
-    {
-        frameBuff = ioctlArg.value.v_pbuffer;
-        memset(frameBuff->pixels, color, APP_GFX_LAYER_WIDTH_PIXELS * APP_GFX_LAYER_HEIGHT_PIXELS * 2);
-    }
-}
-
-
 /******************************************************************************
   Function:
     void APP_Tasks ( void )
@@ -219,16 +274,25 @@ void APP_GLCD_Tasks ( void )
         case APP_STATE_INIT:
         {
             bool appInitialized = true;
-                       
-            gfxPixelBufferCreate(172,
-                    120,
-                    GFX_COLOR_MODE_RGB_565,
+
+            //Register the Filesystem event handler
+            SYS_FS_EventHandlerSet((void *)APP_SYSFSEventHandler, (uintptr_t)NULL);
+
+            // Register the input event handlers
+            appInputListener.handleTouchDown = &touchDownHandler;
+            appInputListener.handleTouchUp = &touchUpHandler;
+            appInputListener.handleTouchMove = &touchMoveHandler;
+            SYS_INP_AddListener(&appInputListener);            
+            
+            gfxPixelBufferCreate(180,
+                    169,
+                    GFX_COLOR_MODE_RGBA_8888,
                     NewHarmonyLogo_data,
                     &imageBuffer);
             
-            gfxPixelBufferCreate(240,
-                    40,
-                    GFX_COLOR_MODE_RGB_565,
+            gfxPixelBufferCreate(267,
+                    22,
+                    GFX_COLOR_MODE_RGBA_8888,
                     StartWithBlankText_data,
                     &textBuffer);
                 
@@ -247,19 +311,19 @@ void APP_GLCD_Tasks ( void )
         {
             //Paint Layer 0 with white
             APP_PaintFrameWithColor(
-                    0xFF,
+                    0xFFFFFFFF,
                     0,
                     0,
                     APP_GFX_LAYER_WIDTH_PIXELS,
                     APP_GFX_LAYER_HEIGHT_PIXELS);
             
             //Draw Harmony Logo on Layer 1
-            APP_PaintFrameWithBuffer(&imageBuffer, 151, 50);
+            APP_PaintFrameWithBuffer(&imageBuffer, 151, 25);
             
             appData.state = APP_STATE_PROCESS;
 
             //Draw Text on Layer 2
-            APP_PaintFrameWithBuffer(&textBuffer, 115, 200);
+            APP_PaintFrameWithBuffer(&textBuffer, 115, 225);
             
             appData.state = APP_STATE_PROCESS;
             
@@ -276,7 +340,6 @@ void APP_GLCD_Tasks ( void )
         /* The default state should never be executed. */
         default:
         {
-            LED1_On();
             //Light the LED for error
             break;
         }

@@ -70,7 +70,8 @@ typedef enum leImageFormat
     LE_IMAGE_FORMAT_RAW = 0,
     LE_IMAGE_FORMAT_RLE,
     LE_IMAGE_FORMAT_JPEG,
-    LE_IMAGE_FORMAT_PNG
+    LE_IMAGE_FORMAT_PNG,
+    LE_IMAGE_FORMAT_MONO
 } leImageFormat;
 
 #define LE_IMAGE_FORMAT_COUNT (LE_IMAGE_FORMAT_RLE + 1)
@@ -91,7 +92,8 @@ typedef enum leImageFlags
     LE_IMAGE_USE_MASK_COLOR  = 1 << 0,
     LE_IMAGE_USE_MASK_MAP    = 1 << 1,
     LE_IMAGE_USE_ALPHA_MAP   = 1 << 2,
-    LE_IMAGE_INTERNAL_ALLOC  = 1 << 3
+    LE_IMAGE_INTERNAL_ALLOC  = 1 << 3,
+    LE_IMAGE_DIRECT_BLIT     = 1 << 4
 } leImageFlags;
 
 // *****************************************************************************
@@ -726,7 +728,7 @@ leResult leImage_RotateDraw(const leImage* src,
  * @param mode the new color mode of the image
  */
 void leProcessImage(leImage* img,
-                    uint32_t addr,
+                    size_t addr,
                     leColorMode mode);
 
 #endif /* LE_IMAGE_H */

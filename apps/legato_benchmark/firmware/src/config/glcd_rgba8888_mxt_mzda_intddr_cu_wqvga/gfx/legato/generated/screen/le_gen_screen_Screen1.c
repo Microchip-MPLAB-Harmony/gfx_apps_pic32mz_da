@@ -1,7 +1,7 @@
 #include "gfx/legato/generated/screen/le_gen_screen_Screen1.h"
 
 // screen member widget declarations
-leWidget* root0;
+static leWidget* root0;
 
 leWidget* Screen1_FPSBackground;
 leLabelWidget* Screen1_FPSCounterValue;
@@ -155,6 +155,8 @@ leResult screenShow_Screen1(void)
 
 void screenUpdate_Screen1(void)
 {
+    root0->fn->setSize(root0, root0->parent->rect.width, root0->parent->rect.height);
+
     Screen1_OnUpdate(); // raise event
 }
 

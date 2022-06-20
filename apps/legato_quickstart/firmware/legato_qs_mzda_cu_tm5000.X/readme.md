@@ -48,7 +48,7 @@ The final setup should be:
 Configure the hardware as follows:
 
 -   Attach the 24-bit Pass-through Card to the J601 connector on the PIC32MZ DA Curiosity board
--   Connect the ribbon cable from the WQVGA display to the J2 connector on the RGB565 GFX Interface card.
+-   Connect the ribbon cable from the WQVGA display to the J2 connector on the 24-bit Pass-through Card.
 -   Connect a USB cable from the host computer to the DEBUG USB port on the PIC32MZ DA Curiosity board. This USB connection is used for power, code download and debugging.
 
 The final hardware setup should be:

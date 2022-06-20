@@ -1,0 +1,44 @@
+format_version: v1.0
+type: UniqueComponent
+attributes: {id: sys_command}
+children:
+- type: Symbols
+  children:
+  - type: Integer
+    attributes: {id: SYS_COMMAND_PRINT_BUFFER_SIZE}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: legato_gfx_LCF0300633GGU00, value: '512'}
+  - type: String
+    attributes: {id: SYS_CONSOLE_DEVICE}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: sys_command, value: SYS_CONSOLE_1}
+  - type: String
+    attributes: {id: SYS_CONSOLE_INDEX}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: sys_command, value: '1'}
+- type: Attachments
+  children:
+  - type: DirectDependency
+    attributes: {id: sys_command_SYS_CONSOLE_dependency}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: targetComponentID}
+        children:
+        - {type: Value, value: sys_console_1}
+      - type: String
+        attributes: {id: targetAttachmentID}
+        children:
+        - {type: Value, value: sys_console}
+- type: ElementPosition
+  attributes: {x: '360', y: '538', id: sys_command}

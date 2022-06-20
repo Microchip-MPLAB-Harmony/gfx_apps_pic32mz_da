@@ -77,6 +77,26 @@ void _SYS_INPUT_Tasks(  void *pvParameters  )
     }
 }
 
+
+void _SYS_FS_Tasks(  void *pvParameters  )
+{
+    while(1)
+    {
+        SYS_FS_Tasks();
+        vTaskDelay(10 / portTICK_PERIOD_MS);
+    }
+}
+
+
+void _DRV_SDMMC0_Tasks(  void *pvParameters  )
+{
+    while(1)
+    {
+        DRV_SDMMC_Tasks(sysObj.drvSDMMC0);
+        vTaskDelay(DRV_SDMMC_RTOS_DELAY_IDX0 / portTICK_PERIOD_MS);
+    }
+}
+
 void _DRV_MAXTOUCH_Tasks(  void *pvParameters  )
 {
     while(1)
@@ -118,6 +138,25 @@ void SYS_Tasks ( void )
 {
     /* Maintain system services */
     
+    xTaskCreate( _SYS_FS_Tasks,
+        "SYS_FS_TASKS",
+        SYS_FS_STACK_SIZE,
+        (void*)NULL,
+        SYS_FS_PRIORITY,
+        (TaskHandle_t*)NULL
+    );
+
+    xTaskCreate( _DRV_SDMMC0_Tasks,
+        "DRV_SDMMC0_Tasks",
+        DRV_SDMMC_STACK_SIZE_IDX0,
+        (void*)NULL,
+        DRV_SDMMC_PRIORITY_IDX0,
+        (TaskHandle_t*)NULL
+    );
+
+
+
+
 
     /* Maintain Device Drivers */
         xTaskCreate( _GLCD_Tasks,

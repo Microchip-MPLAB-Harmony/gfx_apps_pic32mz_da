@@ -204,6 +204,7 @@ const DRV_I2C_INIT drvI2C0InitData =
 const DRV_MAXTOUCH_INIT drvMAXTOUCHInitData =
 {
     .drvOpen                     = DRV_I2C_Open,
+    .drvClose                    = DRV_I2C_Close,
     .orientation                 = 0,
     .horizontalResolution        = 480,
     .verticalResolution          = 272,
@@ -275,12 +276,12 @@ const SYS_TIME_INIT sysTimeInitData =
 
 void SYS_Initialize ( void* data )
 {
+
     /* Start out with interrupts disabled before configuring any modules */
     __builtin_disable_interrupts();
 
   
     CLK_Initialize();
-    
     /* Configure Prefetch, Wait States and ECC */
     PRECONbits.PREFEN = 3;
     PRECONbits.PFMWS = 2;
