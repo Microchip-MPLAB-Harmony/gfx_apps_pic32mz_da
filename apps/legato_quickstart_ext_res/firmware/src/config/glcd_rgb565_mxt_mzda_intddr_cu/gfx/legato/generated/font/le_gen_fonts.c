@@ -5184,7 +5184,7 @@ leRasterFont NotoSansCJKtc_Regular =
     {
         {
             LE_STREAM_LOCATION_ID_SQI, // data location id
-            (void*)0, // glyph table data address
+            (void*)103331, // glyph table data address
             1524880, // data size
         },
         LE_RASTER_FONT,

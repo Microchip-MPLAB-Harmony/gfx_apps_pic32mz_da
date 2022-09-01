@@ -1,4 +1,4 @@
-<config configName="glcd_rgba8888_mxt_mzda_intddr_cu_wvga" projectName="legato_video_player_mzda_cu_tm5000" configVersion="1.1" device="PIC32MZ2064DAR176" deviceLibraryClass="com.microchip.mcc.harmony.Harmony3Library" coreVersion="5.4.3">
+<config configName="glcd_rgba8888_mxt_mzda_intddr_cu_wvga" projectName="legato_video_player_mzda_cu_tm5000" configVersion="1.1" device="PIC32MZ2064DAR176" deviceLibraryClass="com.microchip.mcc.harmony.Harmony3Library" coreVersion="5.4.11">
    <usedPackages class="java.util.ArrayList"/>
    <usedClasses class="java.util.TreeMap">
       <entry>
@@ -4431,17 +4431,7 @@
          <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;drv_i2c_0&gt;
   &lt;drv_i2c_0 dnOrder=&quot;0&quot;&gt;
     &lt;Attachments dnOrder=&quot;0&quot;&gt;
-      &lt;DirectCapability dnOrder=&quot;0&quot; id=&quot;drv_i2c&quot;&gt;
-        &lt;Attributes dnOrder=&quot;0&quot;&gt;
-          &lt;String dnOrder=&quot;0&quot; id=&quot;targetComponentID&quot;&gt;
-            &lt;Value dnOrder=&quot;0&quot;&gt;gfx_maxtouch_controller&lt;/Value&gt;
-          &lt;/String&gt;
-          &lt;String dnOrder=&quot;1&quot; id=&quot;targetAttachmentID&quot;&gt;
-            &lt;Value dnOrder=&quot;0&quot;&gt;i2c&lt;/Value&gt;
-          &lt;/String&gt;
-        &lt;/Attributes&gt;
-      &lt;/DirectCapability&gt;
-      &lt;DirectDependency dnOrder=&quot;1&quot; id=&quot;drv_i2c_I2C_dependency&quot;&gt;
+      &lt;DirectDependency dnOrder=&quot;0&quot; id=&quot;drv_i2c_I2C_dependency&quot;&gt;
         &lt;Attributes dnOrder=&quot;0&quot;&gt;
           &lt;String dnOrder=&quot;0&quot; id=&quot;targetComponentID&quot;&gt;
             &lt;Value dnOrder=&quot;0&quot;&gt;i2c2&lt;/Value&gt;
@@ -5110,17 +5100,7 @@
          <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;gfx_maxtouch_controller&gt;
   &lt;gfx_maxtouch_controller dnOrder=&quot;0&quot;&gt;
     &lt;Attachments dnOrder=&quot;0&quot;&gt;
-      &lt;DirectDependency dnOrder=&quot;0&quot; id=&quot;i2c&quot;&gt;
-        &lt;Attributes dnOrder=&quot;0&quot;&gt;
-          &lt;String dnOrder=&quot;0&quot; id=&quot;targetComponentID&quot;&gt;
-            &lt;Value dnOrder=&quot;0&quot;&gt;drv_i2c_0&lt;/Value&gt;
-          &lt;/String&gt;
-          &lt;String dnOrder=&quot;1&quot; id=&quot;targetAttachmentID&quot;&gt;
-            &lt;Value dnOrder=&quot;0&quot;&gt;drv_i2c&lt;/Value&gt;
-          &lt;/String&gt;
-        &lt;/Attributes&gt;
-      &lt;/DirectDependency&gt;
-      &lt;DirectDependency dnOrder=&quot;1&quot; id=&quot;touch_panel&quot;&gt;
+      &lt;DirectDependency dnOrder=&quot;0&quot; id=&quot;touch_panel&quot;&gt;
         &lt;Attributes dnOrder=&quot;0&quot;&gt;
           &lt;String dnOrder=&quot;0&quot; id=&quot;targetComponentID&quot;&gt;
             &lt;Value dnOrder=&quot;0&quot;&gt;gfx_disp_pdatm5000_800x480&lt;/Value&gt;
@@ -5584,8 +5564,8 @@
     &lt;Attachments dnOrder=&quot;0&quot;&gt;
       &lt;MultiCapability dnOrder=&quot;0&quot; id=&quot;sys_fs_DRV_MEDIA_dependency&quot;&gt;
         &lt;TargetAttachments dnOrder=&quot;0&quot;&gt;
-          &lt;TargetAttachment dnOrder=&quot;0&quot; targetAttachmentID=&quot;drv_media&quot; targetComponentID=&quot;drv_sdmmc_0&quot;/&gt;
-          &lt;TargetAttachment dnOrder=&quot;1&quot; targetAttachmentID=&quot;USB Host MSD&quot; targetComponentID=&quot;usb_host_msd&quot;/&gt;
+          &lt;TargetAttachment dnOrder=&quot;0&quot; targetAttachmentID=&quot;USB Host MSD&quot; targetComponentID=&quot;usb_host_msd&quot;/&gt;
+          &lt;TargetAttachment dnOrder=&quot;1&quot; targetAttachmentID=&quot;drv_media&quot; targetComponentID=&quot;drv_sdmmc_0&quot;/&gt;
         &lt;/TargetAttachments&gt;
       &lt;/MultiCapability&gt;
     &lt;/Attachments&gt;
@@ -5951,7 +5931,7 @@
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu_wvga\gfx\legato\widget\radialmenu\legato_widget_radial_menu.h</file>
-         <hash>0ea1e373baa08a2e86005d296bbb239a3be3b308bf50acb880a4a05bc062d79c</hash>
+         <hash>7d696452908f7d5067122e9e8950f1ea3403c28336c430164f8b04b95ccd3eae</hash>
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu_wvga\peripheral\evic\plib_evic.h</file>
@@ -5963,7 +5943,7 @@
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu_wvga\gfx\legato\renderer\legato_draw_line.c</file>
-         <hash>2344aeec3f4270a9419ea2bbab43e275e3147fd6c83c71f5f8511db8c59c610f</hash>
+         <hash>5a5225ae699e372c0982d245dbdce998d17faee3129fa8d97b8160d43407ce77</hash>
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu_wvga\gfx\driver\processor\2dgpu\libnano2d.h</file>
@@ -5971,11 +5951,11 @@
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu_wvga\gfx\legato\datastructure\legato_array.c</file>
-         <hash>5af0679fa56998e08d3b96d58aa2f39fc6f318ff2fd8b2162c7a8fd8657ba52b</hash>
+         <hash>0c0912af497741bec7b15ee3992245a18a9dd1a57fd34cf34d41073629f1e46d</hash>
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu_wvga\driver\i2c\drv_i2c_definitions.h</file>
-         <hash>48e93b446c00e2ff05fa909dff3eccb8aad1051467c4137e407d37afc4b40ab0</hash>
+         <hash>73ed094aba8f1de3ae1497ff414474f02588381d94801f6beac411f8c7f9b329</hash>
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu_wvga\gfx\legato\common\legato_pixelbuffer.h</file>
@@ -5983,19 +5963,19 @@
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu_wvga\gfx\legato\datastructure\legato_array.h</file>
-         <hash>6a40bd2c577f607734ab0b617fa223c480a5e3dbee4010e10962215c1af6e0fe</hash>
+         <hash>5cf11151d0e350e180620a86c2b2975fe62c429e81b0db45f5aad7f33446bb6b</hash>
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu_wvga\gfx\legato\widget\radialmenu\legato_widget_radial_menu.c</file>
-         <hash>33556348b8ce45267d8cfb08ee3011b406a2ce4a884427fadfbe1fc7a37f5ec4</hash>
+         <hash>779eb1d6fa8090878a3c112a1c6d89173420fb92eb53154faa412f3508bd56c2</hash>
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu_wvga\system\fs\fat_fs\file_system\ff.c</file>
-         <hash>89210dcb75cae2c2c9cf5e835ccd0b5a8dd5860ac9f79661207076b9a4d709e0</hash>
+         <hash>ef75bad24073ec54d3e76b06b26c56b604bb4f063fe6bd9ebe7c80bae94fd6d5</hash>
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu_wvga\gfx\legato\widget\slider\legato_widget_slider.c</file>
-         <hash>095d0709b9f873a9b3f3180f118fa637dfdea50e8d9f6353e8bf046046b86f49</hash>
+         <hash>598a95c15cc5096c046cefeeb2987dbbbd691a783c24e3521e40e07ed680e5ed</hash>
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu_wvga\driver\usb\usbhs\src\templates\usbhs_TxEPStatus_Unsupported.h</file>
@@ -6019,11 +5999,11 @@
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu_wvga\peripheral\evic\plib_evic.c</file>
-         <hash>d1fc8df7165f83f719f8e1a82aa751d21635444affa14218aa9396875718acaf</hash>
+         <hash>b77dde4ce4561331affbd4b47e7df03404edc1d64a6476ecc9a9b1665be3b80b</hash>
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu_wvga\gfx\legato\widget\slider\legato_widget_slider.h</file>
-         <hash>cc332c292b1f0648b7016e496f53a39a88170014dcf60496f01ab61958104e7d</hash>
+         <hash>951ab0c001d95cc75937a4df525c86614b5e1e24ae63fa123cabfa23305a09fc</hash>
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu_wvga\usb\usb_host.h</file>
@@ -6051,7 +6031,7 @@
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu_wvga\gfx\legato\widget\circulargauge\legato_widget_circular_gauge_skin_classic.c</file>
-         <hash>d2f11c35da7f40a3626a55a02ce616792f5acc48e4f54ee24c46cff9cbc3e68b</hash>
+         <hash>dfeed151d24ec901c73ab5c629327620a305c123a5e4b6770d4dadaa01e7fcdd</hash>
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu_wvga\gfx\legato\widget\legato_widget_skin_classic_common.h</file>
@@ -6067,15 +6047,15 @@
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu_wvga\gfx\legato\core\legato_stream.h</file>
-         <hash>dd83df530d2638cf298350747e49b4287cab0adea8ed72e1b7e18554aa78d121</hash>
+         <hash>24fe0fa035f27481ed9a8f40b8d2169cca52dd342fdfa9fbcda066d79f466e11</hash>
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu_wvga\definitions.h</file>
-         <hash>7ac3aa0bea8cfcb218c7be495405466472e8a2e4cb761d6a4912c684d6d3f834</hash>
+         <hash>852fd34ee1c927031353e8e5fbbf9e00f4807f74b153d3b9632e7a15911ce153</hash>
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu_wvga\gfx\legato\widget\bargraph\legato_widget_bar_graph_skin_classic.c</file>
-         <hash>b6a1351a87cb192a468a7bc38a9605e715a11850db5377aa44931bd35df33747</hash>
+         <hash>d1392d45deba7cf0caca94d2f5f3fef92927bde7e827003d95356654c22ba178</hash>
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu_wvga\driver\usb\usbhs\src\templates\usbhs_EP0Status_Unsupported.h</file>
@@ -6095,7 +6075,7 @@
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu_wvga\system\fs\fat_fs\file_system\ff.h</file>
-         <hash>910fa58ceb264c7e03edce224b6484fc2fba3c8d6656975e3c01cd45cdc5d4b3</hash>
+         <hash>d7b45a8f01fcd9923e18f8618408613021f2d36f35c632de31edaf5f4acf6c6b</hash>
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu_wvga\gfx\legato\common\legato_pixelbuffer.c</file>
@@ -6119,7 +6099,7 @@
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu_wvga\gfx\legato\renderer\legato_gpu.h</file>
-         <hash>9729a96a8d73007df72a13110c158bd5fbddc844527878c65e54885430f93f85</hash>
+         <hash>ee697fe9fbe34a099121d2a5e6b1b5d2f3bf2c49a5fcabef34cb296a19384aa0</hash>
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu_wvga\gfx\legato\image\legato_image.c</file>
@@ -6131,15 +6111,15 @@
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu_wvga\gfx\legato\widget\label\legato_widget_label.c</file>
-         <hash>acfc30bc34257cd99e44ac67d5efd559c44ea40450a55516178b36a4b4acd598</hash>
+         <hash>4db3d7cdf29ede7f8f87431a0da6e2d94356bbcc7cebe8e83c6307e34f67ea3a</hash>
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu_wvga\gfx\legato\widget\textfield\legato_widget_textfield.h</file>
-         <hash>5dfb5278363072469c5c958790bfd1184056ae7dc23fcb3e64cca737186da68b</hash>
+         <hash>c5812ba643d018f40166c5d74c862fd5a0f0e2421e7c2955e5d363c5b1ec531e</hash>
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu_wvga\gfx\legato\image\raw\legato_imagedecoder_raw.c</file>
-         <hash>3d1c027582d5d515f28a7ad2961e4d0cab087958e5fe5f0c849e9bea625544e6</hash>
+         <hash>9946d4b12dfb72e2b5a4e41d7111ba2bc963871457948e92b9e381e673f411ab</hash>
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu_wvga\gfx\legato\core\legato_event.c</file>
@@ -6147,7 +6127,7 @@
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu_wvga\gfx\legato\widget\textfield\legato_widget_textfield.c</file>
-         <hash>fe791583fa7a1253046c5d2d728bd1c697a2fe023438286d9b17b73803eb6c71</hash>
+         <hash>5aa52da5c54fb68258176a1bbd534c613afb2f3833152c6941837f3f1bca2ad7</hash>
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu_wvga\usb\src\usb_external_dependencies.h</file>
@@ -6155,11 +6135,11 @@
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu_wvga\gfx\legato\image\legato_image.h</file>
-         <hash>a478775d3560e86c1f9933877c19531a6f2fbdbdca84b601cea7d091c63ab431</hash>
+         <hash>eac79467eeba5158cc581ab5fd98a9a8a0266bf34d3f3e35d9f1de44f5d29245</hash>
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu_wvga\gfx\legato\renderer\legato_gpu.c</file>
-         <hash>b0756ce63da7917dd1e428263ecd81410290af0c8a19255ff872dae39e6ef1c5</hash>
+         <hash>8f88939c0ee727618b4ca718f34d67cce3ccf555fbb125bff1e3057b0542eb17</hash>
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu_wvga\gfx\legato\generated\le_gen_init.c</file>
@@ -6167,7 +6147,7 @@
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu_wvga\gfx\driver\controller\glcd\drv_gfx_glcd.c</file>
-         <hash>6b84e67e12a4d2e7fd5bf232500e784e0cfa93283ccfc978b0b9fa04d6a8e2b8</hash>
+         <hash>adef12ee36a1ab8646249f56f3ac3ff650152c6c69c8446a0f41641edcc20b34</hash>
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu_wvga\gfx\legato\string\legato_stringtable.c</file>
@@ -6175,7 +6155,7 @@
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu_wvga\gfx\legato\widget\groupbox\legato_widget_groupbox.c</file>
-         <hash>a9801ac3c76c3b112ad6fabd2a1e1fe320caa399b5b9be1262612aaa22bb08dd</hash>
+         <hash>ea8c4c0c46bc4ee4867dcd0d053986a9272501d12d52c0d5dbfc6b011aecc8fc</hash>
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu_wvga\peripheral\cache\plib_cache.c</file>
@@ -6187,27 +6167,27 @@
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu_wvga\system\debug\sys_debug.h</file>
-         <hash>970de73fb9806906b5429168c66ab403309d8a9cad46febab875a5e6d071525e</hash>
+         <hash>16fbc4bbf026e4713e9b835b1511411e053aaf92ab7d6a000638630576fe92b3</hash>
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu_wvga\gfx\legato\common\legato_math.h</file>
-         <hash>5195d1b72c755ed2a9dc8804c0b118ccc78a806132d681bd6cfed15a03a21289</hash>
+         <hash>f794f16f2feab8180837496d1a067cfc023cf2157a199a82989cce01c76442ed</hash>
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu_wvga\peripheral\gpio\plib_gpio.c</file>
-         <hash>6c8d44adf3e751e1b01f8ec3b9a9467f844ac18bea38a0462f050544cad1f912</hash>
+         <hash>460a9d9cf369accd2d8a6fe4b0d962b9eaa3b10c31344b85e39b3c3c7a836128</hash>
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu_wvga\gfx\legato\widget\groupbox\legato_widget_groupbox.h</file>
-         <hash>0ce7e6250c37b7305022e0ed5689047bc5127171b49b2d66ae1ca92c4a89db34</hash>
+         <hash>8d73449f3a11649a142d7ea2e1714eb0ff1a464bbcd12b933421c3df2267b0d1</hash>
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu_wvga\peripheral\gpio\plib_gpio.h</file>
-         <hash>2e3129d574739af1d7d9d24ffc9e2a750da6ad4983e37a1e572cc969f41d03a2</hash>
+         <hash>0471b3d337fabb795a60ffa5b943630a00268a6b306ec32b1adb7c42b68cd003</hash>
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu_wvga\driver\i2c\drv_i2c.h</file>
-         <hash>c17a0a4f6904f2226706c71821a1dac31171a701181677c9bb512049e20b71a2</hash>
+         <hash>1add02b0380f67be5dc9707f01b290af08eccc0957775327f44a8c1afc823410</hash>
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu_wvga\gfx\legato\image\mono\legato_imagedecoder_mono_read_stream.c</file>
@@ -6223,7 +6203,7 @@
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu_wvga\gfx\legato\string\legato_tablestring.c</file>
-         <hash>78400d186a719bbd674747f01457ba41e122401f320ada98e02b215f0e533ef1</hash>
+         <hash>eb62565c0d757215a476a53285853929e243c0ea68dfc8fa9c1bcc9950fc4a5c</hash>
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu_wvga\gfx\driver\controller\glcd\drv_gfx_glcd.h</file>
@@ -6235,7 +6215,7 @@
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu_wvga\gfx\legato\string\legato_tablestring.h</file>
-         <hash>0539ca068e32afe8f09e7f43cba8eea1d747363f341dd7082475ab2f3adc7532</hash>
+         <hash>4551ff37ce3fb51d88140c4c241e9a60967f7b04fe24a939c36aeec829f8656c</hash>
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu_wvga\peripheral\clk\plib_clk.c</file>
@@ -6247,7 +6227,7 @@
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu_wvga\gfx\legato\string\legato_stringtable.h</file>
-         <hash>d5e329232652f6e05780d9dd7d805806da420a43a0eef1d82503ff3a63cf69a0</hash>
+         <hash>cbcc1a9026a6ee50f02e490f4a8cafc41fd59e4fc356a59ef8f9748d5761eae3</hash>
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu_wvga\gfx\legato\generated\le_gen_init.h</file>
@@ -6263,7 +6243,7 @@
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu_wvga\gfx\legato\image\jpeg\jidctint.c</file>
-         <hash>1151ccb6918bbbd996bcdb20ae212dd4f50b196fe1002cf98bdcf4a9316732db</hash>
+         <hash>8997d893fe52e5702acd160837989e558b8ee3b3c918055eef8647b2d0a8e7d3</hash>
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu_wvga\gfx\legato\image\mono\legato_imagedecoder_mono_read_internal.c</file>
@@ -6275,7 +6255,7 @@
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu_wvga\gfx\legato\widget\linegraph\legato_widget_line_graph_skin_classic.c</file>
-         <hash>7e0a0d521a9d2603ea93ede08d11d9bba19df91e9a12e2364c2c56a79a7eea2f</hash>
+         <hash>8e3de8e4c850d8674b7085b78db8cc85e3381b187a8a86e2c28bf0ef8d7db7ea</hash>
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu_wvga\gfx\legato\image\raw\legato_imagedecoder_raw_scale.c</file>
@@ -6291,7 +6271,7 @@
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu_wvga\driver\sdmmc\drv_sdmmc.h</file>
-         <hash>adfd11fa4fb647cbc17073c5e43c29875b46cef63c016b655ef8d6bed9d514e2</hash>
+         <hash>7521b2ccf0bf9505fa4180aa436c0bdf91511c8db534011ec2f3769fcc02cb76</hash>
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu_wvga\system\fs\fat_fs\file_system\ffunicode.c</file>
@@ -6315,11 +6295,11 @@
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu_wvga\gfx\legato\widget\button\legato_widget_button.h</file>
-         <hash>88ad3cdf69b9587f44346877aaaa743f184c73ab60072cbe479605a436ce28a5</hash>
+         <hash>ddb018ba4b754896c5bcaf46c6a1a3c558a92e763bd0a538d37000095c33aeb8</hash>
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu_wvga\gfx\legato\widget\progressbar\legato_widget_progressbar.c</file>
-         <hash>eb3ee7673e69f8387b7fd63ae5252a84cb8810d5e7292406a12727818f7fb11c</hash>
+         <hash>afbbff4482f176aa768f2fc83f5717a36c2173e9c5854bcd3af745a4c9102d63</hash>
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu_wvga\gfx\legato\image\legato_palette.c</file>
@@ -6327,11 +6307,11 @@
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu_wvga\gfx\legato\widget\legato_widget_skin_classic.c</file>
-         <hash>9f34120be53101e1ef46fbd8ad106eb1e1cb51a831faa41e53626245ca475874</hash>
+         <hash>1c71ad5777b6052a641c70c0321ce857669a2706486126cf1ac982ebd6ea84a6</hash>
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu_wvga\gfx\legato\widget\progressbar\legato_widget_progressbar.h</file>
-         <hash>4fcc3b545941f5e182b9bf1fd6f8b4eadf65de967132219c090501406d81cd26</hash>
+         <hash>9e6a646cecd8c7b9ab0788a3054d502bf31b30fc8b1660d3ff8e9b42102fc5d7</hash>
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu_wvga\peripheral\cache\plib_cache.h</file>
@@ -6347,7 +6327,7 @@
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu_wvga\gfx\legato\widget\button\legato_widget_button.c</file>
-         <hash>e7114a1916bcc42da4b8cfc538f77d09f15e425b0408280e093c92d078e1e82c</hash>
+         <hash>b88864c12223bc73b60e239a9bde41877a87f87525866e2ce7a38d9bf608fdc0</hash>
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu_wvga\peripheral\sdhc\plib_sdhc.c</file>
@@ -6367,7 +6347,7 @@
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu_wvga\gfx\legato\widget\radiobutton\legato_widget_radiobutton.c</file>
-         <hash>21ff5a7b08b7a7707f2143bb253dde59f9496901c1aae54aff5871a5b4053deb</hash>
+         <hash>d2243e418f81c8a3de5f753d184128b2d9b5692c569cda525cca4da496ec8db8</hash>
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu_wvga\gfx\legato\image\png\legato_imagedecoder_png.h</file>
@@ -6375,7 +6355,7 @@
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu_wvga\gfx\legato\widget\radiobutton\legato_widget_radiobutton.h</file>
-         <hash>3f7f5f0e9e291cfe64b0f1e382cf59eb92b4c19e80696fb8c19a346d083b5c49</hash>
+         <hash>f36f6109be592673b763c0971a4997b3aef148f432a3830d2af47cfa171fd754</hash>
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu_wvga\driver\usb\usbhs\src\templates\usbhs_SoftReset_Default.h</file>
@@ -6383,7 +6363,7 @@
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu_wvga\gfx\legato\common\legato_utils.c</file>
-         <hash>90dd09850f635717fee0c06532d385ebfd1711f2de9e43d8ec2e19003caca7b9</hash>
+         <hash>f7d528b39dabd79ad9bf209ba8b00232f1741d43c5b349f115a4bfc162deae0e</hash>
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu_wvga\usb\src\usb_host_msd.c</file>
@@ -6391,11 +6371,11 @@
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu_wvga\gfx\legato\common\legato_utils.h</file>
-         <hash>747aa96b2bb1ed485f8103dbe5a334c9066209e830d8fe6615664bbab3c61438</hash>
+         <hash>6d1b21c69618c4d05fd85b4415a1a51bc414e4d9a3c85c6dffda10054d28d01b</hash>
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu_wvga\gfx\legato\image\png\legato_imagedecoder_png.c</file>
-         <hash>9a7b41a8a316681bb1abfa868977be55e204176aa493287e88fa56377bacb36a</hash>
+         <hash>11093aacc4d3ddaa36ae5d00e49581cccde5dc1eb616de8badea5781fc93e439</hash>
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu_wvga\peripheral\cache\plib_cache_pic32mz.h</file>
@@ -6403,7 +6383,7 @@
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu_wvga\gfx\legato\legato.h</file>
-         <hash>fa6abe8960c1d00140f822570472c09b6dd02d7831a87682c75c5ac3a0ec9055</hash>
+         <hash>79646dc5498e272741df83cfde01562dc4ea5b59e06e7b3dc10f2d1586080db8</hash>
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu_wvga\peripheral\cache\plib_cache_pic32mz.S</file>
@@ -6415,11 +6395,11 @@
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu_wvga\gfx\legato\common\legato_error.h</file>
-         <hash>13d143afaa2ff3dc8ae64326dca05ee8efface1caf78de7a0b07ac4c8ceac60c</hash>
+         <hash>d37f93003691dc91b4fe0d327ca3b3a874da4962122c17870550106f5d9fe2fa</hash>
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu_wvga\gfx\legato\memory\legato_variableheap.h</file>
-         <hash>87610ca9afd33a0e862a7f218ed0ab70591ed5a1b34b9a84dee50cc3004b5d1f</hash>
+         <hash>bfd908522659e4755dd3ab8405935af45dbabc9f336690ceb6c82093ffed8ac2</hash>
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu_wvga\system\fs\src\sys_fs_media_manager.c</file>
@@ -6435,15 +6415,15 @@
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu_wvga\system\fs\fat_fs\file_system\ffconf.h</file>
-         <hash>fbf2e6a69c373f38dd0ba9c98001d8ed44d9061c934cc3968cae98fd6588af71</hash>
+         <hash>38384cafcd92ec161e88b5dc418efe68927dd506284b6ea0414843f949621a7d</hash>
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu_wvga\gfx\legato\memory\legato_variableheap.c</file>
-         <hash>7d8c120d2620b978d82c1a20cdb9c2c243e797a35cada318091f65da70f4432d</hash>
+         <hash>e7d7931e13bcceca0d1238232693aabdaea793010004fa185ea0cf4f3e373813</hash>
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu_wvga\gfx\legato\renderer\legato_draw_arc.c</file>
-         <hash>30cb14a19932319828175f3fe9b8dded7a33ed7fe9a2ac58e6afe3bddd54bceb</hash>
+         <hash>fe4b9323e17cab3c7ef5898032918a93cf55aeda7f16e78179f57ed2f00084a0</hash>
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu_wvga\system\system_module.h</file>
@@ -6487,11 +6467,11 @@
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu_wvga\gfx\legato\widget\list\legato_widget_list.h</file>
-         <hash>0c9fa86bb717a17a37d042710177888c3353c60777442f6d3f6473504b676695</hash>
+         <hash>23f8a2c0ab59dd4269f9cf4c8ab3f08aff3e505f5d5d8703c14b51c8a68cbaf7</hash>
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu_wvga\gfx\legato\widget\piechart\legato_widget_pie_chart_skin_classic.c</file>
-         <hash>fe58316cb5c12d64c8d6a6b0769c01be62c3a1c45d46930fede2803d0017ecd5</hash>
+         <hash>2ed073c996216690ff09b1f0ecdd5b23fb1369820b1430b70e49f8dd383dbd6d</hash>
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu_wvga\gfx\legato\generated\le_gen_scheme.h</file>
@@ -6503,11 +6483,11 @@
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu_wvga\gfx\legato\widget\touchtest\legato_widget_touchtest.h</file>
-         <hash>b1b5dbfca70faef923e543f4b4390a9d1e7ee9ef7d1d9aec58af70a3ba3ff47b</hash>
+         <hash>337643065e8ae3d8952f37c1ff64ed43757ef465c6a4d090d7074a4f6d48dc60</hash>
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu_wvga\gfx\legato\widget\list\legato_widget_list.c</file>
-         <hash>c2b0d7b2fbe4bbe6144042bacad5b91b3e582f23d5fa42ab9f1931d1345d93be</hash>
+         <hash>14795c73b729627b00b2495346e4000612752449b2d4d65d4b83551b8dfd82ff</hash>
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu_wvga\driver\sdmmc\src\drv_sdmmc.c</file>
@@ -6515,11 +6495,11 @@
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu_wvga\gfx\legato\widget\touchtest\legato_widget_touchtest.c</file>
-         <hash>264a893978115d50f30679c1b9f7edb156d9c3dfcc23f39d1ca5147d7440eb1a</hash>
+         <hash>153650239baf625669025d719dd70566954aeaca7868c99d90568c11bce0d0d9</hash>
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu_wvga\gfx\legato\widget\circularslider\legato_widget_circular_slider.c</file>
-         <hash>3999c52451dce511f684523b25684b03c7499b9cbebf9271e658103173695712</hash>
+         <hash>998f2dea10e1144d446c6c85ffa700d382f6d5b564e90b887e2f019f0dfe866f</hash>
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu_wvga\driver\usb\usbhs\src\templates\usbhs_SoftReset_Unsupported.h</file>
@@ -6527,11 +6507,11 @@
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu_wvga\gfx\legato\widget\circularslider\legato_widget_circular_slider.h</file>
-         <hash>f7ec19f9ce56cacdf61a39de4ca7e2a9476338ef1da07d726dcf6425ac647953</hash>
+         <hash>076403f0c25f2a55a5506f3774ff33f692701387b745da4eb51e203604da9bc5</hash>
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu_wvga\gfx\legato\core\legato_event.h</file>
-         <hash>e56836c5a176663c061a6364bbb63973426cc2bdf71469a27efc3a330f4524d0</hash>
+         <hash>fb2f37dbfb7508bf5c493b34f5dd8ff2e853ce27fad53ce2057079a781363561</hash>
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu_wvga\gfx\driver\gfx_driver.h</file>
@@ -6571,7 +6551,7 @@
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu_wvga\gfx\legato\widget\window\legato_widget_window.h</file>
-         <hash>c32dd91208c0878a285b2baa02b2357b0d15b0cc274e14f149509b1fd8bcfa6e</hash>
+         <hash>2de15ae28e8e4c357637f6fdc7ec75a729c3515486903135a1384d5f3cbf532b</hash>
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu_wvga\gfx\legato\image\jpeg\legato_imagedecoder_jpeg_common.h</file>
@@ -6583,7 +6563,7 @@
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu_wvga\gfx\legato\renderer\legato_renderer.h</file>
-         <hash>18fdfb45e6166f14147fd0b9cd92f3ba528bd2394f1ce569da973eadc808504c</hash>
+         <hash>9a0155fa825cec3a872cc886bd7ee8d91a2a38ff0bc528659edf905963dfe35c</hash>
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu_wvga\usb\src\usb_host_msd_local.h</file>
@@ -6591,23 +6571,23 @@
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu_wvga\gfx\legato\memory\legato_fixedheap.c</file>
-         <hash>a3cede82c50da8bd2a93a80ea52aee5ae5a9b55ee097c533d3f01056f93367aa</hash>
+         <hash>197174ddbc7c7ef5c966bee36da8114e64dec8ce734d374c0b31401f800e21bf</hash>
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu_wvga\gfx\legato\widget\window\legato_widget_window.c</file>
-         <hash>6eb5e123bcb6554ee3f43793dfcdfb874fe2484b3631a3fa0e4c7df38f407ac1</hash>
+         <hash>c90a07b766a49ea10f1e444cea59da8fd83bd424ad68898181f529ad3342d2b9</hash>
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu_wvga\gfx\legato\renderer\legato_renderer.c</file>
-         <hash>bef2d6fc1469a10406340243668b64364877b8d58ef8fc5f230399f380a1d10c</hash>
+         <hash>8670db119b7bd79b2b2ae15ecc57f27c1f345a6fd21c57a824a3d0bdcdfd4c8f</hash>
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu_wvga\gfx\legato\common\legato_rect.h</file>
-         <hash>25224ecd03ec49948390ad908bb67fbdac79d04cea50dee2434fc4cad7ed69dd</hash>
+         <hash>243b908a6395f350b2a5f700f91c181c392a65ed1eb993a2ba417df5777a390c</hash>
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu_wvga\gfx\legato\image\raw\legato_imagedecoder_raw_blend.c</file>
-         <hash>2848a66f0697334725da29c9d34c6ef70de140804cf37ac3511bf6175afa0b8d</hash>
+         <hash>ef046613a6fa79b2a6c085acc22e2eec7b2158ee9ba31019337e0c65a3055ec9</hash>
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu_wvga\gfx\legato\datastructure\legato_list.c</file>
@@ -6615,11 +6595,11 @@
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu_wvga\gfx\legato\widget\legato_widget.h</file>
-         <hash>4c46d578858ecc95324003866c3c6c1bd867a1a8679d21abdd6745f1b3bdb314</hash>
+         <hash>820e28c0a3f81b37387cc156ff43899f05414c27d64f1b4c6d6291ed2deff663</hash>
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu_wvga\gfx\legato\datastructure\legato_list.h</file>
-         <hash>e3976e63dc121845db596b5bfc10321e51dfd232a1328032efa1418973d1cbcf</hash>
+         <hash>a6d52daa6de7d55afcc4f5e8c974a9048dd432b63a330bc4b3bb20b394b99209</hash>
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu_wvga\gfx\legato\memory\legato_fixedheap.h</file>
@@ -6627,11 +6607,11 @@
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu_wvga\gfx\legato\widget\legato_widget.c</file>
-         <hash>3c2b489c451a72eb89a3e3732e097f17da4129293022081d42400ffac1f4eac0</hash>
+         <hash>5cd66f799381c6ce723c7b8903ea966c1535653fe8e471ad5bfd01843cab9063</hash>
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu_wvga\peripheral\i2c\master\plib_i2c2_master.c</file>
-         <hash>5ec07bb0e988f84fff1554b9084d880989245b48061bb2e615d25923152432bf</hash>
+         <hash>2119608eee66b6fec01661579aef1ba4aab9abe440b8364de12a19d85b5aa60f</hash>
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu_wvga\gfx\legato\common\legato_rect.c</file>
@@ -6655,7 +6635,7 @@
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu_wvga\gfx\legato\image\jpeg\legato_imagedecoder_jpeg_common.c</file>
-         <hash>6436e9c49b54a535d1b8600b501b607fe36dd18ca22a092fb239c4a45970ba79</hash>
+         <hash>841d298fd2691e391277919d6d196a5ee866c4126cc80d6c7742de8c31f3b204</hash>
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu_wvga\system\system_media.h</file>
@@ -6667,7 +6647,7 @@
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu_wvga\peripheral\i2c\master\plib_i2c2_master.h</file>
-         <hash>80bc7c59795127145c2530ac56c192005c4c951924a211ec4339e5b643c2a6b7</hash>
+         <hash>54b41d364e7a205020f560ca2ab2cb125aa11f8a6f5910337ad3cf510a03c9a7</hash>
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu_wvga\usb\usb_chapter_9.h</file>
@@ -6703,7 +6683,7 @@
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu_wvga\gfx\legato\widget\bargraph\legato_widget_bar_graph.c</file>
-         <hash>877149881796b1fcc802d2c64b39b5c0421ab0b725096e4c995ea59835e4e537</hash>
+         <hash>7437fbc8b9a263bbd7a897f98d44a76665ee809bd10b6f9e8b7aef2bda6d446a</hash>
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu_wvga\gfx\legato\image\raw\legato_imagedecoder_raw_read_stream_color.c</file>
@@ -6711,7 +6691,7 @@
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu_wvga\gfx\legato\widget\bargraph\legato_widget_bar_graph.h</file>
-         <hash>178f8681b168e7e34c6fe1b00a85eb0704c637a85eac62b9b9e383029d2411d1</hash>
+         <hash>1bc313a8d54f35fea8ebef3ca45d1d7f25e4519b6b312d983d75a99abe91e638</hash>
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu_wvga\gfx\legato\widget\textfield\legato_widget_textfield_skin_classic.c</file>
@@ -6723,11 +6703,11 @@
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu_wvga\gfx\legato\generated\screen\le_gen_screen_Screen0.c</file>
-         <hash>6e1d46d833d3ef66b925755d483520b3ecb8de10f9aed77fef572a01079c4bc1</hash>
+         <hash>b50a7143c15111ebbc42852bc67f27327560681db65541e06506331483927d55</hash>
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu_wvga\gfx\legato\widget\circle\legato_widget_circle.h</file>
-         <hash>89dba4c516687aebde6989ae208f99319a33b8a3e236e0274716498b94d68907</hash>
+         <hash>2a8ad9f81660b58baf586da863c009be7636f2100c13dcde3fed50a600ac09c0</hash>
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu_wvga\gfx\legato\string\legato_string_renderer.c</file>
@@ -6747,11 +6727,11 @@
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu_wvga\gfx\legato\widget\keypad\legato_widget_keypad.c</file>
-         <hash>0b87dee0da73d088a7eb7c0d4a74d1ca63f52fe823bb11c6d5c71985bc9b41b5</hash>
+         <hash>6dae943b18e928679e8c64d61cbd4fcd810b8ab48b7cbf4cd2b3ddd90a499991</hash>
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu_wvga\gfx\legato\widget\circle\legato_widget_circle.c</file>
-         <hash>78b04ea3c1ba40a8ee83580ce80c8e8ebcc8088fb93a44db8b1339f170937dbb</hash>
+         <hash>aa5da2769246f6ae059a6cccc96391e6e9069de941e516e6ecbbadac3cb87d39</hash>
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu_wvga\driver\sdmmc\drv_sdmmc_definitions.h</file>
@@ -6763,7 +6743,7 @@
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu_wvga\gfx\legato\widget\keypad\legato_widget_keypad.h</file>
-         <hash>efd86e574c4a8500fe5e03f7f8a972fbf59d60cec54607f1526b458d12ff3632</hash>
+         <hash>495fb799d9d276cd4767a05d53d3da4dbe245b9ad3564165772ea59c6caf3585</hash>
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu_wvga\system\fs\src\sys_fs_fat_interface.c</file>
@@ -6791,7 +6771,7 @@
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu_wvga\gfx\legato\widget\rectangle\legato_widget_rectangle.h</file>
-         <hash>94516777e808b740e86ce48be7547786ee3fd527b9dfd6d00a9377b55ce373a7</hash>
+         <hash>e7232a4939a64fe6bbdee113a39784a89b149a52d53f69c6c169a203a51632cd</hash>
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu_wvga\system\fs\sys_fs_fat_interface.h</file>
@@ -6831,11 +6811,11 @@
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu_wvga\gfx\legato\renderer\legato_draw.c</file>
-         <hash>514f76ba5c4b083884ad35ca20c0a03b22622ac978b9f4f81d4dfd152feccb1b</hash>
+         <hash>cc0dab38f93423ea13b1f24a56ce9341a6080c0b98f934e5d72c8c4b84b72113</hash>
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu_wvga\gfx\legato\widget\rectangle\legato_widget_rectangle.c</file>
-         <hash>a76ac76dee48047129151b82dab9669d767a60e6975ef59f012356dd495fce79</hash>
+         <hash>bb7af194e53d7259133670fa3de54ce13a32d0f8bb3bece1b3a062322acf3752</hash>
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu_wvga\system\input\sys_input_listener.c</file>
@@ -6875,27 +6855,27 @@
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu_wvga\gfx\legato\widget\drawsurface\legato_widget_drawsurface.h</file>
-         <hash>9d37c8a489c560f31f93e52e0dd22b917c065134590837705d22fea13fb7f03c</hash>
+         <hash>e7e82efaeaa2af539571f167d8a66eeb80ae9bb53793375416d67d109970cff0</hash>
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu_wvga\gfx\legato\widget\listwheel\legato_widget_listwheel.h</file>
-         <hash>75bc155010de739d1cd6f850f3a9049fb03e91e39e2dca469de65bca59f32083</hash>
+         <hash>04bce10c60d60100b89e341ab281f6f65738c1712626dba43ba82c6fd12690ec</hash>
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu_wvga\gfx\legato\widget\checkbox\legato_widget_checkbox.h</file>
-         <hash>0c8e5f9e58ef843b7f30d5023922dc9349e54075a8375fa714e000f43fc68bb7</hash>
+         <hash>d3546cae080d4fd304d515b0fd05c56c5257ea7027d0b4eee452e0a0f5fc50cf</hash>
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu_wvga\gfx\legato\widget\drawsurface\legato_widget_drawsurface.c</file>
-         <hash>1980508afc8e18f8653e1aaf41bfe8ed1c93a302e264eb89a834dbe624576270</hash>
+         <hash>e394b25b38a5645a5f40424c0ebcca5c1959d20ac59740330748daa5607a81b6</hash>
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu_wvga\gfx\legato\widget\listwheel\legato_widget_listwheel.c</file>
-         <hash>e1c6b29a703a2ef24e5471704d4bfeaad6fffeb5ea7a12ba15bf41d77e16e461</hash>
+         <hash>d2ec10152f30b4f55a4a3282fee7afd5af32557805f199658e4ff0401f950571</hash>
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu_wvga\gfx\legato\widget\piechart\legato_widget_pie_chart.c</file>
-         <hash>77e88545a8005516342097fe109861f082d329021eb4d7bb44900016a6ad22c7</hash>
+         <hash>b6010e92d402c1277c12dcfecafef2a6df5f4ab88b2f9bfd170fec755cb70320</hash>
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu_wvga\driver\usb\usbhs\src\templates\usbhs_HighSpeedSupport_Default.h</file>
@@ -6907,7 +6887,7 @@
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu_wvga\gfx\legato\widget\piechart\legato_widget_pie_chart.h</file>
-         <hash>94aa15f972e57252a2e22a0d67b0637485f2b21afa8c237697a7504cc8e891a2</hash>
+         <hash>0bce91b83a86ed22b7d4d47e9fb8b9d16e412ceeea8e2e4e874bd3beed29e8fc</hash>
       </entry>
       <entry>
          <file>..\src\app.h</file>
@@ -6923,7 +6903,7 @@
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu_wvga\gfx\legato\widget\checkbox\legato_widget_checkbox.c</file>
-         <hash>3779f7409aadc1cf20213d6f8c6df88ab8b5cbf4b4b5a07837e8b515047bbb44</hash>
+         <hash>27c455d514f130a8cf2d4604f9d725cc2b8ff6e20b4a59fd3d5e302ce21856c8</hash>
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu_wvga\peripheral\coretimer\plib_coretimer.c</file>
@@ -6935,7 +6915,7 @@
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu_wvga\gfx\legato\widget\linegraph\legato_widget_line_graph.h</file>
-         <hash>c314b92bc9d5f8a22b2bb984d60eda7faf719a71c50e4938d18e7c8f8fdedad1</hash>
+         <hash>97f5a2b9b2633c6b901c8bd7c94025d4c9addeef351d749f5367b33122cd38a7</hash>
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu_wvga\system\input\sys_input_gesture.h</file>
@@ -6951,7 +6931,7 @@
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu_wvga\initialization.c</file>
-         <hash>f9ef87c9be6c150c7e514ce208160568fac80d4c9a430c6d0acf326bb542715f</hash>
+         <hash>be8e29d66d587d2440545596aeee49fecb05c2c7378865f9352397ff1997ecb7</hash>
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu_wvga\driver\usb\usbhs\src\templates\usbhs_EP0Status_Default.h</file>
@@ -6979,7 +6959,7 @@
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu_wvga\gfx\legato\widget\imagesequence\legato_widget_imagesequence.h</file>
-         <hash>1718ad098a15739e36aae7e3d6e8f9f27ff61fb705551a5c9833619e7bd2e45e</hash>
+         <hash>086f9e4bb1dab80958c03075a8ffba4d6cda022a62592107fcfc2fa46879aaea</hash>
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu_wvga\usb\src\usb_host_scsi.c</file>
@@ -6999,11 +6979,11 @@
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu_wvga\gfx\legato\core\legato_input.h</file>
-         <hash>984482710a43e60163f0ce8157a6ccc5097763371d8e9542a02d1e41a03de978</hash>
+         <hash>b64b85f2884b54b5e9fb5c735d91a0ae7923990cdcfd9d28792d6dc1af7d4a62</hash>
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu_wvga\gfx\legato\widget\scrollbar\legato_widget_scrollbar.h</file>
-         <hash>fadde1bc9ce6a530a1bb6ef1d2485fa40262181c5090ebe0dffbd3b2a0bd0e72</hash>
+         <hash>ddee85397e2bc454cdce254691b8b4421d558246802b1fe7f03c7d1687f1f83e</hash>
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu_wvga\usb\scsi.h</file>
@@ -7011,7 +6991,7 @@
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu_wvga\gfx\legato\widget\scrollbar\legato_widget_scrollbar.c</file>
-         <hash>6830491402974ff72dfd49c97e0d1a0f81fca4c7ce739b4823ad48c59a4529d4</hash>
+         <hash>186c0c748cd562dfc3e2d752992ca6563c2d47e327cf7f29ee02746d181a7ec6</hash>
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu_wvga\gfx\legato\widget\legato_editwidget.c</file>
@@ -7023,11 +7003,11 @@
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu_wvga\system\fs\sys_fs.h</file>
-         <hash>46a5946f727b22530f0e0945a33cad93077c7b92c1bb2811959709ba7be60e9c</hash>
+         <hash>c3bce19e69290a393dca6f7ddbdb103ed7cf21be40f492fdfea185eb85ecbb93</hash>
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu_wvga\gfx\legato\font\legato_font.h</file>
-         <hash>fee131d6d91edddf72e3a41ddf66a8eb8b658f7d8311b7ebae1895c84095bed5</hash>
+         <hash>45dc390999d5046740d0cf4f0ad4b537091727eea5c91f03795388b9f734b991</hash>
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu_wvga\driver\usb\usbhs\src\templates\usbhs_EndpointOperations_Default.h</file>
@@ -7043,7 +7023,7 @@
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu_wvga\gfx\legato\widget\window\legato_widget_window_skin_classic.c</file>
-         <hash>97a665219e5e55865135218f28a76e2a20f6665e4a05ede4ae8e30067e5bca36</hash>
+         <hash>dd6b3e7c710431206685fc51459a31358dae4e99be8dd14849be4fe858ba4cc8</hash>
       </entry>
       <entry>
          <file>..\src\main.c</file>
@@ -7051,7 +7031,7 @@
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu_wvga\gfx\legato\widget\imagesequence\legato_widget_imagesequence.c</file>
-         <hash>93defd481660ae6a5da95455b3fb838c15c40b82ae4b6f7bad610cfb379c7cfa</hash>
+         <hash>a65278b8833e71ccf0d999b4c65a4ef65fdd165076c1d36d3d99717945657c6e</hash>
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu_wvga\driver\usb\usbhs\src\templates\usbhs_EndpointFIFO_Default.h</file>
@@ -7059,7 +7039,7 @@
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu_wvga\gfx\legato\core\legato_input.c</file>
-         <hash>a92c37779d40053f36fbfa78596c887a8cdfceb1db2fa1c400b94371df7c5d54</hash>
+         <hash>065da654944d4bf2353d9d60f15cb1fa9f22ef1d669250dd05f25e6b15bf0ec6</hash>
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu_wvga\peripheral\coretimer\plib_coretimer.h</file>
@@ -7071,7 +7051,7 @@
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu_wvga\gfx\legato\widget\arc\legato_widget_arc.h</file>
-         <hash>332809d39da2257d6ba6689c466a8bb0c4cd995d08fb88228008e37866fe9714</hash>
+         <hash>59f4b30443e8a06b0611b1a6be30db6f75d9b8a535f611a9cd3a0db9cc8d8be3</hash>
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu_wvga\gfx\driver\controller\glcd\plib_glcd.c</file>
@@ -7083,7 +7063,7 @@
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu_wvga\system\time\src\sys_time.c</file>
-         <hash>ddec1a83e32b63552ae72f884dc849e376b60d411669554f7ec492fff180662f</hash>
+         <hash>b722ac0c5d955d289bd906609ab6f302342166c5ba66f87b30cac17ac6bfdcd9</hash>
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu_wvga\gfx\legato\widget\arc\legato_widget_arc_skin_classic.c</file>
@@ -7091,7 +7071,7 @@
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu_wvga\system\fs\src\sys_fs.c</file>
-         <hash>25d27349ac93f74a60186c235b8b1d7f6a4c25c53c97642f0df93109a2a6241d</hash>
+         <hash>aba5ae4d2d52843de0d236941838bd3ff6428f6acade1fb5ef923b2aa7615968</hash>
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu_wvga\gfx\driver\controller\glcd\plib_glcd.h</file>
@@ -7099,11 +7079,11 @@
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu_wvga\stdio\xc32_monitor.c</file>
-         <hash>26e5749db654ed433fd94f6c732ef8600d0cbf5196493374cf111877c02b694e</hash>
+         <hash>858f8710d4287200a5ee7f3b3ad7c24f505aed9c05c16956ab0ff9f7bb162a6a</hash>
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu_wvga\system\fs\sys_fs_media_manager.h</file>
-         <hash>6cb6bdb605ca6e8b9e683671cffadbbc26a1f686e3eaedc74a6cba860e8ac3c4</hash>
+         <hash>29bda64831783de33b10c3841e1eb703dc9f5b04287c1e26af8f3b75b7197b39</hash>
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu_wvga\usb\src\usb_host_scsi_local.h</file>
@@ -7111,11 +7091,11 @@
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu_wvga\gfx\legato\widget\circulargauge\legato_widget_circular_gauge.c</file>
-         <hash>a5b46d255221f7c6c3b08b77efe71179f40263fd63aadaf685f8d179c3209d29</hash>
+         <hash>187dd3dcb006c1b2edb338b31b598185b850dfd815a1c0da63dafed32a4cbbc6</hash>
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu_wvga\gfx\legato\core\legato_state.h</file>
-         <hash>51240ef18d358731042773cc74cfd11656e713e0f11f43c7abefa311038b8745</hash>
+         <hash>021730fd1ba0ab8a75fd98242ee8115fcaaf610e2cb7b17ec901f886e7f404b0</hash>
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu_wvga\gfx\legato\widget\radiobutton\legato_widget_radiobutton_skin_classic.c</file>
@@ -7123,19 +7103,19 @@
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu_wvga\gfx\legato\core\legato_state.c</file>
-         <hash>31b951f3c9d338a6f34a38642381bbb94790cd4f83699b0e520707a47be138cf</hash>
+         <hash>2b43334893b574253509f4830d0c6ccda57c8b067a315de554a5657160edf918</hash>
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu_wvga\gfx\legato\widget\circulargauge\legato_widget_circular_gauge.h</file>
-         <hash>f7bb1ce517a25b2afdccfae477f96004dc208e65fab38f205e8bc2934dd3aa02</hash>
+         <hash>e6597d8b8f6e75b5dec2eeaeddb863a3d8180c24a25fd7b7bef20aae76126f34</hash>
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu_wvga\gfx\legato\memory\legato_memory.c</file>
-         <hash>fe63c2c5186464d6add0e2198fb325c608715e5bf69c00208c6d542eca71ef38</hash>
+         <hash>0703d9b8268ae3f2b07abe69b19b2055e8c959b1cb9ebce3e5845515a0479b9e</hash>
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu_wvga\gfx\legato\image\jpeg\legato_imagedecoder_jpeg.c</file>
-         <hash>d7346bcc3ab3cfcafd9ef0cb3d3dc7548b4e3254fb909d9469f431a9cb88f3df</hash>
+         <hash>9080b22546fb464f814d8ff65cd9d981622ee5ee6639465b753140b59d16b761</hash>
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu_wvga\gfx\legato\image\raw\legato_imagedecoder_raw_palette_stream.c</file>
@@ -7183,11 +7163,11 @@
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu_wvga\system\time\src\sys_time_local.h</file>
-         <hash>a761ad68ce0cbac8c326bd17e54cc01d10324ed8d5e120ef092856a21604b6a2</hash>
+         <hash>d3ef06b59d9a89efe9e8eb54fcf3b75120d56156cc21f6847ca4f9e902eb7c9d</hash>
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu_wvga\gfx\legato\image\png\lodepng.c</file>
-         <hash>684e7e52f3d373262c8859a7757121c2d269e29a99e039688ae524ec2fe08c9b</hash>
+         <hash>75b029a69d4a50c3ac27f75766577bf227abf5f35b38bc1375fb18d4e537e833</hash>
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu_wvga\driver\usb\usbhs\src\plib_usbhs_header.h</file>
@@ -7195,11 +7175,11 @@
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu_wvga\gfx\legato\common\legato_common.h</file>
-         <hash>1a5b3c66b398abc354e9a7d933e02803568d388d96559cdc4221bf8b7bc6836d</hash>
+         <hash>9c048287015309dace77916404332a3bc017289c0727ab56277d651727a5b8e3</hash>
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu_wvga\gfx\legato\widget\line\legato_widget_line.h</file>
-         <hash>3f3b3c6788567d2b6f3967f7b443cb45e1b8323ce15bab873090731a086b4f55</hash>
+         <hash>33bff323b7699d5f09d307a810fc10d5e11e88042370f213d70660357eff1a14</hash>
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu_wvga\driver\usb\usbhs\src\templates\usbhs_USBIDControl_Default.h</file>
@@ -7207,7 +7187,7 @@
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu_wvga\driver\i2c\src\drv_i2c.c</file>
-         <hash>066e757e8d736e8d60301a755a5d0a051cf38ff7c98a23bb050c66894838837c</hash>
+         <hash>d27c94dc19b7413b120ca9aca2689f5d95e5a2c46f2b3918d37587bf64c85551</hash>
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu_wvga\gfx\legato\string\legato_stringutils.c</file>
@@ -7215,7 +7195,7 @@
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu_wvga\gfx\legato\widget\line\legato_widget_line.c</file>
-         <hash>7fe86f966ef91e8cac9535c1af72a47768b7cc77847c3f29ca4d05df3e3b6716</hash>
+         <hash>20424bbfe760f7bd6c2dc86ef6011fa4ddde0f56a4ca84c47c6bc20a3c85a2f4</hash>
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu_wvga\gfx\legato\image\png\lodepng.h</file>
@@ -7223,7 +7203,7 @@
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu_wvga\bsp\bsp.h</file>
-         <hash>c55109fa946769bf93aede969301e98e86ecfbd77cec959afc49d864d0620bd2</hash>
+         <hash>f12f2d8d37724b11ea6be6e3bc91a809a773cdcc05d19bcfd66059611e6ad351</hash>
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu_wvga\gfx\legato\string\legato_stringutils.h</file>
@@ -7243,15 +7223,15 @@
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu_wvga\gfx\legato\widget\linegraph\legato_widget_line_graph.c</file>
-         <hash>e9ec601b2a3fbeef1f0cff7b93f6d845d6015e47fcf72cb7da22925e700b4f07</hash>
+         <hash>4cc78db14c54cb98535513c61871bc36e88af5a516cb6529b4f371ff016dcd66</hash>
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu_wvga\gfx\legato\widget\label\legato_widget_label.h</file>
-         <hash>2dcd43c6534c961d079261b432066a712338915e65d1957f0d40e61b02b6f453</hash>
+         <hash>022a0de66de27ed503c07852959b98e6e4c1aa50f881d6c05de1d57cd6ab70ba</hash>
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu_wvga\gfx\legato\widget\imagerotate\legato_widget_imagerotate.c</file>
-         <hash>bbcd506f8bb3ced1e77aeb8b10a9c31eefaaee19e727941543eb10fb4a5a36cc</hash>
+         <hash>0b8756b40331d3ba68694d23c9e7e0ce44bff969802da539a4d756ba1e30637a</hash>
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu_wvga\system\fs\src\sys_fs_local.h</file>
@@ -7263,11 +7243,11 @@
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu_wvga\configuration.h</file>
-         <hash>97c947ed1f2b0f2a4abd87d03e14d2a010c6ac72010a65d97557ed73e18f1bd7</hash>
+         <hash>4305bdcc027f249ec31efd08ccdeb59b1b47f260acf58715c35dc89b23657ce8</hash>
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu_wvga\gfx\legato\widget\imagerotate\legato_widget_imagerotate.h</file>
-         <hash>b60623dd47a7a9c2da60a83bb878ac20331014c68e7b328b81f9e5a637341584</hash>
+         <hash>21142bd015997290a0ce7af4dac6202b096642cffbe54a1950d843f551afc3a6</hash>
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu_wvga\gfx\legato\image\raw\legato_imagedecoder_raw_mask.c</file>
@@ -7287,7 +7267,7 @@
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu_wvga\gfx\legato\common\legato_color.h</file>
-         <hash>3b21a0fb159d6954744727af76e4d50bc0461af9701d07fbec985d7ccde8e483</hash>
+         <hash>05713a0e9ba22a72a6a90fb971c149739cd3450e7b56a214fc3fc1591a1bb2ff</hash>
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu_wvga\usb\usb_common.h</file>
@@ -7295,7 +7275,7 @@
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu_wvga\gfx\legato\widget\imagescale\legato_widget_imagescale.c</file>
-         <hash>eb5952a18c4f4de78ad54a4bbbd1d8dbadbee5c82629689ff13f7a92620d4eef</hash>
+         <hash>8a700120e43af815729590c274a7cf3e1ae79e35b580a5441fb0087b084299f7</hash>
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu_wvga\peripheral\i2c\master\plib_i2c_master_common.h</file>
@@ -7315,11 +7295,11 @@
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu_wvga\gfx\legato\legato_config.h</file>
-         <hash>66333d1d1f8edc5a8458a43210b13de2ef72de35e3be831321b387ef6cd7f6be</hash>
+         <hash>c9a6841ab13001e9c1220737f5b3b405eea86fcae84c5050856a7f4c7d7fbe32</hash>
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu_wvga\gfx\legato\widget\imagescale\legato_widget_imagescale.h</file>
-         <hash>331adb7bdfc6be542b1cb3690dcd5cfec3d4e7f8006dd74c57b34659e612058b</hash>
+         <hash>3336aed0e1cd3085eb597792561884849a517cf3bb572c286ff03c121f1d9493</hash>
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu_wvga\device.h</file>
@@ -7331,11 +7311,11 @@
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu_wvga\gfx\legato\image\mono\legato_imagedecoder_mono.c</file>
-         <hash>e2db1348231796da08d92e67fb7a6986cf27e555b02bbca2114f9a313cf2a0da</hash>
+         <hash>2e5403acba491a53e45051d8c31ff829e4661d475a286d74831e49c7d48dc602</hash>
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu_wvga\gfx\legato\widget\image\legato_widget_image.h</file>
-         <hash>6e766e18a60b45d526a63be1f66cc69d013cbb4907cf0eee026ae0321dad2292</hash>
+         <hash>ed8005ad7e80e11970fe5087d67f100cc3c2fb8cc008674192f93e4e785c3ef3</hash>
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu_wvga\gfx\legato\datastructure\legato_rectarray.c</file>
@@ -7367,7 +7347,7 @@
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu_wvga\gfx\legato\widget\gradient\legato_widget_gradient.h</file>
-         <hash>6fed795c29dc12ec5bea1a323729f307c4b122abf467a7b1e7d26a84f25f7e7b</hash>
+         <hash>5d69fac37ff07940571de4ea4b5f592b1e6f09fa39f4358086723de6ec5ec7ae</hash>
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu_wvga\gfx\legato\widget\drawsurface\legato_widget_drawsurface_skin_classic.c</file>
@@ -7383,15 +7363,15 @@
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu_wvga\gfx\legato\widget\radiobutton\legato_radiobutton_group.h</file>
-         <hash>fb968531ea8e46655428ba2faa6c74622bf08a790a393cf69b61171cc0570f3b</hash>
+         <hash>2a597192a279e9d1f1f1deeb94c9882a63d30ce7dcc357ebe80ac511f185d96d</hash>
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu_wvga\gfx\legato\renderer\legato_draw_rect.c</file>
-         <hash>975628ab8a04b3dc6b1408491e07fe6617631b11ec85f97bb4c6d7bc9938a2e1</hash>
+         <hash>173e373c177eff78f550342ffabbe552ad76091df82960aa27f69a235481ee67</hash>
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu_wvga\gfx\legato\widget\gradient\legato_widget_gradient.c</file>
-         <hash>7fbd50f045c2a6b9f3bd29ca44ee09b4d8381c7031e4e2aecadfd53850569cd1</hash>
+         <hash>aab8dc90da6205d3ef966ea5af6f71e1c7ce2b76219f099a8eca0800eb113cdf</hash>
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu_wvga\driver\input\drv_maxtouch.c</file>
@@ -7399,7 +7379,7 @@
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu_wvga\gfx\legato\widget\arc\legato_widget_arc.c</file>
-         <hash>6e6b107efba68e7c5dcbd4771ca22be681ac1310ae30e6b61bbda251c58f3fae</hash>
+         <hash>2ed3accad62315ec8a620bdc0bae6f712132eacdc3bbc3b5876eb6ebc264c7c2</hash>
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu_wvga\gfx\legato\generated\image\le_gen_images.c</file>
@@ -7411,11 +7391,11 @@
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu_wvga\gfx\legato\datastructure\legato_rectarray.h</file>
-         <hash>947b13082727772320141a3761fa6537ee45c2f82b6ca3314ffd5fe8efc5cdf4</hash>
+         <hash>e0a389ae97ec06c1b4e1d3da060b7c882a4f255e45fa709d639910cff74b4e25</hash>
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu_wvga\gfx\legato\widget\image\legato_widget_image.c</file>
-         <hash>27cc7846ef1c5ae5ced5ebe41f1946358c31a8a97a729cf85264e41efab9ccf8</hash>
+         <hash>5bb1d0e1c99405acc3ef79aebdbf413524d822466831e5d7326561e0f340f535</hash>
       </entry>
    </generatedFileHashHistoryMap>
 </config>

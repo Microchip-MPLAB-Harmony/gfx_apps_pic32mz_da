@@ -61,39 +61,39 @@
 // *****************************************************************************
 // *****************************************************************************
 /*** LED Macros for RGB_LED_B ***/
-#define RGB_LED_B_Toggle() (LATBINV = (1<<1))
-#define RGB_LED_B_Get() ((PORTB >> 1) & 0x1)
-#define RGB_LED_B_On() (LATBCLR = (1<<1))
-#define RGB_LED_B_Off() (LATBSET = (1<<1))
+#define RGB_LED_B_Toggle() (LATBINV = (1U<<1))
+#define RGB_LED_B_Get() ((PORTB >> 1) & 0x1U)
+#define RGB_LED_B_On() (LATBCLR = (1U<<1))
+#define RGB_LED_B_Off() (LATBSET = (1U<<1))
 /*** LED Macros for RGB_LED_G ***/
-#define RGB_LED_G_Toggle() (LATCINV = (1<<4))
-#define RGB_LED_G_Get() ((PORTC >> 4) & 0x1)
-#define RGB_LED_G_On() (LATCCLR = (1<<4))
-#define RGB_LED_G_Off() (LATCSET = (1<<4))
+#define RGB_LED_G_Toggle() (LATCINV = (1U<<4))
+#define RGB_LED_G_Get() ((PORTC >> 4) & 0x1U)
+#define RGB_LED_G_On() (LATCCLR = (1U<<4))
+#define RGB_LED_G_Off() (LATCSET = (1U<<4))
 /*** LED Macros for RGB_LED_R ***/
-#define RGB_LED_R_Toggle() (LATCINV = (1<<1))
-#define RGB_LED_R_Get() ((PORTC >> 1) & 0x1)
-#define RGB_LED_R_On() (LATCCLR = (1<<1))
-#define RGB_LED_R_Off() (LATCSET = (1<<1))
+#define RGB_LED_R_Toggle() (LATCINV = (1U<<1))
+#define RGB_LED_R_Get() ((PORTC >> 1) & 0x1U)
+#define RGB_LED_R_On() (LATCCLR = (1U<<1))
+#define RGB_LED_R_Off() (LATCSET = (1U<<1))
 /*** SWITCH Macros for SWITCH4 ***/
-#define SWITCH4_Get() ((PORTB >> 13) & 0x1)
-#define SWITCH4_STATE_PRESSED 0
-#define SWITCH4_STATE_RELEASED 1
+#define SWITCH4_Get() ((PORTB >> 13) & 0x1U)
+#define SWITCH4_STATE_PRESSED 0U
+#define SWITCH4_STATE_RELEASED 1U
 /*** SWITCH Macros for SWITCH1 ***/
-#define SWITCH1_Get() ((PORTB >> 11) & 0x1)
-#define SWITCH1_STATE_PRESSED 0
-#define SWITCH1_STATE_RELEASED 1
+#define SWITCH1_Get() ((PORTB >> 11) & 0x1U)
+#define SWITCH1_STATE_PRESSED 0U
+#define SWITCH1_STATE_RELEASED 1U
 /*** SWITCH Macros for SWITCH2 ***/
-#define SWITCH2_Get() ((PORTG >> 15) & 0x1)
-#define SWITCH2_STATE_PRESSED 0
-#define SWITCH2_STATE_RELEASED 1
+#define SWITCH2_Get() ((PORTG >> 15) & 0x1U)
+#define SWITCH2_STATE_PRESSED 0U
+#define SWITCH2_STATE_RELEASED 1U
 /*** SWITCH Macros for SWITCH3 ***/
-#define SWITCH3_Get() ((PORTH >> 12) & 0x1)
-#define SWITCH3_STATE_PRESSED 0
-#define SWITCH3_STATE_RELEASED 1
+#define SWITCH3_Get() ((PORTH >> 12) & 0x1U)
+#define SWITCH3_STATE_PRESSED 0U
+#define SWITCH3_STATE_RELEASED 1U
 /*** VBUS Macros for VBUS_AH ***/
-#define VBUS_AH_PowerEnable() (LATESET = (1<<0))
-#define VBUS_AH_PowerDisable() (LATECLR = (1<<0))
+#define VBUS_AH_PowerEnable() (LATESET = (1U<<0))
+#define VBUS_AH_PowerDisable() (LATECLR = (1U<<0))
 
 
 

@@ -29,8 +29,6 @@ void legato_updateScreenState(void);
 // do not do anything in the application if this returns true
 leBool legato_isChangingScreens(void);
 
-void legato_preprocessImages(void);
-
 
 //DOM-IGNORE-BEGIN
 

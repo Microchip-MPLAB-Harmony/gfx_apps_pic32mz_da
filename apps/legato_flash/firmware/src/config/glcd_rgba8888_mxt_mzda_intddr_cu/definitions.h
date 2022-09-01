@@ -61,10 +61,10 @@
 #include "driver/sst26/drv_sst26.h"
 #include "driver/i2c/drv_i2c.h"
 #include "system/time/sys_time.h"
-#include "peripheral/coretimer/plib_coretimer.h"
-#include "driver/usb/usbhs/drv_usbhs.h"
 #include "usb/usb_chapter_9.h"
 #include "usb/usb_host.h"
+#include "driver/usb/usbhs/drv_usbhs.h"
+#include "peripheral/coretimer/plib_coretimer.h"
 #include "peripheral/i2c/master/plib_i2c2_master.h"
 #include "system/input/sys_input.h"
 #include "system/fs/sys_fs.h"
@@ -74,8 +74,8 @@
 #include "system/fs/fat_fs/file_system/ffconf.h"
 #include "system/fs/fat_fs/hardware_access/diskio.h"
 #include "bsp/bsp.h"
-#include "peripheral/ddr/plib_ddr.h"
 #include "peripheral/sqi/plib_sqi1.h"
+#include "peripheral/ddr/plib_ddr.h"
 #include "driver/input/drv_maxtouch.h"
 #include "system/int/sys_int.h"
 #include "system/cache/sys_cache.h"
@@ -211,9 +211,9 @@ typedef struct
 
     SYS_MODULE_OBJ  drvSST26;
     SYS_MODULE_OBJ  sysTime;
-	SYS_MODULE_OBJ  drvUSBHSObject;
-
 	SYS_MODULE_OBJ  usbHostObject0;
+
+	SYS_MODULE_OBJ  drvUSBHSObject;
 
     SYS_MODULE_OBJ  drvMAXTOUCH;
 

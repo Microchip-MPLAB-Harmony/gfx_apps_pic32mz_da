@@ -9,8 +9,6 @@ void legato_initializeScreenState(void)
 
     initializeStrings();
 
-    legato_preprocessImages();
-
     screenInit_Screen0();
     screenInit_Splash();
 

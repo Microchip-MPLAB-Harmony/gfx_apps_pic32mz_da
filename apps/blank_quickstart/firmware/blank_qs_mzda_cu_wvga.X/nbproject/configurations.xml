@@ -268,6 +268,7 @@
         <itemPath>../src/config/glcd_rgba8888_mxt_mzda_intddr_cu_wvga/glcd_rgba8888_mxt_mzda_intddr_cu_wvga.mhc/GraphSettings.yml</itemPath>
         <itemPath>../src/config/glcd_rgba8888_mxt_mzda_intddr_cu_wvga/glcd_rgba8888_mxt_mzda_intddr_cu_wvga.mhc/HarmonyCore.yml</itemPath>
         <itemPath>../src/config/glcd_rgba8888_mxt_mzda_intddr_cu_wvga/glcd_rgba8888_mxt_mzda_intddr_cu_wvga.mhc/i2c2.yml</itemPath>
+        <itemPath>../src/config/glcd_rgba8888_mxt_mzda_intddr_cu_wvga/glcd_rgba8888_mxt_mzda_intddr_cu_wvga.mhc/legato_gfx_pda_tm5000.yml</itemPath>
         <itemPath>../src/config/glcd_rgba8888_mxt_mzda_intddr_cu_wvga/glcd_rgba8888_mxt_mzda_intddr_cu_wvga.mhc/le_gfx_driver_2dgpu.yml</itemPath>
         <itemPath>../src/config/glcd_rgba8888_mxt_mzda_intddr_cu_wvga/glcd_rgba8888_mxt_mzda_intddr_cu_wvga.mhc/le_gfx_driver_glcd.yml</itemPath>
         <itemPath>../src/config/glcd_rgba8888_mxt_mzda_intddr_cu_wvga/glcd_rgba8888_mxt_mzda_intddr_cu_wvga.mhc/project.yml</itemPath>
@@ -293,7 +294,7 @@
         <targetDevice>PIC32MZ2064DAR176</targetDevice>
         <targetHeader></targetHeader>
         <targetPluginBoard></targetPluginBoard>
-        <platformTool>noID</platformTool>
+        <platformTool>pkob4hybrid</platformTool>
         <languageToolchain>XC32</languageToolchain>
         <languageToolchainVersion>4.10</languageToolchainVersion>
         <platform>3</platform>
@@ -332,6 +333,7 @@
       <C32>
         <property key="additional-warnings" value="true"/>
         <property key="addresss-attribute-use" value="false"/>
+        <property key="appendMe" value=""/>
         <property key="enable-app-io" value="false"/>
         <property key="enable-omit-frame-pointer" value="false"/>
         <property key="enable-symbols" value="true"/>
@@ -388,6 +390,7 @@
         <property key="additional-options-use-response-files" value="false"/>
         <property key="additional-options-write-sla" value="false"/>
         <property key="allocate-dinit" value="false"/>
+        <property key="appendMe" value=""/>
         <property key="code-dinit" value="false"/>
         <property key="ebase-addr" value=""/>
         <property key="enable-check-sections" value="false"/>
@@ -427,6 +430,7 @@
       <C32CPP>
         <property key="additional-warnings" value="false"/>
         <property key="addresss-attribute-use" value="false"/>
+        <property key="appendMe" value=""/>
         <property key="check-new" value="false"/>
         <property key="eh-specs" value="true"/>
         <property key="enable-app-io" value="false"/>

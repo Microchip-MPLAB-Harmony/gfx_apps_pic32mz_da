@@ -5193,7 +5193,7 @@ leRasterFont NotoSansCJKtc_Regular =
     {
         {
             LE_STREAM_LOCATION_ID_USB_BIN, // data location id
-            (void*)0, // glyph table data address
+            (void*)65082, // glyph table data address
             1526496, // data size
         },
         LE_RASTER_FONT,

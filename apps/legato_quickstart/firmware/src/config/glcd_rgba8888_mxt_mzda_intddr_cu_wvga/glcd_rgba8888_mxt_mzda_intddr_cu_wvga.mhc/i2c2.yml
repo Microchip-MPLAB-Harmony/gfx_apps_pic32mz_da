@@ -12,6 +12,13 @@ children:
       - type: Dynamic
         attributes: {id: i2c2, value: '992'}
   - type: Integer
+    attributes: {id: I2CS_CORE_TIMER_FREQUENCY}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: i2c2, value: '100000000'}
+  - type: Integer
     attributes: {id: I2CS_RISE_TIME_CORE_TIMER_CNTS}
     children:
     - type: Values

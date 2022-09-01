@@ -23,3 +23,5 @@
 *.so binary
 *.otf binary
 *.pdf binary
+*.elf binary
+

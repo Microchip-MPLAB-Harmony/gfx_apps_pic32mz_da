@@ -37,37 +37,22 @@
 			}
 		},
 		"author": "Microchip",
-		"peripherals": [
-			"GPU",
-			"Touch",
-			"I2C",
-			"USB",
-			"SQI",
-			"GLCD",
-			"Display Controller"
-		],
 		"keywords": [
 			"MHC",
+			"MCC",
+			"MIPS",
 			"Harmony",
 			"Middleware",
 			"Graphics",
-			"PIC32MZ2064DAR176",
-			"PIC32MZ DA Family",
-			"GPU",
-			"GLCD",
-			"External Bus Interface",
-			"External Memory",
-			"External NVM",
 			"Memory",
 			"Legato",
-			"Flash",
-			"Legato Flash",
+			"DDR2",
+            "maXTouch",
 			"Touch",
+            "I2C",
+			"GPU",
 			"I2C",
-			"USB",
-			"SQI",
-			"Display Controller",
-            "MaxTouch 4.3in"
+			"Graphics Controller"
 		],
 		"additionalData": {
 			"longDescription": {

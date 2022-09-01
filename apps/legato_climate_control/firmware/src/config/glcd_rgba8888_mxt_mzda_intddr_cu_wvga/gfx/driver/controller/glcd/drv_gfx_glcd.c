@@ -291,7 +291,7 @@ void DRV_GLCD_Initialize()
     rightMargin     = 40;
     leftMargin      = 40;
     hsyncLength     = 48;
-    vsyncLength     = 10;
+    vsyncLength     = 3;
     upperMargin     = 29;
     lowerMargin     = 13;
 

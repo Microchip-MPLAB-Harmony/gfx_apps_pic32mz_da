@@ -1,0 +1,6 @@
+format_version: v1.0
+type: UniqueComponent
+attributes: {id: legato_gfx_pda_tm5000}
+children:
+- type: ElementPosition
+  attributes: {x: '880', y: '20', id: legato_gfx_pda_tm5000}

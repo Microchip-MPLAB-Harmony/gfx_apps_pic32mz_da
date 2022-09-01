@@ -81,7 +81,7 @@ leImage MHGS_logo_small_jpeg =
 {
     {
         LE_STREAM_LOCATION_ID_SQI, // data location id
-        (void*)1524880, // data address
+        (void*)0, // data address
         19637, // data size
     },
     LE_IMAGE_FORMAT_JPEG,
@@ -93,7 +93,7 @@ leImage MHGS_logo_small_jpeg =
         },
         18612,
         19637,
-        (void*)1524880, // data address
+        (void*)0, // data address
         0, // flags
     },
     0, // image flags
@@ -115,7 +115,7 @@ leImage MHGS_logo_small_raw =
 {
     {
         LE_STREAM_LOCATION_ID_SQI, // data location id
-        (void*)1544517, // data address
+        (void*)19637, // data address
         37224, // data size
     },
     LE_IMAGE_FORMAT_RAW,
@@ -127,7 +127,7 @@ leImage MHGS_logo_small_raw =
         },
         18612,
         37224,
-        (void*)1544517, // data address
+        (void*)19637, // data address
         0, // flags
     },
     0, // image flags
@@ -149,7 +149,7 @@ leImage MHGS_logo_small_rle =
 {
     {
         LE_STREAM_LOCATION_ID_SQI, // data location id
-        (void*)1581741, // data address
+        (void*)56861, // data address
         27858, // data size
     },
     LE_IMAGE_FORMAT_RLE,
@@ -161,7 +161,7 @@ leImage MHGS_logo_small_rle =
         },
         18612,
         27858,
-        (void*)1581741, // data address
+        (void*)56861, // data address
         0, // flags
     },
     0, // image flags
@@ -183,7 +183,7 @@ leImage MHGS_logo_small_compressed =
 {
     {
         LE_STREAM_LOCATION_ID_SQI, // data location id
-        (void*)1609599, // data address
+        (void*)84719, // data address
         18612, // data size
     },
     LE_IMAGE_FORMAT_RAW,
@@ -195,7 +195,7 @@ leImage MHGS_logo_small_compressed =
         },
         18612,
         18612,
-        (void*)1609599, // data address
+        (void*)84719, // data address
         0, // flags
     },
     0, // image flags

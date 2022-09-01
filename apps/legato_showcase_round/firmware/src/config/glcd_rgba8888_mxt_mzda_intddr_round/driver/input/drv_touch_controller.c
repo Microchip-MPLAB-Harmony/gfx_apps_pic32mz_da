@@ -154,6 +154,7 @@ DRV_TOUCH_OBJ drv_touch =
 SGRE_touch_predict_result mg_result;
 //END OF CUSTOM CODE
 
+
 void drv_touch_i2c_callback (DRV_I2C_TRANSFER_EVENT  event,
                              DRV_I2C_TRANSFER_HANDLE transferHandle, 
                              uintptr_t context)

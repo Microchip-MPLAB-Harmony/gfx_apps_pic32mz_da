@@ -1,0 +1,14 @@
+package:
+  format-version: "1.0.0"
+  name: "gfx_apps_pic32mz_da"
+  version: "3.10.1"
+  type: "application"
+  status: "production"
+
+  dependencies:
+    - name: "gfx"
+      type: "package"
+      version: "3.11.1"
+    - name: "usb"
+      type: "package"
+      version: "3.10.0"

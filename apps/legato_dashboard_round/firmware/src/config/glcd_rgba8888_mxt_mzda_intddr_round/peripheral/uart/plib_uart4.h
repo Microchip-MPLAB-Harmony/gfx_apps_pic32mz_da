@@ -83,6 +83,8 @@ size_t UART4_WriteFreeBufferCountGet(void);
 
 size_t UART4_WriteBufferSizeGet(void);
 
+bool UART4_TransmitComplete(void);
+
 bool UART4_WriteNotificationEnable(bool isEnabled, bool isPersistent);
 
 void UART4_WriteThresholdSet(uint32_t nBytesThreshold);

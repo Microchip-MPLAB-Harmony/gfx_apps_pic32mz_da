@@ -45,24 +45,30 @@ The following table lists configuration properties:
 
 |Project Name|BSP Used|Graphics Template Used|Description|
 |:-----------|:-------|:---------------------|:----------|
-|legato\_showcase\_round\_X|PIC32MZ DA Radial Board|Legato Graphics w/ LCF0300633GGU00 Display|PIC32MZ DA Radial Graphics Development Board w/ LCF0300633GGU00 Display|
+|legato\_showcase\_round\_X|PIC32MZ DA Radial Board|Legato Graphics w/ LCF0300633GGU00 Display|PIC32MZ DA Radial Graphics Development Board (RGDB) w/ LCF0300633GGU00 Display|
 
 > \*\*\_NOTE:\_\*\* This application may contain custom code that is marked by the comments // START OF CUSTOM CODE ... and // END OF CUSTOM CODE. When using the MPLAB Harmony Configurator to regenerate the application code, use the "ALL" merging strategy and do not remove or replace the custom code.
 
-Configuring the Hardware (TBD)
+Configuring the Hardware
 ------------------------
 
 The final setup should be:
 
 Configure the hardware as follows:
 
--   Attach the 24-bit passthrough graphics interface card to the J601 connector on the PIC32MZ DA Curiosity board.
--   Connect the ribbon cable from the WQVGA display to the J2 connector on the 24-bit passthrough graphics interface card.
--   Connect a USB cable from the host computer to the DEBUG USB port on the PIC32MZ DA Curiosity board. This USB connection is used for power, code download and debugging.
+-   Attach the LCD and touch cable from the LCD module to the board.
 
-The final hardware setup should be:
+![](../../../../docs/html/rgdb_hw_setup.png)
 
-***TBD***
+-   An external debugger like ICD4 or PICKit4 is needed to debug and program the board. To connect a debugger, the ICSP Adapter board must be connected to the RGDB board and the debugger must be connected to the ICSP Adapter Board. The ICSP Adapter board header J2 connects to ICSP header J300 of the RGDB, as shown below.
+
+![](../../../../docs/html/rgdb_dbg_setup.png)
+
+-   Refer to the RGDB User's Guide for more details.
+
+The final hardware setup should similar to the image below:
+
+![](../../../../docs/html/rgdb_hw_setup_showcase.png)
 
 Running the Demonstration
 -------------------------

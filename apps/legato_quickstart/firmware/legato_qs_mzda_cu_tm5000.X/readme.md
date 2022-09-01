@@ -4,9 +4,9 @@
 Defining the Architecture
 -------------------------
 
-![](../../../../docs/html/legato_qs_mzda_cu_tm4301b_arch.png)
+![](../../../../docs/html/legato_qs_mzda_cu_arch.png)
 
-This application demonstrates multi-layer, WVGA graphics using internal SRAM only without the need for DDR memory.
+This application demonstrates multi-layer, WVGA graphics on the PIC32MZ DA MCU.
 
 User touch input on the display panel is received thru the PCAP capacitive touch controller, which sends a notification to the Touch Input Driver. The Touch Input Driver reads the touch information over I2C and sends the touch event to the Graphics Library thru the Input System Service.
 
@@ -15,7 +15,6 @@ User touch input on the display panel is received thru the PCAP capacitive touch
 -   Legato Graphics Library and Graphics Canvas
 -   Reference application for the PIC32MZ DAR/DAS devices with Internal DDR
 -   24-bit color, multi-layer, WVGA (800x480) screen design
--   16-bit RGB565 color depth support (65535 unique colors)
 -   Graphics Acceleration using integrated display controller (GLCD)
 
 Creating the Project Graph

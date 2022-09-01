@@ -14,7 +14,7 @@ This demonstration runs on:
 
 |MPLABX Configuration|Board Configuration|
 |:-------------------|:------------------|
-|[legato\_showcase\_round.X](./firmware/legato_showcase_round.X/readme.md)| [PIC32MZ DA Radial Graphics Development Board](https://www.microchip.com/radial) using GLCD peripheral display controller to drive the LCF0300633GGU00 round display module|
+|[legato\_showcase\_round.X](./firmware/legato_showcase_round.X/readme.md)| [PIC32MZ DA Radial Graphics Development Board (EV50P56A)](https://www.microchip.com/radial) using GLCD peripheral display controller to drive the LCF0300633GGU00 round display module|
 
 
  

@@ -171,13 +171,13 @@ static void fpsUpdateTimer_Callback()
         return;
     
     //Update the 10-pt rolling average
-    prevDrawCountAve[aveCounter] = (leGetRenderState()->drawCount - prevDrawCount);
+    prevDrawCountAve[aveCounter] = (leRenderer_GetDrawCount() - prevDrawCount);
     
     //If not pressed, show current FPS
     if(Screen2_MotionUpdateValue->fn->getPressed(Screen2_MotionUpdateValue) == LE_FALSE)
     {
             //Update FPS
-        rate = (leGetRenderState()->drawCount - prevDrawCount)/
+        rate = (leRenderer_GetDrawCount() - prevDrawCount)/
                (FPS_UPDATE_TIMER_PERIOD_MS/1000);
 
         sprintf(charBuff, "%u curr", (unsigned int)rate);
@@ -215,7 +215,7 @@ static void fpsUpdateTimer_Callback()
     Screen2_MotionUpdateValue->fn->setString(Screen2_MotionUpdateValue, (leString*)&fpsBtnText);
     
     //Update Refresh Rate
-    leGetRenderState()->dispDriver->ioctl(GFX_IOCTL_GET_VSYNC_COUNT, (gfxIOCTLArg_Value*) &val); 
+    leRenderer_DisplayInterface()->ioctl(GFX_IOCTL_GET_VSYNC_COUNT, (gfxIOCTLArg_Value*) &val); 
     rate =  (val.value.v_uint - prevVsyncCount) / (FPS_UPDATE_TIMER_PERIOD_MS/1000);
 
     //If vsyncCount does not increase, assume fixed refresh rate using vsyncCount
@@ -230,7 +230,7 @@ static void fpsUpdateTimer_Callback()
                                       (leString*)&refreshRateText);
     
     
-    prevDrawCount = leGetRenderState()->drawCount;
+    prevDrawCount = leRenderer_GetDrawCount();
     prevVsyncCount = val.value.v_uint;
     
 //    APP_DecrementCount(Counter1LabelWidget);
@@ -548,7 +548,7 @@ void Screen2_OnUpdate()
     {
         case SCREEN_DO_NOTHING:
         {
-            if(leGetRenderState()->frameState == LE_FRAME_READY &&
+            if(leRenderer_IsIdle() &&
                leEvent_GetCount() == 0)
             {            
                 moveRectangles();
@@ -558,7 +558,7 @@ void Screen2_OnUpdate()
         }
         case SCREEN_RECT_SIZE_UP:
         {
-            if(leGetRenderState()->frameState == LE_FRAME_READY &&
+            if(leRenderer_IsIdle() &&
                leEvent_GetCount() == 0)
             {            
                 increaseRectSize();
@@ -570,7 +570,7 @@ void Screen2_OnUpdate()
         }
         case SCREEN_RECT_SIZE_DOWN:
         {
-            if(leGetRenderState()->frameState == LE_FRAME_READY &&
+            if(leRenderer_IsIdle() &&
                leEvent_GetCount() == 0)
             {            
                 decreaseRectSize();
@@ -582,7 +582,7 @@ void Screen2_OnUpdate()
         }
         case SCREEN_RECT_COUNT_UP:
         {
-            if(leGetRenderState()->frameState == LE_FRAME_READY &&
+            if(leRenderer_IsIdle() &&
                leEvent_GetCount() == 0)
             {            
                 addRect();
@@ -594,7 +594,7 @@ void Screen2_OnUpdate()
         }
         case SCREEN_RECT_COUNT_DOWN:
         {
-            if(leGetRenderState()->frameState == LE_FRAME_READY &&
+            if(leRenderer_IsIdle() &&
                leEvent_GetCount() == 0)
             {            
                 removeRect();
@@ -616,7 +616,7 @@ void Screen2_OnUpdate()
         }
         case SCREEN_WAIT_FOR_NEXT:
         {
-            if(leGetRenderState()->frameState == LE_FRAME_READY &&
+            if(leRenderer_IsIdle() &&
                leEvent_GetCount() == 0)
             {
                 screenState = SCREEN_MOVE_TO_NEXT;

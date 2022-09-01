@@ -516,7 +516,6 @@
                 <itemPath>../src/config/glcd_rgba8888_mxt_mzda_intddr_round/gfx/legato/generated/le_gen_globalpalette.c</itemPath>
                 <itemPath>../src/config/glcd_rgba8888_mxt_mzda_intddr_round/gfx/legato/generated/le_gen_harmony.c</itemPath>
                 <itemPath>../src/config/glcd_rgba8888_mxt_mzda_intddr_round/gfx/legato/generated/le_gen_init.c</itemPath>
-                <itemPath>../src/config/glcd_rgba8888_mxt_mzda_intddr_round/gfx/legato/generated/le_gen_preprocess.c</itemPath>
                 <itemPath>../src/config/glcd_rgba8888_mxt_mzda_intddr_round/gfx/legato/generated/le_gen_scheme.c</itemPath>
                 <itemPath>../src/config/glcd_rgba8888_mxt_mzda_intddr_round/gfx/legato/generated/le_gen_stringtable.c</itemPath>
               </logicalFolder>
@@ -887,9 +886,9 @@
         <targetDevice>PIC32MZ2064DAS176</targetDevice>
         <targetHeader></targetHeader>
         <targetPluginBoard></targetPluginBoard>
-        <platformTool>noID</platformTool>
+        <platformTool>ICD4Tool</platformTool>
         <languageToolchain>XC32</languageToolchain>
-        <languageToolchainVersion>4.10</languageToolchainVersion>
+        <languageToolchainVersion>3.01</languageToolchainVersion>
         <platform>3</platform>
       </toolsSet>
       <packs>
@@ -925,8 +924,9 @@
         <makeCustomizationNormalizeHexFile>false</makeCustomizationNormalizeHexFile>
       </makeCustomizationType>
       <C32>
-        <property key="additional-warnings" value="true"/>
+        <property key="additional-warnings" value="false"/>
         <property key="addresss-attribute-use" value="false"/>
+        <property key="appendMe" value=""/>
         <property key="enable-app-io" value="false"/>
         <property key="enable-omit-frame-pointer" value="false"/>
         <property key="enable-symbols" value="true"/>
@@ -936,9 +936,9 @@
                   value="../src;../src/config/glcd_rgba8888_mxt_mzda_intddr_round;../src/config/glcd_rgba8888_mxt_mzda_intddr_round/system/fs/fat_fs/file_system;../src/config/glcd_rgba8888_mxt_mzda_intddr_round/system/fs/fat_fs/hardware_access"/>
         <property key="generate-16-bit-code" value="false"/>
         <property key="generate-micro-compressed-code" value="false"/>
-        <property key="isolate-each-function" value="true"/>
-        <property key="make-warnings-into-errors" value="true"/>
-        <property key="optimization-level" value="-O1"/>
+        <property key="isolate-each-function" value="false"/>
+        <property key="make-warnings-into-errors" value="false"/>
+        <property key="optimization-level" value=""/>
         <property key="place-data-into-section" value="false"/>
         <property key="post-instruction-scheduling" value="default"/>
         <property key="pre-instruction-scheduling" value="default"/>
@@ -983,6 +983,7 @@
         <property key="additional-options-use-response-files" value="false"/>
         <property key="additional-options-write-sla" value="false"/>
         <property key="allocate-dinit" value="false"/>
+        <property key="appendMe" value=""/>
         <property key="code-dinit" value="false"/>
         <property key="ebase-addr" value=""/>
         <property key="enable-check-sections" value="false"/>
@@ -1022,6 +1023,7 @@
       <C32CPP>
         <property key="additional-warnings" value="false"/>
         <property key="addresss-attribute-use" value="false"/>
+        <property key="appendMe" value=""/>
         <property key="check-new" value="false"/>
         <property key="eh-specs" value="true"/>
         <property key="enable-app-io" value="false"/>

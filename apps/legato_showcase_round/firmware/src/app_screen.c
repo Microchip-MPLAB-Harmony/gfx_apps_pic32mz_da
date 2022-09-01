@@ -2073,8 +2073,7 @@ void Screen0_OnUpdate(void)
     {
         case SCR_INIT:
         {
-            if(leGetRenderState()->frameState != LE_FRAME_READY || 
-               leEvent_GetCount() != 0)
+            if (!leRenderer_IsIdle() || leEvent_GetCount() != 0)
             {
                 break;
             }

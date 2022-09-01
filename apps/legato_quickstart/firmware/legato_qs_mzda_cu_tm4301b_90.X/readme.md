@@ -4,9 +4,9 @@
 Defining the Architecture
 -------------------------
 
-![](../../../../docs/html/legato_qs_mzda_cu_tm4301b_arch.png)
+![](../../../../docs/html/legato_qs_mzda_cu_arch.png)
 
-This application demonstrates multi-layer WQVGA graphics at 90 degree orientation. It uses internal SRAM only without the need for DDR memory.
+This application demonstrates multi-layer WQVGA graphics at 90 degree orientation. 
 
 User touch input on the display panel is received thru the PCAP capacitive touch controller, which sends a notification to the Touch Input Driver. The Touch Input Driver reads the touch information over I2C and sends the touch event to the Graphics Library thru the Input System Service.
 

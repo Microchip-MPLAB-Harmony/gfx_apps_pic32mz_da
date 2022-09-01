@@ -334,7 +334,6 @@ leResult screenShow_screen1(void)
     screen1_SyncButton->fn->setBackgroundType(screen1_SyncButton, LE_WIDGET_BACKGROUND_NONE);
     screen1_SyncButton->fn->setBorderType(screen1_SyncButton, LE_WIDGET_BORDER_NONE);
     screen1_SyncButton->fn->setToggleable(screen1_SyncButton, LE_TRUE);
-    screen1_SyncButton->fn->setPressed(screen1_SyncButton, LE_TRUE);
     screen1_SyncButton->fn->setPressedImage(screen1_SyncButton, (leImage*)&syncOn_rs);
     screen1_SyncButton->fn->setReleasedImage(screen1_SyncButton, (leImage*)&syncOff_rs);
     screen1_SyncButton->fn->setPressedOffset(screen1_SyncButton, 0);
@@ -685,9 +684,9 @@ leResult screenShow_screen1(void)
 
 void screenUpdate_screen1(void)
 {
-    root0->fn->setSize(root0, root0->parent->rect.width, root0->parent->rect.height);
-    root1->fn->setSize(root1, root1->parent->rect.width, root1->parent->rect.height);
-    root2->fn->setSize(root2, root2->parent->rect.width, root2->parent->rect.height);
+    root0->fn->setSize(root0, root0->rect.width, root0->rect.height);
+    root1->fn->setSize(root1, root1->rect.width, root1->rect.height);
+    root2->fn->setSize(root2, root2->rect.width, root2->rect.height);
 
     screen1_OnUpdate(); // raise event
 }

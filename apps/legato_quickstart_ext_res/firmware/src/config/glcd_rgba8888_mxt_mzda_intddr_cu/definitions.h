@@ -73,15 +73,15 @@
 #include "peripheral/cache/plib_cache.h"
 #include "peripheral/evic/plib_evic.h"
 #include "driver/usb/usbhs/drv_usbhs.h"
-#include "system/input/sys_input.h"
 #include "peripheral/i2c/master/plib_i2c2_master.h"
-#include "bsp/bsp.h"
+#include "system/input/sys_input.h"
 #include "system/fs/sys_fs.h"
 #include "system/fs/sys_fs_media_manager.h"
 #include "system/fs/sys_fs_fat_interface.h"
 #include "system/fs/fat_fs/file_system/ff.h"
 #include "system/fs/fat_fs/file_system/ffconf.h"
 #include "system/fs/fat_fs/hardware_access/diskio.h"
+#include "bsp/bsp.h"
 #include "app.h"
 
 

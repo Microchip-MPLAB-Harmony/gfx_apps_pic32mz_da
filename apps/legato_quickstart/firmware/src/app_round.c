@@ -5,7 +5,7 @@
     Microchip Technology Inc.
 
   File Name:
-    app.c
+    app_round.c
 
   Summary:
     This file contains the source code for the MPLAB Harmony application.
@@ -28,7 +28,6 @@
 // *****************************************************************************
 
 #include "app_round.h"
-#include "definitions.h"
 
 // *****************************************************************************
 // *****************************************************************************
@@ -36,12 +35,70 @@
 // *****************************************************************************
 // *****************************************************************************
 
-APP_ROUND_DATA appData;
+// *****************************************************************************
+/* Application Data
+
+  Summary:
+    Holds application data
+
+  Description:
+    This structure holds the application's data.
+
+  Remarks:
+    This structure should be initialized by the APP_ROUND_Initialize function.
+
+    Application strings and buffers are be defined outside this structure.
+*/
+
+APP_ROUND_DATA app_roundData;
+
+// *****************************************************************************
+// *****************************************************************************
+// Section: Application Callback Functions
+// *****************************************************************************
+// *****************************************************************************
+
+/* TODO:  Add any necessary callback functions.
+*/
+
+// *****************************************************************************
+// *****************************************************************************
+// Section: Application Local Functions
+// *****************************************************************************
+// *****************************************************************************
+
+
+/* TODO:  Add any necessary local functions.
+*/
+
+
+// *****************************************************************************
+// *****************************************************************************
+// Section: Application Initialization and State Machine Functions
+// *****************************************************************************
+// *****************************************************************************
+
+/*******************************************************************************
+  Function:
+    void APP_ROUND_Initialize ( void )
+
+  Remarks:
+    See prototype in app_round.h.
+ */
 
 void APP_ROUND_Initialize ( void )
 {
-    appData.state = APP_ROUND_STATE_INIT;
+    /* Place the App state machine in its initial state. */
+    app_roundData.state = APP_ROUND_STATE_INIT;
+
+
+
+    /* TODO: Initialize your application's state machine and other
+     * parameters.
+     */
 }
+
+
 /******************************************************************************
   Function:
     void APP_ROUND_Tasks ( void )
@@ -52,23 +109,39 @@ void APP_ROUND_Initialize ( void )
 
 void APP_ROUND_Tasks ( void )
 {
+
     /* Check the application's current state. */
-    switch ( appData.state )
+    switch ( app_roundData.state )
     {
         /* Application's initial state. */
         case APP_ROUND_STATE_INIT:
-        {   
-            appData.state = APP_ROUND_STATE_SERVICE_TASKS;
+        {
+            bool appInitialized = true;
+
+
+            if (appInitialized)
+            {
+
+                app_roundData.state = APP_ROUND_STATE_SERVICE_TASKS;
+            }
             break;
         }
+
         case APP_ROUND_STATE_SERVICE_TASKS:
         {
+
             break;
         }
+
+        /* TODO: implement your application state machine.*/
+
+
         /* The default state should never be executed. */
         default:
+        {
+            /* TODO: Handle error in application's state machine. */
             break;
-
+        }
     }
 }
 

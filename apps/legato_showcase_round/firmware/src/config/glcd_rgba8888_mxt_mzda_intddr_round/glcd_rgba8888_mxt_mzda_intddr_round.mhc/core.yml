@@ -3631,6 +3631,13 @@ children:
       - type: Dynamic
         attributes: {id: core, value: '512'}
   - type: Hex
+    attributes: {id: SYS_PORT_G_TRIS}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: core, value: '0'}
+  - type: Hex
     attributes: {id: SYS_PORT_H_ANSEL}
     children:
     - type: Values

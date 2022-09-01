@@ -53,8 +53,8 @@
 #include "usb/usb_chapter_9.h"
 #include "usb/usb_device.h"
 #include "peripheral/ocmp/plib_ocmp1.h"
-#include "driver/i2c/drv_i2c.h"
 #include "gfx/canvas/gfx_canvas_api.h"
+#include "driver/i2c/drv_i2c.h"
 #include "system/time/sys_time.h"
 #include "usb/usb_device_cdc.h"
 #include "usb/usb_cdc.h"
@@ -81,8 +81,8 @@
 #include "peripheral/gpio/plib_gpio.h"
 #include "peripheral/cache/plib_cache.h"
 #include "peripheral/evic/plib_evic.h"
-#include "driver/usb/usbhs/drv_usbhs.h"
 #include "peripheral/i2c/master/plib_i2c1_master.h"
+#include "driver/usb/usbhs/drv_usbhs.h"
 #include "peripheral/i2c/master/plib_i2c2_master.h"
 #include "system/input/sys_input.h"
 #include "system/fs/sys_fs.h"
@@ -222,7 +222,7 @@ typedef struct
     /* I2C0 Driver Object */
     SYS_MODULE_OBJ drvI2C0;
 
-	SYS_MODULE_OBJ  usbDevObject0;
+    SYS_MODULE_OBJ  usbDevObject0;
 
     SYS_MODULE_OBJ  sysTime;
     SYS_MODULE_OBJ  sysConsole0;

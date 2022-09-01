@@ -2,15 +2,6 @@ format_version: v1.0
 type: GeneratorComponent
 attributes: {id: drv_i2c}
 children:
-- type: Symbols
-  children:
-  - type: Combo
-    attributes: {id: DRV_I2C_MODE}
-    children:
-    - type: Values
-      children:
-      - type: Dynamic
-        attributes: {id: drv_i2c, value: Asynchronous}
 - type: Instances
   children:
   - type: InstanceComponent
@@ -54,4 +45,4 @@ children:
             children:
             - {type: Value, value: I2C2_I2C}
 - type: ElementPosition
-  attributes: {x: '217', y: '198', id: drv_i2c}
+  attributes: {x: '193', y: '216', id: drv_i2c}

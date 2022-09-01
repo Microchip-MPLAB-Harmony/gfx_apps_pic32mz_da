@@ -37,35 +37,22 @@
 			}
 		},
 		"author": "Microchip",
-		"peripherals": [
-			"GPU",
-			"Touch",
-			"I2C",
-			"Display Controller"
-		],
 		"keywords": [
 			"MHC",
+			"MCC",
+			"MIPS",
 			"Harmony",
 			"Middleware",
 			"Graphics",
-			"PIC32MZ2064DAS176",
-			"PIC32MZ DA Family",
-			"GPU",
-			"External Bus Interface",
-			"External Memory",
 			"Memory",
 			"Legato",
-			"Round",
-			"Round Display",
-			"Showcase",
-			"Legato Showcase Round",
-			"RGDB",
-			"Radial",
-			"Radial Graphics Developmebt Board",
-			"Radial Display",
+			"DDR2",
+            "maXTouch",
 			"Touch",
+            "I2C",
+			"GPU",
 			"I2C",
-			"Display Controller"
+			"Graphics Controller"
 		],
 		"additionalData": {
 			"longDescription": {

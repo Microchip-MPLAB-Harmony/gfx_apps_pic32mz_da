@@ -37,36 +37,22 @@
 			}
 		},
 		"author": "Microchip",
-		"peripherals": [
-			"GPU",
-			"Touch",
-			"I2C",
-			"Display Controller",
-            "Memory Card",
-            "USB"
-		],
 		"keywords": [
 			"MHC",
+			"MCC",
+			"MIPS",
 			"Harmony",
 			"Middleware",
 			"Graphics",
-			"PIC32MZ2064DAR176",
-			"PIC32MZ DA Family",
-			"GPU",
-			"External Bus Interface",
-			"External Memory",
 			"Memory",
 			"Legato",
-			"External",
-			"Resources",
-			"Legato External Resources",
+			"DDR2",
+            "maXTouch",
 			"Touch",
+            "I2C",
+			"GPU",
 			"I2C",
-			"Display Controller",
-            "Memory Card",
-            "USB",
-            "File System",
-            "MaxTouch 4.3in"
+			"Graphics Controller"
 		],
 		"additionalData": {
 			"longDescription": {

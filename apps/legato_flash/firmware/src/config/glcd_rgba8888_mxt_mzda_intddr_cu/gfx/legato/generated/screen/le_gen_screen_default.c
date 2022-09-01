@@ -230,6 +230,7 @@ leResult screenShow_default(void)
     default_FlashingProgressBar->fn->setScheme(default_FlashingProgressBar, &ProgressScheme);
     default_FlashingProgressBar->fn->setHAlignment(default_FlashingProgressBar, LE_HALIGN_RIGHT);
     default_FlashingProgressBar->fn->setVAlignment(default_FlashingProgressBar, LE_VALIGN_BOTTOM);
+    default_FlashingProgressBar->fn->setValue(default_FlashingProgressBar, 537537586);
     default_FlashingPanel->fn->addChild(default_FlashingPanel, (leWidget*)default_FlashingProgressBar);
 
     leAddRootWidget(root0, 0);
@@ -244,7 +245,7 @@ leResult screenShow_default(void)
 
 void screenUpdate_default(void)
 {
-    root0->fn->setSize(root0, root0->parent->rect.width, root0->parent->rect.height);
+    root0->fn->setSize(root0, root0->rect.width, root0->rect.height);
 
     default_OnUpdate(); // raise event
 }

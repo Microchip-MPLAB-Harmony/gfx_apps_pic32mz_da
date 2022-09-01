@@ -54,8 +54,7 @@ void Splash_OnUpdate(void)
     {
         case SPLASH_INIT:
         {
-            if(leGetRenderState()->frameState != LE_FRAME_READY || 
-               leEvent_GetCount() != 0)
+            if (!leRenderer_IsIdle() || leEvent_GetCount() != 0)
             {
                 break;
             }

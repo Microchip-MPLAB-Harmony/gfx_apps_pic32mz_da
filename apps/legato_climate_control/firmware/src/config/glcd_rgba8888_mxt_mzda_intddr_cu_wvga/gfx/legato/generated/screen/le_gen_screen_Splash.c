@@ -91,9 +91,9 @@ leResult screenShow_Splash(void)
 
 void screenUpdate_Splash(void)
 {
-    root0->fn->setSize(root0, root0->parent->rect.width, root0->parent->rect.height);
-    root1->fn->setSize(root1, root1->parent->rect.width, root1->parent->rect.height);
-    root2->fn->setSize(root2, root2->parent->rect.width, root2->parent->rect.height);
+    root0->fn->setSize(root0, root0->rect.width, root0->rect.height);
+    root1->fn->setSize(root1, root1->rect.width, root1->rect.height);
+    root2->fn->setSize(root2, root2->rect.width, root2->rect.height);
 
     Splash_OnUpdate(); // raise event
 }

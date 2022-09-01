@@ -115,7 +115,7 @@ leImage MHGS_logo_small_raw =
 {
     {
         LE_STREAM_LOCATION_ID_USB_BIN, // data location id
-        (void*)1526496, // data address
+        (void*)0, // data address
         37224, // data size
     },
     LE_IMAGE_FORMAT_RAW,
@@ -127,7 +127,7 @@ leImage MHGS_logo_small_raw =
         },
         18612,
         37224,
-        (void*)1526496, // data address
+        (void*)0, // data address
         0, // flags
     },
     0, // image flags
@@ -149,7 +149,7 @@ leImage MHGS_logo_small_rle =
 {
     {
         LE_STREAM_LOCATION_ID_USB_BIN, // data location id
-        (void*)1563720, // data address
+        (void*)37224, // data address
         27858, // data size
     },
     LE_IMAGE_FORMAT_RLE,
@@ -161,7 +161,7 @@ leImage MHGS_logo_small_rle =
         },
         18612,
         27858,
-        (void*)1563720, // data address
+        (void*)37224, // data address
         0, // flags
     },
     0, // image flags

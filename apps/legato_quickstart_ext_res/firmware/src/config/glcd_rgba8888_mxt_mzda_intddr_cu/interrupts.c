@@ -62,6 +62,7 @@
 
 
 void CORE_TIMER_InterruptHandler( void );
+void TIMER_1_InterruptHandler( void );
 void DRV_USBHS_InterruptHandler( void );
 void DRV_USBHS_DMAInterruptHandler( void );
 void I2C2_BUS_InterruptHandler( void );
@@ -79,6 +80,7 @@ void __ISR(_CORE_TIMER_VECTOR, ipl1SRS) CORE_TIMER_Handler (void)
 
 void __ISR(_TIMER_1_VECTOR, ipl1SRS) TIMER_1_Handler (void)
 {
+    TIMER_1_InterruptHandler();
 }
 
 void __ISR(_USB_VECTOR, ipl1SRS) USB_Handler (void)
