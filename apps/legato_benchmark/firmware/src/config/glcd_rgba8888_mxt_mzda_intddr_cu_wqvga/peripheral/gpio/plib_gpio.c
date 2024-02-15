@@ -42,6 +42,8 @@
 //DOM-IGNORE-END
 
 #include "plib_gpio.h"
+#include "interrupts.h"
+
 
 
 
@@ -60,7 +62,13 @@ void GPIO_Initialize ( void )
 
     /* PORTA Initialization */
     /* PORTB Initialization */
+    ODCBSET = 0x2U; /* Open Drain Enable */
+    LATB = 0x2U; /* Initial Latch Value */
+    TRISBCLR = 0x2U; /* Direction Control */
     /* PORTC Initialization */
+    ODCCSET = 0x12U; /* Open Drain Enable */
+    LATC = 0x12U; /* Initial Latch Value */
+    TRISCCLR = 0x12U; /* Direction Control */
     /* PORTD Initialization */
     LATD = 0x1U; /* Initial Latch Value */
     TRISDCLR = 0x1U; /* Direction Control */
@@ -68,6 +76,8 @@ void GPIO_Initialize ( void )
     /* PORTF Initialization */
     /* PORTG Initialization */
     /* PORTH Initialization */
+    LATH = 0x400U; /* Initial Latch Value */
+    TRISHCLR = 0x400U; /* Direction Control */
     /* PORTJ Initialization */
     /* PORTK Initialization */
 

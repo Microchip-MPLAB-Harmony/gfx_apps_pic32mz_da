@@ -1053,11 +1053,11 @@ leResult screenShow_Screen0(void)
     root1->fn->addChild(root1, (leWidget*)Screen0_ButtonsPanel);
 
     Screen0_MchpLogoImage = leImageWidget_New();
-    Screen0_MchpLogoImage->fn->setPosition(Screen0_MchpLogoImage, 157, 162);
+    Screen0_MchpLogoImage->fn->setPosition(Screen0_MchpLogoImage, 158, 159);
     Screen0_MchpLogoImage->fn->setSize(Screen0_MchpLogoImage, 110, 110);
     Screen0_MchpLogoImage->fn->setBackgroundType(Screen0_MchpLogoImage, LE_WIDGET_BACKGROUND_NONE);
     Screen0_MchpLogoImage->fn->setBorderType(Screen0_MchpLogoImage, LE_WIDGET_BORDER_NONE);
-    Screen0_MchpLogoImage->fn->setImage(Screen0_MchpLogoImage, (leImage*)&mchp_circle);
+    Screen0_MchpLogoImage->fn->setImage(Screen0_MchpLogoImage, (leImage*)&mchp_logo2);
     Screen0_ButtonsPanel->fn->addChild(Screen0_ButtonsPanel, (leWidget*)Screen0_MchpLogoImage);
 
     Screen0_HomeButton = leButtonWidget_New();

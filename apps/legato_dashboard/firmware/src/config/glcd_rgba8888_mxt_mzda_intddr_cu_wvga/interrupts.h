@@ -57,6 +57,12 @@
 // *****************************************************************************
 // *****************************************************************************
 
+void CORE_TIMER_InterruptHandler( void );
+void TIMER_2_InterruptHandler( void );
+void I2C2_BUS_InterruptHandler( void );
+void I2C2_MASTER_InterruptHandler( void );
+void GLCD_Interrupt_Handler( void );
+
 
 
 #endif // INTERRUPTS_H

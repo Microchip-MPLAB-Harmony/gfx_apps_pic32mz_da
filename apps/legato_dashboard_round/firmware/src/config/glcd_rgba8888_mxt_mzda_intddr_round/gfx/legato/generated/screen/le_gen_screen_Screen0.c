@@ -48,12 +48,12 @@ leResult screenShow_Screen0(void)
     root0->fn->addChild(root0, (leWidget*)Screen0_ImageWidget0);
 
     Screen0_RPMButtonWidget = leButtonWidget_New();
-    Screen0_RPMButtonWidget->fn->setPosition(Screen0_RPMButtonWidget, 167, 165);
-    Screen0_RPMButtonWidget->fn->setSize(Screen0_RPMButtonWidget, 100, 100);
+    Screen0_RPMButtonWidget->fn->setPosition(Screen0_RPMButtonWidget, 176, 182);
+    Screen0_RPMButtonWidget->fn->setSize(Screen0_RPMButtonWidget, 80, 80);
     Screen0_RPMButtonWidget->fn->setBackgroundType(Screen0_RPMButtonWidget, LE_WIDGET_BACKGROUND_NONE);
     Screen0_RPMButtonWidget->fn->setBorderType(Screen0_RPMButtonWidget, LE_WIDGET_BORDER_NONE);
-    Screen0_RPMButtonWidget->fn->setPressedImage(Screen0_RPMButtonWidget, (leImage*)&mchp_circle);
-    Screen0_RPMButtonWidget->fn->setReleasedImage(Screen0_RPMButtonWidget, (leImage*)&mchp_circle);
+    Screen0_RPMButtonWidget->fn->setPressedImage(Screen0_RPMButtonWidget, (leImage*)&mchp_logo2);
+    Screen0_RPMButtonWidget->fn->setReleasedImage(Screen0_RPMButtonWidget, (leImage*)&mchp_logo2);
     Screen0_RPMButtonWidget->fn->setPressedOffset(Screen0_RPMButtonWidget, 0);
     Screen0_RPMButtonWidget->fn->setReleasedEventCallback(Screen0_RPMButtonWidget, event_Screen0_RPMButtonWidget_OnReleased);
     root0->fn->addChild(root0, (leWidget*)Screen0_RPMButtonWidget);
@@ -79,12 +79,12 @@ leResult screenShow_Screen0(void)
     root1->fn->addChild(root1, (leWidget*)Screen0_ImageWidget1);
 
     Screen0_MPHButtonWidget = leButtonWidget_New();
-    Screen0_MPHButtonWidget->fn->setPosition(Screen0_MPHButtonWidget, 167, 165);
-    Screen0_MPHButtonWidget->fn->setSize(Screen0_MPHButtonWidget, 100, 100);
+    Screen0_MPHButtonWidget->fn->setPosition(Screen0_MPHButtonWidget, 176, 182);
+    Screen0_MPHButtonWidget->fn->setSize(Screen0_MPHButtonWidget, 80, 80);
     Screen0_MPHButtonWidget->fn->setBackgroundType(Screen0_MPHButtonWidget, LE_WIDGET_BACKGROUND_NONE);
     Screen0_MPHButtonWidget->fn->setBorderType(Screen0_MPHButtonWidget, LE_WIDGET_BORDER_NONE);
-    Screen0_MPHButtonWidget->fn->setPressedImage(Screen0_MPHButtonWidget, (leImage*)&mchp_circle);
-    Screen0_MPHButtonWidget->fn->setReleasedImage(Screen0_MPHButtonWidget, (leImage*)&mchp_circle);
+    Screen0_MPHButtonWidget->fn->setPressedImage(Screen0_MPHButtonWidget, (leImage*)&mchp_logo2);
+    Screen0_MPHButtonWidget->fn->setReleasedImage(Screen0_MPHButtonWidget, (leImage*)&mchp_logo2);
     Screen0_MPHButtonWidget->fn->setPressedOffset(Screen0_MPHButtonWidget, 0);
     Screen0_MPHButtonWidget->fn->setReleasedEventCallback(Screen0_MPHButtonWidget, event_Screen0_MPHButtonWidget_OnReleased);
     root1->fn->addChild(root1, (leWidget*)Screen0_MPHButtonWidget);

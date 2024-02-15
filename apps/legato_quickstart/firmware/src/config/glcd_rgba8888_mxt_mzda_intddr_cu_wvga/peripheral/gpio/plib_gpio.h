@@ -71,14 +71,14 @@
 #define BSP_MAXTOUCH_CHG_Get()               ((PORTH >> 14) & 0x1U)
 #define BSP_MAXTOUCH_CHG_PIN                  GPIO_PIN_RH14
 
-/*** Macros for TM5000_BACKLIGHT pin ***/
-#define TM5000_BACKLIGHT_Set()               (LATDSET = (1U<<0))
-#define TM5000_BACKLIGHT_Clear()             (LATDCLR = (1U<<0))
-#define TM5000_BACKLIGHT_Toggle()            (LATDINV= (1U<<0))
-#define TM5000_BACKLIGHT_OutputEnable()      (TRISDCLR = (1U<<0))
-#define TM5000_BACKLIGHT_InputEnable()       (TRISDSET = (1U<<0))
-#define TM5000_BACKLIGHT_Get()               ((PORTD >> 0) & 0x1U)
-#define TM5000_BACKLIGHT_PIN                  GPIO_PIN_RD0
+/*** Macros for TM4301B_BACKLIGHT pin ***/
+#define TM4301B_BACKLIGHT_Set()               (LATDSET = (1U<<0))
+#define TM4301B_BACKLIGHT_Clear()             (LATDCLR = (1U<<0))
+#define TM4301B_BACKLIGHT_Toggle()            (LATDINV= (1U<<0))
+#define TM4301B_BACKLIGHT_OutputEnable()      (TRISDCLR = (1U<<0))
+#define TM4301B_BACKLIGHT_InputEnable()       (TRISDSET = (1U<<0))
+#define TM4301B_BACKLIGHT_Get()               ((PORTD >> 0) & 0x1U)
+#define TM4301B_BACKLIGHT_PIN                  GPIO_PIN_RD0
 
 /*** Macros for LCDDISP pin ***/
 #define LCDDISP_Set()               (LATHSET = (1U<<10))

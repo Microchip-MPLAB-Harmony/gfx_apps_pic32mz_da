@@ -237,9 +237,12 @@ void _leBarGraphWidget_GetGraphRect(const leBarGraphWidget* _this,
 {
     leRect categoryLabelMaxRect;
     leRect valueLabelMaxRect;
+    leRect globalRect;
 
-    graphRect->x = _this->widget.rect.x;
-    graphRect->y = _this->widget.rect.y;
+    _this->fn->rectToScreen(_this, &globalRect);
+
+    graphRect->x = globalRect.x;
+    graphRect->y = globalRect.y;
     graphRect->width = _this->widget.rect.width;
     graphRect->height = _this->widget.rect.height;
 
@@ -1120,7 +1123,7 @@ static leResult clearData(leBarGraphWidget* _this)
     leBarGraphCategory* cat;
     leBarGraphDataSeries* seriesArray;
 
-    uint32_t i;
+    uint32_t i,j;
     
     LE_ASSERT_THIS();
     
@@ -1141,6 +1144,11 @@ static leResult clearData(leBarGraphWidget* _this)
     for (i = 0; i < _this->dataSeriesArray.size; i++)
     {
         seriesArray = leArray_Get(&_this->dataSeriesArray, i);
+        
+        for(j = 0; j < seriesArray->data.size; j++)
+        {
+          LE_FREE(seriesArray->data.values[j]);
+        }
         
         if(seriesArray != NULL)
         {

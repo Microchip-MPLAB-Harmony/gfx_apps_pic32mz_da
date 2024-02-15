@@ -55,13 +55,13 @@
 #include "peripheral/evic/plib_evic.h"
 #include "peripheral/ocmp/plib_ocmp1.h"
 #include "system/time/sys_time.h"
-#include "driver/i2c/drv_i2c.h"
 #include "gfx/canvas/gfx_canvas_api.h"
+#include "driver/i2c/drv_i2c.h"
 #include "peripheral/coretimer/plib_coretimer.h"
-#include "peripheral/i2c/master/plib_i2c2_master.h"
 #include "system/input/sys_input.h"
-#include "bsp/bsp.h"
+#include "peripheral/i2c/master/plib_i2c2_master.h"
 #include "peripheral/tmr/plib_tmr2.h"
+#include "bsp/bsp.h"
 #include "driver/input/drv_maxtouch.h"
 #include "system/int/sys_int.h"
 #include "osal/osal.h"
@@ -77,6 +77,12 @@ extern "C" {
 
 #endif
 // DOM-IGNORE-END
+
+/* Device Information */
+#define DEVICE_NAME			 "PIC32MZ2064DAR176"
+#define DEVICE_ARCH			 "MIPS"
+#define DEVICE_FAMILY		 "PIC32MZDA"
+#define DEVICE_SERIES		 "PIC32MZ"
 
 /* CPU clock frequency */
 #define CPU_CLOCK_FREQUENCY 200000000

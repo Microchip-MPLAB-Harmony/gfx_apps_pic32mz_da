@@ -69,7 +69,7 @@
 #define GFX_GLCD_LAYERS 3
 #define GFX_GLCD_BACKGROUND_COLOR 0xFFFFFF00
 #define GFX_GLCD_CONFIG_CONTROL 0x80000000
-#define GFX_GLCD_CONFIG_CLK_DIVIDER 10
+#define GFX_GLCD_CONFIG_CLK_DIVIDER 6
 #define GFX_GLCD_GLOBAL_PALETTE_COLOR_COUNT 256
 
 #define SYNC_RECT_COUNT 200
@@ -311,7 +311,7 @@ void DRV_GLCD_Initialize()
     rightMargin     = 40;
     leftMargin      = 40;
     hsyncLength     = 48;
-    vsyncLength     = 10;
+    vsyncLength     = 3;
     upperMargin     = 29;
     lowerMargin     = 13;
 

@@ -918,15 +918,6 @@ extern leImage RoundBackground_base_432_gray;
 
 /*********************************
  * Legato Image Asset
- * Name:   mchp_circle
- * Size:   80x80 pixels
- * Type:   RGB Data
- * Format: RGBA_8888
- ***********************************/
-extern leImage mchp_circle;
-
-/*********************************
- * Legato Image Asset
  * Name:   bulb_l
  * Size:   48x56 pixels
  * Type:   RGB Data
@@ -1113,6 +1104,15 @@ extern leImage lock;
  * Format: RGB_565
  ***********************************/
 extern leImage unlock;
+
+/*********************************
+ * Legato Image Asset
+ * Name:   mchp_logo2
+ * Size:   110x58 pixels
+ * Type:   RGB Data
+ * Format: RGBA_8888
+ ***********************************/
+extern leImage mchp_logo2;
 
 /*****************************************************************************
  * Legato Graphics Font Assets

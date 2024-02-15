@@ -1,0 +1,14 @@
+configName: glcd_rgb565_mxt_mzda_intddr_cu_wqvga
+folderName: legato_qs_mzda_cu_tm4301b_rgb565
+format_version: v1.0
+frameworkPath: ..\..\..
+processor: PIC32MZ2064DAR176
+projectName: legato_quickstart_mzda_cu_wqvga_rgb565
+settings:
+  PackageFilter: bootloader;bsp;core;core_apps_pic32mz_da;core_apps_sam_9x60;core_apps_sam_a5d2;crypto;csp;csp_apps_pic32mz_da;csp_apps_pic32mz_ef;csp_apps_sam_9x60;csp_apps_sam_a5d2;csp_apps_sam_a7g5;csp_apps_sam_d20;csp_apps_sam_d21_da1;csp_apps_sam_d5x_e5x;csp_apps_sam_e70_s70_v70_v71;Devices;dev_packs;gfx;gfx_apps_pic32mz_da;gfx_apps_pic32mz_da_old;gfx_apps_pic32mz_ef;gfx_apps_sam_9x60;gfx_apps_sam_a5d2;gfx_apps_sam_c20_c21;gfx_apps_sam_d5x_e5x;gfx_apps_sam_e70_s70_v70_v71;gfx_apps_sam_l22;gfx_old;harmony-services;mc_apps_sam_d5x_e5x;mc_apps_sam_e7x_s7x_v7x;motor_control;net;quick_docs;touch;usb;x2c
+  FORCE_OPTIMIZATION: 'false'
+  GENERATE_BACKUP: 'true'
+  TRUSTZONE: 'false'
+  CMSISPath: .\dev_packs\arm\CMSIS\5.8.0
+  MERGE_STRATEGY: USER_ALL
+  DFPPath: PIC32MZ-DA_DFP\1.4.118

@@ -1,0 +1,1003 @@
+14443 1706859208676 XXXX 1706859208676, Thread 14443: XXXX 1706859208676, Exiting Thread 14443: Commands::runScriptWithDownload(WriteRAM)  
+14443 1706859208676 XXXX 1706859208676, Thread 14443: XXXX 1706859208676, Entering Thread 14443: Commands::runScriptWithUpload, script name = ReadRAM  
+14443 1706859208676 XXXX 1706859208676, Thread 14443: XXXX 1706859208676, Entering Thread 14443: ToolCommUsb::readTransfer, sideData is 0x28 bytes long, transferDataLength is 0x4 bytes long  
+14443 1706859208680 XXXX 1706859208680, Thread 14443: XXXX 1706859208680, Exiting Thread 14443: ToolCommUsb::readTransfer,  cr.status = 0x0  
+14443 1706859208680 XXXX 1706859208680, Thread 14443: XXXX 1706859208680, Exiting Thread 14443: Commands::runScriptWithUpload  
+14443 1706859208680 XXXX 1706859208680, Thread 14443: XXXX 1706859208680, Entering Thread 14443: Commands::runScriptWithDownload, script name = WriteRAM  
+14443 1706859208683 XXXX 1706859208683, Thread 14443: XXXX 1706859208683, Exiting Thread 14443: Commands::runScriptWithDownload(WriteRAM)  
+14443 1706859208683 XXXX 1706859208683, Thread 14443: XXXX 1706859208683, Entering Thread 14443: Commands::runScriptWithUpload, script name = ReadRAM  
+14443 1706859208683 XXXX 1706859208683, Thread 14443: XXXX 1706859208683, Entering Thread 14443: ToolCommUsb::readTransfer, sideData is 0x28 bytes long, transferDataLength is 0x4 bytes long  
+14443 1706859208687 XXXX 1706859208687, Thread 14443: XXXX 1706859208687, Exiting Thread 14443: ToolCommUsb::readTransfer,  cr.status = 0x0  
+14443 1706859208687 XXXX 1706859208687, Thread 14443: XXXX 1706859208687, Exiting Thread 14443: Commands::runScriptWithUpload  
+14443 1706859208687 XXXX 1706859208687, Thread 14443: XXXX 1706859208687, Entering Thread 14443: Commands::runScriptWithDownload, script name = WriteRAM  
+14443 1706859208690 XXXX 1706859208690, Thread 14443: XXXX 1706859208690, Exiting Thread 14443: Commands::runScriptWithDownload(WriteRAM)  
+14443 1706859208690 XXXX 1706859208690, Thread 14443: XXXX 1706859208690, Entering Thread 14443: Commands::runScriptWithUpload, script name = ReadRAM  
+14443 1706859208690 XXXX 1706859208690, Thread 14443: XXXX 1706859208690, Entering Thread 14443: ToolCommUsb::readTransfer, sideData is 0x28 bytes long, transferDataLength is 0x4 bytes long  
+14443 1706859208694 XXXX 1706859208694, Thread 14443: XXXX 1706859208694, Exiting Thread 14443: ToolCommUsb::readTransfer,  cr.status = 0x0  
+14443 1706859208694 XXXX 1706859208694, Thread 14443: XXXX 1706859208694, Exiting Thread 14443: Commands::runScriptWithUpload  
+14443 1706859208694 XXXX 1706859208694, Thread 14443: XXXX 1706859208694, Entering Thread 14443: Commands::runScriptWithDownload, script name = WriteRAM  
+14443 1706859208697 XXXX 1706859208697, Thread 14443: XXXX 1706859208697, Exiting Thread 14443: Commands::runScriptWithDownload(WriteRAM)  
+14443 1706859208697 XXXX 1706859208697, Thread 14443: XXXX 1706859208697, Entering Thread 14443: Commands::runScriptWithUpload, script name = ReadRAM  
+14443 1706859208697 XXXX 1706859208697, Thread 14443: XXXX 1706859208697, Entering Thread 14443: ToolCommUsb::readTransfer, sideData is 0x28 bytes long, transferDataLength is 0x4 bytes long  
+14443 1706859208701 XXXX 1706859208701, Thread 14443: XXXX 1706859208701, Exiting Thread 14443: ToolCommUsb::readTransfer,  cr.status = 0x0  
+14443 1706859208701 XXXX 1706859208701, Thread 14443: XXXX 1706859208701, Exiting Thread 14443: Commands::runScriptWithUpload  
+14443 1706859208701 XXXX 1706859208701, Thread 14443: XXXX 1706859208701, Entering Thread 14443: Commands::runScriptWithDownload, script name = WriteRAM  
+14443 1706859208704 XXXX 1706859208704, Thread 14443: XXXX 1706859208704, Exiting Thread 14443: Commands::runScriptWithDownload(WriteRAM)  
+14443 1706859208704 XXXX 1706859208704, Thread 14443: XXXX 1706859208704, Entering Thread 14443: Commands::runScriptWithUpload, script name = ReadRAM  
+14443 1706859208704 XXXX 1706859208704, Thread 14443: XXXX 1706859208704, Entering Thread 14443: ToolCommUsb::readTransfer, sideData is 0x28 bytes long, transferDataLength is 0x4 bytes long  
+14443 1706859208708 XXXX 1706859208708, Thread 14443: XXXX 1706859208708, Exiting Thread 14443: ToolCommUsb::readTransfer,  cr.status = 0x0  
+14443 1706859208708 XXXX 1706859208708, Thread 14443: XXXX 1706859208708, Exiting Thread 14443: Commands::runScriptWithUpload  
+14443 1706859208708 XXXX 1706859208708, Thread 14443: XXXX 1706859208708, Entering Thread 14443: Commands::runScriptWithDownload, script name = WriteRAM  
+14443 1706859208711 XXXX 1706859208711, Thread 14443: XXXX 1706859208711, Exiting Thread 14443: Commands::runScriptWithDownload(WriteRAM)  
+14443 1706859208711 XXXX 1706859208711, Thread 14443: XXXX 1706859208711, Entering Thread 14443: Commands::runScriptWithUpload, script name = ReadRAM  
+14443 1706859208711 XXXX 1706859208711, Thread 14443: XXXX 1706859208711, Entering Thread 14443: ToolCommUsb::readTransfer, sideData is 0x28 bytes long, transferDataLength is 0x4 bytes long  
+14443 1706859208715 XXXX 1706859208715, Thread 14443: XXXX 1706859208715, Exiting Thread 14443: ToolCommUsb::readTransfer,  cr.status = 0x0  
+14443 1706859208715 XXXX 1706859208715, Thread 14443: XXXX 1706859208715, Exiting Thread 14443: Commands::runScriptWithUpload  
+14443 1706859208715 XXXX 1706859208715, Thread 14443: XXXX 1706859208715, Entering Thread 14443: Commands::runScriptWithDownload, script name = WriteRAM  
+14443 1706859208718 XXXX 1706859208718, Thread 14443: XXXX 1706859208718, Exiting Thread 14443: Commands::runScriptWithDownload(WriteRAM)  
+14443 1706859208718 XXXX 1706859208718, Thread 14443: XXXX 1706859208718, Entering Thread 14443: Commands::runScriptWithUpload, script name = ReadRAM  
+14443 1706859208718 XXXX 1706859208718, Thread 14443: XXXX 1706859208718, Entering Thread 14443: ToolCommUsb::readTransfer, sideData is 0x28 bytes long, transferDataLength is 0x4 bytes long  
+14443 1706859208722 XXXX 1706859208722, Thread 14443: XXXX 1706859208722, Exiting Thread 14443: ToolCommUsb::readTransfer,  cr.status = 0x0  
+14443 1706859208722 XXXX 1706859208722, Thread 14443: XXXX 1706859208722, Exiting Thread 14443: Commands::runScriptWithUpload  
+14443 1706859208722 XXXX 1706859208722, Thread 14443: XXXX 1706859208722, Entering Thread 14443: Commands::runScriptWithDownload, script name = WriteRAM  
+14443 1706859208725 XXXX 1706859208725, Thread 14443: XXXX 1706859208725, Exiting Thread 14443: Commands::runScriptWithDownload(WriteRAM)  
+14443 1706859208725 XXXX 1706859208725, Thread 14443: XXXX 1706859208725, Entering Thread 14443: Commands::runScriptWithUpload, script name = ReadRAM  
+14443 1706859208725 XXXX 1706859208725, Thread 14443: XXXX 1706859208725, Entering Thread 14443: ToolCommUsb::readTransfer, sideData is 0x28 bytes long, transferDataLength is 0x4 bytes long  
+14443 1706859208728 XXXX 1706859208728, Thread 14443: XXXX 1706859208728, Exiting Thread 14443: ToolCommUsb::readTransfer,  cr.status = 0x0  
+14443 1706859208728 XXXX 1706859208728, Thread 14443: XXXX 1706859208728, Exiting Thread 14443: Commands::runScriptWithUpload  
+14443 1706859208728 XXXX 1706859208728, Thread 14443: XXXX 1706859208728, Entering Thread 14443: Commands::runScriptWithDownload, script name = WriteRAM  
+14443 1706859208732 XXXX 1706859208732, Thread 14443: XXXX 1706859208732, Exiting Thread 14443: Commands::runScriptWithDownload(WriteRAM)  
+14443 1706859208732 XXXX 1706859208732, Thread 14443: XXXX 1706859208732, Entering Thread 14443: Commands::runScriptWithUpload, script name = ReadRAM  
+14443 1706859208732 XXXX 1706859208732, Thread 14443: XXXX 1706859208732, Entering Thread 14443: ToolCommUsb::readTransfer, sideData is 0x28 bytes long, transferDataLength is 0x4 bytes long  
+14443 1706859208735 XXXX 1706859208735, Thread 14443: XXXX 1706859208735, Exiting Thread 14443: ToolCommUsb::readTransfer,  cr.status = 0x0  
+14443 1706859208735 XXXX 1706859208735, Thread 14443: XXXX 1706859208735, Exiting Thread 14443: Commands::runScriptWithUpload  
+14443 1706859208735 XXXX 1706859208735, Thread 14443: XXXX 1706859208735, Entering Thread 14443: Commands::runScriptWithDownload, script name = WriteRAM  
+14443 1706859208738 XXXX 1706859208738, Thread 14443: XXXX 1706859208738, Exiting Thread 14443: Commands::runScriptWithDownload(WriteRAM)  
+14443 1706859208738 XXXX 1706859208738, Thread 14443: XXXX 1706859208738, Entering Thread 14443: Commands::runScriptWithUpload, script name = ReadRAM  
+14443 1706859208738 XXXX 1706859208738, Thread 14443: XXXX 1706859208738, Entering Thread 14443: ToolCommUsb::readTransfer, sideData is 0x28 bytes long, transferDataLength is 0x4 bytes long  
+14443 1706859208742 XXXX 1706859208742, Thread 14443: XXXX 1706859208742, Exiting Thread 14443: ToolCommUsb::readTransfer,  cr.status = 0x0  
+14443 1706859208742 XXXX 1706859208742, Thread 14443: XXXX 1706859208742, Exiting Thread 14443: Commands::runScriptWithUpload  
+14443 1706859208742 XXXX 1706859208742, Thread 14443: XXXX 1706859208742, Entering Thread 14443: Commands::runScriptWithDownload, script name = WriteRAM  
+14443 1706859208745 XXXX 1706859208745, Thread 14443: XXXX 1706859208745, Exiting Thread 14443: Commands::runScriptWithDownload(WriteRAM)  
+14443 1706859208745 XXXX 1706859208745, Thread 14443: XXXX 1706859208745, Entering Thread 14443: Commands::runScriptWithUpload, script name = ReadRAM  
+14443 1706859208745 XXXX 1706859208745, Thread 14443: XXXX 1706859208745, Entering Thread 14443: ToolCommUsb::readTransfer, sideData is 0x28 bytes long, transferDataLength is 0x4 bytes long  
+14443 1706859208749 XXXX 1706859208749, Thread 14443: XXXX 1706859208749, Exiting Thread 14443: ToolCommUsb::readTransfer,  cr.status = 0x0  
+14443 1706859208749 XXXX 1706859208749, Thread 14443: XXXX 1706859208749, Exiting Thread 14443: Commands::runScriptWithUpload  
+14443 1706859208749 XXXX 1706859208749, Thread 14443: XXXX 1706859208749, Entering Thread 14443: Commands::runScriptWithDownload, script name = WriteRAM  
+14443 1706859208752 XXXX 1706859208752, Thread 14443: XXXX 1706859208752, Exiting Thread 14443: Commands::runScriptWithDownload(WriteRAM)  
+14443 1706859208752 XXXX 1706859208752, Thread 14443: XXXX 1706859208752, Entering Thread 14443: Commands::runScriptWithUpload, script name = ReadRAM  
+14443 1706859208752 XXXX 1706859208752, Thread 14443: XXXX 1706859208752, Entering Thread 14443: ToolCommUsb::readTransfer, sideData is 0x28 bytes long, transferDataLength is 0x4 bytes long  
+14443 1706859208756 XXXX 1706859208756, Thread 14443: XXXX 1706859208756, Exiting Thread 14443: ToolCommUsb::readTransfer,  cr.status = 0x0  
+14443 1706859208756 XXXX 1706859208756, Thread 14443: XXXX 1706859208756, Exiting Thread 14443: Commands::runScriptWithUpload  
+14443 1706859208756 XXXX 1706859208756, Thread 14443: XXXX 1706859208756, Entering Thread 14443: Commands::runScriptWithDownload, script name = WriteRAM  
+14443 1706859208759 XXXX 1706859208759, Thread 14443: XXXX 1706859208759, Exiting Thread 14443: Commands::runScriptWithDownload(WriteRAM)  
+14443 1706859208759 XXXX 1706859208759, Thread 14443: XXXX 1706859208759, Entering Thread 14443: Commands::runScriptWithUpload, script name = ReadRAM  
+14443 1706859208759 XXXX 1706859208759, Thread 14443: XXXX 1706859208759, Entering Thread 14443: ToolCommUsb::readTransfer, sideData is 0x28 bytes long, transferDataLength is 0x4 bytes long  
+14443 1706859208763 XXXX 1706859208763, Thread 14443: XXXX 1706859208763, Exiting Thread 14443: ToolCommUsb::readTransfer,  cr.status = 0x0  
+14443 1706859208763 XXXX 1706859208763, Thread 14443: XXXX 1706859208763, Exiting Thread 14443: Commands::runScriptWithUpload  
+14443 1706859208763 XXXX 1706859208763, Thread 14443: XXXX 1706859208763, Entering Thread 14443: Commands::runScriptWithDownload, script name = WriteRAM  
+14443 1706859208766 XXXX 1706859208766, Thread 14443: XXXX 1706859208766, Exiting Thread 14443: Commands::runScriptWithDownload(WriteRAM)  
+14443 1706859208766 XXXX 1706859208766, Thread 14443: XXXX 1706859208766, Entering Thread 14443: Commands::runScriptWithUpload, script name = ReadRAM  
+14443 1706859208766 XXXX 1706859208766, Thread 14443: XXXX 1706859208766, Entering Thread 14443: ToolCommUsb::readTransfer, sideData is 0x28 bytes long, transferDataLength is 0x4 bytes long  
+14443 1706859208770 XXXX 1706859208770, Thread 14443: XXXX 1706859208770, Exiting Thread 14443: ToolCommUsb::readTransfer,  cr.status = 0x0  
+14443 1706859208770 XXXX 1706859208770, Thread 14443: XXXX 1706859208770, Exiting Thread 14443: Commands::runScriptWithUpload  
+14443 1706859208770 XXXX 1706859208770, Thread 14443: XXXX 1706859208770, Entering Thread 14443: Commands::runScriptWithDownload, script name = WriteRAM  
+14443 1706859208773 XXXX 1706859208773, Thread 14443: XXXX 1706859208773, Exiting Thread 14443: Commands::runScriptWithDownload(WriteRAM)  
+14443 1706859208773 XXXX 1706859208773, Thread 14443: XXXX 1706859208773, Entering Thread 14443: Commands::runScriptWithUpload, script name = ReadRAM  
+14443 1706859208773 XXXX 1706859208773, Thread 14443: XXXX 1706859208773, Entering Thread 14443: ToolCommUsb::readTransfer, sideData is 0x28 bytes long, transferDataLength is 0x4 bytes long  
+14443 1706859208777 XXXX 1706859208777, Thread 14443: XXXX 1706859208777, Exiting Thread 14443: ToolCommUsb::readTransfer,  cr.status = 0x0  
+14443 1706859208777 XXXX 1706859208777, Thread 14443: XXXX 1706859208777, Exiting Thread 14443: Commands::runScriptWithUpload  
+14443 1706859208777 XXXX 1706859208777, Thread 14443: XXXX 1706859208777, Entering Thread 14443: Commands::runScriptWithDownload, script name = WriteRAM  
+14443 1706859208780 XXXX 1706859208780, Thread 14443: XXXX 1706859208780, Exiting Thread 14443: Commands::runScriptWithDownload(WriteRAM)  
+14443 1706859208780 XXXX 1706859208780, Thread 14443: XXXX 1706859208780, Entering Thread 14443: Commands::runScriptWithUpload, script name = ReadRAM  
+14443 1706859208780 XXXX 1706859208780, Thread 14443: XXXX 1706859208780, Entering Thread 14443: ToolCommUsb::readTransfer, sideData is 0x28 bytes long, transferDataLength is 0x4 bytes long  
+14443 1706859208784 XXXX 1706859208784, Thread 14443: XXXX 1706859208784, Exiting Thread 14443: ToolCommUsb::readTransfer,  cr.status = 0x0  
+14443 1706859208784 XXXX 1706859208784, Thread 14443: XXXX 1706859208784, Exiting Thread 14443: Commands::runScriptWithUpload  
+14443 1706859208784 XXXX 1706859208784, Thread 14443: XXXX 1706859208784, Entering Thread 14443: Commands::runScriptWithDownload, script name = WriteRAM  
+14443 1706859208787 XXXX 1706859208787, Thread 14443: XXXX 1706859208787, Exiting Thread 14443: Commands::runScriptWithDownload(WriteRAM)  
+14443 1706859208787 XXXX 1706859208787, Thread 14443: XXXX 1706859208787, Entering Thread 14443: Commands::runScriptWithUpload, script name = ReadRAM  
+14443 1706859208787 XXXX 1706859208787, Thread 14443: XXXX 1706859208787, Entering Thread 14443: ToolCommUsb::readTransfer, sideData is 0x28 bytes long, transferDataLength is 0x4 bytes long  
+14443 1706859208791 XXXX 1706859208791, Thread 14443: XXXX 1706859208791, Exiting Thread 14443: ToolCommUsb::readTransfer,  cr.status = 0x0  
+14443 1706859208791 XXXX 1706859208791, Thread 14443: XXXX 1706859208791, Exiting Thread 14443: Commands::runScriptWithUpload  
+14443 1706859208791 XXXX 1706859208791, Thread 14443: XXXX 1706859208791, Entering Thread 14443: Commands::runScriptWithDownload, script name = WriteRAM  
+14443 1706859208794 XXXX 1706859208794, Thread 14443: XXXX 1706859208794, Exiting Thread 14443: Commands::runScriptWithDownload(WriteRAM)  
+14443 1706859208794 XXXX 1706859208794, Thread 14443: XXXX 1706859208794, Entering Thread 14443: Commands::runScriptWithUpload, script name = ReadRAM  
+14443 1706859208794 XXXX 1706859208794, Thread 14443: XXXX 1706859208794, Entering Thread 14443: ToolCommUsb::readTransfer, sideData is 0x28 bytes long, transferDataLength is 0x4 bytes long  
+14443 1706859208798 XXXX 1706859208798, Thread 14443: XXXX 1706859208798, Exiting Thread 14443: ToolCommUsb::readTransfer,  cr.status = 0x0  
+14443 1706859208798 XXXX 1706859208798, Thread 14443: XXXX 1706859208798, Exiting Thread 14443: Commands::runScriptWithUpload  
+14443 1706859208798 XXXX 1706859208798, Thread 14443: XXXX 1706859208798, Entering Thread 14443: Commands::runScriptWithDownload, script name = WriteRAM  
+14443 1706859208801 XXXX 1706859208801, Thread 14443: XXXX 1706859208801, Exiting Thread 14443: Commands::runScriptWithDownload(WriteRAM)  
+14443 1706859208801 XXXX 1706859208801, Thread 14443: XXXX 1706859208801, Entering Thread 14443: Commands::runScriptWithUpload, script name = ReadRAM  
+14443 1706859208801 XXXX 1706859208801, Thread 14443: XXXX 1706859208801, Entering Thread 14443: ToolCommUsb::readTransfer, sideData is 0x28 bytes long, transferDataLength is 0x4 bytes long  
+14443 1706859208805 XXXX 1706859208805, Thread 14443: XXXX 1706859208805, Exiting Thread 14443: ToolCommUsb::readTransfer,  cr.status = 0x0  
+14443 1706859208805 XXXX 1706859208805, Thread 14443: XXXX 1706859208805, Exiting Thread 14443: Commands::runScriptWithUpload  
+14443 1706859208805 XXXX 1706859208805, Thread 14443: XXXX 1706859208805, Entering Thread 14443: Commands::runScriptWithDownload, script name = WriteRAM  
+14443 1706859208808 XXXX 1706859208808, Thread 14443: XXXX 1706859208808, Exiting Thread 14443: Commands::runScriptWithDownload(WriteRAM)  
+14443 1706859208808 XXXX 1706859208808, Thread 14443: XXXX 1706859208808, Entering Thread 14443: Commands::runScriptWithUpload, script name = ReadRAM  
+14443 1706859208808 XXXX 1706859208808, Thread 14443: XXXX 1706859208808, Entering Thread 14443: ToolCommUsb::readTransfer, sideData is 0x28 bytes long, transferDataLength is 0x4 bytes long  
+14443 1706859208812 XXXX 1706859208812, Thread 14443: XXXX 1706859208812, Exiting Thread 14443: ToolCommUsb::readTransfer,  cr.status = 0x0  
+14443 1706859208812 XXXX 1706859208812, Thread 14443: XXXX 1706859208812, Exiting Thread 14443: Commands::runScriptWithUpload  
+14443 1706859208812 XXXX 1706859208812, Thread 14443: XXXX 1706859208812, Entering Thread 14443: Commands::runScriptWithDownload, script name = WriteRAM  
+14443 1706859208815 XXXX 1706859208815, Thread 14443: XXXX 1706859208815, Exiting Thread 14443: Commands::runScriptWithDownload(WriteRAM)  
+14443 1706859208815 XXXX 1706859208815, Thread 14443: XXXX 1706859208815, Entering Thread 14443: Commands::runScriptWithUpload, script name = ReadRAM  
+14443 1706859208815 XXXX 1706859208815, Thread 14443: XXXX 1706859208815, Entering Thread 14443: ToolCommUsb::readTransfer, sideData is 0x28 bytes long, transferDataLength is 0x4 bytes long  
+14443 1706859208819 XXXX 1706859208819, Thread 14443: XXXX 1706859208819, Exiting Thread 14443: ToolCommUsb::readTransfer,  cr.status = 0x0  
+14443 1706859208819 XXXX 1706859208819, Thread 14443: XXXX 1706859208819, Exiting Thread 14443: Commands::runScriptWithUpload  
+14443 1706859208819 XXXX 1706859208819, Thread 14443: XXXX 1706859208819, Entering Thread 14443: Commands::runScriptWithDownload, script name = WriteRAM  
+14443 1706859208822 XXXX 1706859208822, Thread 14443: XXXX 1706859208822, Exiting Thread 14443: Commands::runScriptWithDownload(WriteRAM)  
+14443 1706859208822 XXXX 1706859208822, Thread 14443: XXXX 1706859208822, Entering Thread 14443: Commands::runScriptWithUpload, script name = ReadRAM  
+14443 1706859208822 XXXX 1706859208822, Thread 14443: XXXX 1706859208822, Entering Thread 14443: ToolCommUsb::readTransfer, sideData is 0x28 bytes long, transferDataLength is 0x4 bytes long  
+14443 1706859208826 XXXX 1706859208826, Thread 14443: XXXX 1706859208826, Exiting Thread 14443: ToolCommUsb::readTransfer,  cr.status = 0x0  
+14443 1706859208826 XXXX 1706859208826, Thread 14443: XXXX 1706859208826, Exiting Thread 14443: Commands::runScriptWithUpload  
+14443 1706859208826 XXXX 1706859208826, Thread 14443: XXXX 1706859208826, Entering Thread 14443: Commands::runScriptWithDownload, script name = WriteRAM  
+14443 1706859208829 XXXX 1706859208829, Thread 14443: XXXX 1706859208829, Exiting Thread 14443: Commands::runScriptWithDownload(WriteRAM)  
+14443 1706859208829 XXXX 1706859208829, Thread 14443: XXXX 1706859208829, Entering Thread 14443: Commands::runScriptWithUpload, script name = ReadRAM  
+14443 1706859208830 XXXX 1706859208830, Thread 14443: XXXX 1706859208829, Entering Thread 14443: ToolCommUsb::readTransfer, sideData is 0x28 bytes long, transferDataLength is 0x4 bytes long  
+14443 1706859208833 XXXX 1706859208833, Thread 14443: XXXX 1706859208833, Exiting Thread 14443: ToolCommUsb::readTransfer,  cr.status = 0x0  
+14443 1706859208833 XXXX 1706859208833, Thread 14443: XXXX 1706859208833, Exiting Thread 14443: Commands::runScriptWithUpload  
+14443 1706859208833 XXXX 1706859208833, Thread 14443: XXXX 1706859208833, Entering Thread 14443: Commands::runScriptWithDownload, script name = WriteRAM  
+14443 1706859208836 XXXX 1706859208836, Thread 14443: XXXX 1706859208836, Exiting Thread 14443: Commands::runScriptWithDownload(WriteRAM)  
+14443 1706859208836 XXXX 1706859208836, Thread 14443: XXXX 1706859208836, Entering Thread 14443: Commands::runScriptWithUpload, script name = ReadRAM  
+14443 1706859208836 XXXX 1706859208836, Thread 14443: XXXX 1706859208836, Entering Thread 14443: ToolCommUsb::readTransfer, sideData is 0x28 bytes long, transferDataLength is 0x4 bytes long  
+14443 1706859208840 XXXX 1706859208840, Thread 14443: XXXX 1706859208840, Exiting Thread 14443: ToolCommUsb::readTransfer,  cr.status = 0x0  
+14443 1706859208840 XXXX 1706859208840, Thread 14443: XXXX 1706859208840, Exiting Thread 14443: Commands::runScriptWithUpload  
+14443 1706859208840 XXXX 1706859208840, Thread 14443: XXXX 1706859208840, Entering Thread 14443: Commands::runScriptWithDownload, script name = WriteRAM  
+14443 1706859208843 XXXX 1706859208843, Thread 14443: XXXX 1706859208843, Exiting Thread 14443: Commands::runScriptWithDownload(WriteRAM)  
+14443 1706859208843 XXXX 1706859208843, Thread 14443: XXXX 1706859208843, Entering Thread 14443: Commands::runScriptWithUpload, script name = ReadRAM  
+14443 1706859208843 XXXX 1706859208843, Thread 14443: XXXX 1706859208843, Entering Thread 14443: ToolCommUsb::readTransfer, sideData is 0x28 bytes long, transferDataLength is 0x4 bytes long  
+14443 1706859208847 XXXX 1706859208847, Thread 14443: XXXX 1706859208847, Exiting Thread 14443: ToolCommUsb::readTransfer,  cr.status = 0x0  
+14443 1706859208847 XXXX 1706859208847, Thread 14443: XXXX 1706859208847, Exiting Thread 14443: Commands::runScriptWithUpload  
+14443 1706859208847 XXXX 1706859208847, Thread 14443: XXXX 1706859208847, Entering Thread 14443: Commands::runScriptWithDownload, script name = WriteRAM  
+14443 1706859208850 XXXX 1706859208850, Thread 14443: XXXX 1706859208850, Exiting Thread 14443: Commands::runScriptWithDownload(WriteRAM)  
+14443 1706859208850 XXXX 1706859208850, Thread 14443: XXXX 1706859208850, Entering Thread 14443: Commands::runScriptWithUpload, script name = ReadRAM  
+14443 1706859208850 XXXX 1706859208850, Thread 14443: XXXX 1706859208850, Entering Thread 14443: ToolCommUsb::readTransfer, sideData is 0x28 bytes long, transferDataLength is 0x4 bytes long  
+14443 1706859208854 XXXX 1706859208854, Thread 14443: XXXX 1706859208854, Exiting Thread 14443: ToolCommUsb::readTransfer,  cr.status = 0x0  
+14443 1706859208854 XXXX 1706859208854, Thread 14443: XXXX 1706859208854, Exiting Thread 14443: Commands::runScriptWithUpload  
+14443 1706859208854 XXXX 1706859208854, Thread 14443: XXXX 1706859208854, Entering Thread 14443: Commands::runScriptWithDownload, script name = WriteRAM  
+14443 1706859208858 XXXX 1706859208858, Thread 14443: XXXX 1706859208858, Exiting Thread 14443: Commands::runScriptWithDownload(WriteRAM)  
+14443 1706859208858 XXXX 1706859208858, Thread 14443: XXXX 1706859208858, Entering Thread 14443: Commands::runScriptWithUpload, script name = ReadRAM  
+14443 1706859208858 XXXX 1706859208858, Thread 14443: XXXX 1706859208858, Entering Thread 14443: ToolCommUsb::readTransfer, sideData is 0x28 bytes long, transferDataLength is 0x4 bytes long  
+14443 1706859208861 XXXX 1706859208861, Thread 14443: XXXX 1706859208861, Exiting Thread 14443: ToolCommUsb::readTransfer,  cr.status = 0x0  
+14443 1706859208861 XXXX 1706859208861, Thread 14443: XXXX 1706859208861, Exiting Thread 14443: Commands::runScriptWithUpload  
+14443 1706859208861 XXXX 1706859208861, Thread 14443: XXXX 1706859208861, Entering Thread 14443: Commands::runScriptWithDownload, script name = WriteRAM  
+14443 1706859208864 XXXX 1706859208864, Thread 14443: XXXX 1706859208864, Exiting Thread 14443: Commands::runScriptWithDownload(WriteRAM)  
+14443 1706859208865 XXXX 1706859208865, Thread 14443: XXXX 1706859208865, Entering Thread 14443: Commands::runScriptWithUpload, script name = ReadRAM  
+14443 1706859208865 XXXX 1706859208865, Thread 14443: XXXX 1706859208865, Entering Thread 14443: ToolCommUsb::readTransfer, sideData is 0x28 bytes long, transferDataLength is 0x4 bytes long  
+14443 1706859208868 XXXX 1706859208868, Thread 14443: XXXX 1706859208868, Exiting Thread 14443: ToolCommUsb::readTransfer,  cr.status = 0x0  
+14443 1706859208868 XXXX 1706859208868, Thread 14443: XXXX 1706859208868, Exiting Thread 14443: Commands::runScriptWithUpload  
+14443 1706859208868 XXXX 1706859208868, Thread 14443: XXXX 1706859208868, Entering Thread 14443: Commands::runScriptWithDownload, script name = WriteRAM  
+14443 1706859208872 XXXX 1706859208872, Thread 14443: XXXX 1706859208872, Exiting Thread 14443: Commands::runScriptWithDownload(WriteRAM)  
+14443 1706859208872 XXXX 1706859208872, Thread 14443: XXXX 1706859208872, Entering Thread 14443: Commands::runScriptWithUpload, script name = ReadRAM  
+14443 1706859208872 XXXX 1706859208872, Thread 14443: XXXX 1706859208872, Entering Thread 14443: ToolCommUsb::readTransfer, sideData is 0x28 bytes long, transferDataLength is 0x4 bytes long  
+14443 1706859208875 XXXX 1706859208875, Thread 14443: XXXX 1706859208875, Exiting Thread 14443: ToolCommUsb::readTransfer,  cr.status = 0x0  
+14443 1706859208875 XXXX 1706859208875, Thread 14443: XXXX 1706859208875, Exiting Thread 14443: Commands::runScriptWithUpload  
+14443 1706859208876 XXXX 1706859208876, Thread 14443: XXXX 1706859208876, Entering Thread 14443: Commands::runScriptWithDownload, script name = WriteRAM  
+14443 1706859208879 XXXX 1706859208879, Thread 14443: XXXX 1706859208879, Exiting Thread 14443: Commands::runScriptWithDownload(WriteRAM)  
+14443 1706859208879 XXXX 1706859208879, Thread 14443: XXXX 1706859208879, Entering Thread 14443: Commands::runScriptWithUpload, script name = ReadRAM  
+14443 1706859208879 XXXX 1706859208879, Thread 14443: XXXX 1706859208879, Entering Thread 14443: ToolCommUsb::readTransfer, sideData is 0x28 bytes long, transferDataLength is 0x4 bytes long  
+14443 1706859208882 XXXX 1706859208882, Thread 14443: XXXX 1706859208882, Exiting Thread 14443: ToolCommUsb::readTransfer,  cr.status = 0x0  
+14443 1706859208882 XXXX 1706859208882, Thread 14443: XXXX 1706859208882, Exiting Thread 14443: Commands::runScriptWithUpload  
+14443 1706859208883 XXXX 1706859208883, Thread 14443: XXXX 1706859208883, Entering Thread 14443: Commands::runScriptWithDownload, script name = WriteRAM  
+14443 1706859208886 XXXX 1706859208886, Thread 14443: XXXX 1706859208886, Exiting Thread 14443: Commands::runScriptWithDownload(WriteRAM)  
+14443 1706859208886 XXXX 1706859208886, Thread 14443: XXXX 1706859208886, Entering Thread 14443: Commands::runScriptWithUpload, script name = ReadRAM  
+14443 1706859208886 XXXX 1706859208886, Thread 14443: XXXX 1706859208886, Entering Thread 14443: ToolCommUsb::readTransfer, sideData is 0x28 bytes long, transferDataLength is 0x4 bytes long  
+14443 1706859208889 XXXX 1706859208889, Thread 14443: XXXX 1706859208889, Exiting Thread 14443: ToolCommUsb::readTransfer,  cr.status = 0x0  
+14443 1706859208889 XXXX 1706859208889, Thread 14443: XXXX 1706859208889, Exiting Thread 14443: Commands::runScriptWithUpload  
+14443 1706859208890 XXXX 1706859208890, Thread 14443: XXXX 1706859208890, Entering Thread 14443: Commands::runScriptWithDownload, script name = WriteRAM  
+14443 1706859208893 XXXX 1706859208893, Thread 14443: XXXX 1706859208893, Exiting Thread 14443: Commands::runScriptWithDownload(WriteRAM)  
+14443 1706859208893 XXXX 1706859208893, Thread 14443: XXXX 1706859208893, Entering Thread 14443: Commands::runScriptWithUpload, script name = ReadRAM  
+14443 1706859208893 XXXX 1706859208893, Thread 14443: XXXX 1706859208893, Entering Thread 14443: ToolCommUsb::readTransfer, sideData is 0x28 bytes long, transferDataLength is 0x4 bytes long  
+14443 1706859208896 XXXX 1706859208896, Thread 14443: XXXX 1706859208896, Exiting Thread 14443: ToolCommUsb::readTransfer,  cr.status = 0x0  
+14443 1706859208896 XXXX 1706859208896, Thread 14443: XXXX 1706859208896, Exiting Thread 14443: Commands::runScriptWithUpload  
+14443 1706859208897 XXXX 1706859208897, Thread 14443: XXXX 1706859208897, Entering Thread 14443: Commands::runScriptWithDownload, script name = WriteRAM  
+14443 1706859208901 XXXX 1706859208901, Thread 14443: XXXX 1706859208900, Exiting Thread 14443: Commands::runScriptWithDownload(WriteRAM)  
+14443 1706859208901 XXXX 1706859208901, Thread 14443: XXXX 1706859208901, Entering Thread 14443: Commands::runScriptWithUpload, script name = ReadRAM  
+14443 1706859208901 XXXX 1706859208901, Thread 14443: XXXX 1706859208901, Entering Thread 14443: ToolCommUsb::readTransfer, sideData is 0x28 bytes long, transferDataLength is 0x4 bytes long  
+14443 1706859208904 XXXX 1706859208904, Thread 14443: XXXX 1706859208904, Exiting Thread 14443: ToolCommUsb::readTransfer,  cr.status = 0x0  
+14443 1706859208905 XXXX 1706859208905, Thread 14443: XXXX 1706859208905, Exiting Thread 14443: Commands::runScriptWithUpload  
+14443 1706859208905 XXXX 1706859208905, Thread 14443: XXXX 1706859208905, Entering Thread 14443: Commands::runScriptWithDownload, script name = WriteRAM  
+14443 1706859208908 XXXX 1706859208908, Thread 14443: XXXX 1706859208908, Exiting Thread 14443: Commands::runScriptWithDownload(WriteRAM)  
+14443 1706859208908 XXXX 1706859208908, Thread 14443: XXXX 1706859208908, Entering Thread 14443: Commands::runScriptWithUpload, script name = ReadRAM  
+14443 1706859208908 XXXX 1706859208908, Thread 14443: XXXX 1706859208908, Entering Thread 14443: ToolCommUsb::readTransfer, sideData is 0x28 bytes long, transferDataLength is 0x4 bytes long  
+14443 1706859208912 XXXX 1706859208912, Thread 14443: XXXX 1706859208912, Exiting Thread 14443: ToolCommUsb::readTransfer,  cr.status = 0x0  
+14443 1706859208912 XXXX 1706859208912, Thread 14443: XXXX 1706859208912, Exiting Thread 14443: Commands::runScriptWithUpload  
+14443 1706859208912 XXXX 1706859208912, Thread 14443: XXXX 1706859208912, Entering Thread 14443: Commands::runScriptWithDownload, script name = WriteRAM  
+14443 1706859208915 XXXX 1706859208915, Thread 14443: XXXX 1706859208915, Exiting Thread 14443: Commands::runScriptWithDownload(WriteRAM)  
+14443 1706859208915 XXXX 1706859208915, Thread 14443: XXXX 1706859208915, Entering Thread 14443: Commands::runScriptWithUpload, script name = ReadRAM  
+14443 1706859208915 XXXX 1706859208915, Thread 14443: XXXX 1706859208915, Entering Thread 14443: ToolCommUsb::readTransfer, sideData is 0x28 bytes long, transferDataLength is 0x4 bytes long  
+14443 1706859208919 XXXX 1706859208919, Thread 14443: XXXX 1706859208919, Exiting Thread 14443: ToolCommUsb::readTransfer,  cr.status = 0x0  
+14443 1706859208919 XXXX 1706859208919, Thread 14443: XXXX 1706859208919, Exiting Thread 14443: Commands::runScriptWithUpload  
+14443 1706859208919 XXXX 1706859208919, Thread 14443: XXXX 1706859208919, Entering Thread 14443: Commands::runScriptWithDownload, script name = WriteRAM  
+14443 1706859208922 XXXX 1706859208922, Thread 14443: XXXX 1706859208922, Exiting Thread 14443: Commands::runScriptWithDownload(WriteRAM)  
+14443 1706859208922 XXXX 1706859208922, Thread 14443: XXXX 1706859208922, Entering Thread 14443: Commands::runScriptWithUpload, script name = ReadRAM  
+14443 1706859208922 XXXX 1706859208922, Thread 14443: XXXX 1706859208922, Entering Thread 14443: ToolCommUsb::readTransfer, sideData is 0x28 bytes long, transferDataLength is 0x4 bytes long  
+14443 1706859208926 XXXX 1706859208926, Thread 14443: XXXX 1706859208926, Exiting Thread 14443: ToolCommUsb::readTransfer,  cr.status = 0x0  
+14443 1706859208926 XXXX 1706859208926, Thread 14443: XXXX 1706859208926, Exiting Thread 14443: Commands::runScriptWithUpload  
+14443 1706859208926 XXXX 1706859208926, Thread 14443: XXXX 1706859208926, Entering Thread 14443: Commands::runScriptWithDownload, script name = WriteRAM  
+14443 1706859208929 XXXX 1706859208929, Thread 14443: XXXX 1706859208929, Exiting Thread 14443: Commands::runScriptWithDownload(WriteRAM)  
+14443 1706859208929 XXXX 1706859208929, Thread 14443: XXXX 1706859208929, Entering Thread 14443: Commands::runScriptWithUpload, script name = ReadRAM  
+14443 1706859208929 XXXX 1706859208929, Thread 14443: XXXX 1706859208929, Entering Thread 14443: ToolCommUsb::readTransfer, sideData is 0x28 bytes long, transferDataLength is 0x4 bytes long  
+14443 1706859208933 XXXX 1706859208933, Thread 14443: XXXX 1706859208933, Exiting Thread 14443: ToolCommUsb::readTransfer,  cr.status = 0x0  
+14443 1706859208933 XXXX 1706859208933, Thread 14443: XXXX 1706859208933, Exiting Thread 14443: Commands::runScriptWithUpload  
+14443 1706859208933 XXXX 1706859208933, Thread 14443: XXXX 1706859208933, Entering Thread 14443: Commands::runScriptWithDownload, script name = WriteRAM  
+14443 1706859208936 XXXX 1706859208936, Thread 14443: XXXX 1706859208936, Exiting Thread 14443: Commands::runScriptWithDownload(WriteRAM)  
+14443 1706859208936 XXXX 1706859208936, Thread 14443: XXXX 1706859208936, Entering Thread 14443: Commands::runScriptWithUpload, script name = ReadRAM  
+14443 1706859208936 XXXX 1706859208936, Thread 14443: XXXX 1706859208936, Entering Thread 14443: ToolCommUsb::readTransfer, sideData is 0x28 bytes long, transferDataLength is 0x4 bytes long  
+14443 1706859208940 XXXX 1706859208940, Thread 14443: XXXX 1706859208940, Exiting Thread 14443: ToolCommUsb::readTransfer,  cr.status = 0x0  
+14443 1706859208940 XXXX 1706859208940, Thread 14443: XXXX 1706859208940, Exiting Thread 14443: Commands::runScriptWithUpload  
+14443 1706859208940 XXXX 1706859208940, Thread 14443: XXXX 1706859208940, Entering Thread 14443: Commands::runScriptWithDownload, script name = WriteRAM  
+14443 1706859208943 XXXX 1706859208943, Thread 14443: XXXX 1706859208943, Exiting Thread 14443: Commands::runScriptWithDownload(WriteRAM)  
+14443 1706859208943 XXXX 1706859208943, Thread 14443: XXXX 1706859208943, Entering Thread 14443: Commands::runScriptWithUpload, script name = ReadRAM  
+14443 1706859208943 XXXX 1706859208943, Thread 14443: XXXX 1706859208943, Entering Thread 14443: ToolCommUsb::readTransfer, sideData is 0x28 bytes long, transferDataLength is 0x4 bytes long  
+14443 1706859208947 XXXX 1706859208947, Thread 14443: XXXX 1706859208947, Exiting Thread 14443: ToolCommUsb::readTransfer,  cr.status = 0x0  
+14443 1706859208947 XXXX 1706859208947, Thread 14443: XXXX 1706859208947, Exiting Thread 14443: Commands::runScriptWithUpload  
+14443 1706859208947 XXXX 1706859208947, Thread 14443: XXXX 1706859208947, Entering Thread 14443: Commands::runScriptWithDownload, script name = WriteRAM  
+14443 1706859208950 XXXX 1706859208950, Thread 14443: XXXX 1706859208950, Exiting Thread 14443: Commands::runScriptWithDownload(WriteRAM)  
+14443 1706859208950 XXXX 1706859208950, Thread 14443: XXXX 1706859208950, Entering Thread 14443: Commands::runScriptBasic, script name = GetPC, timeOut = -1 ms  
+14443 1706859208952 XXXX 1706859208952, Thread 14443: XXXX 1706859208952, Exiting Thread 14443: Commands::runScriptBasic  
+14443 1706859208962 XXXX 1706859208962, Thread 14443: XXXX 1706859208962, Entering Thread 14443: Commands::runScriptBasic, script name = Run, timeOut = -1 ms  
+14443 1706859208963 XXXX 1706859208963, Thread 14443: XXXX 1706859208963, Exiting Thread 14443: Commands::runScriptBasic  
+14443 1706859209220 XXXX 1706859209220, Thread 14443: XXXX 1706859209220, Entering Thread 14443: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+14443 1706859209221 XXXX 1706859209221, Thread 14443: XXXX 1706859209221, Exiting Thread 14443: Commands::runScriptBasic  
+14443 1706859209232 XXXX 1706859209232, Thread 14443: XXXX 1706859209232, Entering Thread 14443: Commands::runScriptWithUpload, script name = ReadRAM  
+14443 1706859209232 XXXX 1706859209232, Thread 14443: XXXX 1706859209232, Entering Thread 14443: ToolCommUsb::readTransfer, sideData is 0x28 bytes long, transferDataLength is 0x4 bytes long  
+14443 1706859209236 XXXX 1706859209236, Thread 14443: XXXX 1706859209236, Exiting Thread 14443: ToolCommUsb::readTransfer,  cr.status = 0x0  
+14443 1706859209236 XXXX 1706859209236, Thread 14443: XXXX 1706859209236, Exiting Thread 14443: Commands::runScriptWithUpload  
+14443 1706859209333 XXXX 1706859209333, Thread 14443: XXXX 1706859209333, Entering Thread 14443: Commands::runScriptWithDownload, script name = WriteRAM  
+14443 1706859209336 XXXX 1706859209336, Thread 14443: XXXX 1706859209336, Exiting Thread 14443: Commands::runScriptWithDownload(WriteRAM)  
+14443 1706859209336 XXXX 1706859209336, Thread 14443: XXXX 1706859209336, Entering Thread 14443: Commands::runScriptWithDownload, script name = WriteRAM  
+14443 1706859209339 XXXX 1706859209339, Thread 14443: XXXX 1706859209339, Exiting Thread 14443: Commands::runScriptWithDownload(WriteRAM)  
+14443 1706859209339 XXXX 1706859209339, Thread 14443: XXXX 1706859209339, Entering Thread 14443: Commands::runScriptWithDownload, script name = WriteRAM  
+14443 1706859209342 XXXX 1706859209342, Thread 14443: XXXX 1706859209342, Exiting Thread 14443: Commands::runScriptWithDownload(WriteRAM)  
+14443 1706859209343 XXXX 1706859209343, Thread 14443: XXXX 1706859209342, Entering Thread 14443: Commands::runScriptWithDownload, script name = WriteRAM  
+14443 1706859209345 XXXX 1706859209345, Thread 14443: XXXX 1706859209345, Exiting Thread 14443: Commands::runScriptWithDownload(WriteRAM)  
+14443 1706859209346 XXXX 1706859209346, Thread 14443: XXXX 1706859209346, Entering Thread 14443: Commands::runScriptWithDownload, script name = WriteRAM  
+14443 1706859209348 XXXX 1706859209348, Thread 14443: XXXX 1706859209348, Exiting Thread 14443: Commands::runScriptWithDownload(WriteRAM)  
+14443 1706859209349 XXXX 1706859209349, Thread 14443: XXXX 1706859209349, Entering Thread 14443: Commands::runScriptWithDownload, script name = WriteRAM  
+14443 1706859209351 XXXX 1706859209351, Thread 14443: XXXX 1706859209351, Exiting Thread 14443: Commands::runScriptWithDownload(WriteRAM)  
+14443 1706859209352 XXXX 1706859209352, Thread 14443: XXXX 1706859209352, Entering Thread 14443: Commands::runScriptWithDownload, script name = WriteRAM  
+14443 1706859209354 XXXX 1706859209354, Thread 14443: XXXX 1706859209354, Exiting Thread 14443: Commands::runScriptWithDownload(WriteRAM)  
+14443 1706859209355 XXXX 1706859209355, Thread 14443: XXXX 1706859209355, Entering Thread 14443: Commands::runScriptWithDownload, script name = WriteRAM  
+14443 1706859209357 XXXX 1706859209357, Thread 14443: XXXX 1706859209357, Exiting Thread 14443: Commands::runScriptWithDownload(WriteRAM)  
+14443 1706859209358 XXXX 1706859209358, Thread 14443: XXXX 1706859209358, Entering Thread 14443: Commands::runScriptWithDownload, script name = WriteRAM  
+14443 1706859209360 XXXX 1706859209360, Thread 14443: XXXX 1706859209360, Exiting Thread 14443: Commands::runScriptWithDownload(WriteRAM)  
+14443 1706859209361 XXXX 1706859209361, Thread 14443: XXXX 1706859209361, Entering Thread 14443: Commands::runScriptWithDownload, script name = WriteRAM  
+14443 1706859209364 XXXX 1706859209364, Thread 14443: XXXX 1706859209364, Exiting Thread 14443: Commands::runScriptWithDownload(WriteRAM)  
+14443 1706859209364 XXXX 1706859209364, Thread 14443: XXXX 1706859209364, Entering Thread 14443: Commands::runScriptWithDownload, script name = WriteRAM  
+14443 1706859209368 XXXX 1706859209368, Thread 14443: XXXX 1706859209368, Exiting Thread 14443: Commands::runScriptWithDownload(WriteRAM)  
+14443 1706859209368 XXXX 1706859209368, Thread 14443: XXXX 1706859209368, Entering Thread 14443: Commands::runScriptWithDownload, script name = WriteRAM  
+14443 1706859209372 XXXX 1706859209372, Thread 14443: XXXX 1706859209372, Exiting Thread 14443: Commands::runScriptWithDownload(WriteRAM)  
+14443 1706859209372 XXXX 1706859209372, Thread 14443: XXXX 1706859209372, Entering Thread 14443: Commands::runScriptWithDownload, script name = WriteRAM  
+14443 1706859209375 XXXX 1706859209375, Thread 14443: XXXX 1706859209375, Exiting Thread 14443: Commands::runScriptWithDownload(WriteRAM)  
+14443 1706859209375 XXXX 1706859209375, Thread 14443: XXXX 1706859209375, Entering Thread 14443: Commands::runScriptWithDownload, script name = WriteRAM  
+14443 1706859209378 XXXX 1706859209378, Thread 14443: XXXX 1706859209378, Exiting Thread 14443: Commands::runScriptWithDownload(WriteRAM)  
+14443 1706859209378 XXXX 1706859209378, Thread 14443: XXXX 1706859209378, Entering Thread 14443: Commands::runScriptWithDownload, script name = WriteRAM  
+14443 1706859209380 XXXX 1706859209380, Thread 14443: XXXX 1706859209380, Exiting Thread 14443: Commands::runScriptWithDownload(WriteRAM)  
+14443 1706859209380 XXXX 1706859209380, Thread 14443: XXXX 1706859209380, Entering Thread 14443: Commands::runScriptWithDownload, script name = WriteRAM  
+14443 1706859209383 XXXX 1706859209383, Thread 14443: XXXX 1706859209383, Exiting Thread 14443: Commands::runScriptWithDownload(WriteRAM)  
+14443 1706859209383 XXXX 1706859209383, Thread 14443: XXXX 1706859209383, Entering Thread 14443: Commands::runScriptWithDownload, script name = WriteRAM  
+14443 1706859209386 XXXX 1706859209386, Thread 14443: XXXX 1706859209386, Exiting Thread 14443: Commands::runScriptWithDownload(WriteRAM)  
+14443 1706859209386 XXXX 1706859209386, Thread 14443: XXXX 1706859209386, Entering Thread 14443: Commands::runScriptWithDownload, script name = WriteRAM  
+14443 1706859209389 XXXX 1706859209389, Thread 14443: XXXX 1706859209389, Exiting Thread 14443: Commands::runScriptWithDownload(WriteRAM)  
+14443 1706859209390 XXXX 1706859209390, Thread 14443: XXXX 1706859209390, Entering Thread 14443: Commands::runScriptWithUpload, script name = ReadRAM  
+14443 1706859209390 XXXX 1706859209390, Thread 14443: XXXX 1706859209390, Entering Thread 14443: ToolCommUsb::readTransfer, sideData is 0x28 bytes long, transferDataLength is 0x4 bytes long  
+14443 1706859209394 XXXX 1706859209394, Thread 14443: XXXX 1706859209394, Exiting Thread 14443: ToolCommUsb::readTransfer,  cr.status = 0x0  
+14443 1706859209394 XXXX 1706859209394, Thread 14443: XXXX 1706859209394, Exiting Thread 14443: Commands::runScriptWithUpload  
+14443 1706859209394 XXXX 1706859209394, Thread 14443: XXXX 1706859209394, Entering Thread 14443: Commands::runScriptWithUpload, script name = ReadRAM  
+14443 1706859209394 XXXX 1706859209394, Thread 14443: XXXX 1706859209394, Entering Thread 14443: ToolCommUsb::readTransfer, sideData is 0x28 bytes long, transferDataLength is 0x4 bytes long  
+14443 1706859209398 XXXX 1706859209398, Thread 14443: XXXX 1706859209398, Exiting Thread 14443: ToolCommUsb::readTransfer,  cr.status = 0x0  
+14443 1706859209398 XXXX 1706859209398, Thread 14443: XXXX 1706859209398, Exiting Thread 14443: Commands::runScriptWithUpload  
+14443 1706859209398 XXXX 1706859209398, Thread 14443: XXXX 1706859209398, Entering Thread 14443: Commands::runScriptBasic, script name = GetPC, timeOut = -1 ms  
+14443 1706859209401 XXXX 1706859209401, Thread 14443: XXXX 1706859209401, Exiting Thread 14443: Commands::runScriptBasic  
+14421 1706859209401 XXXX 1706859209401, Thread 14421: XXXX 1706859209401, Entering Thread 14421: Commands::runScriptWithUpload, script name = ReadRAM  
+14421 1706859209401 XXXX 1706859209401, Thread 14421: XXXX 1706859209401, Entering Thread 14421: ToolCommUsb::readTransfer, sideData is 0x28 bytes long, transferDataLength is 0x300 bytes long  
+14421 1706859209417 XXXX 1706859209417, Thread 14421: XXXX 1706859209417, Exiting Thread 14421: ToolCommUsb::readTransfer,  cr.status = 0x0  
+14421 1706859209417 XXXX 1706859209417, Thread 14421: XXXX 1706859209417, Exiting Thread 14421: Commands::runScriptWithUpload  
+14402 1706859216229 XXXX 1706859216229, Thread 14402: XXXX 1706859216229, Entering Thread 14402: Commands::runScriptWithUpload, script name = ReadRAM  
+14402 1706859216229 XXXX 1706859216229, Thread 14402: XXXX 1706859216229, Entering Thread 14402: ToolCommUsb::readTransfer, sideData is 0x28 bytes long, transferDataLength is 0x4 bytes long  
+14402 1706859216233 XXXX 1706859216233, Thread 14402: XXXX 1706859216233, Exiting Thread 14402: ToolCommUsb::readTransfer,  cr.status = 0x0  
+14402 1706859216233 XXXX 1706859216233, Thread 14402: XXXX 1706859216233, Exiting Thread 14402: Commands::runScriptWithUpload  
+14402 1706859216234 XXXX 1706859216234, Thread 14402: XXXX 1706859216234, Entering Thread 14402: Commands::runScriptWithUpload, script name = ReadRAM  
+14402 1706859216234 XXXX 1706859216234, Thread 14402: XXXX 1706859216234, Entering Thread 14402: ToolCommUsb::readTransfer, sideData is 0x28 bytes long, transferDataLength is 0x4 bytes long  
+14402 1706859216238 XXXX 1706859216238, Thread 14402: XXXX 1706859216238, Exiting Thread 14402: ToolCommUsb::readTransfer,  cr.status = 0x0  
+14402 1706859216239 XXXX 1706859216239, Thread 14402: XXXX 1706859216239, Exiting Thread 14402: Commands::runScriptWithUpload  
+14402 1706859216268 XXXX 1706859216268, Thread 14402: XXXX 1706859216268, Entering Thread 14402: Commands::runScriptWithUpload, script name = ReadRAM  
+14402 1706859216269 XXXX 1706859216269, Thread 14402: XXXX 1706859216269, Entering Thread 14402: ToolCommUsb::readTransfer, sideData is 0x28 bytes long, transferDataLength is 0x4 bytes long  
+14402 1706859216274 XXXX 1706859216274, Thread 14402: XXXX 1706859216273, Exiting Thread 14402: ToolCommUsb::readTransfer,  cr.status = 0x0  
+14402 1706859216274 XXXX 1706859216274, Thread 14402: XXXX 1706859216274, Exiting Thread 14402: Commands::runScriptWithUpload  
+14402 1706859216274 XXXX 1706859216274, Thread 14402: XXXX 1706859216274, Entering Thread 14402: Commands::runScriptWithUpload, script name = ReadRAM  
+14402 1706859216275 XXXX 1706859216275, Thread 14402: XXXX 1706859216275, Entering Thread 14402: ToolCommUsb::readTransfer, sideData is 0x28 bytes long, transferDataLength is 0x4 bytes long  
+14402 1706859216279 XXXX 1706859216279, Thread 14402: XXXX 1706859216279, Exiting Thread 14402: ToolCommUsb::readTransfer,  cr.status = 0x0  
+14402 1706859216279 XXXX 1706859216279, Thread 14402: XXXX 1706859216279, Exiting Thread 14402: Commands::runScriptWithUpload  
+14402 1706859216282 XXXX 1706859216282, Thread 14402: XXXX 1706859216282, Entering Thread 14402: Commands::runScriptWithUpload, script name = ReadRAM  
+14402 1706859216282 XXXX 1706859216282, Thread 14402: XXXX 1706859216282, Entering Thread 14402: ToolCommUsb::readTransfer, sideData is 0x28 bytes long, transferDataLength is 0x4 bytes long  
+14402 1706859216286 XXXX 1706859216286, Thread 14402: XXXX 1706859216286, Exiting Thread 14402: ToolCommUsb::readTransfer,  cr.status = 0x0  
+14402 1706859216286 XXXX 1706859216286, Thread 14402: XXXX 1706859216286, Exiting Thread 14402: Commands::runScriptWithUpload  
+14402 1706859216287 XXXX 1706859216287, Thread 14402: XXXX 1706859216287, Entering Thread 14402: Commands::runScriptWithUpload, script name = ReadRAM  
+14402 1706859216287 XXXX 1706859216287, Thread 14402: XXXX 1706859216287, Entering Thread 14402: ToolCommUsb::readTransfer, sideData is 0x28 bytes long, transferDataLength is 0x4 bytes long  
+14402 1706859216291 XXXX 1706859216291, Thread 14402: XXXX 1706859216291, Exiting Thread 14402: ToolCommUsb::readTransfer,  cr.status = 0x0  
+14402 1706859216292 XXXX 1706859216292, Thread 14402: XXXX 1706859216291, Exiting Thread 14402: Commands::runScriptWithUpload  
+14402 1706859216293 XXXX 1706859216293, Thread 14402: XXXX 1706859216293, Entering Thread 14402: Commands::runScriptWithUpload, script name = ReadRAM  
+14402 1706859216294 XXXX 1706859216294, Thread 14402: XXXX 1706859216294, Entering Thread 14402: ToolCommUsb::readTransfer, sideData is 0x28 bytes long, transferDataLength is 0x4 bytes long  
+14402 1706859216297 XXXX 1706859216297, Thread 14402: XXXX 1706859216297, Exiting Thread 14402: ToolCommUsb::readTransfer,  cr.status = 0x0  
+14402 1706859216298 XXXX 1706859216298, Thread 14402: XXXX 1706859216298, Exiting Thread 14402: Commands::runScriptWithUpload  
+14402 1706859216298 XXXX 1706859216298, Thread 14402: XXXX 1706859216298, Entering Thread 14402: Commands::runScriptWithUpload, script name = ReadRAM  
+14402 1706859216298 XXXX 1706859216298, Thread 14402: XXXX 1706859216298, Entering Thread 14402: ToolCommUsb::readTransfer, sideData is 0x28 bytes long, transferDataLength is 0x4 bytes long  
+14402 1706859216302 XXXX 1706859216302, Thread 14402: XXXX 1706859216302, Exiting Thread 14402: ToolCommUsb::readTransfer,  cr.status = 0x0  
+14402 1706859216303 XXXX 1706859216303, Thread 14402: XXXX 1706859216303, Exiting Thread 14402: Commands::runScriptWithUpload  
+14402 1706859216305 XXXX 1706859216305, Thread 14402: XXXX 1706859216305, Entering Thread 14402: Commands::runScriptWithUpload, script name = ReadRAM  
+14402 1706859216305 XXXX 1706859216305, Thread 14402: XXXX 1706859216305, Entering Thread 14402: ToolCommUsb::readTransfer, sideData is 0x28 bytes long, transferDataLength is 0x4 bytes long  
+14402 1706859216308 XXXX 1706859216308, Thread 14402: XXXX 1706859216308, Exiting Thread 14402: ToolCommUsb::readTransfer,  cr.status = 0x0  
+14402 1706859216309 XXXX 1706859216309, Thread 14402: XXXX 1706859216309, Exiting Thread 14402: Commands::runScriptWithUpload  
+14402 1706859216309 XXXX 1706859216309, Thread 14402: XXXX 1706859216309, Entering Thread 14402: Commands::runScriptWithUpload, script name = ReadRAM  
+14402 1706859216309 XXXX 1706859216309, Thread 14402: XXXX 1706859216309, Entering Thread 14402: ToolCommUsb::readTransfer, sideData is 0x28 bytes long, transferDataLength is 0x4 bytes long  
+14402 1706859216314 XXXX 1706859216314, Thread 14402: XXXX 1706859216314, Exiting Thread 14402: ToolCommUsb::readTransfer,  cr.status = 0x0  
+14402 1706859216314 XXXX 1706859216314, Thread 14402: XXXX 1706859216314, Exiting Thread 14402: Commands::runScriptWithUpload  
+14638 1706859216471 XXXX 1706859216471, Thread 14638: XXXX 1706859216471, Entering Thread 14638: Commands::runScriptWithUpload, script name = ReadRAM  
+14638 1706859216471 XXXX 1706859216471, Thread 14638: XXXX 1706859216471, Entering Thread 14638: ToolCommUsb::readTransfer, sideData is 0x28 bytes long, transferDataLength is 0x4 bytes long  
+14638 1706859216476 XXXX 1706859216476, Thread 14638: XXXX 1706859216476, Exiting Thread 14638: ToolCommUsb::readTransfer,  cr.status = 0x0  
+14638 1706859216476 XXXX 1706859216476, Thread 14638: XXXX 1706859216476, Exiting Thread 14638: Commands::runScriptWithUpload  
+14638 1706859216477 XXXX 1706859216477, Thread 14638: XXXX 1706859216477, Entering Thread 14638: Commands::runScriptWithUpload, script name = ReadRAM  
+14638 1706859216477 XXXX 1706859216477, Thread 14638: XXXX 1706859216477, Entering Thread 14638: ToolCommUsb::readTransfer, sideData is 0x28 bytes long, transferDataLength is 0x4 bytes long  
+14638 1706859216481 XXXX 1706859216481, Thread 14638: XXXX 1706859216481, Exiting Thread 14638: ToolCommUsb::readTransfer,  cr.status = 0x0  
+14638 1706859216481 XXXX 1706859216481, Thread 14638: XXXX 1706859216481, Exiting Thread 14638: Commands::runScriptWithUpload  
+14638 1706859216502 XXXX 1706859216502, Thread 14638: XXXX 1706859216502, Entering Thread 14638: Commands::runScriptWithUpload, script name = ReadRAM  
+14638 1706859216503 XXXX 1706859216503, Thread 14638: XXXX 1706859216503, Entering Thread 14638: ToolCommUsb::readTransfer, sideData is 0x28 bytes long, transferDataLength is 0x4 bytes long  
+14638 1706859216507 XXXX 1706859216507, Thread 14638: XXXX 1706859216507, Exiting Thread 14638: ToolCommUsb::readTransfer,  cr.status = 0x0  
+14638 1706859216507 XXXX 1706859216507, Thread 14638: XXXX 1706859216507, Exiting Thread 14638: Commands::runScriptWithUpload  
+14638 1706859216508 XXXX 1706859216508, Thread 14638: XXXX 1706859216508, Entering Thread 14638: Commands::runScriptWithUpload, script name = ReadRAM  
+14638 1706859216508 XXXX 1706859216508, Thread 14638: XXXX 1706859216508, Entering Thread 14638: ToolCommUsb::readTransfer, sideData is 0x28 bytes long, transferDataLength is 0x4 bytes long  
+14638 1706859216512 XXXX 1706859216512, Thread 14638: XXXX 1706859216512, Exiting Thread 14638: ToolCommUsb::readTransfer,  cr.status = 0x0  
+14638 1706859216512 XXXX 1706859216512, Thread 14638: XXXX 1706859216512, Exiting Thread 14638: Commands::runScriptWithUpload  
+14638 1706859216515 XXXX 1706859216515, Thread 14638: XXXX 1706859216515, Entering Thread 14638: Commands::runScriptWithUpload, script name = ReadRAM  
+14638 1706859216516 XXXX 1706859216516, Thread 14638: XXXX 1706859216516, Entering Thread 14638: ToolCommUsb::readTransfer, sideData is 0x28 bytes long, transferDataLength is 0x4 bytes long  
+14638 1706859216520 XXXX 1706859216520, Thread 14638: XXXX 1706859216520, Exiting Thread 14638: ToolCommUsb::readTransfer,  cr.status = 0x0  
+14638 1706859216521 XXXX 1706859216520, Thread 14638: XXXX 1706859216520, Exiting Thread 14638: Commands::runScriptWithUpload  
+14638 1706859216521 XXXX 1706859216521, Thread 14638: XXXX 1706859216521, Entering Thread 14638: Commands::runScriptWithUpload, script name = ReadRAM  
+14638 1706859216521 XXXX 1706859216521, Thread 14638: XXXX 1706859216521, Entering Thread 14638: ToolCommUsb::readTransfer, sideData is 0x28 bytes long, transferDataLength is 0x4 bytes long  
+14638 1706859216525 XXXX 1706859216525, Thread 14638: XXXX 1706859216525, Exiting Thread 14638: ToolCommUsb::readTransfer,  cr.status = 0x0  
+14638 1706859216525 XXXX 1706859216525, Thread 14638: XXXX 1706859216525, Exiting Thread 14638: Commands::runScriptWithUpload  
+14638 1706859216527 XXXX 1706859216527, Thread 14638: XXXX 1706859216527, Entering Thread 14638: Commands::runScriptWithUpload, script name = ReadRAM  
+14638 1706859216527 XXXX 1706859216527, Thread 14638: XXXX 1706859216527, Entering Thread 14638: ToolCommUsb::readTransfer, sideData is 0x28 bytes long, transferDataLength is 0x4 bytes long  
+14638 1706859216531 XXXX 1706859216531, Thread 14638: XXXX 1706859216531, Exiting Thread 14638: ToolCommUsb::readTransfer,  cr.status = 0x0  
+14638 1706859216532 XXXX 1706859216532, Thread 14638: XXXX 1706859216532, Exiting Thread 14638: Commands::runScriptWithUpload  
+14638 1706859216532 XXXX 1706859216532, Thread 14638: XXXX 1706859216532, Entering Thread 14638: Commands::runScriptWithUpload, script name = ReadRAM  
+14638 1706859216533 XXXX 1706859216533, Thread 14638: XXXX 1706859216533, Entering Thread 14638: ToolCommUsb::readTransfer, sideData is 0x28 bytes long, transferDataLength is 0x4 bytes long  
+14638 1706859216537 XXXX 1706859216537, Thread 14638: XXXX 1706859216537, Exiting Thread 14638: ToolCommUsb::readTransfer,  cr.status = 0x0  
+14638 1706859216538 XXXX 1706859216538, Thread 14638: XXXX 1706859216538, Exiting Thread 14638: Commands::runScriptWithUpload  
+14638 1706859216540 XXXX 1706859216540, Thread 14638: XXXX 1706859216540, Entering Thread 14638: Commands::runScriptWithUpload, script name = ReadRAM  
+14638 1706859216541 XXXX 1706859216541, Thread 14638: XXXX 1706859216541, Entering Thread 14638: ToolCommUsb::readTransfer, sideData is 0x28 bytes long, transferDataLength is 0x4 bytes long  
+14638 1706859216545 XXXX 1706859216545, Thread 14638: XXXX 1706859216545, Exiting Thread 14638: ToolCommUsb::readTransfer,  cr.status = 0x0  
+14638 1706859216545 XXXX 1706859216545, Thread 14638: XXXX 1706859216545, Exiting Thread 14638: Commands::runScriptWithUpload  
+14638 1706859216546 XXXX 1706859216546, Thread 14638: XXXX 1706859216546, Entering Thread 14638: Commands::runScriptWithUpload, script name = ReadRAM  
+14638 1706859216547 XXXX 1706859216546, Thread 14638: XXXX 1706859216546, Entering Thread 14638: ToolCommUsb::readTransfer, sideData is 0x28 bytes long, transferDataLength is 0x4 bytes long  
+14638 1706859216550 XXXX 1706859216550, Thread 14638: XXXX 1706859216550, Exiting Thread 14638: ToolCommUsb::readTransfer,  cr.status = 0x0  
+14638 1706859216550 XXXX 1706859216550, Thread 14638: XXXX 1706859216550, Exiting Thread 14638: Commands::runScriptWithUpload  
+14638 1706859221505 XXXX 1706859221505, Thread 14638: XXXX 1706859221505, Entering Thread 14638: Commands::runScriptWithDownload, script name = WriteRAM  
+14638 1706859221508 XXXX 1706859221508, Thread 14638: XXXX 1706859221508, Exiting Thread 14638: Commands::runScriptWithDownload(WriteRAM)  
+14638 1706859221508 XXXX 1706859221508, Thread 14638: XXXX 1706859221508, Entering Thread 14638: Commands::runScriptWithDownload, script name = WriteRAM  
+14638 1706859221512 XXXX 1706859221512, Thread 14638: XXXX 1706859221512, Exiting Thread 14638: Commands::runScriptWithDownload(WriteRAM)  
+14638 1706859221512 XXXX 1706859221512, Thread 14638: XXXX 1706859221512, Entering Thread 14638: Commands::runScriptWithDownload, script name = WriteRAM  
+14638 1706859221515 XXXX 1706859221515, Thread 14638: XXXX 1706859221515, Exiting Thread 14638: Commands::runScriptWithDownload(WriteRAM)  
+14638 1706859221515 XXXX 1706859221515, Thread 14638: XXXX 1706859221515, Entering Thread 14638: Commands::runScriptWithDownload, script name = WriteRAM  
+14638 1706859221518 XXXX 1706859221518, Thread 14638: XXXX 1706859221518, Exiting Thread 14638: Commands::runScriptWithDownload(WriteRAM)  
+14638 1706859221518 XXXX 1706859221518, Thread 14638: XXXX 1706859221518, Entering Thread 14638: Commands::runScriptWithDownload, script name = WriteRAM  
+14638 1706859221521 XXXX 1706859221521, Thread 14638: XXXX 1706859221521, Exiting Thread 14638: Commands::runScriptWithDownload(WriteRAM)  
+14638 1706859221521 XXXX 1706859221521, Thread 14638: XXXX 1706859221521, Entering Thread 14638: Commands::runScriptWithDownload, script name = WriteRAM  
+14638 1706859221524 XXXX 1706859221524, Thread 14638: XXXX 1706859221524, Exiting Thread 14638: Commands::runScriptWithDownload(WriteRAM)  
+14638 1706859221524 XXXX 1706859221524, Thread 14638: XXXX 1706859221524, Entering Thread 14638: Commands::runScriptWithDownload, script name = WriteRAM  
+14638 1706859221527 XXXX 1706859221527, Thread 14638: XXXX 1706859221527, Exiting Thread 14638: Commands::runScriptWithDownload(WriteRAM)  
+14638 1706859221527 XXXX 1706859221527, Thread 14638: XXXX 1706859221527, Entering Thread 14638: Commands::runScriptWithDownload, script name = WriteRAM  
+14638 1706859221530 XXXX 1706859221530, Thread 14638: XXXX 1706859221530, Exiting Thread 14638: Commands::runScriptWithDownload(WriteRAM)  
+14638 1706859221530 XXXX 1706859221530, Thread 14638: XXXX 1706859221530, Entering Thread 14638: Commands::runScriptWithDownload, script name = WriteRAM  
+14638 1706859221533 XXXX 1706859221533, Thread 14638: XXXX 1706859221533, Exiting Thread 14638: Commands::runScriptWithDownload(WriteRAM)  
+14638 1706859221533 XXXX 1706859221533, Thread 14638: XXXX 1706859221533, Entering Thread 14638: Commands::runScriptWithDownload, script name = WriteRAM  
+14638 1706859221536 XXXX 1706859221536, Thread 14638: XXXX 1706859221536, Exiting Thread 14638: Commands::runScriptWithDownload(WriteRAM)  
+14638 1706859221536 XXXX 1706859221536, Thread 14638: XXXX 1706859221536, Entering Thread 14638: Commands::runScriptWithDownload, script name = WriteRAM  
+14638 1706859221539 XXXX 1706859221539, Thread 14638: XXXX 1706859221539, Exiting Thread 14638: Commands::runScriptWithDownload(WriteRAM)  
+14638 1706859221539 XXXX 1706859221539, Thread 14638: XXXX 1706859221539, Entering Thread 14638: Commands::runScriptWithDownload, script name = WriteRAM  
+14638 1706859221542 XXXX 1706859221542, Thread 14638: XXXX 1706859221542, Exiting Thread 14638: Commands::runScriptWithDownload(WriteRAM)  
+14638 1706859221542 XXXX 1706859221542, Thread 14638: XXXX 1706859221542, Entering Thread 14638: Commands::runScriptWithDownload, script name = WriteRAM  
+14638 1706859221545 XXXX 1706859221545, Thread 14638: XXXX 1706859221545, Exiting Thread 14638: Commands::runScriptWithDownload(WriteRAM)  
+14638 1706859221545 XXXX 1706859221545, Thread 14638: XXXX 1706859221545, Entering Thread 14638: Commands::runScriptWithDownload, script name = WriteRAM  
+14638 1706859221548 XXXX 1706859221548, Thread 14638: XXXX 1706859221548, Exiting Thread 14638: Commands::runScriptWithDownload(WriteRAM)  
+14638 1706859221548 XXXX 1706859221548, Thread 14638: XXXX 1706859221548, Entering Thread 14638: Commands::runScriptWithDownload, script name = WriteRAM  
+14638 1706859221550 XXXX 1706859221550, Thread 14638: XXXX 1706859221550, Exiting Thread 14638: Commands::runScriptWithDownload(WriteRAM)  
+14638 1706859221550 XXXX 1706859221550, Thread 14638: XXXX 1706859221550, Entering Thread 14638: Commands::runScriptWithDownload, script name = WriteRAM  
+14638 1706859221553 XXXX 1706859221553, Thread 14638: XXXX 1706859221553, Exiting Thread 14638: Commands::runScriptWithDownload(WriteRAM)  
+14638 1706859221553 XXXX 1706859221553, Thread 14638: XXXX 1706859221553, Entering Thread 14638: Commands::runScriptWithDownload, script name = WriteRAM  
+14638 1706859221556 XXXX 1706859221556, Thread 14638: XXXX 1706859221556, Exiting Thread 14638: Commands::runScriptWithDownload(WriteRAM)  
+14638 1706859221556 XXXX 1706859221556, Thread 14638: XXXX 1706859221556, Entering Thread 14638: Commands::runScriptWithDownload, script name = WriteRAM  
+14638 1706859221559 XXXX 1706859221559, Thread 14638: XXXX 1706859221559, Exiting Thread 14638: Commands::runScriptWithDownload(WriteRAM)  
+14638 1706859221560 XXXX 1706859221560, Thread 14638: XXXX 1706859221560, Entering Thread 14638: Commands::runScriptWithUpload, script name = ReadRAM  
+14638 1706859221560 XXXX 1706859221560, Thread 14638: XXXX 1706859221560, Entering Thread 14638: ToolCommUsb::readTransfer, sideData is 0x28 bytes long, transferDataLength is 0x4 bytes long  
+14638 1706859221563 XXXX 1706859221563, Thread 14638: XXXX 1706859221563, Exiting Thread 14638: ToolCommUsb::readTransfer,  cr.status = 0x0  
+14638 1706859221563 XXXX 1706859221563, Thread 14638: XXXX 1706859221563, Exiting Thread 14638: Commands::runScriptWithUpload  
+14638 1706859221563 XXXX 1706859221563, Thread 14638: XXXX 1706859221563, Entering Thread 14638: Commands::runScriptWithDownload, script name = WriteRAM  
+14638 1706859221566 XXXX 1706859221566, Thread 14638: XXXX 1706859221566, Exiting Thread 14638: Commands::runScriptWithDownload(WriteRAM)  
+14638 1706859221566 XXXX 1706859221566, Thread 14638: XXXX 1706859221566, Entering Thread 14638: Commands::runScriptWithUpload, script name = ReadRAM  
+14638 1706859221566 XXXX 1706859221566, Thread 14638: XXXX 1706859221566, Entering Thread 14638: ToolCommUsb::readTransfer, sideData is 0x28 bytes long, transferDataLength is 0x4 bytes long  
+14638 1706859221570 XXXX 1706859221570, Thread 14638: XXXX 1706859221570, Exiting Thread 14638: ToolCommUsb::readTransfer,  cr.status = 0x0  
+14638 1706859221570 XXXX 1706859221570, Thread 14638: XXXX 1706859221570, Exiting Thread 14638: Commands::runScriptWithUpload  
+14638 1706859221570 XXXX 1706859221570, Thread 14638: XXXX 1706859221570, Entering Thread 14638: Commands::runScriptWithDownload, script name = WriteRAM  
+14638 1706859221573 XXXX 1706859221573, Thread 14638: XXXX 1706859221573, Exiting Thread 14638: Commands::runScriptWithDownload(WriteRAM)  
+14638 1706859221573 XXXX 1706859221573, Thread 14638: XXXX 1706859221573, Entering Thread 14638: Commands::runScriptWithUpload, script name = ReadRAM  
+14638 1706859221573 XXXX 1706859221573, Thread 14638: XXXX 1706859221573, Entering Thread 14638: ToolCommUsb::readTransfer, sideData is 0x28 bytes long, transferDataLength is 0x4 bytes long  
+14638 1706859221577 XXXX 1706859221577, Thread 14638: XXXX 1706859221577, Exiting Thread 14638: ToolCommUsb::readTransfer,  cr.status = 0x0  
+14638 1706859221577 XXXX 1706859221577, Thread 14638: XXXX 1706859221577, Exiting Thread 14638: Commands::runScriptWithUpload  
+14638 1706859221577 XXXX 1706859221577, Thread 14638: XXXX 1706859221577, Entering Thread 14638: Commands::runScriptWithDownload, script name = WriteRAM  
+14638 1706859221580 XXXX 1706859221580, Thread 14638: XXXX 1706859221580, Exiting Thread 14638: Commands::runScriptWithDownload(WriteRAM)  
+14638 1706859221580 XXXX 1706859221580, Thread 14638: XXXX 1706859221580, Entering Thread 14638: Commands::runScriptWithUpload, script name = ReadRAM  
+14638 1706859221580 XXXX 1706859221580, Thread 14638: XXXX 1706859221580, Entering Thread 14638: ToolCommUsb::readTransfer, sideData is 0x28 bytes long, transferDataLength is 0x4 bytes long  
+14638 1706859221584 XXXX 1706859221584, Thread 14638: XXXX 1706859221584, Exiting Thread 14638: ToolCommUsb::readTransfer,  cr.status = 0x0  
+14638 1706859221584 XXXX 1706859221584, Thread 14638: XXXX 1706859221584, Exiting Thread 14638: Commands::runScriptWithUpload  
+14638 1706859221584 XXXX 1706859221584, Thread 14638: XXXX 1706859221584, Entering Thread 14638: Commands::runScriptWithDownload, script name = WriteRAM  
+14638 1706859221587 XXXX 1706859221587, Thread 14638: XXXX 1706859221587, Exiting Thread 14638: Commands::runScriptWithDownload(WriteRAM)  
+14638 1706859221587 XXXX 1706859221587, Thread 14638: XXXX 1706859221587, Entering Thread 14638: Commands::runScriptWithUpload, script name = ReadRAM  
+14638 1706859221588 XXXX 1706859221588, Thread 14638: XXXX 1706859221588, Entering Thread 14638: ToolCommUsb::readTransfer, sideData is 0x28 bytes long, transferDataLength is 0x4 bytes long  
+14638 1706859221591 XXXX 1706859221591, Thread 14638: XXXX 1706859221591, Exiting Thread 14638: ToolCommUsb::readTransfer,  cr.status = 0x0  
+14638 1706859221591 XXXX 1706859221591, Thread 14638: XXXX 1706859221591, Exiting Thread 14638: Commands::runScriptWithUpload  
+14638 1706859221591 XXXX 1706859221591, Thread 14638: XXXX 1706859221591, Entering Thread 14638: Commands::runScriptWithDownload, script name = WriteRAM  
+14638 1706859221595 XXXX 1706859221595, Thread 14638: XXXX 1706859221595, Exiting Thread 14638: Commands::runScriptWithDownload(WriteRAM)  
+14638 1706859221595 XXXX 1706859221595, Thread 14638: XXXX 1706859221595, Entering Thread 14638: Commands::runScriptWithUpload, script name = ReadRAM  
+14638 1706859221595 XXXX 1706859221595, Thread 14638: XXXX 1706859221595, Entering Thread 14638: ToolCommUsb::readTransfer, sideData is 0x28 bytes long, transferDataLength is 0x4 bytes long  
+14638 1706859221598 XXXX 1706859221598, Thread 14638: XXXX 1706859221598, Exiting Thread 14638: ToolCommUsb::readTransfer,  cr.status = 0x0  
+14638 1706859221598 XXXX 1706859221598, Thread 14638: XXXX 1706859221598, Exiting Thread 14638: Commands::runScriptWithUpload  
+14638 1706859221598 XXXX 1706859221598, Thread 14638: XXXX 1706859221598, Entering Thread 14638: Commands::runScriptWithDownload, script name = WriteRAM  
+14638 1706859221602 XXXX 1706859221602, Thread 14638: XXXX 1706859221602, Exiting Thread 14638: Commands::runScriptWithDownload(WriteRAM)  
+14638 1706859221602 XXXX 1706859221602, Thread 14638: XXXX 1706859221602, Entering Thread 14638: Commands::runScriptWithUpload, script name = ReadRAM  
+14638 1706859221602 XXXX 1706859221602, Thread 14638: XXXX 1706859221602, Entering Thread 14638: ToolCommUsb::readTransfer, sideData is 0x28 bytes long, transferDataLength is 0x4 bytes long  
+14638 1706859221606 XXXX 1706859221606, Thread 14638: XXXX 1706859221606, Exiting Thread 14638: ToolCommUsb::readTransfer,  cr.status = 0x0  
+14638 1706859221606 XXXX 1706859221606, Thread 14638: XXXX 1706859221606, Exiting Thread 14638: Commands::runScriptWithUpload  
+14638 1706859221606 XXXX 1706859221606, Thread 14638: XXXX 1706859221606, Entering Thread 14638: Commands::runScriptWithDownload, script name = WriteRAM  
+14638 1706859221609 XXXX 1706859221609, Thread 14638: XXXX 1706859221609, Exiting Thread 14638: Commands::runScriptWithDownload(WriteRAM)  
+14638 1706859221609 XXXX 1706859221609, Thread 14638: XXXX 1706859221609, Entering Thread 14638: Commands::runScriptWithUpload, script name = ReadRAM  
+14638 1706859221609 XXXX 1706859221609, Thread 14638: XXXX 1706859221609, Entering Thread 14638: ToolCommUsb::readTransfer, sideData is 0x28 bytes long, transferDataLength is 0x4 bytes long  
+14638 1706859221612 XXXX 1706859221612, Thread 14638: XXXX 1706859221612, Exiting Thread 14638: ToolCommUsb::readTransfer,  cr.status = 0x0  
+14638 1706859221612 XXXX 1706859221612, Thread 14638: XXXX 1706859221612, Exiting Thread 14638: Commands::runScriptWithUpload  
+14638 1706859221613 XXXX 1706859221613, Thread 14638: XXXX 1706859221613, Entering Thread 14638: Commands::runScriptWithDownload, script name = WriteRAM  
+14638 1706859221616 XXXX 1706859221616, Thread 14638: XXXX 1706859221616, Exiting Thread 14638: Commands::runScriptWithDownload(WriteRAM)  
+14638 1706859221616 XXXX 1706859221616, Thread 14638: XXXX 1706859221616, Entering Thread 14638: Commands::runScriptWithUpload, script name = ReadRAM  
+14638 1706859221616 XXXX 1706859221616, Thread 14638: XXXX 1706859221616, Entering Thread 14638: ToolCommUsb::readTransfer, sideData is 0x28 bytes long, transferDataLength is 0x4 bytes long  
+14638 1706859221619 XXXX 1706859221619, Thread 14638: XXXX 1706859221619, Exiting Thread 14638: ToolCommUsb::readTransfer,  cr.status = 0x0  
+14638 1706859221619 XXXX 1706859221619, Thread 14638: XXXX 1706859221619, Exiting Thread 14638: Commands::runScriptWithUpload  
+14638 1706859221620 XXXX 1706859221620, Thread 14638: XXXX 1706859221620, Entering Thread 14638: Commands::runScriptWithDownload, script name = WriteRAM  
+14638 1706859221623 XXXX 1706859221623, Thread 14638: XXXX 1706859221623, Exiting Thread 14638: Commands::runScriptWithDownload(WriteRAM)  
+14638 1706859221623 XXXX 1706859221623, Thread 14638: XXXX 1706859221623, Entering Thread 14638: Commands::runScriptWithUpload, script name = ReadRAM  
+14638 1706859221623 XXXX 1706859221623, Thread 14638: XXXX 1706859221623, Entering Thread 14638: ToolCommUsb::readTransfer, sideData is 0x28 bytes long, transferDataLength is 0x4 bytes long  
+14638 1706859221626 XXXX 1706859221626, Thread 14638: XXXX 1706859221626, Exiting Thread 14638: ToolCommUsb::readTransfer,  cr.status = 0x0  
+14638 1706859221626 XXXX 1706859221626, Thread 14638: XXXX 1706859221626, Exiting Thread 14638: Commands::runScriptWithUpload  
+14638 1706859221627 XXXX 1706859221627, Thread 14638: XXXX 1706859221627, Entering Thread 14638: Commands::runScriptWithDownload, script name = WriteRAM  
+14638 1706859221630 XXXX 1706859221630, Thread 14638: XXXX 1706859221630, Exiting Thread 14638: Commands::runScriptWithDownload(WriteRAM)  
+14638 1706859221630 XXXX 1706859221630, Thread 14638: XXXX 1706859221630, Entering Thread 14638: Commands::runScriptWithUpload, script name = ReadRAM  
+14638 1706859221630 XXXX 1706859221630, Thread 14638: XXXX 1706859221630, Entering Thread 14638: ToolCommUsb::readTransfer, sideData is 0x28 bytes long, transferDataLength is 0x4 bytes long  
+14638 1706859221633 XXXX 1706859221633, Thread 14638: XXXX 1706859221633, Exiting Thread 14638: ToolCommUsb::readTransfer,  cr.status = 0x0  
+14638 1706859221634 XXXX 1706859221634, Thread 14638: XXXX 1706859221633, Exiting Thread 14638: Commands::runScriptWithUpload  
+14638 1706859221634 XXXX 1706859221634, Thread 14638: XXXX 1706859221634, Entering Thread 14638: Commands::runScriptWithDownload, script name = WriteRAM  
+14638 1706859221637 XXXX 1706859221637, Thread 14638: XXXX 1706859221637, Exiting Thread 14638: Commands::runScriptWithDownload(WriteRAM)  
+14638 1706859221637 XXXX 1706859221637, Thread 14638: XXXX 1706859221637, Entering Thread 14638: Commands::runScriptWithUpload, script name = ReadRAM  
+14638 1706859221637 XXXX 1706859221637, Thread 14638: XXXX 1706859221637, Entering Thread 14638: ToolCommUsb::readTransfer, sideData is 0x28 bytes long, transferDataLength is 0x4 bytes long  
+14638 1706859221640 XXXX 1706859221640, Thread 14638: XXXX 1706859221640, Exiting Thread 14638: ToolCommUsb::readTransfer,  cr.status = 0x0  
+14638 1706859221641 XXXX 1706859221641, Thread 14638: XXXX 1706859221641, Exiting Thread 14638: Commands::runScriptWithUpload  
+14638 1706859221641 XXXX 1706859221641, Thread 14638: XXXX 1706859221641, Entering Thread 14638: Commands::runScriptWithDownload, script name = WriteRAM  
+14638 1706859221644 XXXX 1706859221644, Thread 14638: XXXX 1706859221644, Exiting Thread 14638: Commands::runScriptWithDownload(WriteRAM)  
+14638 1706859221644 XXXX 1706859221644, Thread 14638: XXXX 1706859221644, Entering Thread 14638: Commands::runScriptWithUpload, script name = ReadRAM  
+14638 1706859221644 XXXX 1706859221644, Thread 14638: XXXX 1706859221644, Entering Thread 14638: ToolCommUsb::readTransfer, sideData is 0x28 bytes long, transferDataLength is 0x4 bytes long  
+14638 1706859221648 XXXX 1706859221648, Thread 14638: XXXX 1706859221648, Exiting Thread 14638: ToolCommUsb::readTransfer,  cr.status = 0x0  
+14638 1706859221648 XXXX 1706859221648, Thread 14638: XXXX 1706859221648, Exiting Thread 14638: Commands::runScriptWithUpload  
+14638 1706859221648 XXXX 1706859221648, Thread 14638: XXXX 1706859221648, Entering Thread 14638: Commands::runScriptWithDownload, script name = WriteRAM  
+14638 1706859221651 XXXX 1706859221651, Thread 14638: XXXX 1706859221651, Exiting Thread 14638: Commands::runScriptWithDownload(WriteRAM)  
+14638 1706859221651 XXXX 1706859221651, Thread 14638: XXXX 1706859221651, Entering Thread 14638: Commands::runScriptWithUpload, script name = ReadRAM  
+14638 1706859221651 XXXX 1706859221651, Thread 14638: XXXX 1706859221651, Entering Thread 14638: ToolCommUsb::readTransfer, sideData is 0x28 bytes long, transferDataLength is 0x4 bytes long  
+14638 1706859221655 XXXX 1706859221655, Thread 14638: XXXX 1706859221655, Exiting Thread 14638: ToolCommUsb::readTransfer,  cr.status = 0x0  
+14638 1706859221655 XXXX 1706859221655, Thread 14638: XXXX 1706859221655, Exiting Thread 14638: Commands::runScriptWithUpload  
+14638 1706859221655 XXXX 1706859221655, Thread 14638: XXXX 1706859221655, Entering Thread 14638: Commands::runScriptWithDownload, script name = WriteRAM  
+14638 1706859221658 XXXX 1706859221658, Thread 14638: XXXX 1706859221658, Exiting Thread 14638: Commands::runScriptWithDownload(WriteRAM)  
+14638 1706859221658 XXXX 1706859221658, Thread 14638: XXXX 1706859221658, Entering Thread 14638: Commands::runScriptWithUpload, script name = ReadRAM  
+14638 1706859221658 XXXX 1706859221658, Thread 14638: XXXX 1706859221658, Entering Thread 14638: ToolCommUsb::readTransfer, sideData is 0x28 bytes long, transferDataLength is 0x4 bytes long  
+14638 1706859221662 XXXX 1706859221662, Thread 14638: XXXX 1706859221662, Exiting Thread 14638: ToolCommUsb::readTransfer,  cr.status = 0x0  
+14638 1706859221662 XXXX 1706859221662, Thread 14638: XXXX 1706859221662, Exiting Thread 14638: Commands::runScriptWithUpload  
+14638 1706859221662 XXXX 1706859221662, Thread 14638: XXXX 1706859221662, Entering Thread 14638: Commands::runScriptWithDownload, script name = WriteRAM  
+14638 1706859221665 XXXX 1706859221665, Thread 14638: XXXX 1706859221665, Exiting Thread 14638: Commands::runScriptWithDownload(WriteRAM)  
+14638 1706859221665 XXXX 1706859221665, Thread 14638: XXXX 1706859221665, Entering Thread 14638: Commands::runScriptWithUpload, script name = ReadRAM  
+14638 1706859221665 XXXX 1706859221665, Thread 14638: XXXX 1706859221665, Entering Thread 14638: ToolCommUsb::readTransfer, sideData is 0x28 bytes long, transferDataLength is 0x4 bytes long  
+14638 1706859221669 XXXX 1706859221669, Thread 14638: XXXX 1706859221669, Exiting Thread 14638: ToolCommUsb::readTransfer,  cr.status = 0x0  
+14638 1706859221669 XXXX 1706859221669, Thread 14638: XXXX 1706859221669, Exiting Thread 14638: Commands::runScriptWithUpload  
+14638 1706859221669 XXXX 1706859221669, Thread 14638: XXXX 1706859221669, Entering Thread 14638: Commands::runScriptWithDownload, script name = WriteRAM  
+14638 1706859221672 XXXX 1706859221672, Thread 14638: XXXX 1706859221672, Exiting Thread 14638: Commands::runScriptWithDownload(WriteRAM)  
+14638 1706859221672 XXXX 1706859221672, Thread 14638: XXXX 1706859221672, Entering Thread 14638: Commands::runScriptWithUpload, script name = ReadRAM  
+14638 1706859221672 XXXX 1706859221672, Thread 14638: XXXX 1706859221672, Entering Thread 14638: ToolCommUsb::readTransfer, sideData is 0x28 bytes long, transferDataLength is 0x4 bytes long  
+14638 1706859221676 XXXX 1706859221676, Thread 14638: XXXX 1706859221676, Exiting Thread 14638: ToolCommUsb::readTransfer,  cr.status = 0x0  
+14638 1706859221676 XXXX 1706859221676, Thread 14638: XXXX 1706859221676, Exiting Thread 14638: Commands::runScriptWithUpload  
+14638 1706859221676 XXXX 1706859221676, Thread 14638: XXXX 1706859221676, Entering Thread 14638: Commands::runScriptWithDownload, script name = WriteRAM  
+14638 1706859221679 XXXX 1706859221679, Thread 14638: XXXX 1706859221679, Exiting Thread 14638: Commands::runScriptWithDownload(WriteRAM)  
+14638 1706859221679 XXXX 1706859221679, Thread 14638: XXXX 1706859221679, Entering Thread 14638: Commands::runScriptWithUpload, script name = ReadRAM  
+14638 1706859221679 XXXX 1706859221679, Thread 14638: XXXX 1706859221679, Entering Thread 14638: ToolCommUsb::readTransfer, sideData is 0x28 bytes long, transferDataLength is 0x4 bytes long  
+14638 1706859221683 XXXX 1706859221683, Thread 14638: XXXX 1706859221683, Exiting Thread 14638: ToolCommUsb::readTransfer,  cr.status = 0x0  
+14638 1706859221683 XXXX 1706859221683, Thread 14638: XXXX 1706859221683, Exiting Thread 14638: Commands::runScriptWithUpload  
+14638 1706859221683 XXXX 1706859221683, Thread 14638: XXXX 1706859221683, Entering Thread 14638: Commands::runScriptWithDownload, script name = WriteRAM  
+14638 1706859221686 XXXX 1706859221686, Thread 14638: XXXX 1706859221686, Exiting Thread 14638: Commands::runScriptWithDownload(WriteRAM)  
+14638 1706859221686 XXXX 1706859221686, Thread 14638: XXXX 1706859221686, Entering Thread 14638: Commands::runScriptWithUpload, script name = ReadRAM  
+14638 1706859221686 XXXX 1706859221686, Thread 14638: XXXX 1706859221686, Entering Thread 14638: ToolCommUsb::readTransfer, sideData is 0x28 bytes long, transferDataLength is 0x4 bytes long  
+14638 1706859221690 XXXX 1706859221690, Thread 14638: XXXX 1706859221690, Exiting Thread 14638: ToolCommUsb::readTransfer,  cr.status = 0x0  
+14638 1706859221690 XXXX 1706859221690, Thread 14638: XXXX 1706859221690, Exiting Thread 14638: Commands::runScriptWithUpload  
+14638 1706859221690 XXXX 1706859221690, Thread 14638: XXXX 1706859221690, Entering Thread 14638: Commands::runScriptWithDownload, script name = WriteRAM  
+14638 1706859221693 XXXX 1706859221693, Thread 14638: XXXX 1706859221693, Exiting Thread 14638: Commands::runScriptWithDownload(WriteRAM)  
+14638 1706859221693 XXXX 1706859221693, Thread 14638: XXXX 1706859221693, Entering Thread 14638: Commands::runScriptWithUpload, script name = ReadRAM  
+14638 1706859221693 XXXX 1706859221693, Thread 14638: XXXX 1706859221693, Entering Thread 14638: ToolCommUsb::readTransfer, sideData is 0x28 bytes long, transferDataLength is 0x4 bytes long  
+14638 1706859221697 XXXX 1706859221697, Thread 14638: XXXX 1706859221697, Exiting Thread 14638: ToolCommUsb::readTransfer,  cr.status = 0x0  
+14638 1706859221697 XXXX 1706859221697, Thread 14638: XXXX 1706859221697, Exiting Thread 14638: Commands::runScriptWithUpload  
+14638 1706859221697 XXXX 1706859221697, Thread 14638: XXXX 1706859221697, Entering Thread 14638: Commands::runScriptWithDownload, script name = WriteRAM  
+14638 1706859221700 XXXX 1706859221700, Thread 14638: XXXX 1706859221700, Exiting Thread 14638: Commands::runScriptWithDownload(WriteRAM)  
+14638 1706859221700 XXXX 1706859221700, Thread 14638: XXXX 1706859221700, Entering Thread 14638: Commands::runScriptWithUpload, script name = ReadRAM  
+14638 1706859221700 XXXX 1706859221700, Thread 14638: XXXX 1706859221700, Entering Thread 14638: ToolCommUsb::readTransfer, sideData is 0x28 bytes long, transferDataLength is 0x4 bytes long  
+14638 1706859221704 XXXX 1706859221704, Thread 14638: XXXX 1706859221704, Exiting Thread 14638: ToolCommUsb::readTransfer,  cr.status = 0x0  
+14638 1706859221704 XXXX 1706859221704, Thread 14638: XXXX 1706859221704, Exiting Thread 14638: Commands::runScriptWithUpload  
+14638 1706859221704 XXXX 1706859221704, Thread 14638: XXXX 1706859221704, Entering Thread 14638: Commands::runScriptWithDownload, script name = WriteRAM  
+14638 1706859221707 XXXX 1706859221707, Thread 14638: XXXX 1706859221707, Exiting Thread 14638: Commands::runScriptWithDownload(WriteRAM)  
+14638 1706859221707 XXXX 1706859221707, Thread 14638: XXXX 1706859221707, Entering Thread 14638: Commands::runScriptWithUpload, script name = ReadRAM  
+14638 1706859221707 XXXX 1706859221707, Thread 14638: XXXX 1706859221707, Entering Thread 14638: ToolCommUsb::readTransfer, sideData is 0x28 bytes long, transferDataLength is 0x4 bytes long  
+14638 1706859221711 XXXX 1706859221711, Thread 14638: XXXX 1706859221711, Exiting Thread 14638: ToolCommUsb::readTransfer,  cr.status = 0x0  
+14638 1706859221711 XXXX 1706859221711, Thread 14638: XXXX 1706859221711, Exiting Thread 14638: Commands::runScriptWithUpload  
+14638 1706859221711 XXXX 1706859221711, Thread 14638: XXXX 1706859221711, Entering Thread 14638: Commands::runScriptWithDownload, script name = WriteRAM  
+14638 1706859221714 XXXX 1706859221714, Thread 14638: XXXX 1706859221714, Exiting Thread 14638: Commands::runScriptWithDownload(WriteRAM)  
+14638 1706859221714 XXXX 1706859221714, Thread 14638: XXXX 1706859221714, Entering Thread 14638: Commands::runScriptWithUpload, script name = ReadRAM  
+14638 1706859221714 XXXX 1706859221714, Thread 14638: XXXX 1706859221714, Entering Thread 14638: ToolCommUsb::readTransfer, sideData is 0x28 bytes long, transferDataLength is 0x4 bytes long  
+14638 1706859221718 XXXX 1706859221718, Thread 14638: XXXX 1706859221718, Exiting Thread 14638: ToolCommUsb::readTransfer,  cr.status = 0x0  
+14638 1706859221718 XXXX 1706859221718, Thread 14638: XXXX 1706859221718, Exiting Thread 14638: Commands::runScriptWithUpload  
+14638 1706859221718 XXXX 1706859221718, Thread 14638: XXXX 1706859221718, Entering Thread 14638: Commands::runScriptWithDownload, script name = WriteRAM  
+14638 1706859221721 XXXX 1706859221721, Thread 14638: XXXX 1706859221721, Exiting Thread 14638: Commands::runScriptWithDownload(WriteRAM)  
+14638 1706859221721 XXXX 1706859221721, Thread 14638: XXXX 1706859221721, Entering Thread 14638: Commands::runScriptWithUpload, script name = ReadRAM  
+14638 1706859221721 XXXX 1706859221721, Thread 14638: XXXX 1706859221721, Entering Thread 14638: ToolCommUsb::readTransfer, sideData is 0x28 bytes long, transferDataLength is 0x4 bytes long  
+14638 1706859221725 XXXX 1706859221725, Thread 14638: XXXX 1706859221725, Exiting Thread 14638: ToolCommUsb::readTransfer,  cr.status = 0x0  
+14638 1706859221725 XXXX 1706859221725, Thread 14638: XXXX 1706859221725, Exiting Thread 14638: Commands::runScriptWithUpload  
+14638 1706859221725 XXXX 1706859221725, Thread 14638: XXXX 1706859221725, Entering Thread 14638: Commands::runScriptWithDownload, script name = WriteRAM  
+14638 1706859221728 XXXX 1706859221728, Thread 14638: XXXX 1706859221728, Exiting Thread 14638: Commands::runScriptWithDownload(WriteRAM)  
+14638 1706859221728 XXXX 1706859221728, Thread 14638: XXXX 1706859221728, Entering Thread 14638: Commands::runScriptWithUpload, script name = ReadRAM  
+14638 1706859221728 XXXX 1706859221728, Thread 14638: XXXX 1706859221728, Entering Thread 14638: ToolCommUsb::readTransfer, sideData is 0x28 bytes long, transferDataLength is 0x4 bytes long  
+14638 1706859221732 XXXX 1706859221732, Thread 14638: XXXX 1706859221732, Exiting Thread 14638: ToolCommUsb::readTransfer,  cr.status = 0x0  
+14638 1706859221732 XXXX 1706859221732, Thread 14638: XXXX 1706859221732, Exiting Thread 14638: Commands::runScriptWithUpload  
+14638 1706859221732 XXXX 1706859221732, Thread 14638: XXXX 1706859221732, Entering Thread 14638: Commands::runScriptWithDownload, script name = WriteRAM  
+14638 1706859221735 XXXX 1706859221735, Thread 14638: XXXX 1706859221735, Exiting Thread 14638: Commands::runScriptWithDownload(WriteRAM)  
+14638 1706859221735 XXXX 1706859221735, Thread 14638: XXXX 1706859221735, Entering Thread 14638: Commands::runScriptWithUpload, script name = ReadRAM  
+14638 1706859221735 XXXX 1706859221735, Thread 14638: XXXX 1706859221735, Entering Thread 14638: ToolCommUsb::readTransfer, sideData is 0x28 bytes long, transferDataLength is 0x4 bytes long  
+14638 1706859221739 XXXX 1706859221739, Thread 14638: XXXX 1706859221739, Exiting Thread 14638: ToolCommUsb::readTransfer,  cr.status = 0x0  
+14638 1706859221739 XXXX 1706859221739, Thread 14638: XXXX 1706859221739, Exiting Thread 14638: Commands::runScriptWithUpload  
+14638 1706859221739 XXXX 1706859221739, Thread 14638: XXXX 1706859221739, Entering Thread 14638: Commands::runScriptWithDownload, script name = WriteRAM  
+14638 1706859221742 XXXX 1706859221742, Thread 14638: XXXX 1706859221742, Exiting Thread 14638: Commands::runScriptWithDownload(WriteRAM)  
+14638 1706859221742 XXXX 1706859221742, Thread 14638: XXXX 1706859221742, Entering Thread 14638: Commands::runScriptWithUpload, script name = ReadRAM  
+14638 1706859221742 XXXX 1706859221742, Thread 14638: XXXX 1706859221742, Entering Thread 14638: ToolCommUsb::readTransfer, sideData is 0x28 bytes long, transferDataLength is 0x4 bytes long  
+14638 1706859221746 XXXX 1706859221746, Thread 14638: XXXX 1706859221746, Exiting Thread 14638: ToolCommUsb::readTransfer,  cr.status = 0x0  
+14638 1706859221746 XXXX 1706859221746, Thread 14638: XXXX 1706859221746, Exiting Thread 14638: Commands::runScriptWithUpload  
+14638 1706859221746 XXXX 1706859221746, Thread 14638: XXXX 1706859221746, Entering Thread 14638: Commands::runScriptWithDownload, script name = WriteRAM  
+14638 1706859221749 XXXX 1706859221749, Thread 14638: XXXX 1706859221749, Exiting Thread 14638: Commands::runScriptWithDownload(WriteRAM)  
+14638 1706859221749 XXXX 1706859221749, Thread 14638: XXXX 1706859221749, Entering Thread 14638: Commands::runScriptWithUpload, script name = ReadRAM  
+14638 1706859221749 XXXX 1706859221749, Thread 14638: XXXX 1706859221749, Entering Thread 14638: ToolCommUsb::readTransfer, sideData is 0x28 bytes long, transferDataLength is 0x4 bytes long  
+14638 1706859221753 XXXX 1706859221753, Thread 14638: XXXX 1706859221753, Exiting Thread 14638: ToolCommUsb::readTransfer,  cr.status = 0x0  
+14638 1706859221753 XXXX 1706859221753, Thread 14638: XXXX 1706859221753, Exiting Thread 14638: Commands::runScriptWithUpload  
+14638 1706859221753 XXXX 1706859221753, Thread 14638: XXXX 1706859221753, Entering Thread 14638: Commands::runScriptWithDownload, script name = WriteRAM  
+14638 1706859221756 XXXX 1706859221756, Thread 14638: XXXX 1706859221756, Exiting Thread 14638: Commands::runScriptWithDownload(WriteRAM)  
+14638 1706859221756 XXXX 1706859221756, Thread 14638: XXXX 1706859221756, Entering Thread 14638: Commands::runScriptWithUpload, script name = ReadRAM  
+14638 1706859221756 XXXX 1706859221756, Thread 14638: XXXX 1706859221756, Entering Thread 14638: ToolCommUsb::readTransfer, sideData is 0x28 bytes long, transferDataLength is 0x4 bytes long  
+14638 1706859221760 XXXX 1706859221760, Thread 14638: XXXX 1706859221760, Exiting Thread 14638: ToolCommUsb::readTransfer,  cr.status = 0x0  
+14638 1706859221760 XXXX 1706859221760, Thread 14638: XXXX 1706859221760, Exiting Thread 14638: Commands::runScriptWithUpload  
+14638 1706859221760 XXXX 1706859221760, Thread 14638: XXXX 1706859221760, Entering Thread 14638: Commands::runScriptWithDownload, script name = WriteRAM  
+14638 1706859221763 XXXX 1706859221763, Thread 14638: XXXX 1706859221763, Exiting Thread 14638: Commands::runScriptWithDownload(WriteRAM)  
+14638 1706859221763 XXXX 1706859221763, Thread 14638: XXXX 1706859221763, Entering Thread 14638: Commands::runScriptWithUpload, script name = ReadRAM  
+14638 1706859221763 XXXX 1706859221763, Thread 14638: XXXX 1706859221763, Entering Thread 14638: ToolCommUsb::readTransfer, sideData is 0x28 bytes long, transferDataLength is 0x4 bytes long  
+14638 1706859221767 XXXX 1706859221767, Thread 14638: XXXX 1706859221767, Exiting Thread 14638: ToolCommUsb::readTransfer,  cr.status = 0x0  
+14638 1706859221767 XXXX 1706859221767, Thread 14638: XXXX 1706859221767, Exiting Thread 14638: Commands::runScriptWithUpload  
+14638 1706859221767 XXXX 1706859221767, Thread 14638: XXXX 1706859221767, Entering Thread 14638: Commands::runScriptWithDownload, script name = WriteRAM  
+14638 1706859221770 XXXX 1706859221770, Thread 14638: XXXX 1706859221770, Exiting Thread 14638: Commands::runScriptWithDownload(WriteRAM)  
+14638 1706859221770 XXXX 1706859221770, Thread 14638: XXXX 1706859221770, Entering Thread 14638: Commands::runScriptWithUpload, script name = ReadRAM  
+14638 1706859221770 XXXX 1706859221770, Thread 14638: XXXX 1706859221770, Entering Thread 14638: ToolCommUsb::readTransfer, sideData is 0x28 bytes long, transferDataLength is 0x4 bytes long  
+14638 1706859221774 XXXX 1706859221774, Thread 14638: XXXX 1706859221774, Exiting Thread 14638: ToolCommUsb::readTransfer,  cr.status = 0x0  
+14638 1706859221774 XXXX 1706859221774, Thread 14638: XXXX 1706859221774, Exiting Thread 14638: Commands::runScriptWithUpload  
+14638 1706859221774 XXXX 1706859221774, Thread 14638: XXXX 1706859221774, Entering Thread 14638: Commands::runScriptWithDownload, script name = WriteRAM  
+14638 1706859221777 XXXX 1706859221777, Thread 14638: XXXX 1706859221777, Exiting Thread 14638: Commands::runScriptWithDownload(WriteRAM)  
+14638 1706859221777 XXXX 1706859221777, Thread 14638: XXXX 1706859221777, Entering Thread 14638: Commands::runScriptWithUpload, script name = ReadRAM  
+14638 1706859221777 XXXX 1706859221777, Thread 14638: XXXX 1706859221777, Entering Thread 14638: ToolCommUsb::readTransfer, sideData is 0x28 bytes long, transferDataLength is 0x4 bytes long  
+14638 1706859221781 XXXX 1706859221781, Thread 14638: XXXX 1706859221781, Exiting Thread 14638: ToolCommUsb::readTransfer,  cr.status = 0x0  
+14638 1706859221781 XXXX 1706859221781, Thread 14638: XXXX 1706859221781, Exiting Thread 14638: Commands::runScriptWithUpload  
+14638 1706859221781 XXXX 1706859221781, Thread 14638: XXXX 1706859221781, Entering Thread 14638: Commands::runScriptWithDownload, script name = WriteRAM  
+14638 1706859221784 XXXX 1706859221784, Thread 14638: XXXX 1706859221784, Exiting Thread 14638: Commands::runScriptWithDownload(WriteRAM)  
+14638 1706859221784 XXXX 1706859221784, Thread 14638: XXXX 1706859221784, Entering Thread 14638: Commands::runScriptWithUpload, script name = ReadRAM  
+14638 1706859221784 XXXX 1706859221784, Thread 14638: XXXX 1706859221784, Entering Thread 14638: ToolCommUsb::readTransfer, sideData is 0x28 bytes long, transferDataLength is 0x4 bytes long  
+14638 1706859221788 XXXX 1706859221788, Thread 14638: XXXX 1706859221788, Exiting Thread 14638: ToolCommUsb::readTransfer,  cr.status = 0x0  
+14638 1706859221788 XXXX 1706859221788, Thread 14638: XXXX 1706859221788, Exiting Thread 14638: Commands::runScriptWithUpload  
+14638 1706859221788 XXXX 1706859221788, Thread 14638: XXXX 1706859221788, Entering Thread 14638: Commands::runScriptWithDownload, script name = WriteRAM  
+14638 1706859221791 XXXX 1706859221791, Thread 14638: XXXX 1706859221791, Exiting Thread 14638: Commands::runScriptWithDownload(WriteRAM)  
+14638 1706859221791 XXXX 1706859221791, Thread 14638: XXXX 1706859221791, Entering Thread 14638: Commands::runScriptWithUpload, script name = ReadRAM  
+14638 1706859221791 XXXX 1706859221791, Thread 14638: XXXX 1706859221791, Entering Thread 14638: ToolCommUsb::readTransfer, sideData is 0x28 bytes long, transferDataLength is 0x4 bytes long  
+14638 1706859221794 XXXX 1706859221794, Thread 14638: XXXX 1706859221794, Exiting Thread 14638: ToolCommUsb::readTransfer,  cr.status = 0x0  
+14638 1706859221794 XXXX 1706859221794, Thread 14638: XXXX 1706859221794, Exiting Thread 14638: Commands::runScriptWithUpload  
+14638 1706859221794 XXXX 1706859221794, Thread 14638: XXXX 1706859221794, Entering Thread 14638: Commands::runScriptWithDownload, script name = WriteRAM  
+14638 1706859221797 XXXX 1706859221797, Thread 14638: XXXX 1706859221797, Exiting Thread 14638: Commands::runScriptWithDownload(WriteRAM)  
+14638 1706859221797 XXXX 1706859221797, Thread 14638: XXXX 1706859221797, Entering Thread 14638: Commands::runScriptWithUpload, script name = ReadRAM  
+14638 1706859221797 XXXX 1706859221797, Thread 14638: XXXX 1706859221797, Entering Thread 14638: ToolCommUsb::readTransfer, sideData is 0x28 bytes long, transferDataLength is 0x4 bytes long  
+14638 1706859221801 XXXX 1706859221801, Thread 14638: XXXX 1706859221801, Exiting Thread 14638: ToolCommUsb::readTransfer,  cr.status = 0x0  
+14638 1706859221801 XXXX 1706859221801, Thread 14638: XXXX 1706859221801, Exiting Thread 14638: Commands::runScriptWithUpload  
+14638 1706859221801 XXXX 1706859221801, Thread 14638: XXXX 1706859221801, Entering Thread 14638: Commands::runScriptWithDownload, script name = WriteRAM  
+14638 1706859221804 XXXX 1706859221804, Thread 14638: XXXX 1706859221804, Exiting Thread 14638: Commands::runScriptWithDownload(WriteRAM)  
+14638 1706859221804 XXXX 1706859221804, Thread 14638: XXXX 1706859221804, Entering Thread 14638: Commands::runScriptWithUpload, script name = ReadRAM  
+14638 1706859221804 XXXX 1706859221804, Thread 14638: XXXX 1706859221804, Entering Thread 14638: ToolCommUsb::readTransfer, sideData is 0x28 bytes long, transferDataLength is 0x4 bytes long  
+14638 1706859221808 XXXX 1706859221808, Thread 14638: XXXX 1706859221808, Exiting Thread 14638: ToolCommUsb::readTransfer,  cr.status = 0x0  
+14638 1706859221808 XXXX 1706859221808, Thread 14638: XXXX 1706859221808, Exiting Thread 14638: Commands::runScriptWithUpload  
+14638 1706859221808 XXXX 1706859221808, Thread 14638: XXXX 1706859221808, Entering Thread 14638: Commands::runScriptWithDownload, script name = WriteRAM  
+14638 1706859221811 XXXX 1706859221811, Thread 14638: XXXX 1706859221811, Exiting Thread 14638: Commands::runScriptWithDownload(WriteRAM)  
+14638 1706859221811 XXXX 1706859221811, Thread 14638: XXXX 1706859221811, Entering Thread 14638: Commands::runScriptWithUpload, script name = ReadRAM  
+14638 1706859221811 XXXX 1706859221811, Thread 14638: XXXX 1706859221811, Entering Thread 14638: ToolCommUsb::readTransfer, sideData is 0x28 bytes long, transferDataLength is 0x4 bytes long  
+14638 1706859221815 XXXX 1706859221815, Thread 14638: XXXX 1706859221815, Exiting Thread 14638: ToolCommUsb::readTransfer,  cr.status = 0x0  
+14638 1706859221815 XXXX 1706859221815, Thread 14638: XXXX 1706859221815, Exiting Thread 14638: Commands::runScriptWithUpload  
+14638 1706859221815 XXXX 1706859221815, Thread 14638: XXXX 1706859221815, Entering Thread 14638: Commands::runScriptWithDownload, script name = WriteRAM  
+14638 1706859221818 XXXX 1706859221818, Thread 14638: XXXX 1706859221818, Exiting Thread 14638: Commands::runScriptWithDownload(WriteRAM)  
+14638 1706859221818 XXXX 1706859221818, Thread 14638: XXXX 1706859221818, Entering Thread 14638: Commands::runScriptWithUpload, script name = ReadRAM  
+14638 1706859221818 XXXX 1706859221818, Thread 14638: XXXX 1706859221818, Entering Thread 14638: ToolCommUsb::readTransfer, sideData is 0x28 bytes long, transferDataLength is 0x4 bytes long  
+14638 1706859221822 XXXX 1706859221822, Thread 14638: XXXX 1706859221822, Exiting Thread 14638: ToolCommUsb::readTransfer,  cr.status = 0x0  
+14638 1706859221822 XXXX 1706859221822, Thread 14638: XXXX 1706859221822, Exiting Thread 14638: Commands::runScriptWithUpload  
+14638 1706859221822 XXXX 1706859221822, Thread 14638: XXXX 1706859221822, Entering Thread 14638: Commands::runScriptWithDownload, script name = WriteRAM  
+14638 1706859221825 XXXX 1706859221825, Thread 14638: XXXX 1706859221825, Exiting Thread 14638: Commands::runScriptWithDownload(WriteRAM)  
+14638 1706859221825 XXXX 1706859221825, Thread 14638: XXXX 1706859221825, Entering Thread 14638: Commands::runScriptWithUpload, script name = ReadRAM  
+14638 1706859221825 XXXX 1706859221825, Thread 14638: XXXX 1706859221825, Entering Thread 14638: ToolCommUsb::readTransfer, sideData is 0x28 bytes long, transferDataLength is 0x4 bytes long  
+14638 1706859221829 XXXX 1706859221829, Thread 14638: XXXX 1706859221829, Exiting Thread 14638: ToolCommUsb::readTransfer,  cr.status = 0x0  
+14638 1706859221829 XXXX 1706859221829, Thread 14638: XXXX 1706859221829, Exiting Thread 14638: Commands::runScriptWithUpload  
+14638 1706859221829 XXXX 1706859221829, Thread 14638: XXXX 1706859221829, Entering Thread 14638: Commands::runScriptWithDownload, script name = WriteRAM  
+14638 1706859221832 XXXX 1706859221832, Thread 14638: XXXX 1706859221832, Exiting Thread 14638: Commands::runScriptWithDownload(WriteRAM)  
+14638 1706859221832 XXXX 1706859221832, Thread 14638: XXXX 1706859221832, Entering Thread 14638: Commands::runScriptWithUpload, script name = ReadRAM  
+14638 1706859221832 XXXX 1706859221832, Thread 14638: XXXX 1706859221832, Entering Thread 14638: ToolCommUsb::readTransfer, sideData is 0x28 bytes long, transferDataLength is 0x4 bytes long  
+14638 1706859221836 XXXX 1706859221836, Thread 14638: XXXX 1706859221836, Exiting Thread 14638: ToolCommUsb::readTransfer,  cr.status = 0x0  
+14638 1706859221836 XXXX 1706859221836, Thread 14638: XXXX 1706859221836, Exiting Thread 14638: Commands::runScriptWithUpload  
+14638 1706859221836 XXXX 1706859221836, Thread 14638: XXXX 1706859221836, Entering Thread 14638: Commands::runScriptWithDownload, script name = WriteRAM  
+14638 1706859221839 XXXX 1706859221839, Thread 14638: XXXX 1706859221839, Exiting Thread 14638: Commands::runScriptWithDownload(WriteRAM)  
+14638 1706859221839 XXXX 1706859221839, Thread 14638: XXXX 1706859221839, Entering Thread 14638: Commands::runScriptWithUpload, script name = ReadRAM  
+14638 1706859221839 XXXX 1706859221839, Thread 14638: XXXX 1706859221839, Entering Thread 14638: ToolCommUsb::readTransfer, sideData is 0x28 bytes long, transferDataLength is 0x4 bytes long  
+14638 1706859221843 XXXX 1706859221843, Thread 14638: XXXX 1706859221843, Exiting Thread 14638: ToolCommUsb::readTransfer,  cr.status = 0x0  
+14638 1706859221843 XXXX 1706859221843, Thread 14638: XXXX 1706859221843, Exiting Thread 14638: Commands::runScriptWithUpload  
+14638 1706859221843 XXXX 1706859221843, Thread 14638: XXXX 1706859221843, Entering Thread 14638: Commands::runScriptWithDownload, script name = WriteRAM  
+14638 1706859221846 XXXX 1706859221846, Thread 14638: XXXX 1706859221846, Exiting Thread 14638: Commands::runScriptWithDownload(WriteRAM)  
+14638 1706859221846 XXXX 1706859221846, Thread 14638: XXXX 1706859221846, Entering Thread 14638: Commands::runScriptWithUpload, script name = ReadRAM  
+14638 1706859221846 XXXX 1706859221846, Thread 14638: XXXX 1706859221846, Entering Thread 14638: ToolCommUsb::readTransfer, sideData is 0x28 bytes long, transferDataLength is 0x4 bytes long  
+14638 1706859221850 XXXX 1706859221850, Thread 14638: XXXX 1706859221850, Exiting Thread 14638: ToolCommUsb::readTransfer,  cr.status = 0x0  
+14638 1706859221850 XXXX 1706859221850, Thread 14638: XXXX 1706859221850, Exiting Thread 14638: Commands::runScriptWithUpload  
+14638 1706859221850 XXXX 1706859221850, Thread 14638: XXXX 1706859221850, Entering Thread 14638: Commands::runScriptWithDownload, script name = WriteRAM  
+14638 1706859221853 XXXX 1706859221853, Thread 14638: XXXX 1706859221853, Exiting Thread 14638: Commands::runScriptWithDownload(WriteRAM)  
+14638 1706859221853 XXXX 1706859221853, Thread 14638: XXXX 1706859221853, Entering Thread 14638: Commands::runScriptWithUpload, script name = ReadRAM  
+14638 1706859221853 XXXX 1706859221853, Thread 14638: XXXX 1706859221853, Entering Thread 14638: ToolCommUsb::readTransfer, sideData is 0x28 bytes long, transferDataLength is 0x4 bytes long  
+14638 1706859221857 XXXX 1706859221857, Thread 14638: XXXX 1706859221857, Exiting Thread 14638: ToolCommUsb::readTransfer,  cr.status = 0x0  
+14638 1706859221857 XXXX 1706859221857, Thread 14638: XXXX 1706859221857, Exiting Thread 14638: Commands::runScriptWithUpload  
+14638 1706859221857 XXXX 1706859221857, Thread 14638: XXXX 1706859221857, Entering Thread 14638: Commands::runScriptWithDownload, script name = WriteRAM  
+14638 1706859221860 XXXX 1706859221860, Thread 14638: XXXX 1706859221860, Exiting Thread 14638: Commands::runScriptWithDownload(WriteRAM)  
+14638 1706859221860 XXXX 1706859221860, Thread 14638: XXXX 1706859221860, Entering Thread 14638: Commands::runScriptWithUpload, script name = ReadRAM  
+14638 1706859221860 XXXX 1706859221860, Thread 14638: XXXX 1706859221860, Entering Thread 14638: ToolCommUsb::readTransfer, sideData is 0x28 bytes long, transferDataLength is 0x4 bytes long  
+14638 1706859221864 XXXX 1706859221864, Thread 14638: XXXX 1706859221864, Exiting Thread 14638: ToolCommUsb::readTransfer,  cr.status = 0x0  
+14638 1706859221864 XXXX 1706859221864, Thread 14638: XXXX 1706859221864, Exiting Thread 14638: Commands::runScriptWithUpload  
+14638 1706859221864 XXXX 1706859221864, Thread 14638: XXXX 1706859221864, Entering Thread 14638: Commands::runScriptWithDownload, script name = WriteRAM  
+14638 1706859221867 XXXX 1706859221867, Thread 14638: XXXX 1706859221867, Exiting Thread 14638: Commands::runScriptWithDownload(WriteRAM)  
+14638 1706859221867 XXXX 1706859221867, Thread 14638: XXXX 1706859221867, Entering Thread 14638: Commands::runScriptWithUpload, script name = ReadRAM  
+14638 1706859221867 XXXX 1706859221867, Thread 14638: XXXX 1706859221867, Entering Thread 14638: ToolCommUsb::readTransfer, sideData is 0x28 bytes long, transferDataLength is 0x4 bytes long  
+14638 1706859221871 XXXX 1706859221871, Thread 14638: XXXX 1706859221871, Exiting Thread 14638: ToolCommUsb::readTransfer,  cr.status = 0x0  
+14638 1706859221871 XXXX 1706859221871, Thread 14638: XXXX 1706859221871, Exiting Thread 14638: Commands::runScriptWithUpload  
+14638 1706859221871 XXXX 1706859221871, Thread 14638: XXXX 1706859221871, Entering Thread 14638: Commands::runScriptWithDownload, script name = WriteRAM  
+14638 1706859221874 XXXX 1706859221874, Thread 14638: XXXX 1706859221874, Exiting Thread 14638: Commands::runScriptWithDownload(WriteRAM)  
+14638 1706859221874 XXXX 1706859221874, Thread 14638: XXXX 1706859221874, Entering Thread 14638: Commands::runScriptWithUpload, script name = ReadRAM  
+14638 1706859221874 XXXX 1706859221874, Thread 14638: XXXX 1706859221874, Entering Thread 14638: ToolCommUsb::readTransfer, sideData is 0x28 bytes long, transferDataLength is 0x4 bytes long  
+14638 1706859221878 XXXX 1706859221878, Thread 14638: XXXX 1706859221878, Exiting Thread 14638: ToolCommUsb::readTransfer,  cr.status = 0x0  
+14638 1706859221878 XXXX 1706859221878, Thread 14638: XXXX 1706859221878, Exiting Thread 14638: Commands::runScriptWithUpload  
+14638 1706859221878 XXXX 1706859221878, Thread 14638: XXXX 1706859221878, Entering Thread 14638: Commands::runScriptWithDownload, script name = WriteRAM  
+14638 1706859221881 XXXX 1706859221881, Thread 14638: XXXX 1706859221881, Exiting Thread 14638: Commands::runScriptWithDownload(WriteRAM)  
+14638 1706859221881 XXXX 1706859221881, Thread 14638: XXXX 1706859221881, Entering Thread 14638: Commands::runScriptWithUpload, script name = ReadRAM  
+14638 1706859221881 XXXX 1706859221881, Thread 14638: XXXX 1706859221881, Entering Thread 14638: ToolCommUsb::readTransfer, sideData is 0x28 bytes long, transferDataLength is 0x4 bytes long  
+14638 1706859221885 XXXX 1706859221885, Thread 14638: XXXX 1706859221885, Exiting Thread 14638: ToolCommUsb::readTransfer,  cr.status = 0x0  
+14638 1706859221885 XXXX 1706859221885, Thread 14638: XXXX 1706859221885, Exiting Thread 14638: Commands::runScriptWithUpload  
+14638 1706859221885 XXXX 1706859221885, Thread 14638: XXXX 1706859221885, Entering Thread 14638: Commands::runScriptWithDownload, script name = WriteRAM  
+14638 1706859221888 XXXX 1706859221888, Thread 14638: XXXX 1706859221888, Exiting Thread 14638: Commands::runScriptWithDownload(WriteRAM)  
+14638 1706859221888 XXXX 1706859221888, Thread 14638: XXXX 1706859221888, Entering Thread 14638: Commands::runScriptWithUpload, script name = ReadRAM  
+14638 1706859221888 XXXX 1706859221888, Thread 14638: XXXX 1706859221888, Entering Thread 14638: ToolCommUsb::readTransfer, sideData is 0x28 bytes long, transferDataLength is 0x4 bytes long  
+14638 1706859221892 XXXX 1706859221892, Thread 14638: XXXX 1706859221892, Exiting Thread 14638: ToolCommUsb::readTransfer,  cr.status = 0x0  
+14638 1706859221892 XXXX 1706859221892, Thread 14638: XXXX 1706859221892, Exiting Thread 14638: Commands::runScriptWithUpload  
+14638 1706859221892 XXXX 1706859221892, Thread 14638: XXXX 1706859221892, Entering Thread 14638: Commands::runScriptWithDownload, script name = WriteRAM  
+14638 1706859221895 XXXX 1706859221895, Thread 14638: XXXX 1706859221895, Exiting Thread 14638: Commands::runScriptWithDownload(WriteRAM)  
+14638 1706859221895 XXXX 1706859221895, Thread 14638: XXXX 1706859221895, Entering Thread 14638: Commands::runScriptWithUpload, script name = ReadRAM  
+14638 1706859221895 XXXX 1706859221895, Thread 14638: XXXX 1706859221895, Entering Thread 14638: ToolCommUsb::readTransfer, sideData is 0x28 bytes long, transferDataLength is 0x4 bytes long  
+14638 1706859221899 XXXX 1706859221899, Thread 14638: XXXX 1706859221899, Exiting Thread 14638: ToolCommUsb::readTransfer,  cr.status = 0x0  
+14638 1706859221899 XXXX 1706859221899, Thread 14638: XXXX 1706859221899, Exiting Thread 14638: Commands::runScriptWithUpload  
+14638 1706859221899 XXXX 1706859221899, Thread 14638: XXXX 1706859221899, Entering Thread 14638: Commands::runScriptWithDownload, script name = WriteRAM  
+14638 1706859221903 XXXX 1706859221902, Thread 14638: XXXX 1706859221902, Exiting Thread 14638: Commands::runScriptWithDownload(WriteRAM)  
+14638 1706859221903 XXXX 1706859221903, Thread 14638: XXXX 1706859221903, Entering Thread 14638: Commands::runScriptWithUpload, script name = ReadRAM  
+14638 1706859221903 XXXX 1706859221903, Thread 14638: XXXX 1706859221903, Entering Thread 14638: ToolCommUsb::readTransfer, sideData is 0x28 bytes long, transferDataLength is 0x4 bytes long  
+14638 1706859221906 XXXX 1706859221906, Thread 14638: XXXX 1706859221906, Exiting Thread 14638: ToolCommUsb::readTransfer,  cr.status = 0x0  
+14638 1706859221906 XXXX 1706859221906, Thread 14638: XXXX 1706859221906, Exiting Thread 14638: Commands::runScriptWithUpload  
+14638 1706859221906 XXXX 1706859221906, Thread 14638: XXXX 1706859221906, Entering Thread 14638: Commands::runScriptWithDownload, script name = WriteRAM  
+14638 1706859221909 XXXX 1706859221909, Thread 14638: XXXX 1706859221909, Exiting Thread 14638: Commands::runScriptWithDownload(WriteRAM)  
+14638 1706859221909 XXXX 1706859221909, Thread 14638: XXXX 1706859221909, Entering Thread 14638: Commands::runScriptWithUpload, script name = ReadRAM  
+14638 1706859221909 XXXX 1706859221909, Thread 14638: XXXX 1706859221909, Entering Thread 14638: ToolCommUsb::readTransfer, sideData is 0x28 bytes long, transferDataLength is 0x4 bytes long  
+14638 1706859221913 XXXX 1706859221913, Thread 14638: XXXX 1706859221913, Exiting Thread 14638: ToolCommUsb::readTransfer,  cr.status = 0x0  
+14638 1706859221913 XXXX 1706859221913, Thread 14638: XXXX 1706859221913, Exiting Thread 14638: Commands::runScriptWithUpload  
+14638 1706859221913 XXXX 1706859221913, Thread 14638: XXXX 1706859221913, Entering Thread 14638: Commands::runScriptWithDownload, script name = WriteRAM  
+14638 1706859221916 XXXX 1706859221916, Thread 14638: XXXX 1706859221916, Exiting Thread 14638: Commands::runScriptWithDownload(WriteRAM)  
+14638 1706859221917 XXXX 1706859221916, Thread 14638: XXXX 1706859221916, Entering Thread 14638: Commands::runScriptWithUpload, script name = ReadRAM  
+14638 1706859221917 XXXX 1706859221917, Thread 14638: XXXX 1706859221917, Entering Thread 14638: ToolCommUsb::readTransfer, sideData is 0x28 bytes long, transferDataLength is 0x4 bytes long  
+14638 1706859221920 XXXX 1706859221920, Thread 14638: XXXX 1706859221920, Exiting Thread 14638: ToolCommUsb::readTransfer,  cr.status = 0x0  
+14638 1706859221920 XXXX 1706859221920, Thread 14638: XXXX 1706859221920, Exiting Thread 14638: Commands::runScriptWithUpload  
+14638 1706859221920 XXXX 1706859221920, Thread 14638: XXXX 1706859221920, Entering Thread 14638: Commands::runScriptWithDownload, script name = WriteRAM  
+14638 1706859221923 XXXX 1706859221923, Thread 14638: XXXX 1706859221923, Exiting Thread 14638: Commands::runScriptWithDownload(WriteRAM)  
+14638 1706859221923 XXXX 1706859221923, Thread 14638: XXXX 1706859221923, Entering Thread 14638: Commands::runScriptWithUpload, script name = ReadRAM  
+14638 1706859221923 XXXX 1706859221923, Thread 14638: XXXX 1706859221923, Entering Thread 14638: ToolCommUsb::readTransfer, sideData is 0x28 bytes long, transferDataLength is 0x4 bytes long  
+14638 1706859221927 XXXX 1706859221927, Thread 14638: XXXX 1706859221927, Exiting Thread 14638: ToolCommUsb::readTransfer,  cr.status = 0x0  
+14638 1706859221927 XXXX 1706859221927, Thread 14638: XXXX 1706859221927, Exiting Thread 14638: Commands::runScriptWithUpload  
+14638 1706859221927 XXXX 1706859221927, Thread 14638: XXXX 1706859221927, Entering Thread 14638: Commands::runScriptWithDownload, script name = WriteRAM  
+14638 1706859221930 XXXX 1706859221930, Thread 14638: XXXX 1706859221930, Exiting Thread 14638: Commands::runScriptWithDownload(WriteRAM)  
+14638 1706859221931 XXXX 1706859221931, Thread 14638: XXXX 1706859221931, Entering Thread 14638: Commands::runScriptWithUpload, script name = ReadRAM  
+14638 1706859221931 XXXX 1706859221931, Thread 14638: XXXX 1706859221931, Entering Thread 14638: ToolCommUsb::readTransfer, sideData is 0x28 bytes long, transferDataLength is 0x4 bytes long  
+14638 1706859221934 XXXX 1706859221934, Thread 14638: XXXX 1706859221934, Exiting Thread 14638: ToolCommUsb::readTransfer,  cr.status = 0x0  
+14638 1706859221934 XXXX 1706859221934, Thread 14638: XXXX 1706859221934, Exiting Thread 14638: Commands::runScriptWithUpload  
+14638 1706859221934 XXXX 1706859221934, Thread 14638: XXXX 1706859221934, Entering Thread 14638: Commands::runScriptWithDownload, script name = WriteRAM  
+14638 1706859221937 XXXX 1706859221937, Thread 14638: XXXX 1706859221937, Exiting Thread 14638: Commands::runScriptWithDownload(WriteRAM)  
+14638 1706859221937 XXXX 1706859221937, Thread 14638: XXXX 1706859221937, Entering Thread 14638: Commands::runScriptWithUpload, script name = ReadRAM  
+14638 1706859221937 XXXX 1706859221937, Thread 14638: XXXX 1706859221937, Entering Thread 14638: ToolCommUsb::readTransfer, sideData is 0x28 bytes long, transferDataLength is 0x4 bytes long  
+14638 1706859221941 XXXX 1706859221941, Thread 14638: XXXX 1706859221941, Exiting Thread 14638: ToolCommUsb::readTransfer,  cr.status = 0x0  
+14638 1706859221941 XXXX 1706859221941, Thread 14638: XXXX 1706859221941, Exiting Thread 14638: Commands::runScriptWithUpload  
+14638 1706859221941 XXXX 1706859221941, Thread 14638: XXXX 1706859221941, Entering Thread 14638: Commands::runScriptWithDownload, script name = WriteRAM  
+14638 1706859221944 XXXX 1706859221944, Thread 14638: XXXX 1706859221944, Exiting Thread 14638: Commands::runScriptWithDownload(WriteRAM)  
+14638 1706859221944 XXXX 1706859221944, Thread 14638: XXXX 1706859221944, Entering Thread 14638: Commands::runScriptWithUpload, script name = ReadRAM  
+14638 1706859221944 XXXX 1706859221944, Thread 14638: XXXX 1706859221944, Entering Thread 14638: ToolCommUsb::readTransfer, sideData is 0x28 bytes long, transferDataLength is 0x4 bytes long  
+14638 1706859221949 XXXX 1706859221949, Thread 14638: XXXX 1706859221949, Exiting Thread 14638: ToolCommUsb::readTransfer,  cr.status = 0x0  
+14638 1706859221949 XXXX 1706859221949, Thread 14638: XXXX 1706859221949, Exiting Thread 14638: Commands::runScriptWithUpload  
+14638 1706859221949 XXXX 1706859221949, Thread 14638: XXXX 1706859221949, Entering Thread 14638: Commands::runScriptWithDownload, script name = WriteRAM  
+14638 1706859221952 XXXX 1706859221952, Thread 14638: XXXX 1706859221952, Exiting Thread 14638: Commands::runScriptWithDownload(WriteRAM)  
+14638 1706859221952 XXXX 1706859221952, Thread 14638: XXXX 1706859221952, Entering Thread 14638: Commands::runScriptWithUpload, script name = ReadRAM  
+14638 1706859221952 XXXX 1706859221952, Thread 14638: XXXX 1706859221952, Entering Thread 14638: ToolCommUsb::readTransfer, sideData is 0x28 bytes long, transferDataLength is 0x4 bytes long  
+14638 1706859221956 XXXX 1706859221956, Thread 14638: XXXX 1706859221956, Exiting Thread 14638: ToolCommUsb::readTransfer,  cr.status = 0x0  
+14638 1706859221956 XXXX 1706859221956, Thread 14638: XXXX 1706859221956, Exiting Thread 14638: Commands::runScriptWithUpload  
+14638 1706859221956 XXXX 1706859221956, Thread 14638: XXXX 1706859221956, Entering Thread 14638: Commands::runScriptWithDownload, script name = WriteRAM  
+14638 1706859221959 XXXX 1706859221959, Thread 14638: XXXX 1706859221959, Exiting Thread 14638: Commands::runScriptWithDownload(WriteRAM)  
+14638 1706859221959 XXXX 1706859221959, Thread 14638: XXXX 1706859221959, Entering Thread 14638: Commands::runScriptWithUpload, script name = ReadRAM  
+14638 1706859221959 XXXX 1706859221959, Thread 14638: XXXX 1706859221959, Entering Thread 14638: ToolCommUsb::readTransfer, sideData is 0x28 bytes long, transferDataLength is 0x4 bytes long  
+14638 1706859221963 XXXX 1706859221963, Thread 14638: XXXX 1706859221963, Exiting Thread 14638: ToolCommUsb::readTransfer,  cr.status = 0x0  
+14638 1706859221963 XXXX 1706859221963, Thread 14638: XXXX 1706859221963, Exiting Thread 14638: Commands::runScriptWithUpload  
+14638 1706859221963 XXXX 1706859221963, Thread 14638: XXXX 1706859221963, Entering Thread 14638: Commands::runScriptWithDownload, script name = WriteRAM  
+14638 1706859221966 XXXX 1706859221966, Thread 14638: XXXX 1706859221966, Exiting Thread 14638: Commands::runScriptWithDownload(WriteRAM)  
+14638 1706859221966 XXXX 1706859221966, Thread 14638: XXXX 1706859221966, Entering Thread 14638: Commands::runScriptWithUpload, script name = ReadRAM  
+14638 1706859221966 XXXX 1706859221966, Thread 14638: XXXX 1706859221966, Entering Thread 14638: ToolCommUsb::readTransfer, sideData is 0x28 bytes long, transferDataLength is 0x4 bytes long  
+14638 1706859221970 XXXX 1706859221970, Thread 14638: XXXX 1706859221970, Exiting Thread 14638: ToolCommUsb::readTransfer,  cr.status = 0x0  
+14638 1706859221970 XXXX 1706859221970, Thread 14638: XXXX 1706859221970, Exiting Thread 14638: Commands::runScriptWithUpload  
+14638 1706859221970 XXXX 1706859221970, Thread 14638: XXXX 1706859221970, Entering Thread 14638: Commands::runScriptWithDownload, script name = WriteRAM  
+14638 1706859221973 XXXX 1706859221973, Thread 14638: XXXX 1706859221973, Exiting Thread 14638: Commands::runScriptWithDownload(WriteRAM)  
+14638 1706859221973 XXXX 1706859221973, Thread 14638: XXXX 1706859221973, Entering Thread 14638: Commands::runScriptWithUpload, script name = ReadRAM  
+14638 1706859221973 XXXX 1706859221973, Thread 14638: XXXX 1706859221973, Entering Thread 14638: ToolCommUsb::readTransfer, sideData is 0x28 bytes long, transferDataLength is 0x4 bytes long  
+14638 1706859221976 XXXX 1706859221976, Thread 14638: XXXX 1706859221976, Exiting Thread 14638: ToolCommUsb::readTransfer,  cr.status = 0x0  
+14638 1706859221976 XXXX 1706859221976, Thread 14638: XXXX 1706859221976, Exiting Thread 14638: Commands::runScriptWithUpload  
+14638 1706859221977 XXXX 1706859221977, Thread 14638: XXXX 1706859221977, Entering Thread 14638: Commands::runScriptWithDownload, script name = WriteRAM  
+14638 1706859221980 XXXX 1706859221980, Thread 14638: XXXX 1706859221980, Exiting Thread 14638: Commands::runScriptWithDownload(WriteRAM)  
+14638 1706859221980 XXXX 1706859221980, Thread 14638: XXXX 1706859221980, Entering Thread 14638: Commands::runScriptWithUpload, script name = ReadRAM  
+14638 1706859221980 XXXX 1706859221980, Thread 14638: XXXX 1706859221980, Entering Thread 14638: ToolCommUsb::readTransfer, sideData is 0x28 bytes long, transferDataLength is 0x4 bytes long  
+14638 1706859221983 XXXX 1706859221983, Thread 14638: XXXX 1706859221983, Exiting Thread 14638: ToolCommUsb::readTransfer,  cr.status = 0x0  
+14638 1706859221983 XXXX 1706859221983, Thread 14638: XXXX 1706859221983, Exiting Thread 14638: Commands::runScriptWithUpload  
+14638 1706859221983 XXXX 1706859221983, Thread 14638: XXXX 1706859221983, Entering Thread 14638: Commands::runScriptWithDownload, script name = WriteRAM  
+14638 1706859221986 XXXX 1706859221986, Thread 14638: XXXX 1706859221986, Exiting Thread 14638: Commands::runScriptWithDownload(WriteRAM)  
+14638 1706859221987 XXXX 1706859221987, Thread 14638: XXXX 1706859221987, Entering Thread 14638: Commands::runScriptWithUpload, script name = ReadRAM  
+14638 1706859221987 XXXX 1706859221987, Thread 14638: XXXX 1706859221987, Entering Thread 14638: ToolCommUsb::readTransfer, sideData is 0x28 bytes long, transferDataLength is 0x4 bytes long  
+14638 1706859221990 XXXX 1706859221990, Thread 14638: XXXX 1706859221990, Exiting Thread 14638: ToolCommUsb::readTransfer,  cr.status = 0x0  
+14638 1706859221990 XXXX 1706859221990, Thread 14638: XXXX 1706859221990, Exiting Thread 14638: Commands::runScriptWithUpload  
+14638 1706859221990 XXXX 1706859221990, Thread 14638: XXXX 1706859221990, Entering Thread 14638: Commands::runScriptWithDownload, script name = WriteRAM  
+14638 1706859221993 XXXX 1706859221993, Thread 14638: XXXX 1706859221993, Exiting Thread 14638: Commands::runScriptWithDownload(WriteRAM)  
+14638 1706859221993 XXXX 1706859221993, Thread 14638: XXXX 1706859221993, Entering Thread 14638: Commands::runScriptWithUpload, script name = ReadRAM  
+14638 1706859221994 XXXX 1706859221994, Thread 14638: XXXX 1706859221994, Entering Thread 14638: ToolCommUsb::readTransfer, sideData is 0x28 bytes long, transferDataLength is 0x4 bytes long  
+14638 1706859221997 XXXX 1706859221997, Thread 14638: XXXX 1706859221997, Exiting Thread 14638: ToolCommUsb::readTransfer,  cr.status = 0x0  
+14638 1706859221997 XXXX 1706859221997, Thread 14638: XXXX 1706859221997, Exiting Thread 14638: Commands::runScriptWithUpload  
+14638 1706859221997 XXXX 1706859221997, Thread 14638: XXXX 1706859221997, Entering Thread 14638: Commands::runScriptWithDownload, script name = WriteRAM  
+14638 1706859222000 XXXX 1706859222000, Thread 14638: XXXX 1706859222000, Exiting Thread 14638: Commands::runScriptWithDownload(WriteRAM)  
+14638 1706859222000 XXXX 1706859222000, Thread 14638: XXXX 1706859222000, Entering Thread 14638: Commands::runScriptWithUpload, script name = ReadRAM  
+14638 1706859222000 XXXX 1706859222000, Thread 14638: XXXX 1706859222000, Entering Thread 14638: ToolCommUsb::readTransfer, sideData is 0x28 bytes long, transferDataLength is 0x4 bytes long  
+14638 1706859222005 XXXX 1706859222005, Thread 14638: XXXX 1706859222005, Exiting Thread 14638: ToolCommUsb::readTransfer,  cr.status = 0x0  
+14638 1706859222005 XXXX 1706859222005, Thread 14638: XXXX 1706859222005, Exiting Thread 14638: Commands::runScriptWithUpload  
+14638 1706859222005 XXXX 1706859222005, Thread 14638: XXXX 1706859222005, Entering Thread 14638: Commands::runScriptWithDownload, script name = WriteRAM  
+14638 1706859222008 XXXX 1706859222008, Thread 14638: XXXX 1706859222008, Exiting Thread 14638: Commands::runScriptWithDownload(WriteRAM)  
+14638 1706859222008 XXXX 1706859222008, Thread 14638: XXXX 1706859222008, Entering Thread 14638: Commands::runScriptWithUpload, script name = ReadRAM  
+14638 1706859222008 XXXX 1706859222008, Thread 14638: XXXX 1706859222008, Entering Thread 14638: ToolCommUsb::readTransfer, sideData is 0x28 bytes long, transferDataLength is 0x4 bytes long  
+14638 1706859222012 XXXX 1706859222012, Thread 14638: XXXX 1706859222012, Exiting Thread 14638: ToolCommUsb::readTransfer,  cr.status = 0x0  
+14638 1706859222012 XXXX 1706859222012, Thread 14638: XXXX 1706859222012, Exiting Thread 14638: Commands::runScriptWithUpload  
+14638 1706859222012 XXXX 1706859222012, Thread 14638: XXXX 1706859222012, Entering Thread 14638: Commands::runScriptWithDownload, script name = WriteRAM  
+14638 1706859222015 XXXX 1706859222015, Thread 14638: XXXX 1706859222015, Exiting Thread 14638: Commands::runScriptWithDownload(WriteRAM)  
+14638 1706859222015 XXXX 1706859222015, Thread 14638: XXXX 1706859222015, Entering Thread 14638: Commands::runScriptWithUpload, script name = ReadRAM  
+14638 1706859222015 XXXX 1706859222015, Thread 14638: XXXX 1706859222015, Entering Thread 14638: ToolCommUsb::readTransfer, sideData is 0x28 bytes long, transferDataLength is 0x4 bytes long  
+14638 1706859222019 XXXX 1706859222019, Thread 14638: XXXX 1706859222019, Exiting Thread 14638: ToolCommUsb::readTransfer,  cr.status = 0x0  
+14638 1706859222019 XXXX 1706859222019, Thread 14638: XXXX 1706859222019, Exiting Thread 14638: Commands::runScriptWithUpload  
+14638 1706859222019 XXXX 1706859222019, Thread 14638: XXXX 1706859222019, Entering Thread 14638: Commands::runScriptWithDownload, script name = WriteRAM  
+14638 1706859222022 XXXX 1706859222022, Thread 14638: XXXX 1706859222022, Exiting Thread 14638: Commands::runScriptWithDownload(WriteRAM)  
+14638 1706859222022 XXXX 1706859222022, Thread 14638: XXXX 1706859222022, Entering Thread 14638: Commands::runScriptWithUpload, script name = ReadRAM  
+14638 1706859222022 XXXX 1706859222022, Thread 14638: XXXX 1706859222022, Entering Thread 14638: ToolCommUsb::readTransfer, sideData is 0x28 bytes long, transferDataLength is 0x4 bytes long  
+14638 1706859222026 XXXX 1706859222026, Thread 14638: XXXX 1706859222026, Exiting Thread 14638: ToolCommUsb::readTransfer,  cr.status = 0x0  
+14638 1706859222026 XXXX 1706859222026, Thread 14638: XXXX 1706859222026, Exiting Thread 14638: Commands::runScriptWithUpload  
+14638 1706859222026 XXXX 1706859222026, Thread 14638: XXXX 1706859222026, Entering Thread 14638: Commands::runScriptWithDownload, script name = WriteRAM  
+14638 1706859222029 XXXX 1706859222029, Thread 14638: XXXX 1706859222029, Exiting Thread 14638: Commands::runScriptWithDownload(WriteRAM)  
+14638 1706859222029 XXXX 1706859222029, Thread 14638: XXXX 1706859222029, Entering Thread 14638: Commands::runScriptWithUpload, script name = ReadRAM  
+14638 1706859222029 XXXX 1706859222029, Thread 14638: XXXX 1706859222029, Entering Thread 14638: ToolCommUsb::readTransfer, sideData is 0x28 bytes long, transferDataLength is 0x4 bytes long  
+14638 1706859222032 XXXX 1706859222032, Thread 14638: XXXX 1706859222032, Exiting Thread 14638: ToolCommUsb::readTransfer,  cr.status = 0x0  
+14638 1706859222032 XXXX 1706859222032, Thread 14638: XXXX 1706859222032, Exiting Thread 14638: Commands::runScriptWithUpload  
+14638 1706859222032 XXXX 1706859222032, Thread 14638: XXXX 1706859222032, Entering Thread 14638: Commands::runScriptWithDownload, script name = WriteRAM  
+14638 1706859222035 XXXX 1706859222035, Thread 14638: XXXX 1706859222035, Exiting Thread 14638: Commands::runScriptWithDownload(WriteRAM)  
+14638 1706859222035 XXXX 1706859222035, Thread 14638: XXXX 1706859222035, Entering Thread 14638: Commands::runScriptWithUpload, script name = ReadRAM  
+14638 1706859222035 XXXX 1706859222035, Thread 14638: XXXX 1706859222035, Entering Thread 14638: ToolCommUsb::readTransfer, sideData is 0x28 bytes long, transferDataLength is 0x4 bytes long  
+14638 1706859222039 XXXX 1706859222039, Thread 14638: XXXX 1706859222039, Exiting Thread 14638: ToolCommUsb::readTransfer,  cr.status = 0x0  
+14638 1706859222039 XXXX 1706859222039, Thread 14638: XXXX 1706859222039, Exiting Thread 14638: Commands::runScriptWithUpload  
+14638 1706859222039 XXXX 1706859222039, Thread 14638: XXXX 1706859222039, Entering Thread 14638: Commands::runScriptWithDownload, script name = WriteRAM  
+14638 1706859222042 XXXX 1706859222042, Thread 14638: XXXX 1706859222042, Exiting Thread 14638: Commands::runScriptWithDownload(WriteRAM)  
+14638 1706859222042 XXXX 1706859222042, Thread 14638: XXXX 1706859222042, Entering Thread 14638: Commands::runScriptWithUpload, script name = ReadRAM  
+14638 1706859222042 XXXX 1706859222042, Thread 14638: XXXX 1706859222042, Entering Thread 14638: ToolCommUsb::readTransfer, sideData is 0x28 bytes long, transferDataLength is 0x4 bytes long  
+14638 1706859222046 XXXX 1706859222046, Thread 14638: XXXX 1706859222046, Exiting Thread 14638: ToolCommUsb::readTransfer,  cr.status = 0x0  
+14638 1706859222046 XXXX 1706859222046, Thread 14638: XXXX 1706859222046, Exiting Thread 14638: Commands::runScriptWithUpload  
+14638 1706859222046 XXXX 1706859222046, Thread 14638: XXXX 1706859222046, Entering Thread 14638: Commands::runScriptWithDownload, script name = WriteRAM  
+14638 1706859222049 XXXX 1706859222049, Thread 14638: XXXX 1706859222049, Exiting Thread 14638: Commands::runScriptWithDownload(WriteRAM)  
+14638 1706859222049 XXXX 1706859222049, Thread 14638: XXXX 1706859222049, Entering Thread 14638: Commands::runScriptWithUpload, script name = ReadRAM  
+14638 1706859222049 XXXX 1706859222049, Thread 14638: XXXX 1706859222049, Entering Thread 14638: ToolCommUsb::readTransfer, sideData is 0x28 bytes long, transferDataLength is 0x4 bytes long  
+14638 1706859222053 XXXX 1706859222053, Thread 14638: XXXX 1706859222053, Exiting Thread 14638: ToolCommUsb::readTransfer,  cr.status = 0x0  
+14638 1706859222053 XXXX 1706859222053, Thread 14638: XXXX 1706859222053, Exiting Thread 14638: Commands::runScriptWithUpload  
+14638 1706859222053 XXXX 1706859222053, Thread 14638: XXXX 1706859222053, Entering Thread 14638: Commands::runScriptWithDownload, script name = WriteRAM  
+14638 1706859222056 XXXX 1706859222056, Thread 14638: XXXX 1706859222056, Exiting Thread 14638: Commands::runScriptWithDownload(WriteRAM)  
+14638 1706859222056 XXXX 1706859222056, Thread 14638: XXXX 1706859222056, Entering Thread 14638: Commands::runScriptBasic, script name = GetPC, timeOut = -1 ms  
+14638 1706859222060 XXXX 1706859222060, Thread 14638: XXXX 1706859222060, Exiting Thread 14638: Commands::runScriptBasic  
+14638 1706859222068 XXXX 1706859222068, Thread 14638: XXXX 1706859222068, Entering Thread 14638: Commands::runScriptBasic, script name = Run, timeOut = -1 ms  
+14638 1706859222069 XXXX 1706859222069, Thread 14638: XXXX 1706859222069, Exiting Thread 14638: Commands::runScriptBasic  
+14638 1706859222326 XXXX 1706859222326, Thread 14638: XXXX 1706859222326, Entering Thread 14638: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+14638 1706859222326 XXXX 1706859222326, Thread 14638: XXXX 1706859222326, Exiting Thread 14638: Commands::runScriptBasic  
+14638 1706859222337 XXXX 1706859222337, Thread 14638: XXXX 1706859222337, Entering Thread 14638: Commands::runScriptWithUpload, script name = ReadRAM  
+14638 1706859222337 XXXX 1706859222337, Thread 14638: XXXX 1706859222337, Entering Thread 14638: ToolCommUsb::readTransfer, sideData is 0x28 bytes long, transferDataLength is 0x4 bytes long  
+14638 1706859222342 XXXX 1706859222342, Thread 14638: XXXX 1706859222342, Exiting Thread 14638: ToolCommUsb::readTransfer,  cr.status = 0x0  
+14638 1706859222342 XXXX 1706859222342, Thread 14638: XXXX 1706859222342, Exiting Thread 14638: Commands::runScriptWithUpload  
+14638 1706859222400 XXXX 1706859222400, Thread 14638: XXXX 1706859222400, Entering Thread 14638: Commands::runScriptWithDownload, script name = WriteRAM  
+14638 1706859222403 XXXX 1706859222403, Thread 14638: XXXX 1706859222403, Exiting Thread 14638: Commands::runScriptWithDownload(WriteRAM)  
+14638 1706859222403 XXXX 1706859222403, Thread 14638: XXXX 1706859222403, Entering Thread 14638: Commands::runScriptWithDownload, script name = WriteRAM  
+14638 1706859222406 XXXX 1706859222406, Thread 14638: XXXX 1706859222406, Exiting Thread 14638: Commands::runScriptWithDownload(WriteRAM)  
+14638 1706859222406 XXXX 1706859222406, Thread 14638: XXXX 1706859222406, Entering Thread 14638: Commands::runScriptWithDownload, script name = WriteRAM  
+14638 1706859222409 XXXX 1706859222409, Thread 14638: XXXX 1706859222409, Exiting Thread 14638: Commands::runScriptWithDownload(WriteRAM)  
+14638 1706859222409 XXXX 1706859222409, Thread 14638: XXXX 1706859222409, Entering Thread 14638: Commands::runScriptWithDownload, script name = WriteRAM  
+14638 1706859222412 XXXX 1706859222412, Thread 14638: XXXX 1706859222412, Exiting Thread 14638: Commands::runScriptWithDownload(WriteRAM)  
+14638 1706859222412 XXXX 1706859222412, Thread 14638: XXXX 1706859222412, Entering Thread 14638: Commands::runScriptWithDownload, script name = WriteRAM  
+14638 1706859222415 XXXX 1706859222415, Thread 14638: XXXX 1706859222415, Exiting Thread 14638: Commands::runScriptWithDownload(WriteRAM)  
+14638 1706859222415 XXXX 1706859222415, Thread 14638: XXXX 1706859222415, Entering Thread 14638: Commands::runScriptWithDownload, script name = WriteRAM  
+14638 1706859222418 XXXX 1706859222418, Thread 14638: XXXX 1706859222418, Exiting Thread 14638: Commands::runScriptWithDownload(WriteRAM)  
+14638 1706859222418 XXXX 1706859222418, Thread 14638: XXXX 1706859222418, Entering Thread 14638: Commands::runScriptWithDownload, script name = WriteRAM  
+14638 1706859222421 XXXX 1706859222421, Thread 14638: XXXX 1706859222421, Exiting Thread 14638: Commands::runScriptWithDownload(WriteRAM)  
+14638 1706859222421 XXXX 1706859222421, Thread 14638: XXXX 1706859222421, Entering Thread 14638: Commands::runScriptWithDownload, script name = WriteRAM  
+14638 1706859222424 XXXX 1706859222424, Thread 14638: XXXX 1706859222424, Exiting Thread 14638: Commands::runScriptWithDownload(WriteRAM)  
+14638 1706859222424 XXXX 1706859222424, Thread 14638: XXXX 1706859222424, Entering Thread 14638: Commands::runScriptWithDownload, script name = WriteRAM  
+14638 1706859222427 XXXX 1706859222427, Thread 14638: XXXX 1706859222427, Exiting Thread 14638: Commands::runScriptWithDownload(WriteRAM)  
+14638 1706859222427 XXXX 1706859222427, Thread 14638: XXXX 1706859222427, Entering Thread 14638: Commands::runScriptWithDownload, script name = WriteRAM  
+14638 1706859222430 XXXX 1706859222430, Thread 14638: XXXX 1706859222430, Exiting Thread 14638: Commands::runScriptWithDownload(WriteRAM)  
+14638 1706859222430 XXXX 1706859222430, Thread 14638: XXXX 1706859222430, Entering Thread 14638: Commands::runScriptWithDownload, script name = WriteRAM  
+14638 1706859222433 XXXX 1706859222433, Thread 14638: XXXX 1706859222433, Exiting Thread 14638: Commands::runScriptWithDownload(WriteRAM)  
+14638 1706859222433 XXXX 1706859222433, Thread 14638: XXXX 1706859222433, Entering Thread 14638: Commands::runScriptWithDownload, script name = WriteRAM  
+14638 1706859222436 XXXX 1706859222436, Thread 14638: XXXX 1706859222436, Exiting Thread 14638: Commands::runScriptWithDownload(WriteRAM)  
+14638 1706859222436 XXXX 1706859222436, Thread 14638: XXXX 1706859222436, Entering Thread 14638: Commands::runScriptWithDownload, script name = WriteRAM  
+14638 1706859222439 XXXX 1706859222439, Thread 14638: XXXX 1706859222439, Exiting Thread 14638: Commands::runScriptWithDownload(WriteRAM)  
+14638 1706859222439 XXXX 1706859222439, Thread 14638: XXXX 1706859222439, Entering Thread 14638: Commands::runScriptWithDownload, script name = WriteRAM  
+14638 1706859222442 XXXX 1706859222442, Thread 14638: XXXX 1706859222442, Exiting Thread 14638: Commands::runScriptWithDownload(WriteRAM)  
+14638 1706859222442 XXXX 1706859222442, Thread 14638: XXXX 1706859222442, Entering Thread 14638: Commands::runScriptWithDownload, script name = WriteRAM  
+14638 1706859222445 XXXX 1706859222445, Thread 14638: XXXX 1706859222445, Exiting Thread 14638: Commands::runScriptWithDownload(WriteRAM)  
+14638 1706859222445 XXXX 1706859222445, Thread 14638: XXXX 1706859222445, Entering Thread 14638: Commands::runScriptWithDownload, script name = WriteRAM  
+14638 1706859222448 XXXX 1706859222448, Thread 14638: XXXX 1706859222448, Exiting Thread 14638: Commands::runScriptWithDownload(WriteRAM)  
+14638 1706859222448 XXXX 1706859222448, Thread 14638: XXXX 1706859222448, Entering Thread 14638: Commands::runScriptWithDownload, script name = WriteRAM  
+14638 1706859222451 XXXX 1706859222451, Thread 14638: XXXX 1706859222451, Exiting Thread 14638: Commands::runScriptWithDownload(WriteRAM)  
+14638 1706859222451 XXXX 1706859222451, Thread 14638: XXXX 1706859222451, Entering Thread 14638: Commands::runScriptWithDownload, script name = WriteRAM  
+14638 1706859222454 XXXX 1706859222454, Thread 14638: XXXX 1706859222454, Exiting Thread 14638: Commands::runScriptWithDownload(WriteRAM)  
+14638 1706859222454 XXXX 1706859222454, Thread 14638: XXXX 1706859222454, Entering Thread 14638: Commands::runScriptWithUpload, script name = ReadRAM  
+14638 1706859222454 XXXX 1706859222454, Thread 14638: XXXX 1706859222454, Entering Thread 14638: ToolCommUsb::readTransfer, sideData is 0x28 bytes long, transferDataLength is 0x4 bytes long  
+14638 1706859222457 XXXX 1706859222457, Thread 14638: XXXX 1706859222457, Exiting Thread 14638: ToolCommUsb::readTransfer,  cr.status = 0x0  
+14638 1706859222457 XXXX 1706859222457, Thread 14638: XXXX 1706859222457, Exiting Thread 14638: Commands::runScriptWithUpload  
+14638 1706859222457 XXXX 1706859222457, Thread 14638: XXXX 1706859222457, Entering Thread 14638: Commands::runScriptWithUpload, script name = ReadRAM  
+14638 1706859222457 XXXX 1706859222457, Thread 14638: XXXX 1706859222457, Entering Thread 14638: ToolCommUsb::readTransfer, sideData is 0x28 bytes long, transferDataLength is 0x4 bytes long  
+14638 1706859222461 XXXX 1706859222461, Thread 14638: XXXX 1706859222461, Exiting Thread 14638: ToolCommUsb::readTransfer,  cr.status = 0x0  
+14638 1706859222461 XXXX 1706859222461, Thread 14638: XXXX 1706859222461, Exiting Thread 14638: Commands::runScriptWithUpload  
+14638 1706859222461 XXXX 1706859222461, Thread 14638: XXXX 1706859222461, Entering Thread 14638: Commands::runScriptBasic, script name = GetPC, timeOut = -1 ms  
+14638 1706859222464 XXXX 1706859222464, Thread 14638: XXXX 1706859222464, Exiting Thread 14638: Commands::runScriptBasic  
+11451 1706859222465 XXXX 1706859222465, Thread 11451: XXXX 1706859222465, Entering Thread 11451: Commands::runScriptWithUpload, script name = ReadRAM  
+11451 1706859222465 XXXX 1706859222465, Thread 11451: XXXX 1706859222465, Entering Thread 11451: ToolCommUsb::readTransfer, sideData is 0x28 bytes long, transferDataLength is 0x300 bytes long  
+11451 1706859222481 XXXX 1706859222481, Thread 11451: XXXX 1706859222481, Exiting Thread 11451: ToolCommUsb::readTransfer,  cr.status = 0x0  
+11451 1706859222481 XXXX 1706859222481, Thread 11451: XXXX 1706859222481, Exiting Thread 11451: Commands::runScriptWithUpload  
+14836 1706859327433 XXXX 1706859327433, Thread 14836: XXXX 1706859327433, Entering Thread 14836: Commands::runScriptWithUpload, script name = ReadRAM  
+14836 1706859327433 XXXX 1706859327433, Thread 14836: XXXX 1706859327433, Entering Thread 14836: ToolCommUsb::readTransfer, sideData is 0x28 bytes long, transferDataLength is 0x4 bytes long  
+14836 1706859327436 XXXX 1706859327436, Thread 14836: XXXX 1706859327436, Exiting Thread 14836: ToolCommUsb::readTransfer,  cr.status = 0x0  
+14836 1706859327436 XXXX 1706859327436, Thread 14836: XXXX 1706859327436, Exiting Thread 14836: Commands::runScriptWithUpload  
+14836 1706859327436 XXXX 1706859327436, Thread 14836: XXXX 1706859327436, Entering Thread 14836: Commands::runScriptWithUpload, script name = ReadRAM  
+14836 1706859327436 XXXX 1706859327436, Thread 14836: XXXX 1706859327436, Entering Thread 14836: ToolCommUsb::readTransfer, sideData is 0x28 bytes long, transferDataLength is 0x4 bytes long  
+14836 1706859327440 XXXX 1706859327440, Thread 14836: XXXX 1706859327440, Exiting Thread 14836: ToolCommUsb::readTransfer,  cr.status = 0x0  
+14836 1706859327440 XXXX 1706859327440, Thread 14836: XXXX 1706859327440, Exiting Thread 14836: Commands::runScriptWithUpload  
+14836 1706859327441 XXXX 1706859327441, Thread 14836: XXXX 1706859327441, Entering Thread 14836: Commands::runScriptWithUpload, script name = ReadRAM  
+14836 1706859327441 XXXX 1706859327441, Thread 14836: XXXX 1706859327441, Entering Thread 14836: ToolCommUsb::readTransfer, sideData is 0x28 bytes long, transferDataLength is 0x4 bytes long  
+14836 1706859327444 XXXX 1706859327444, Thread 14836: XXXX 1706859327444, Exiting Thread 14836: ToolCommUsb::readTransfer,  cr.status = 0x0  
+14836 1706859327444 XXXX 1706859327444, Thread 14836: XXXX 1706859327444, Exiting Thread 14836: Commands::runScriptWithUpload  
+14836 1706859327444 XXXX 1706859327444, Thread 14836: XXXX 1706859327444, Entering Thread 14836: Commands::runScriptWithUpload, script name = ReadRAM  
+14836 1706859327444 XXXX 1706859327444, Thread 14836: XXXX 1706859327444, Entering Thread 14836: ToolCommUsb::readTransfer, sideData is 0x28 bytes long, transferDataLength is 0x4 bytes long  
+14836 1706859327448 XXXX 1706859327448, Thread 14836: XXXX 1706859327448, Exiting Thread 14836: ToolCommUsb::readTransfer,  cr.status = 0x0  
+14836 1706859327448 XXXX 1706859327448, Thread 14836: XXXX 1706859327448, Exiting Thread 14836: Commands::runScriptWithUpload  
+14836 1706859327449 XXXX 1706859327449, Thread 14836: XXXX 1706859327449, Entering Thread 14836: Commands::runScriptWithUpload, script name = ReadRAM  
+14836 1706859327449 XXXX 1706859327449, Thread 14836: XXXX 1706859327449, Entering Thread 14836: ToolCommUsb::readTransfer, sideData is 0x28 bytes long, transferDataLength is 0x4 bytes long  
+14836 1706859327453 XXXX 1706859327453, Thread 14836: XXXX 1706859327453, Exiting Thread 14836: ToolCommUsb::readTransfer,  cr.status = 0x0  
+14836 1706859327453 XXXX 1706859327453, Thread 14836: XXXX 1706859327453, Exiting Thread 14836: Commands::runScriptWithUpload  
+14836 1706859327453 XXXX 1706859327453, Thread 14836: XXXX 1706859327453, Entering Thread 14836: Commands::runScriptWithUpload, script name = ReadRAM  
+14836 1706859327453 XXXX 1706859327453, Thread 14836: XXXX 1706859327453, Entering Thread 14836: ToolCommUsb::readTransfer, sideData is 0x28 bytes long, transferDataLength is 0x4 bytes long  
+14836 1706859327457 XXXX 1706859327457, Thread 14836: XXXX 1706859327457, Exiting Thread 14836: ToolCommUsb::readTransfer,  cr.status = 0x0  
+14836 1706859327457 XXXX 1706859327457, Thread 14836: XXXX 1706859327457, Exiting Thread 14836: Commands::runScriptWithUpload  
+14836 1706859327458 XXXX 1706859327458, Thread 14836: XXXX 1706859327458, Entering Thread 14836: Commands::runScriptWithUpload, script name = ReadRAM  
+14836 1706859327458 XXXX 1706859327458, Thread 14836: XXXX 1706859327458, Entering Thread 14836: ToolCommUsb::readTransfer, sideData is 0x28 bytes long, transferDataLength is 0x4 bytes long  
+14836 1706859327462 XXXX 1706859327462, Thread 14836: XXXX 1706859327462, Exiting Thread 14836: ToolCommUsb::readTransfer,  cr.status = 0x0  
+14836 1706859327462 XXXX 1706859327462, Thread 14836: XXXX 1706859327462, Exiting Thread 14836: Commands::runScriptWithUpload  
+14836 1706859327462 XXXX 1706859327462, Thread 14836: XXXX 1706859327462, Entering Thread 14836: Commands::runScriptWithUpload, script name = ReadRAM  
+14836 1706859327462 XXXX 1706859327462, Thread 14836: XXXX 1706859327462, Entering Thread 14836: ToolCommUsb::readTransfer, sideData is 0x28 bytes long, transferDataLength is 0x4 bytes long  
+14836 1706859327466 XXXX 1706859327466, Thread 14836: XXXX 1706859327466, Exiting Thread 14836: ToolCommUsb::readTransfer,  cr.status = 0x0  
+14836 1706859327466 XXXX 1706859327466, Thread 14836: XXXX 1706859327466, Exiting Thread 14836: Commands::runScriptWithUpload  
+14836 1706859327467 XXXX 1706859327467, Thread 14836: XXXX 1706859327467, Entering Thread 14836: Commands::runScriptWithUpload, script name = ReadRAM  
+14836 1706859327467 XXXX 1706859327467, Thread 14836: XXXX 1706859327467, Entering Thread 14836: ToolCommUsb::readTransfer, sideData is 0x28 bytes long, transferDataLength is 0x4 bytes long  
+14836 1706859327471 XXXX 1706859327471, Thread 14836: XXXX 1706859327471, Exiting Thread 14836: ToolCommUsb::readTransfer,  cr.status = 0x0  
+14836 1706859327471 XXXX 1706859327471, Thread 14836: XXXX 1706859327471, Exiting Thread 14836: Commands::runScriptWithUpload  
+14836 1706859327471 XXXX 1706859327471, Thread 14836: XXXX 1706859327471, Entering Thread 14836: Commands::runScriptWithUpload, script name = ReadRAM  
+14836 1706859327471 XXXX 1706859327471, Thread 14836: XXXX 1706859327471, Entering Thread 14836: ToolCommUsb::readTransfer, sideData is 0x28 bytes long, transferDataLength is 0x4 bytes long  
+14836 1706859327475 XXXX 1706859327475, Thread 14836: XXXX 1706859327475, Exiting Thread 14836: ToolCommUsb::readTransfer,  cr.status = 0x0  
+14836 1706859327475 XXXX 1706859327475, Thread 14836: XXXX 1706859327475, Exiting Thread 14836: Commands::runScriptWithUpload  
+14836 1706859327476 XXXX 1706859327476, Thread 14836: XXXX 1706859327476, Entering Thread 14836: Commands::runScriptWithUpload, script name = ReadRAM  
+14836 1706859327476 XXXX 1706859327476, Thread 14836: XXXX 1706859327476, Entering Thread 14836: ToolCommUsb::readTransfer, sideData is 0x28 bytes long, transferDataLength is 0x4 bytes long  
+14836 1706859327480 XXXX 1706859327480, Thread 14836: XXXX 1706859327480, Exiting Thread 14836: ToolCommUsb::readTransfer,  cr.status = 0x0  
+14836 1706859327480 XXXX 1706859327480, Thread 14836: XXXX 1706859327480, Exiting Thread 14836: Commands::runScriptWithUpload  
+14836 1706859327480 XXXX 1706859327480, Thread 14836: XXXX 1706859327480, Entering Thread 14836: Commands::runScriptWithUpload, script name = ReadRAM  
+14836 1706859327480 XXXX 1706859327480, Thread 14836: XXXX 1706859327480, Entering Thread 14836: ToolCommUsb::readTransfer, sideData is 0x28 bytes long, transferDataLength is 0x4 bytes long  
+14836 1706859327484 XXXX 1706859327484, Thread 14836: XXXX 1706859327484, Exiting Thread 14836: ToolCommUsb::readTransfer,  cr.status = 0x0  
+14836 1706859327484 XXXX 1706859327484, Thread 14836: XXXX 1706859327484, Exiting Thread 14836: Commands::runScriptWithUpload  
+14836 1706859327485 XXXX 1706859327485, Thread 14836: XXXX 1706859327485, Entering Thread 14836: Commands::runScriptWithUpload, script name = ReadRAM  
+14836 1706859327485 XXXX 1706859327485, Thread 14836: XXXX 1706859327485, Entering Thread 14836: ToolCommUsb::readTransfer, sideData is 0x28 bytes long, transferDataLength is 0x4 bytes long  
+14836 1706859327488 XXXX 1706859327488, Thread 14836: XXXX 1706859327488, Exiting Thread 14836: ToolCommUsb::readTransfer,  cr.status = 0x0  
+14836 1706859327488 XXXX 1706859327488, Thread 14836: XXXX 1706859327488, Exiting Thread 14836: Commands::runScriptWithUpload  
+14836 1706859327488 XXXX 1706859327488, Thread 14836: XXXX 1706859327488, Entering Thread 14836: Commands::runScriptWithUpload, script name = ReadRAM  
+14836 1706859327488 XXXX 1706859327488, Thread 14836: XXXX 1706859327488, Entering Thread 14836: ToolCommUsb::readTransfer, sideData is 0x28 bytes long, transferDataLength is 0x4 bytes long  
+14836 1706859327492 XXXX 1706859327492, Thread 14836: XXXX 1706859327492, Exiting Thread 14836: ToolCommUsb::readTransfer,  cr.status = 0x0  
+14836 1706859327492 XXXX 1706859327492, Thread 14836: XXXX 1706859327492, Exiting Thread 14836: Commands::runScriptWithUpload  
+14881 1706867333121 GEN4_CONNECT_DIAGNOSTICS:Calling Update on plug and play observer com.microchip.mplab.mdbcore.RI4Tool.RI4ToolBase$RI4PlugNPlayObserver@90f7aea
+14881 1706867333121 GEN4_CONNECT_DIAGNOSTICS:Entering plug and play Update(). Attached PID = 810b
+14881 1706867333121 GEN4_CONNECT_DIAGNOSTICS:Entering MPLABCommEvent handler
+14881 1706867333121 GEN4_CONNECT_DIAGNOSTICS:MPLABCommEvent.pid = 810b
+14881 1706867333121 GEN4_CONNECT_DIAGNOSTICS:eventType = MPLABCOMM_TOOL_UNPLUGGED
+14881 1706867333121 GEN4_CONNECT_DIAGNOSTICS:Exiting plug and play Update()
+14886 1706870256050 GEN4_CONNECT_DIAGNOSTICS:Before MPLABCommTool.Connect()
+14886 1706870256050 GEN4_CONNECT_DIAGNOSTICS:After MPLABCommTool.Connect()
+14886 1706870256050 GEN4_CONNECT_DIAGNOSTICS:MPLABCommTool.Connect() returned MPLABCOMM_NO_ERROR
+14886 1706870256050 GEN4_CONNECT_DIAGNOSTICS:Before detaching from MPLABCommTool plugnplay
+14886 1706870256050 GEN4_CONNECT_DIAGNOSTICS:Attaching to MPLABCommTool plugnplay
+14886 1706870256050 GEN4_CONNECT_DIAGNOSTICS:Calling Update on plug and play observer com.microchip.mplab.mdbcore.RI4Tool.RI4ToolBase$RI4PlugNPlayObserver@90f7aea
+14886 1706870256050 GEN4_CONNECT_DIAGNOSTICS:Entering plug and play Update(). Attached PID = 810b
+14886 1706870256050 GEN4_CONNECT_DIAGNOSTICS:Entering MPLABCommEvent handler
+14886 1706870256050 GEN4_CONNECT_DIAGNOSTICS:MPLABCommEvent.pid = 810b
+14886 1706870256050 GEN4_CONNECT_DIAGNOSTICS:eventType = MPLABCOMM_TOOL_PLUGGEDIN
+
+14886 1706870256050 GEN4_TO_CONTROLLER_LOG:GEN4_CONNECT_INT_LOG_PIC32MZ2064DAR176 Pre:GetFirmwareInfo
+14886 1706870256050 GEN4_TO_CONTROLLER_LOG:GEN4_CONNECT_INT_LOG_PIC32MZ2064DAR176 Payload
+14886 1706870256050 GEN4_TO_CONTROLLER_LOG:GEN4_CONNECT_INT_LOG_PIC32MZ2064DAR176 null
+14886 1706870256050 GEN4_TO_CONTROLLER_LOG:GEN4_CONNECT_INT_LOG_PIC32MZ2064DAR176 Payload End
+14886 1706870827744 GEN4_TO_CONTROLLER_LOG:GEN4_CONNECT_INT_LOG_PIC32MZ2064DAR176 Post:GetFirmwareInfo
+14886 1706870827744 GEN4_TO_CONTROLLER_LOG:GEN4_CONNECT_INT_LOG_PIC32MZ2064DAR176 Return Value
+14886 1706870827744 GEN4_TO_CONTROLLER_LOG:GEN4_CONNECT_INT_LOG_PIC32MZ2064DAR176 FirmwareInfo: Values:
+14886 1706870827744 GEN4_TO_CONTROLLER_LOG:GEN4_CONNECT_INT_LOG_PIC32MZ2064DAR176 FirmwareInfo: boot = false, bootVer = 01.01.41, apVer = 00.07.10, fpgaVer = ff.ff.ff, scriptVer = 00.06.67, macAddress = 0495683497167524851485051484951, devID = a1020e01, devID1 = 1, devSN0 = ffffffff, devSN1 = ffffffff, serialNumber = BUR204319016, appCommitID = null, scriptCommitID = c185a9d6f5, PCB_ID = 80000000
+14886 1706870827744 GEN4_TO_CONTROLLER_LOG:GEN4_CONNECT_INT_LOG_PIC32MZ2064DAR176 Return End
+14886 1706870827744 GEN4_CONNECT_DIAGNOSTICS:ENTERING: com.microchip.mplab.mdbcore.RI4Tool.FirmwareUpdateHandler.UpdateFirmware(FirmwareInfo, UpdateMessage)
+14886 1706870827744 GEN4_CONNECT_DIAGNOSTICS:areWeInBoot returned false
+14886 1706870827744 GEN4_CONNECT_DIAGNOSTICS:inBoot = false
+14886 1706870827744 GEN4_CONNECT_DIAGNOSTICS:uMode = checkingVersions
+14886 1706870827744 GEN4_CONNECT_DIAGNOSTICS:selectedTool = pk4
+14886 1706870827744 GEN4_CONNECT_DIAGNOSTICS:current toolType = pk4
+14886 1706870827744 GEN4_CONNECT_DIAGNOSTICS:current tool mode = pk4
+14886 1706870827744 GEN4_CONNECT_DIAGNOSTICS:current toolType = pk4
+
+14886 1706870827744 GEN4_TO_CONTROLLER_LOG:GEN4_CONNECT_INT_LOG_PIC32MZ2064DAR176 Pre:EstablishCommunincations
+14886 1706870827744 GEN4_TO_CONTROLLER_LOG:GEN4_CONNECT_INT_LOG_PIC32MZ2064DAR176 Payload
+14886 1706870827744 GEN4_TO_CONTROLLER_LOG:GEN4_CONNECT_INT_LOG_PIC32MZ2064DAR176 com.microchip.mplab.mdbcore.PK4Tool.PK4Com@353f1f77
+14886 1706870827744 GEN4_TO_CONTROLLER_LOG:GEN4_CONNECT_INT_LOG_PIC32MZ2064DAR176 Payload End
+14886 1706870827744 GEN4_TO_CONTROLLER_LOG:GEN4_CONNECT_INT_LOG_PIC32MZ2064DAR176 Post:EstablishCommunincations
+14886 1706870827744 GEN4_TO_CONTROLLER_LOG:GEN4_CONNECT_INT_LOG_PIC32MZ2064DAR176 Return Value
+14886 1706870827744 GEN4_TO_CONTROLLER_LOG:GEN4_CONNECT_INT_LOG_PIC32MZ2064DAR176 true
+14886 1706870827744 GEN4_TO_CONTROLLER_LOG:GEN4_CONNECT_INT_LOG_PIC32MZ2064DAR176 Return End
+
+14886 1706870827744 GEN4_TO_CONTROLLER_LOG:GEN4_CONNECT_INT_LOG_PIC32MZ2064DAR176 Pre:GetFirmwareInfo
+14886 1706870827744 GEN4_TO_CONTROLLER_LOG:GEN4_CONNECT_INT_LOG_PIC32MZ2064DAR176 Payload
+14886 1706870827744 GEN4_TO_CONTROLLER_LOG:GEN4_CONNECT_INT_LOG_PIC32MZ2064DAR176 null
+14886 1706870827744 GEN4_TO_CONTROLLER_LOG:GEN4_CONNECT_INT_LOG_PIC32MZ2064DAR176 Payload End
+14886 1706870827756 XXXX 1706870827756, Thread 14886: com.Send returned false 
+14886 1706870827758 XXXX 1706870827758, Thread 14886: execCommand: exception after writeSideChanel null 

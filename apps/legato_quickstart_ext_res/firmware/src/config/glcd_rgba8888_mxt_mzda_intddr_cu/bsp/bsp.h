@@ -40,8 +40,8 @@
 *******************************************************************************/
 // DOM-IGNORE-END
 
-#ifndef _BSP_H
-#define _BSP_H
+#ifndef BSP_H
+#define BSP_H
 
 // *****************************************************************************
 // *****************************************************************************
@@ -60,21 +60,24 @@
 // Section: BSP Macros
 // *****************************************************************************
 // *****************************************************************************
+#define pic32mz_da_curiosity
+#define BSP_NAME             "pic32mz_da_curiosity"
+
 /*** LED Macros for RGB_LED_B ***/
-#define RGB_LED_B_Toggle() (LATBINV = (1U<<1))
+#define RGB_LED_B_Toggle() (LATBINV = (1UL<<1))
 #define RGB_LED_B_Get() ((PORTB >> 1) & 0x1U)
-#define RGB_LED_B_On() (LATBCLR = (1U<<1))
-#define RGB_LED_B_Off() (LATBSET = (1U<<1))
+#define RGB_LED_B_On() (LATBCLR = (1UL<<1))
+#define RGB_LED_B_Off() (LATBSET = (1UL<<1))
 /*** LED Macros for RGB_LED_G ***/
-#define RGB_LED_G_Toggle() (LATCINV = (1U<<4))
+#define RGB_LED_G_Toggle() (LATCINV = (1UL<<4))
 #define RGB_LED_G_Get() ((PORTC >> 4) & 0x1U)
-#define RGB_LED_G_On() (LATCCLR = (1U<<4))
-#define RGB_LED_G_Off() (LATCSET = (1U<<4))
+#define RGB_LED_G_On() (LATCCLR = (1UL<<4))
+#define RGB_LED_G_Off() (LATCSET = (1UL<<4))
 /*** LED Macros for RGB_LED_R ***/
-#define RGB_LED_R_Toggle() (LATCINV = (1U<<1))
+#define RGB_LED_R_Toggle() (LATCINV = (1UL<<1))
 #define RGB_LED_R_Get() ((PORTC >> 1) & 0x1U)
-#define RGB_LED_R_On() (LATCCLR = (1U<<1))
-#define RGB_LED_R_Off() (LATCSET = (1U<<1))
+#define RGB_LED_R_On() (LATCCLR = (1UL<<1))
+#define RGB_LED_R_Off() (LATCSET = (1UL<<1))
 /*** SWITCH Macros for SWITCH4 ***/
 #define SWITCH4_Get() ((PORTB >> 13) & 0x1U)
 #define SWITCH4_STATE_PRESSED 0U
@@ -92,8 +95,8 @@
 #define SWITCH3_STATE_PRESSED 0U
 #define SWITCH3_STATE_RELEASED 1U
 /*** VBUS Macros for VBUS_AH ***/
-#define VBUS_AH_PowerEnable() (LATESET = (1U<<0))
-#define VBUS_AH_PowerDisable() (LATECLR = (1U<<0))
+#define VBUS_AH_PowerEnable() (LATESET = (1UL<<0))
+#define VBUS_AH_PowerDisable() (LATECLR = (1UL<<0))
 
 
 
@@ -127,7 +130,6 @@
 
   Example:
     <code>
-    //Initialize the BSP
     BSP_Initialize();
     </code>
 
@@ -137,7 +139,7 @@
 
 void BSP_Initialize(void);
 
-#endif // _BSP_H
+#endif // BSP_H
 
 /*******************************************************************************
  End of File

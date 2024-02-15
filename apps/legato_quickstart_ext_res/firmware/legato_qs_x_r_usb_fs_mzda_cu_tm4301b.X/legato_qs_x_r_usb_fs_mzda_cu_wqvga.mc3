@@ -1,4 +1,4 @@
-<config configName="glcd_rgba8888_mxt_mzda_intddr_cu" projectName="legato_qs_x_r_usb_fs_mzda_cu_wqvga" configVersion="1.1" device="PIC32MZ2064DAR176" deviceLibraryClass="com.microchip.mcc.harmony.Harmony3Library" coreVersion="5.4.11">
+<config configName="glcd_rgba8888_mxt_mzda_intddr_cu" projectName="legato_qs_x_r_usb_fs_mzda_cu_wqvga" configVersion="1.1" device="PIC32MZ2064DAR176" deviceLibraryClass="com.microchip.mcc.harmony.Harmony3Library" coreVersion="5.6.1">
    <usedPackages class="java.util.ArrayList"/>
    <usedClasses class="java.util.TreeMap">
       <entry>
@@ -107,7 +107,7 @@
       </entry>
    </usedClasses>
    <usedLibraries class="java.util.ArrayList">
-      <ILibraryFile class="com.microchip.mcc.core.library.BaseLibraryFile" libraryClass="com.microchip.mcc.harmony.Harmony3Library" version="1.1.0"/>
+      <ILibraryFile class="com.microchip.mcc.core.library.BaseLibraryFile" libraryClass="com.microchip.mcc.harmony.Harmony3Library" version="1.4.1"/>
    </usedLibraries>
    <tokenMap class="java.util.TreeMap">
       <entry>
@@ -591,7 +591,10 @@
          <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;UserData&gt;
   &lt;UserData dnOrder=&quot;0&quot;&gt;
     &lt;GraphSettings canvasHeight=&quot;625&quot; canvasWidth=&quot;892&quot; dnOrder=&quot;0&quot;/&gt;
-    &lt;ComponentGraph dnOrder=&quot;1&quot; id=&quot;__ROOTVIEW&quot;&gt;
+    &lt;PowerProfiles dnOrder=&quot;1&quot;&gt;
+      &lt;Profile dnOrder=&quot;0&quot; id=&quot;profile0&quot; name=&quot;Main&quot;/&gt;
+    &lt;/PowerProfiles&gt;
+    &lt;ComponentGraph dnOrder=&quot;2&quot; id=&quot;__ROOTVIEW&quot;&gt;
       &lt;ElementPositions dnOrder=&quot;0&quot;&gt;
         &lt;ElementPosition dnOrder=&quot;0&quot; id=&quot;BSP_PIC32MZ_DA_Curiosity&quot; x=&quot;320&quot; y=&quot;20&quot;/&gt;
         &lt;ElementPosition dnOrder=&quot;1&quot; id=&quot;HarmonyCore&quot; x=&quot;192&quot; y=&quot;64&quot;/&gt;
@@ -609,7 +612,7 @@
         &lt;ElementPosition dnOrder=&quot;13&quot; id=&quot;i2c2&quot; x=&quot;6&quot; y=&quot;366&quot;/&gt;
         &lt;ElementPosition dnOrder=&quot;14&quot; id=&quot;le_gfx_driver_2dgpu&quot; x=&quot;359&quot; y=&quot;242&quot;/&gt;
         &lt;ElementPosition dnOrder=&quot;15&quot; id=&quot;le_gfx_driver_glcd&quot; x=&quot;360&quot; y=&quot;139&quot;/&gt;
-        &lt;ElementPosition dnOrder=&quot;16&quot; id=&quot;legato_gfx_pda_tm4301b&quot; x=&quot;546&quot; y=&quot;108&quot;/&gt;
+        &lt;ElementPosition dnOrder=&quot;16&quot; id=&quot;legato_gfx_pda_tm4301b&quot; x=&quot;570&quot; y=&quot;100&quot;/&gt;
         &lt;ElementPosition dnOrder=&quot;17&quot; id=&quot;sdhc&quot; x=&quot;412&quot; y=&quot;513&quot;/&gt;
         &lt;ElementPosition dnOrder=&quot;18&quot; id=&quot;sys_fs&quot; x=&quot;750&quot; y=&quot;404&quot;/&gt;
         &lt;ElementPosition dnOrder=&quot;19&quot; id=&quot;sys_input&quot; x=&quot;519&quot; y=&quot;17&quot;/&gt;
@@ -688,6 +691,50 @@
   &lt;core dnOrder=&quot;0&quot; id=&quot;BSP_PIN_105_MODE&quot;&gt;
     &lt;Values dnOrder=&quot;0&quot;&gt;
       &lt;User dnOrder=&quot;0&quot; value=&quot;DIGITAL&quot;/&gt;
+    &lt;/Values&gt;
+  &lt;/core&gt;
+&lt;/core&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="BSP_PIN_106_DIR"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
+  &lt;core dnOrder=&quot;0&quot; id=&quot;BSP_PIN_106_DIR&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;&gt;
+      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;legato_gfx_pda_tm4301b&quot; value=&quot;Out&quot;/&gt;
+    &lt;/Values&gt;
+  &lt;/core&gt;
+&lt;/core&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="BSP_PIN_106_FUNCTION_NAME"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
+  &lt;core dnOrder=&quot;0&quot; id=&quot;BSP_PIN_106_FUNCTION_NAME&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;&gt;
+      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;legato_gfx_pda_tm4301b&quot; value=&quot;GLCD_DISP&quot;/&gt;
+    &lt;/Values&gt;
+  &lt;/core&gt;
+&lt;/core&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="BSP_PIN_106_FUNCTION_TYPE"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
+  &lt;core dnOrder=&quot;0&quot; id=&quot;BSP_PIN_106_FUNCTION_TYPE&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;&gt;
+      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;legato_gfx_pda_tm4301b&quot; value=&quot;GPIO&quot;/&gt;
+    &lt;/Values&gt;
+  &lt;/core&gt;
+&lt;/core&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="BSP_PIN_106_LAT"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
+  &lt;core dnOrder=&quot;0&quot; id=&quot;BSP_PIN_106_LAT&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;&gt;
+      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;legato_gfx_pda_tm4301b&quot; value=&quot;High&quot;/&gt;
     &lt;/Values&gt;
   &lt;/core&gt;
 &lt;/core&gt;
@@ -892,6 +939,17 @@
 </value>
       </entry>
       <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="BSP_PIN_127_FUNCTION_TYPE"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
+  &lt;core dnOrder=&quot;0&quot; id=&quot;BSP_PIN_127_FUNCTION_TYPE&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;&gt;
+      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;legato_gfx_pda_tm4301b&quot; value=&quot;GD1&quot;/&gt;
+    &lt;/Values&gt;
+  &lt;/core&gt;
+&lt;/core&gt;
+</value>
+      </entry>
+      <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="BSP_PIN_127_MODE"/>
          <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
   &lt;core dnOrder=&quot;0&quot; id=&quot;BSP_PIN_127_MODE&quot;&gt;
@@ -947,11 +1005,33 @@
 </value>
       </entry>
       <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="BSP_PIN_130_FUNCTION_TYPE"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
+  &lt;core dnOrder=&quot;0&quot; id=&quot;BSP_PIN_130_FUNCTION_TYPE&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;&gt;
+      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;legato_gfx_pda_tm4301b&quot; value=&quot;GD19&quot;/&gt;
+    &lt;/Values&gt;
+  &lt;/core&gt;
+&lt;/core&gt;
+</value>
+      </entry>
+      <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="BSP_PIN_130_MODE"/>
          <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
   &lt;core dnOrder=&quot;0&quot; id=&quot;BSP_PIN_130_MODE&quot;&gt;
     &lt;Values dnOrder=&quot;0&quot;&gt;
       &lt;User dnOrder=&quot;0&quot; value=&quot;DIGITAL&quot;/&gt;
+    &lt;/Values&gt;
+  &lt;/core&gt;
+&lt;/core&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="BSP_PIN_131_FUNCTION_TYPE"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
+  &lt;core dnOrder=&quot;0&quot; id=&quot;BSP_PIN_131_FUNCTION_TYPE&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;&gt;
+      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;legato_gfx_pda_tm4301b&quot; value=&quot;GD15&quot;/&gt;
     &lt;/Values&gt;
   &lt;/core&gt;
 &lt;/core&gt;
@@ -969,11 +1049,33 @@
 </value>
       </entry>
       <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="BSP_PIN_132_FUNCTION_TYPE"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
+  &lt;core dnOrder=&quot;0&quot; id=&quot;BSP_PIN_132_FUNCTION_TYPE&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;&gt;
+      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;legato_gfx_pda_tm4301b&quot; value=&quot;GD14&quot;/&gt;
+    &lt;/Values&gt;
+  &lt;/core&gt;
+&lt;/core&gt;
+</value>
+      </entry>
+      <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="BSP_PIN_132_MODE"/>
          <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
   &lt;core dnOrder=&quot;0&quot; id=&quot;BSP_PIN_132_MODE&quot;&gt;
     &lt;Values dnOrder=&quot;0&quot;&gt;
       &lt;User dnOrder=&quot;0&quot; value=&quot;DIGITAL&quot;/&gt;
+    &lt;/Values&gt;
+  &lt;/core&gt;
+&lt;/core&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="BSP_PIN_133_FUNCTION_TYPE"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
+  &lt;core dnOrder=&quot;0&quot; id=&quot;BSP_PIN_133_FUNCTION_TYPE&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;&gt;
+      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;legato_gfx_pda_tm4301b&quot; value=&quot;GD13&quot;/&gt;
     &lt;/Values&gt;
   &lt;/core&gt;
 &lt;/core&gt;
@@ -991,11 +1093,33 @@
 </value>
       </entry>
       <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="BSP_PIN_134_FUNCTION_TYPE"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
+  &lt;core dnOrder=&quot;0&quot; id=&quot;BSP_PIN_134_FUNCTION_TYPE&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;&gt;
+      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;legato_gfx_pda_tm4301b&quot; value=&quot;GD12&quot;/&gt;
+    &lt;/Values&gt;
+  &lt;/core&gt;
+&lt;/core&gt;
+</value>
+      </entry>
+      <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="BSP_PIN_134_MODE"/>
          <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
   &lt;core dnOrder=&quot;0&quot; id=&quot;BSP_PIN_134_MODE&quot;&gt;
     &lt;Values dnOrder=&quot;0&quot;&gt;
       &lt;User dnOrder=&quot;0&quot; value=&quot;DIGITAL&quot;/&gt;
+    &lt;/Values&gt;
+  &lt;/core&gt;
+&lt;/core&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="BSP_PIN_137_FUNCTION_TYPE"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
+  &lt;core dnOrder=&quot;0&quot; id=&quot;BSP_PIN_137_FUNCTION_TYPE&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;&gt;
+      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;legato_gfx_pda_tm4301b&quot; value=&quot;GD23&quot;/&gt;
     &lt;/Values&gt;
   &lt;/core&gt;
 &lt;/core&gt;
@@ -1046,11 +1170,33 @@
 </value>
       </entry>
       <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="BSP_PIN_143_FUNCTION_TYPE"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
+  &lt;core dnOrder=&quot;0&quot; id=&quot;BSP_PIN_143_FUNCTION_TYPE&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;&gt;
+      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;legato_gfx_pda_tm4301b&quot; value=&quot;GD8&quot;/&gt;
+    &lt;/Values&gt;
+  &lt;/core&gt;
+&lt;/core&gt;
+</value>
+      </entry>
+      <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="BSP_PIN_143_MODE"/>
          <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
   &lt;core dnOrder=&quot;0&quot; id=&quot;BSP_PIN_143_MODE&quot;&gt;
     &lt;Values dnOrder=&quot;0&quot;&gt;
       &lt;User dnOrder=&quot;0&quot; value=&quot;DIGITAL&quot;/&gt;
+    &lt;/Values&gt;
+  &lt;/core&gt;
+&lt;/core&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="BSP_PIN_144_FUNCTION_TYPE"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
+  &lt;core dnOrder=&quot;0&quot; id=&quot;BSP_PIN_144_FUNCTION_TYPE&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;&gt;
+      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;legato_gfx_pda_tm4301b&quot; value=&quot;GD0&quot;/&gt;
     &lt;/Values&gt;
   &lt;/core&gt;
 &lt;/core&gt;
@@ -1068,11 +1214,33 @@
 </value>
       </entry>
       <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="BSP_PIN_145_FUNCTION_TYPE"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
+  &lt;core dnOrder=&quot;0&quot; id=&quot;BSP_PIN_145_FUNCTION_TYPE&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;&gt;
+      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;legato_gfx_pda_tm4301b&quot; value=&quot;GD9&quot;/&gt;
+    &lt;/Values&gt;
+  &lt;/core&gt;
+&lt;/core&gt;
+</value>
+      </entry>
+      <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="BSP_PIN_145_MODE"/>
          <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
   &lt;core dnOrder=&quot;0&quot; id=&quot;BSP_PIN_145_MODE&quot;&gt;
     &lt;Values dnOrder=&quot;0&quot;&gt;
       &lt;User dnOrder=&quot;0&quot; value=&quot;DIGITAL&quot;/&gt;
+    &lt;/Values&gt;
+  &lt;/core&gt;
+&lt;/core&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="BSP_PIN_146_FUNCTION_TYPE"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
+  &lt;core dnOrder=&quot;0&quot; id=&quot;BSP_PIN_146_FUNCTION_TYPE&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;&gt;
+      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;legato_gfx_pda_tm4301b&quot; value=&quot;GD18&quot;/&gt;
     &lt;/Values&gt;
   &lt;/core&gt;
 &lt;/core&gt;
@@ -1101,11 +1269,33 @@
 </value>
       </entry>
       <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="BSP_PIN_148_FUNCTION_TYPE"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
+  &lt;core dnOrder=&quot;0&quot; id=&quot;BSP_PIN_148_FUNCTION_TYPE&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;&gt;
+      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;legato_gfx_pda_tm4301b&quot; value=&quot;GCLK&quot;/&gt;
+    &lt;/Values&gt;
+  &lt;/core&gt;
+&lt;/core&gt;
+</value>
+      </entry>
+      <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="BSP_PIN_148_MODE"/>
          <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
   &lt;core dnOrder=&quot;0&quot; id=&quot;BSP_PIN_148_MODE&quot;&gt;
     &lt;Values dnOrder=&quot;0&quot;&gt;
       &lt;User dnOrder=&quot;0&quot; value=&quot;DIGITAL&quot;/&gt;
+    &lt;/Values&gt;
+  &lt;/core&gt;
+&lt;/core&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="BSP_PIN_149_FUNCTION_TYPE"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
+  &lt;core dnOrder=&quot;0&quot; id=&quot;BSP_PIN_149_FUNCTION_TYPE&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;&gt;
+      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;legato_gfx_pda_tm4301b&quot; value=&quot;HSYNC&quot;/&gt;
     &lt;/Values&gt;
   &lt;/core&gt;
 &lt;/core&gt;
@@ -1123,11 +1313,33 @@
 </value>
       </entry>
       <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="BSP_PIN_150_FUNCTION_TYPE"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
+  &lt;core dnOrder=&quot;0&quot; id=&quot;BSP_PIN_150_FUNCTION_TYPE&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;&gt;
+      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;legato_gfx_pda_tm4301b&quot; value=&quot;VSYNC&quot;/&gt;
+    &lt;/Values&gt;
+  &lt;/core&gt;
+&lt;/core&gt;
+</value>
+      </entry>
+      <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="BSP_PIN_150_MODE"/>
          <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
   &lt;core dnOrder=&quot;0&quot; id=&quot;BSP_PIN_150_MODE&quot;&gt;
     &lt;Values dnOrder=&quot;0&quot;&gt;
       &lt;User dnOrder=&quot;0&quot; value=&quot;DIGITAL&quot;/&gt;
+    &lt;/Values&gt;
+  &lt;/core&gt;
+&lt;/core&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="BSP_PIN_151_FUNCTION_TYPE"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
+  &lt;core dnOrder=&quot;0&quot; id=&quot;BSP_PIN_151_FUNCTION_TYPE&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;&gt;
+      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;legato_gfx_pda_tm4301b&quot; value=&quot;GD20&quot;/&gt;
     &lt;/Values&gt;
   &lt;/core&gt;
 &lt;/core&gt;
@@ -1530,6 +1742,17 @@
 </value>
       </entry>
       <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="BSP_PIN_74_FUNCTION_TYPE"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
+  &lt;core dnOrder=&quot;0&quot; id=&quot;BSP_PIN_74_FUNCTION_TYPE&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;&gt;
+      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;legato_gfx_pda_tm4301b&quot; value=&quot;GD10&quot;/&gt;
+    &lt;/Values&gt;
+  &lt;/core&gt;
+&lt;/core&gt;
+</value>
+      </entry>
+      <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="BSP_PIN_74_MODE"/>
          <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
   &lt;core dnOrder=&quot;0&quot; id=&quot;BSP_PIN_74_MODE&quot;&gt;
@@ -1541,11 +1764,33 @@
 </value>
       </entry>
       <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="BSP_PIN_75_FUNCTION_TYPE"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
+  &lt;core dnOrder=&quot;0&quot; id=&quot;BSP_PIN_75_FUNCTION_TYPE&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;&gt;
+      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;legato_gfx_pda_tm4301b&quot; value=&quot;GD11&quot;/&gt;
+    &lt;/Values&gt;
+  &lt;/core&gt;
+&lt;/core&gt;
+</value>
+      </entry>
+      <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="BSP_PIN_75_MODE"/>
          <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
   &lt;core dnOrder=&quot;0&quot; id=&quot;BSP_PIN_75_MODE&quot;&gt;
     &lt;Values dnOrder=&quot;0&quot;&gt;
       &lt;User dnOrder=&quot;0&quot; value=&quot;DIGITAL&quot;/&gt;
+    &lt;/Values&gt;
+  &lt;/core&gt;
+&lt;/core&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="BSP_PIN_76_FUNCTION_TYPE"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
+  &lt;core dnOrder=&quot;0&quot; id=&quot;BSP_PIN_76_FUNCTION_TYPE&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;&gt;
+      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;legato_gfx_pda_tm4301b&quot; value=&quot;GD2&quot;/&gt;
     &lt;/Values&gt;
   &lt;/core&gt;
 &lt;/core&gt;
@@ -1629,11 +1874,33 @@
 </value>
       </entry>
       <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="BSP_PIN_80_FUNCTION_TYPE"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
+  &lt;core dnOrder=&quot;0&quot; id=&quot;BSP_PIN_80_FUNCTION_TYPE&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;&gt;
+      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;legato_gfx_pda_tm4301b&quot; value=&quot;GD7&quot;/&gt;
+    &lt;/Values&gt;
+  &lt;/core&gt;
+&lt;/core&gt;
+</value>
+      </entry>
+      <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="BSP_PIN_80_MODE"/>
          <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
   &lt;core dnOrder=&quot;0&quot; id=&quot;BSP_PIN_80_MODE&quot;&gt;
     &lt;Values dnOrder=&quot;0&quot;&gt;
       &lt;User dnOrder=&quot;0&quot; value=&quot;DIGITAL&quot;/&gt;
+    &lt;/Values&gt;
+  &lt;/core&gt;
+&lt;/core&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="BSP_PIN_81_FUNCTION_TYPE"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
+  &lt;core dnOrder=&quot;0&quot; id=&quot;BSP_PIN_81_FUNCTION_TYPE&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;&gt;
+      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;legato_gfx_pda_tm4301b&quot; value=&quot;GD22&quot;/&gt;
     &lt;/Values&gt;
   &lt;/core&gt;
 &lt;/core&gt;
@@ -1662,11 +1929,33 @@
 </value>
       </entry>
       <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="BSP_PIN_89_FUNCTION_TYPE"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
+  &lt;core dnOrder=&quot;0&quot; id=&quot;BSP_PIN_89_FUNCTION_TYPE&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;&gt;
+      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;legato_gfx_pda_tm4301b&quot; value=&quot;GD16&quot;/&gt;
+    &lt;/Values&gt;
+  &lt;/core&gt;
+&lt;/core&gt;
+</value>
+      </entry>
+      <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="BSP_PIN_89_MODE"/>
          <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
   &lt;core dnOrder=&quot;0&quot; id=&quot;BSP_PIN_89_MODE&quot;&gt;
     &lt;Values dnOrder=&quot;0&quot;&gt;
       &lt;User dnOrder=&quot;0&quot; value=&quot;DIGITAL&quot;/&gt;
+    &lt;/Values&gt;
+  &lt;/core&gt;
+&lt;/core&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="BSP_PIN_90_FUNCTION_TYPE"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
+  &lt;core dnOrder=&quot;0&quot; id=&quot;BSP_PIN_90_FUNCTION_TYPE&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;&gt;
+      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;legato_gfx_pda_tm4301b&quot; value=&quot;GD5&quot;/&gt;
     &lt;/Values&gt;
   &lt;/core&gt;
 &lt;/core&gt;
@@ -1684,11 +1973,33 @@
 </value>
       </entry>
       <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="BSP_PIN_91_FUNCTION_TYPE"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
+  &lt;core dnOrder=&quot;0&quot; id=&quot;BSP_PIN_91_FUNCTION_TYPE&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;&gt;
+      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;legato_gfx_pda_tm4301b&quot; value=&quot;GD6&quot;/&gt;
+    &lt;/Values&gt;
+  &lt;/core&gt;
+&lt;/core&gt;
+</value>
+      </entry>
+      <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="BSP_PIN_91_MODE"/>
          <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
   &lt;core dnOrder=&quot;0&quot; id=&quot;BSP_PIN_91_MODE&quot;&gt;
     &lt;Values dnOrder=&quot;0&quot;&gt;
       &lt;User dnOrder=&quot;0&quot; value=&quot;DIGITAL&quot;/&gt;
+    &lt;/Values&gt;
+  &lt;/core&gt;
+&lt;/core&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="BSP_PIN_92_FUNCTION_TYPE"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
+  &lt;core dnOrder=&quot;0&quot; id=&quot;BSP_PIN_92_FUNCTION_TYPE&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;&gt;
+      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;legato_gfx_pda_tm4301b&quot; value=&quot;GD21&quot;/&gt;
     &lt;/Values&gt;
   &lt;/core&gt;
 &lt;/core&gt;
@@ -1717,6 +2028,17 @@
 </value>
       </entry>
       <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="BSP_PIN_95_FUNCTION_TYPE"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
+  &lt;core dnOrder=&quot;0&quot; id=&quot;BSP_PIN_95_FUNCTION_TYPE&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;&gt;
+      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;legato_gfx_pda_tm4301b&quot; value=&quot;GD4&quot;/&gt;
+    &lt;/Values&gt;
+  &lt;/core&gt;
+&lt;/core&gt;
+</value>
+      </entry>
+      <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="BSP_PIN_95_MODE"/>
          <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
   &lt;core dnOrder=&quot;0&quot; id=&quot;BSP_PIN_95_MODE&quot;&gt;
@@ -1728,11 +2050,33 @@
 </value>
       </entry>
       <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="BSP_PIN_96_FUNCTION_TYPE"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
+  &lt;core dnOrder=&quot;0&quot; id=&quot;BSP_PIN_96_FUNCTION_TYPE&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;&gt;
+      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;legato_gfx_pda_tm4301b&quot; value=&quot;GD3&quot;/&gt;
+    &lt;/Values&gt;
+  &lt;/core&gt;
+&lt;/core&gt;
+</value>
+      </entry>
+      <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="BSP_PIN_96_MODE"/>
          <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
   &lt;core dnOrder=&quot;0&quot; id=&quot;BSP_PIN_96_MODE&quot;&gt;
     &lt;Values dnOrder=&quot;0&quot;&gt;
       &lt;User dnOrder=&quot;0&quot; value=&quot;DIGITAL&quot;/&gt;
+    &lt;/Values&gt;
+  &lt;/core&gt;
+&lt;/core&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="BSP_PIN_97_FUNCTION_TYPE"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
+  &lt;core dnOrder=&quot;0&quot; id=&quot;BSP_PIN_97_FUNCTION_TYPE&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;&gt;
+      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;legato_gfx_pda_tm4301b&quot; value=&quot;GD17&quot;/&gt;
     &lt;/Values&gt;
   &lt;/core&gt;
 &lt;/core&gt;
@@ -3966,7 +4310,7 @@
          <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
   &lt;core dnOrder=&quot;0&quot; id=&quot;SYS_PORT_H_LAT&quot;&gt;
     &lt;Values dnOrder=&quot;0&quot;&gt;
-      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;core&quot; value=&quot;0&quot;/&gt;
+      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;core&quot; value=&quot;1024&quot;/&gt;
     &lt;/Values&gt;
   &lt;/core&gt;
 &lt;/core&gt;
@@ -3977,7 +4321,7 @@
          <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
   &lt;core dnOrder=&quot;0&quot; id=&quot;SYS_PORT_H_TRIS&quot;&gt;
     &lt;Values dnOrder=&quot;0&quot;&gt;
-      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;core&quot; value=&quot;0&quot;/&gt;
+      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;core&quot; value=&quot;1024&quot;/&gt;
     &lt;/Values&gt;
   &lt;/core&gt;
 &lt;/core&gt;
@@ -4866,6 +5210,16 @@
           &lt;/String&gt;
         &lt;/Attributes&gt;
       &lt;/DirectCapability&gt;
+      &lt;DirectCapability dnOrder=&quot;1&quot; id=&quot;touch_panel&quot;&gt;
+        &lt;Attributes dnOrder=&quot;0&quot;&gt;
+          &lt;String dnOrder=&quot;0&quot; id=&quot;targetComponentID&quot;&gt;
+            &lt;Value dnOrder=&quot;0&quot;&gt;gfx_maxtouch_controller&lt;/Value&gt;
+          &lt;/String&gt;
+          &lt;String dnOrder=&quot;1&quot; id=&quot;targetAttachmentID&quot;&gt;
+            &lt;Value dnOrder=&quot;0&quot;&gt;touch_panel&lt;/Value&gt;
+          &lt;/String&gt;
+        &lt;/Attributes&gt;
+      &lt;/DirectCapability&gt;
     &lt;/Attachments&gt;
   &lt;/gfx_disp_pdatm4301b_480x272&gt;
 &lt;/gfx_disp_pdatm4301b_480x272&gt;
@@ -5158,6 +5512,16 @@
           &lt;/String&gt;
           &lt;String dnOrder=&quot;1&quot; id=&quot;targetAttachmentID&quot;&gt;
             &lt;Value dnOrder=&quot;0&quot;&gt;drv_i2c&lt;/Value&gt;
+          &lt;/String&gt;
+        &lt;/Attributes&gt;
+      &lt;/DirectDependency&gt;
+      &lt;DirectDependency dnOrder=&quot;1&quot; id=&quot;touch_panel&quot;&gt;
+        &lt;Attributes dnOrder=&quot;0&quot;&gt;
+          &lt;String dnOrder=&quot;0&quot; id=&quot;targetComponentID&quot;&gt;
+            &lt;Value dnOrder=&quot;0&quot;&gt;gfx_disp_pdatm4301b_480x272&lt;/Value&gt;
+          &lt;/String&gt;
+          &lt;String dnOrder=&quot;1&quot; id=&quot;targetAttachmentID&quot;&gt;
+            &lt;Value dnOrder=&quot;0&quot;&gt;touch_panel&lt;/Value&gt;
           &lt;/String&gt;
         &lt;/Attributes&gt;
       &lt;/DirectDependency&gt;
@@ -5594,7 +5958,6 @@
       &lt;MultiCapability dnOrder=&quot;0&quot; id=&quot;sys_fs_DRV_MEDIA_dependency&quot;&gt;
         &lt;TargetAttachments dnOrder=&quot;0&quot;&gt;
           &lt;TargetAttachment dnOrder=&quot;0&quot; targetAttachmentID=&quot;USB Host MSD&quot; targetComponentID=&quot;usb_host_msd&quot;/&gt;
-          &lt;TargetAttachment dnOrder=&quot;1&quot; targetAttachmentID=&quot;drv_media&quot; targetComponentID=&quot;drv_sdmmc_0&quot;/&gt;
         &lt;/TargetAttachments&gt;
       &lt;/MultiCapability&gt;
     &lt;/Attachments&gt;
@@ -5887,15 +6250,15 @@
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu\bsp\bsp.h</file>
-         <hash>846665fde8ecf7804446cf201ead9848ad4be1cc10df5dc1e143bede49a58a9a</hash>
+         <hash>45d2f1fcd634a57b26bf5e8c0e9bc681798f7f47348be598ab48aa0a7571627b</hash>
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu\configuration.h</file>
-         <hash>2ef3ffd4d2f73c3b9acc802bbec284e3a86bac1f99c8959567d759a76063ea52</hash>
+         <hash>5269add1d5f4d2458b739bc86c8403048e6f0b920ba387033464ee39533f2185</hash>
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu\definitions.h</file>
-         <hash>b20d5ed138c1eb44870bccfe1102a0b92dd3658f717f956a0308ba0acf2a5896</hash>
+         <hash>1d71b3190d0e7cc91442bb146bdd121d9099020f3ee19cd35dd90b124d0a3220</hash>
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu\device.h</file>
@@ -5915,23 +6278,23 @@
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu\driver\i2c\drv_i2c.h</file>
-         <hash>1add02b0380f67be5dc9707f01b290af08eccc0957775327f44a8c1afc823410</hash>
+         <hash>098d38bbc9c9d42befb9e601cfaf7f342ce8c670b788c961ef84df6db1ecbf82</hash>
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu\driver\i2c\drv_i2c_definitions.h</file>
-         <hash>73ed094aba8f1de3ae1497ff414474f02588381d94801f6beac411f8c7f9b329</hash>
+         <hash>308393d7dc25f042ea7443ac00d81cc8fafb0eec952207d88f64a0b48ea04bae</hash>
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu\driver\i2c\src\drv_i2c.c</file>
-         <hash>d27c94dc19b7413b120ca9aca2689f5d95e5a2c46f2b3918d37587bf64c85551</hash>
+         <hash>5d5aba18ec8e697a064a2eb4b862f0bb5ae34e68d88e71de23b5b1a9019e90c4</hash>
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu\driver\i2c\src\drv_i2c_local.h</file>
-         <hash>f82fd4270a023c7d3281752352a98a33d139a03992f8cf32e6ad04adaf8fcf5f</hash>
+         <hash>efe3b598a6fc3492f7f448c0077edcce4378d2029b5a26d304e0293e0d4711f7</hash>
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu\driver\input\drv_maxtouch.c</file>
-         <hash>b29a953b076ca24973d9661341d24091b446030c17368cc678f59c3cc51ab349</hash>
+         <hash>a64fc76b80833ab5617504d1383c7b6c8acec2ef26a4653d88e70be4cdfda950</hash>
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu\driver\input\drv_maxtouch.h</file>
@@ -5939,23 +6302,27 @@
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu\driver\sdmmc\drv_sdmmc.h</file>
-         <hash>7521b2ccf0bf9505fa4180aa436c0bdf91511c8db534011ec2f3769fcc02cb76</hash>
+         <hash>697acb93f32d8f9c5fb4987da5587233adf62a9b331fb30a195d1c788455339d</hash>
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu\driver\sdmmc\drv_sdmmc_definitions.h</file>
-         <hash>8e3fa241696362bae6415e2c9f4d750536d8956fc32845f72406b1f01c7e460a</hash>
+         <hash>4917f65a8afb9ae28e08fab862bfba969b892990b1d1039f1d03d66edcaa826e</hash>
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu\driver\sdmmc\src\drv_sdmmc.c</file>
-         <hash>b2ded46128c5fd50a0234f65fbe7b4a97f920c4ff90afe4778840e0f2aec78c8</hash>
+         <hash>ed15b761b26c824bd8a5040f275c796098adcd276f667f41e18fa66d061021b1</hash>
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu\driver\sdmmc\src\drv_sdmmc_file_system.c</file>
-         <hash>0c600ddf151f7ca49c2b1a21f212a010c2f6e2f46717cc5a3ef5cc357c896c63</hash>
+         <hash>d9ccc4228377cc80f855b932d5205c03cf168edf09f05fadf4e3931e1d8822d0</hash>
+      </entry>
+      <entry>
+         <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu\driver\sdmmc\src\drv_sdmmc_file_system.h</file>
+         <hash>3f80d1ef387e9ea48674dd721d301fe0e273ab00870b800ba28a1af40c8cdebd</hash>
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu\driver\sdmmc\src\drv_sdmmc_local.h</file>
-         <hash>6636f9435b8e6db473bd22410b84550ca0ac22283da3480bc292b1a9a6ef03d3</hash>
+         <hash>8c14b0e285ba1bf8850608f41809b4d7e914a83273ecaf22226750ca322c9835</hash>
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu\driver\usb\drv_usb.h</file>
@@ -6091,7 +6458,7 @@
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu\exceptions.c</file>
-         <hash>c7f83f167acb4cd93e430dd7eb6a3d13194218fdad1d75c129783ede94db1723</hash>
+         <hash>30b880390be9495d817d130a99612cbe4a21ce5f953a22bf77fc97872b770538</hash>
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu\gfx\driver\controller\glcd\drv_gfx_glcd.c</file>
@@ -6115,7 +6482,7 @@
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu\gfx\driver\gfx_driver.h</file>
-         <hash>fe9fcaab15196bb9b101e51cddc6418c9004f6babc2d416d8d5400ed7e554308</hash>
+         <hash>c0b0a01ff978f89cac7d3aa11baf20122297d95a8c28f45506c4e3c1e9217594</hash>
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu\gfx\driver\processor\2dgpu\lib\libnano2d.a</file>
@@ -6123,7 +6490,7 @@
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu\gfx\driver\processor\2dgpu\libnano2d.c</file>
-         <hash>c61986b49b2eb8c7c3f7508f113ec8e71487e35a4765d984667cd1d47d8765ba</hash>
+         <hash>f4fbddd754eb3b766651a447ebd71134d5a26fb5f8ed3dc1625ea8da3151ae8f</hash>
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu\gfx\driver\processor\2dgpu\libnano2d.h</file>
@@ -6155,7 +6522,7 @@
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu\gfx\legato\common\legato_common.h</file>
-         <hash>9c048287015309dace77916404332a3bc017289c0727ab56277d651727a5b8e3</hash>
+         <hash>a5901f452e13a7663245f052bdfa26ad31b49b289b9f310b78f750e3288e80d5</hash>
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu\gfx\legato\common\legato_error.c</file>
@@ -6163,11 +6530,11 @@
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu\gfx\legato\common\legato_error.h</file>
-         <hash>d37f93003691dc91b4fe0d327ca3b3a874da4962122c17870550106f5d9fe2fa</hash>
+         <hash>ea71092a2341a7b4776fc16b9682ebb30a9b315b88f049c3e64c5e9f0dd376da</hash>
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu\gfx\legato\common\legato_math.c</file>
-         <hash>6ed4792308018d9cd70dcd2b2e758b27264282c2921a483e538463b99f863137</hash>
+         <hash>173bfbbff90c6fe0122b91c4fab36da12e8da4160a72014347f88d160d36db5b</hash>
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu\gfx\legato\common\legato_math.h</file>
@@ -6191,7 +6558,7 @@
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu\gfx\legato\common\legato_utils.c</file>
-         <hash>2d7053dacc26e6ba9ea9d7eeef6c58e77f47fec870e69a1abc9fe76bdfba68fa</hash>
+         <hash>f7d528b39dabd79ad9bf209ba8b00232f1741d43c5b349f115a4bfc162deae0e</hash>
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu\gfx\legato\common\legato_utils.h</file>
@@ -6207,7 +6574,7 @@
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu\gfx\legato\core\legato_input.c</file>
-         <hash>065da654944d4bf2353d9d60f15cb1fa9f22ef1d669250dd05f25e6b15bf0ec6</hash>
+         <hash>33d63a672ae146acdf56cbfb86c4da4eb25ea6230f82a84587e6a6e613bee676</hash>
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu\gfx\legato\core\legato_input.h</file>
@@ -6223,11 +6590,11 @@
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu\gfx\legato\core\legato_state.c</file>
-         <hash>2b6cd4751d3db9d9a6de99d67aff74ed96504f85962de3ed9be63fbe49272d94</hash>
+         <hash>2b43334893b574253509f4830d0c6ccda57c8b067a315de554a5657160edf918</hash>
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu\gfx\legato\core\legato_state.h</file>
-         <hash>9ca415b93252885216e9310835c8e0b3f23b04d18cff795ac3e1e60042823a9c</hash>
+         <hash>021730fd1ba0ab8a75fd98242ee8115fcaaf610e2cb7b17ec901f886e7f404b0</hash>
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu\gfx\legato\core\legato_stream.c</file>
@@ -6255,7 +6622,7 @@
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu\gfx\legato\datastructure\legato_rectarray.c</file>
-         <hash>df8f35364cba51695a0da67fb89606394a571aea6c6b385bd6bc5fe3e01a46d8</hash>
+         <hash>c56985af163f387e9d85c755f64976d04b2e4885059fd51db2f238f5c5fa4233</hash>
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu\gfx\legato\datastructure\legato_rectarray.h</file>
@@ -6263,11 +6630,11 @@
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu\gfx\legato\font\legato_font.c</file>
-         <hash>398421927fb718787cb904b8f56a9c93e7870d611c4f0c198de17371425a5537</hash>
+         <hash>2147f47f2298508c2cae98691a7157313c6f03375a706f3bae3ed799a1d9068d</hash>
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu\gfx\legato\font\legato_font.h</file>
-         <hash>45dc390999d5046740d0cf4f0ad4b537091727eea5c91f03795388b9f734b991</hash>
+         <hash>2fc294c101b74dc10976c745908906e5619791eb4a5f1b15463e414d0ca7da66</hash>
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu\gfx\legato\font\legato_rasterfont_liberationmono1.c</file>
@@ -6283,7 +6650,7 @@
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu\gfx\legato\generated\font\le_gen_fonts.c</file>
-         <hash>1a655f5f9f516b88bfe68a06c29041d12065dbd502d73f8e883fc433cfad44db</hash>
+         <hash>57aa22f2832977d8063ab51a4dcfe0568e929651682193784cbdc31f7e0a027a</hash>
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu\gfx\legato\generated\image\le_gen_images.c</file>
@@ -6299,7 +6666,7 @@
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu\gfx\legato\generated\le_gen_harmony.c</file>
-         <hash>d9760de919a7e528590804aa5a37e1f5d01e2e7883f90c999c605638b74491cb</hash>
+         <hash>36c31abc6bcd91d7c298d51d6b6e71eb8240659f35f5b6ddb74d5cc2c3a7b4c3</hash>
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu\gfx\legato\generated\le_gen_harmony.h</file>
@@ -6307,7 +6674,7 @@
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu\gfx\legato\generated\le_gen_init.c</file>
-         <hash>45dd4d207587939a352bfd48795a95648cc09c48663c86108b6125de9c95846b</hash>
+         <hash>aab4e1bda425411c7b71aa0e47b13162711f541de0a128f45437e08b291ee9d7</hash>
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu\gfx\legato\generated\le_gen_init.h</file>
@@ -6367,7 +6734,7 @@
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu\gfx\legato\image\legato_image.h</file>
-         <hash>eac79467eeba5158cc581ab5fd98a9a8a0266bf34d3f3e35d9f1de44f5d29245</hash>
+         <hash>b920952ed97bb57bf1b0848f6ee957d5a15110b5b3142365b180b909685ecce2</hash>
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu\gfx\legato\image\legato_image_utils.c</file>
@@ -6399,7 +6766,7 @@
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu\gfx\legato\image\mono\legato_imagedecoder_mono_read_stream.c</file>
-         <hash>26d1a3ad240fb5892a6da12fdb718a8348acf902f4f82f96c6473f2236280f73</hash>
+         <hash>f9d136caf93a756039b4266cf1d31cfde80b6d3c80235525d5741dd749441905</hash>
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu\gfx\legato\image\png\legato_imagedecoder_png.c</file>
@@ -6411,7 +6778,7 @@
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu\gfx\legato\image\png\lodepng.c</file>
-         <hash>75b029a69d4a50c3ac27f75766577bf227abf5f35b38bc1375fb18d4e537e833</hash>
+         <hash>4753f5d064d52b83ea992004bdc569e5dd9b2c00f37f8a1466f5044969488df7</hash>
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu\gfx\legato\image\png\lodepng.h</file>
@@ -6423,11 +6790,11 @@
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu\gfx\legato\image\raw\legato_imagedecoder_raw.h</file>
-         <hash>738ae52b60b1c10a47d8a29af025c15ab4aa9fdf5fc1a7b2fa3519dd67ef39ce</hash>
+         <hash>9298e0e6a7fbbcad0e6eaa97a9fc22bbddf8c0e95393827b1402667ad41aff49</hash>
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu\gfx\legato\image\raw\legato_imagedecoder_raw_blend.c</file>
-         <hash>ef046613a6fa79b2a6c085acc22e2eec7b2158ee9ba31019337e0c65a3055ec9</hash>
+         <hash>a618fa3bd1c9915c02143ae065c92200da98143a771af8355e3e4c9be83873c4</hash>
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu\gfx\legato\image\raw\legato_imagedecoder_raw_convert.c</file>
@@ -6435,11 +6802,11 @@
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu\gfx\legato\image\raw\legato_imagedecoder_raw_mask.c</file>
-         <hash>04a56f67ab3ef840d89ab44d03ddac16e4ad55dbbcce72d91174d19071c749d7</hash>
+         <hash>6aebd76da11fb7cb0a1ac48563b741391204857a673f384c34dde4e083889e9f</hash>
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu\gfx\legato\image\raw\legato_imagedecoder_raw_palette_internal.c</file>
-         <hash>89ebac404e6aa269ca0bcc895fc9e11d2d593ad53e1f423d0c1f33881068a39d</hash>
+         <hash>0cec862ead00d99e9cb82c61e943185c336660170b1f4ac3af84689428938e2b</hash>
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu\gfx\legato\image\raw\legato_imagedecoder_raw_palette_stream.c</file>
@@ -6499,7 +6866,7 @@
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu\gfx\legato\memory\legato_memory.c</file>
-         <hash>0703d9b8268ae3f2b07abe69b19b2055e8c959b1cb9ebce3e5845515a0479b9e</hash>
+         <hash>8047bcaf8c3b284df0c455e2a2067bceef3cfc1d3a91f19ec40933c7544ba207</hash>
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu\gfx\legato\memory\legato_memory.h</file>
@@ -6507,7 +6874,7 @@
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu\gfx\legato\memory\legato_variableheap.c</file>
-         <hash>e7d7931e13bcceca0d1238232693aabdaea793010004fa185ea0cf4f3e373813</hash>
+         <hash>1a9fb6e89e156bef847d47d58a552ac7e97a31b075d229559b487b479b1ebf4d</hash>
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu\gfx\legato\memory\legato_variableheap.h</file>
@@ -6515,7 +6882,7 @@
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu\gfx\legato\renderer\legato_draw.c</file>
-         <hash>cc0dab38f93423ea13b1f24a56ce9341a6080c0b98f934e5d72c8c4b84b72113</hash>
+         <hash>5b3064465b4c94ec45a578e4dbc443d3e1908080847b34c99df0be4f94cff7e9</hash>
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu\gfx\legato\renderer\legato_draw_arc.c</file>
@@ -6531,15 +6898,15 @@
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu\gfx\legato\renderer\legato_gpu.c</file>
-         <hash>1b66475ad86326969a38dcb65c14d5591716dc52aa569433f50fef9b7f7c378d</hash>
+         <hash>2c875be18e8daa42c03196428cf7f00b8f9829a595b4c31eb9ebe45397e7b48c</hash>
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu\gfx\legato\renderer\legato_gpu.h</file>
-         <hash>9729a96a8d73007df72a13110c158bd5fbddc844527878c65e54885430f93f85</hash>
+         <hash>ee697fe9fbe34a099121d2a5e6b1b5d2f3bf2c49a5fcabef34cb296a19384aa0</hash>
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu\gfx\legato\renderer\legato_renderer.c</file>
-         <hash>2d7be08bfbde9de867481126878f88f402f0bda8f0e512422026796b9e700a82</hash>
+         <hash>8670db119b7bd79b2b2ae15ecc57f27c1f345a6fd21c57a824a3d0bdcdfd4c8f</hash>
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu\gfx\legato\renderer\legato_renderer.h</file>
@@ -6571,7 +6938,7 @@
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu\gfx\legato\string\legato_string_renderer.c</file>
-         <hash>b7051905d5c0de0d435b6f28e54333e20d5b9c0a6737015171dee7e698436ba5</hash>
+         <hash>ee320cc6223fcc86b6008757f09576a4f54633d2330070e045cbb698ab53d46a</hash>
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu\gfx\legato\string\legato_string_renderer.h</file>
@@ -6619,7 +6986,7 @@
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu\gfx\legato\widget\bargraph\legato_widget_bar_graph.c</file>
-         <hash>7437fbc8b9a263bbd7a897f98d44a76665ee809bd10b6f9e8b7aef2bda6d446a</hash>
+         <hash>493b11e33116cd709add657e3fd44499e7d753b079e3c4be68de526fbac7ac68</hash>
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu\gfx\legato\widget\bargraph\legato_widget_bar_graph.h</file>
@@ -6727,7 +7094,7 @@
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu\gfx\legato\widget\image\legato_widget_image.c</file>
-         <hash>5bb1d0e1c99405acc3ef79aebdbf413524d822466831e5d7326561e0f340f535</hash>
+         <hash>850da06063b06132ed4bc020af7fb28adef50b89517aa6507cc6febedcd07ab7</hash>
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu\gfx\legato\widget\image\legato_widget_image.h</file>
@@ -6775,7 +7142,7 @@
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu\gfx\legato\widget\keypad\legato_widget_keypad.c</file>
-         <hash>6dae943b18e928679e8c64d61cbd4fcd810b8ab48b7cbf4cd2b3ddd90a499991</hash>
+         <hash>7aa5b75e9614a9a99922344e2c425a11d332c1304784c77ae9f42b9a3d37375c</hash>
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu\gfx\legato\widget\keypad\legato_widget_keypad.h</file>
@@ -6807,11 +7174,11 @@
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu\gfx\legato\widget\legato_widget.c</file>
-         <hash>5cd66f799381c6ce723c7b8903ea966c1535653fe8e471ad5bfd01843cab9063</hash>
+         <hash>f9195f07098f8a346a7af2ac6502ff0f28102f2ea4cc96810a8842847dc7da12</hash>
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu\gfx\legato\widget\legato_widget.h</file>
-         <hash>820e28c0a3f81b37387cc156ff43899f05414c27d64f1b4c6d6291ed2deff663</hash>
+         <hash>bea12a374e5d5f32dc18b906d74b9d4cdc58bac123095868eb520cb7033c3af5</hash>
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu\gfx\legato\widget\legato_widget_skin_classic.c</file>
@@ -6819,11 +7186,11 @@
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu\gfx\legato\widget\legato_widget_skin_classic_common.c</file>
-         <hash>48d75d856374c3230a13c4aae564fa537fb5b77978c16cb49db93affdc02bafc</hash>
+         <hash>18834d393da62b2ef9b1dad769422504489540acfd557ceb46c156158778c1f9</hash>
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu\gfx\legato\widget\legato_widget_skin_classic_common.h</file>
-         <hash>c92b55e1527deae1f9d69657c5ff7d784118d21c31ef81c25d5c41bbbd83d1ef</hash>
+         <hash>a40b0d61f3393d6c1582f3b43c2de97955e64f3d05ef10ef7364e506f671cac7</hash>
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu\gfx\legato\widget\line\legato_widget_line.c</file>
@@ -6839,7 +7206,7 @@
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu\gfx\legato\widget\linegraph\legato_widget_line_graph.c</file>
-         <hash>4cc78db14c54cb98535513c61871bc36e88af5a516cb6529b4f371ff016dcd66</hash>
+         <hash>8dd3aab89037bd4a56a7a94c5b91bcf12a044d1ec84fe4356ce3ca441a4b10eb</hash>
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu\gfx\legato\widget\linegraph\legato_widget_line_graph.h</file>
@@ -6847,11 +7214,11 @@
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu\gfx\legato\widget\linegraph\legato_widget_line_graph_skin_classic.c</file>
-         <hash>8e3de8e4c850d8674b7085b78db8cc85e3381b187a8a86e2c28bf0ef8d7db7ea</hash>
+         <hash>f096ec470a4e83e29db6e90423a462656ed53c30184ffaecff2d353d99a16c77</hash>
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu\gfx\legato\widget\list\legato_widget_list.c</file>
-         <hash>14795c73b729627b00b2495346e4000612752449b2d4d65d4b83551b8dfd82ff</hash>
+         <hash>76cd79d99adccc089df61da79159d17866877b21cb90d2b4e2d8a31a7706c25d</hash>
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu\gfx\legato\widget\list\legato_widget_list.h</file>
@@ -6871,7 +7238,7 @@
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu\gfx\legato\widget\listwheel\legato_widget_listwheel_skin_classic.c</file>
-         <hash>0ab46b9a745f7deaf71c2f91662dc8803dabf05073b233a3611694264464e0de</hash>
+         <hash>9ce4c574de757f31f865a332c0cd86858de0fedfcdd46f3bfceeed18dbb73ff2</hash>
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu\gfx\legato\widget\piechart\legato_widget_pie_chart.c</file>
@@ -6908,6 +7275,10 @@
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu\gfx\legato\widget\radialmenu\legato_widget_radial_menu_skin_classic.c</file>
          <hash>5df7ffa5609ce829eac666279540823aac9296ba559e8e7c6f9813ddea0e3193</hash>
+      </entry>
+      <entry>
+         <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu\gfx\legato\widget\radialmenu\legato_widget_radial_menu_state.c</file>
+         <hash>beddd4565f9de6740724aa09e9f13387218b0ea891a8b393f44d3ba2d077438f</hash>
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu\gfx\legato\widget\radiobutton\legato_radiobutton_group.c</file>
@@ -6955,7 +7326,7 @@
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu\gfx\legato\widget\slider\legato_widget_slider.c</file>
-         <hash>598a95c15cc5096c046cefeeb2987dbbbd691a783c24e3521e40e07ed680e5ed</hash>
+         <hash>64bfd7a705db6c2f26865a9d2dfc4a6133ce29cc0fc3edd2be35916b7887f5e5</hash>
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu\gfx\legato\widget\slider\legato_widget_slider.h</file>
@@ -6963,7 +7334,7 @@
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu\gfx\legato\widget\slider\legato_widget_slider_skin_classic.c</file>
-         <hash>8844ec387305f1afce0918658c11ca3e0ddfd06f91740d1c2a3609f59178237a</hash>
+         <hash>757ceafde102185252413d651a7e422d6b144d184bd55a346fb347864e6f5e19</hash>
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu\gfx\legato\widget\textfield\legato_widget_textfield.c</file>
@@ -7003,27 +7374,27 @@
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu\initialization.c</file>
-         <hash>4b37ffc7462ba1542f0dcbfc612128ebd61df0a0a53800f017f2e94955d66c60</hash>
+         <hash>9eec1765cf6c80d40df437bbd324b498092ad4ece2e2d6ed8f815d72a6c32404</hash>
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu\interrupts.c</file>
-         <hash>f5833f0630cf7541119138b3b77e4e2bdef81993a9333611164545fff4a53c61</hash>
+         <hash>46e5b5659f3b5fe9618a83ff4735d88fb3c26700974b24f98bf19d25ba53f987</hash>
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu\interrupts.h</file>
-         <hash>91abdb8d191ae865fc6082f30783c3d6cca8aa8d5aca823a7fb2cc65e3a57d24</hash>
+         <hash>88607a51b5c38d7345ef535c80fcf82b779e2f0fb9805950c57e39d829412753</hash>
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu\osal\osal.h</file>
-         <hash>d42702188d00d3e1d7219d7eef030485896bf8b5ebe55318656e82f0fbb89788</hash>
+         <hash>8404fbe44807fa0484ffb38843a72cb9af8e31c9c30bd1b2594e609b8ea317d9</hash>
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu\osal\osal_definitions.h</file>
-         <hash>0a5ca28c4812bb37babfebc1fe30a90b13583504d81910ad159feb746a5b002c</hash>
+         <hash>5f0a2513a093b6d228e2b50646b204923a82047335a47f3d35a2938309ab6f37</hash>
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu\osal\osal_impl_basic.h</file>
-         <hash>0c388837ef1d4e207a028ed31bfe07f1aac7ea8b0505caff58f737667ccbeaee</hash>
+         <hash>67ce72d34fd1e4dee0b6937fa026ab2c7bd285f82a24da09742c68333adaf0fc</hash>
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu\p32MZ2064DAR176.ld</file>
@@ -7031,15 +7402,15 @@
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu\peripheral\cache\plib_cache.c</file>
-         <hash>28c61150a2e09ba1c80c2a1658351ba6d75e37ea0f3dbe56b4adc79ff49d7a64</hash>
+         <hash>500634fa5c5cb4efb91faa7a54e3ccbb26ad7ff6d188ff0e91cbaabc606cf054</hash>
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu\peripheral\cache\plib_cache.h</file>
-         <hash>114b4101b4690f99a531562fe08f7b52654664d811ee3ca2ecdfd72aefe96792</hash>
+         <hash>da01fae7f39626c9f25c0c8f4f9a8cf25ed0c4b8dd6c0d4bae146210efe8da46</hash>
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu\peripheral\cache\plib_cache_local.h</file>
-         <hash>d8172028d448563ad48e5258b140e6746274aed4742c450ef84336e6574c810e</hash>
+         <hash>91d5a1a9920a5aea939f16fe36e9346b60ba3a8577817f24c0e8198cba2e089d</hash>
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu\peripheral\cache\plib_cache_pic32mz.S</file>
@@ -7051,51 +7422,51 @@
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu\peripheral\clk\plib_clk.c</file>
-         <hash>2e5f511ab6317744de182b45cae93d8e944cb52f6d0bb9de7a747be305d5387a</hash>
+         <hash>a66a6fbba920f857757daf87ef76d05b65743622995746eb86488b935106b303</hash>
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu\peripheral\clk\plib_clk.h</file>
-         <hash>aeb73e24e5a518024b1c3f7dce953a5cbacead08f55e80ae465fc8d2e522e477</hash>
+         <hash>35384f2e13e59b7190bf77f6996baf3ea2377ec42df94979a6f793326def5255</hash>
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu\peripheral\coretimer\plib_coretimer.c</file>
-         <hash>fe067c1842e5d3843cd88f1aaa7f4931c3c4452f5ddfa79318404c6bea0cf3dc</hash>
+         <hash>2f636a8a90403a73ce55b8397c9ea548bb1e4ef7c022796ec2b3dffe7f97e96c</hash>
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu\peripheral\coretimer\plib_coretimer.h</file>
-         <hash>3b518d0f3667efcff16c9f0972d35f38eb4b97d22eca4ca2e7a862eb61e7cd6d</hash>
+         <hash>d88929a1d7d6d0428c517cb789359c574c42d52c3c8a04bb267990255ad81706</hash>
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu\peripheral\ddr\plib_ddr.c</file>
-         <hash>dda73e1eb3e74d1b2f0e81100b3d0a742ced9ac4dfa0d3a3a610a1c2e6388ce2</hash>
+         <hash>59c81e0328cbe59f8c220b24778c762b05b05919ad576bf75afe1fcc1506e27d</hash>
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu\peripheral\ddr\plib_ddr.h</file>
-         <hash>b5b6be078a510d1f5b7cf7fdd596a2735bfbd6117d4030e9dba44bf88d0873b6</hash>
+         <hash>e01c67f908fbed58bb542cc7f37e1ef68565a97d6d0d7aabf4a074fb3fd0eea2</hash>
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu\peripheral\evic\plib_evic.c</file>
-         <hash>1578f5153805b84c9e51e5411cfb619cffab5a9da506bde8b4b68729e5da3dda</hash>
+         <hash>fab81a6d3154884f4201f8443b9c137b37ed8e8fb78f27c18271c8179d344a3c</hash>
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu\peripheral\evic\plib_evic.h</file>
-         <hash>c92512e3068987f43ebd53be03c4e58115b45dbdcb9833216cb05c2d71199152</hash>
+         <hash>465c919c27930db968cce9d5bcabcb177beafbb3d2e9c62f3f6f8a4f00885a79</hash>
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu\peripheral\gpio\plib_gpio.c</file>
-         <hash>a8bdb0f90bc9c3c598af937d833d1e7819bbd307ceb431ba904834590066b8d8</hash>
+         <hash>804737446442434eb4423a77718142e5b296afcb4ddcda24b875984a3c571d5e</hash>
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu\peripheral\gpio\plib_gpio.h</file>
-         <hash>990dfc3aa1cc1804a4ba1464cc49bae8d1961e2cac48a11691eb9ffb994d0b78</hash>
+         <hash>9623f88a8b6b0a5ad8611c9acd67aa578a9cbd8b2699aa270f9a5f0b495d51d1</hash>
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu\peripheral\i2c\master\plib_i2c2_master.c</file>
-         <hash>2119608eee66b6fec01661579aef1ba4aab9abe440b8364de12a19d85b5aa60f</hash>
+         <hash>1e9fa55046a22c48e4f653d7087671bb6044a1bb561590d958c51142a66cd5bf</hash>
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu\peripheral\i2c\master\plib_i2c2_master.h</file>
-         <hash>54b41d364e7a205020f560ca2ab2cb125aa11f8a6f5910337ad3cf510a03c9a7</hash>
+         <hash>b64cbd9b5559995f70cfa38282f985b3879ca6d9988bb4dfa6e1efc1a2da81ca</hash>
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu\peripheral\i2c\master\plib_i2c_master_common.h</file>
@@ -7103,23 +7474,23 @@
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu\peripheral\sdhc\plib_sdhc.c</file>
-         <hash>497e5c173d7f45bf6163f90375789d655223a693d510cee3708f8d55fdc25e64</hash>
+         <hash>0d4b402e4db8754ab927a51407ddc939e32bb0ef75563da5e83459030775c561</hash>
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu\peripheral\sdhc\plib_sdhc.h</file>
-         <hash>7ad84305ac65e87e97e5a21a262eb394c61fdadb4372e577fffa697b3c7a0500</hash>
+         <hash>b165a938128195df76745b2dc0c5c6906eac9fe61f7a7b64e1b347c674eb9571</hash>
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu\peripheral\sdhc\plib_sdhc_common.h</file>
-         <hash>f1fd828f9d8fc847d80f9abd93a522e20fd3a84a75dd6cc86e519584877059be</hash>
+         <hash>64c22c9aa05f45a2dfaf19e5c9c9ea07318d64a03d757ba4c97115754afcb253</hash>
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu\peripheral\tmr1\plib_tmr1.c</file>
-         <hash>c91bd9bdf86320f47be21dbb97b5e590e4f5a485f99108d6cd0da70a94e0d6f6</hash>
+         <hash>2176cc7828fa6c50035b15f42b80f477464b06d19494463aff853a42734c7e39</hash>
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu\peripheral\tmr1\plib_tmr1.h</file>
-         <hash>b28749c5aeabe65f99fb625e1d171fcc0979f5b85f0ff072a6fb610d66236832</hash>
+         <hash>3e1ae49682c4b1b0f0d329f2b76d9e9f9a2a32bb42f25049a897e05c85270626</hash>
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu\peripheral\tmr1\plib_tmr1_common.h</file>
@@ -7130,32 +7501,36 @@
          <hash>858f8710d4287200a5ee7f3b3ad7c24f505aed9c05c16956ab0ff9f7bb162a6a</hash>
       </entry>
       <entry>
+         <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu\sys_tasks.h</file>
+         <hash>21f254f497a18a024cd00128d06c4776c2643f867a460c1ba9880a7dd41a8d56</hash>
+      </entry>
+      <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu\system\cache\sys_cache.c</file>
-         <hash>c588752333a197d8ca33071ed888a98ace2149b1123aaaa71dcb5d5a30134e49</hash>
+         <hash>53fd36c6040f1cd83a5a625dc5dbf3b9a1f337988e5c10b776da9235f7b7579e</hash>
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu\system\cache\sys_cache.h</file>
-         <hash>3407ecac4da455d4b8ba70043f10c20b10e1304e92402db824ca5efa6a2f8402</hash>
+         <hash>b4b3a4e7434759c9bbcd3c6a0ab97558eb2a007f083a4eb76dbedcb2e2c3d86b</hash>
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu\system\debug\sys_debug.h</file>
-         <hash>16fbc4bbf026e4713e9b835b1511411e053aaf92ab7d6a000638630576fe92b3</hash>
+         <hash>6dc7375ac05501951020122a9baa63e17e9331e11423c70c8ddd3c0944fd632c</hash>
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu\system\fs\fat_fs\file_system\ff.c</file>
-         <hash>ef75bad24073ec54d3e76b06b26c56b604bb4f063fe6bd9ebe7c80bae94fd6d5</hash>
+         <hash>09f73618c1ac3bd9736650439be337fbfe49018a1db7205126fcbfde1e384a0f</hash>
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu\system\fs\fat_fs\file_system\ff.h</file>
-         <hash>d7b45a8f01fcd9923e18f8618408613021f2d36f35c632de31edaf5f4acf6c6b</hash>
+         <hash>2906f8255a58097a83011b023f09dfa602c04c2d154c39a9e35fcb48823940ac</hash>
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu\system\fs\fat_fs\file_system\ffconf.h</file>
-         <hash>6600ddc48e57795a3cab339fe6de568a30440db0582cbe1c1b79f67e1b95cf8b</hash>
+         <hash>ac7199590220f90e8d9231cdc4cb43a0ac697ecb4c01b8e63595340e645a9cf9</hash>
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu\system\fs\fat_fs\file_system\ffunicode.c</file>
-         <hash>b519b20a6de1ceea6ae01421480d0137d03abe788b4e6553b2153d2a8591b840</hash>
+         <hash>3f1632c1f1e64b0b683b0d7e51341b9870728f398604869dd8211f1819509a8e</hash>
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu\system\fs\fat_fs\hardware_access\diskio.c</file>
@@ -7167,39 +7542,39 @@
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu\system\fs\src\sys_fs.c</file>
-         <hash>ca021c42833ef8d927a2165d42b8cf0d14ba0739eae48591dbd65b03f6166993</hash>
+         <hash>e6f4b416098de46fc230e3ecfb99cad91106ac0e99ab808c2a6c0df391e233b5</hash>
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu\system\fs\src\sys_fs_fat_interface.c</file>
-         <hash>581a4c11a2e6c4aa4aa2c64742b276d5d4b3bd1dbdbed1983aab17f162f4c47b</hash>
+         <hash>c7873a18d6d2ee9cb2eb1bf9c678dfc6c22837d4c22e5c3bcbf30507b3aa125f</hash>
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu\system\fs\src\sys_fs_local.h</file>
-         <hash>9757dc4a413f39e70813ea66b1825a7467f1b9a38a94d066fd39eb399361b438</hash>
+         <hash>7e7721693694ecc133d6772321cad1337c0a2209b7457b9351dda3a01cb129b1</hash>
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu\system\fs\src\sys_fs_media_manager.c</file>
-         <hash>0095a6e18a387cf6162ad5cbb04975f73c652f9651cb92f15a9acbbb19e1c4e2</hash>
+         <hash>c40b26a6263eb0890cbd15ef4eeb676cf876e347a183767514ac1d9c9603ee19</hash>
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu\system\fs\src\sys_fs_media_manager_local.h</file>
-         <hash>bbc6074719c421b07d4540ee6e745ae4145239f698780819c479e13bfdd9ddd5</hash>
+         <hash>5d471f0372ec41b3ef362ad533beede076e4e959274e57221ed229b996d7231e</hash>
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu\system\fs\sys_fs.h</file>
-         <hash>c3bce19e69290a393dca6f7ddbdb103ed7cf21be40f492fdfea185eb85ecbb93</hash>
+         <hash>4ca0bf61b93d1b4335bad8755bfeeed6dfda8a7eb3f2eabfcd9239a0b78e01af</hash>
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu\system\fs\sys_fs_fat_interface.h</file>
-         <hash>47379030a7b158d0db57e79d9ee9d056b9bbad70e13152b6ea603f1cbf37a459</hash>
+         <hash>8abf10cb082958d08f5cf3210694cef73fdb6fa9b6a641e00da547cbcec0719b</hash>
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu\system\fs\sys_fs_media_manager.h</file>
-         <hash>29bda64831783de33b10c3841e1eb703dc9f5b04287c1e26af8f3b75b7197b39</hash>
+         <hash>2f7c76d5a40a41594e86a831470c67d7aeec5b6e540fb967518ce095fe6da271</hash>
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu\system\input\sys_input.c</file>
-         <hash>e40e4ffe1dae0584eda92df7a87e3df4e9ae0e831db34bb76ac8493a70800eac</hash>
+         <hash>ebae84fd66e137b1803f597267fa5e03b22aba212d276c5b72b04da298f801d7</hash>
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu\system\input\sys_input.h</file>
@@ -7231,15 +7606,15 @@
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu\system\int\src\sys_int.c</file>
-         <hash>ff706bb4bde7b62a65b603efea8bab8b5a7d9a1a2c1cb2a9e981d68bbf20f764</hash>
+         <hash>30ac5e334ca90204f545f1ab769ae26f421b910b3fb3be99354b364febceee64</hash>
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu\system\int\sys_int.h</file>
-         <hash>c6ec8fc3c7ad1fa570998b9f65cb37fba4364ab07c3869f2d6cb30612a8a91e8</hash>
+         <hash>2c878ab7ff41ae56b5c0c3c94929ad66eb87b8660bf9a439177d049e8ad8f8c8</hash>
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu\system\int\sys_int_mapping.h</file>
-         <hash>771b853250bfb05ceac0f525749007ca1d4478e660c13f6a7b7e8fe28eefcf75</hash>
+         <hash>a2dcf05575becc98aa212af1d220eda07487bd645d82c4d7a980aa3a22384cf3</hash>
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu\system\system.h</file>
@@ -7247,39 +7622,39 @@
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu\system\system_common.h</file>
-         <hash>0dbf2f60b29c97426e70187bc59c652ab5a355f51cfbe3f195ff1c8c6c0b1602</hash>
+         <hash>c9f34bd226f8efab12f5766e77f8355996cd0430b50e0f6ee30258664c494984</hash>
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu\system\system_media.h</file>
-         <hash>be592b4eb9eb4cc8f25cf734fc15b088de091d2f8051b0fcba091c1b6194df5f</hash>
+         <hash>e61ba67015cfba6a7425d077cd2c633ba9989218bbe585078efe2face729401f</hash>
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu\system\system_module.h</file>
-         <hash>981fac23277aa77f682e7a9a28d436f892006cd5b4c7f23f50941b6d9a30e740</hash>
+         <hash>96c74368801b0a7aaa25aec3ec2cb0d483250385f103ffc1ff64089b4ca2c6d9</hash>
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu\system\time\src\sys_time.c</file>
-         <hash>b722ac0c5d955d289bd906609ab6f302342166c5ba66f87b30cac17ac6bfdcd9</hash>
+         <hash>fa2d85ab967b80157caf8483f6e28a23b12b548844a1d80f2fef760cd9b99271</hash>
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu\system\time\src\sys_time_local.h</file>
-         <hash>d3ef06b59d9a89efe9e8eb54fcf3b75120d56156cc21f6847ca4f9e902eb7c9d</hash>
+         <hash>df56f970664902417d798760e44978cf4b84c108cf0761647a383e91db76980c</hash>
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu\system\time\sys_time.h</file>
-         <hash>f21b100d8f0b8b79af9217315098d51df855d9015f05a7e25ad77414cd19b2c3</hash>
+         <hash>6357468f7670698b16bfb6439d9919ed38eba99d4f03277a8b43ac34586fa1b3</hash>
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu\system\time\sys_time_definitions.h</file>
-         <hash>904195d4340ba6b97cf19c25b9695d2a9f37ed67cf6abdf8ee1ee839506e2801</hash>
+         <hash>46537746b1d12ece6b682c9be1c8f3f219663c638c21a51a973762b7b393afe6</hash>
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu\tasks.c</file>
-         <hash>f2cee0e4b4b11c3fb5c4bc15296b34bdef26ee52c8476f5656f2081514ebb03e</hash>
+         <hash>94d6e269f60daf1dbf6f8106b42862341bbd6134756fa9a291c395f28d362758</hash>
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu\toolchain_specifics.h</file>
-         <hash>84276afca06869943bba17727ff4f41fea61e4f81329ee20a333cafe39562a73</hash>
+         <hash>fd2fc7bbe60706409cc0c0a525825c0194f6f71adc0a89e6310041f06dc2f645</hash>
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu\usb\scsi.h</file>
@@ -7331,7 +7706,7 @@
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu\usb\usb_host_client_driver.h</file>
-         <hash>d11085e6a64f6b4551b1dc19aaee5b8a2555b7df649057bdb2ce8549c296a87d</hash>
+         <hash>999717236876c88cfbb582f50c8b6429396a0e6696aba8a74556c25862070e8d</hash>
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu\usb\usb_host_hub_interface.h</file>
@@ -7355,7 +7730,7 @@
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu\usb_host_init_data.c</file>
-         <hash>0330d7752283cae468d58190fa175bdce6c256cbd94116385f6c6c0381099e27</hash>
+         <hash>e34b7b9d6d87436b54c8ca66932e017987ed5bea37c725cda4b91ea9dc5452a5</hash>
       </entry>
       <entry>
          <file>..\src\config\glcd_rgba8888_mxt_mzda_intddr_cu\user.h</file>

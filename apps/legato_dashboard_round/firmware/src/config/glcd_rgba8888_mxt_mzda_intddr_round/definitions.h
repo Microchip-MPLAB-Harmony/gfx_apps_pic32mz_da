@@ -53,9 +53,9 @@
 #include "usb/usb_chapter_9.h"
 #include "usb/usb_device.h"
 #include "peripheral/ocmp/plib_ocmp1.h"
+#include "system/time/sys_time.h"
 #include "gfx/canvas/gfx_canvas_api.h"
 #include "driver/i2c/drv_i2c.h"
-#include "system/time/sys_time.h"
 #include "usb/usb_device_cdc.h"
 #include "usb/usb_cdc.h"
 #include "peripheral/coretimer/plib_coretimer.h"
@@ -83,8 +83,8 @@
 #include "peripheral/evic/plib_evic.h"
 #include "peripheral/i2c/master/plib_i2c1_master.h"
 #include "driver/usb/usbhs/drv_usbhs.h"
-#include "peripheral/i2c/master/plib_i2c2_master.h"
 #include "system/input/sys_input.h"
+#include "peripheral/i2c/master/plib_i2c2_master.h"
 #include "system/fs/sys_fs.h"
 #include "system/fs/sys_fs_media_manager.h"
 #include "system/fs/sys_fs_fat_interface.h"
@@ -105,6 +105,12 @@ extern "C" {
 
 #endif
 // DOM-IGNORE-END
+
+/* Device Information */
+#define DEVICE_NAME			 "PIC32MZ2064DAS176"
+#define DEVICE_ARCH			 "MIPS"
+#define DEVICE_FAMILY		 "PIC32MZDA"
+#define DEVICE_SERIES		 "PIC32MZ"
 
 /* CPU clock frequency */
 #define CPU_CLOCK_FREQUENCY 200000000

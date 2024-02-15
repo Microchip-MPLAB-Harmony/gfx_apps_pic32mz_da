@@ -3,7 +3,7 @@ title: Harmony 3 Graphics PIC32MZ DA Applications Package
 nav_order: 1
 ---
 
-# ![MPLAB® Harmony Graphics Suite](./docs/images/mhgs.png) MPLAB® Harmony 3 Graphics Application Examples for PIC32MZ DA Family
+# ![MPLAB® Harmony Graphics Suite](./images/mhgs.png) MPLAB® Harmony 3 Graphics Application Examples for PIC32MZ DA Family
 
 MPLAB® Harmony Graphics Suite  is an extension of the MPLAB® ecosystem for creating
 embedded graphics firmware solutions for Microchip 32-bit SAM and PIC microcontroller
@@ -20,7 +20,7 @@ For more information on the tools, libraries and basic development with the MPLA
  - [Release Notes](./release_notes.md)
  - [MPLAB® Harmony License](./mplab_harmony_license.md)
  - [MPLAB® Harmony 3 Graphics User Guides Wiki](https://github.com/mchpgfx/legato.docs/wiki)
- - [MPLAB® Harmony 3 Graphics API Help](https://mchpgfx.github.io/legato.docs/html/index.html)
+ - [MPLAB® Harmony 3 Graphics API Help](https://mchpgfx.github.io/legato.images/index.html)
  - [MPLAB® Harmony 3 Graphics Videos](https://www.youtube.com/playlist?list=PL9B4edd-p2ag5xsIIHhja-caKYY7AKPxe)
  - [MPLAB® Harmony 3 Graphics Suite Documentation](https://microchip-mplab-harmony.github.io/gfx/documentation.html)
 
@@ -34,23 +34,31 @@ For more information on the tools, libraries and basic development with the MPLA
 
 Documentation is available for offline viewing.  It can be used only after cloning this repository onto a local machine. For online viewing, please use [github pages](https://microchip-mplab-harmony.github.io/gfx_apps_pic32mz_da) of this repository.
 
-## Graphics application examples
+## Graphics application examples (Legato)
 
 The following applications are provided to demonstrate a subset of the capabilities of Harmony Graphics Suite.
 
-| Category | Item | Description | Release Type |
+| Category | Item | Description | Release Status |
 | --- | --- | ---- |---- |
 |  apps | [legato_climate_control](./apps/legato_climate_control/readme.md) | Climate Control UI Example | ![app-beta](https://img.shields.io/badge/application-production-green?style=plastic) |
 |     | [legato_dashboard](./apps/legato_dashboard/readme.md) | Vehicle Dashboard Example | ![app-beta](https://img.shields.io/badge/application-production-green?style=plastic) |
-|     | [legato_dashboard_round](./apps/legato_dashboard_round/readme.md) | Vehicle Dashboard Example for PIC32MZ DA Radial Graphics Board| ![app-beta](https://img.shields.io/badge/application-beta-orange?style=plastic) |
-|     | [legato_quickstart](./apps/legato_quickstart/readme.md) | Legato Graphics Library Quickstart Examples | ![app-beta](https://img.shields.io/badge/application-beta-orange?style=plastic) |
-|     | [legato_flash](./apps/legato_flash/readme.md) | Flash Writer Example | ![app-beta](https://img.shields.io/badge/application-production-green?style=plastic) |
+|     | [legato_dashboard_round](./apps/legato_dashboard_round/readme.md) | Vehicle Dashboard Example for [RGDB MiWi IoT Gateway Application Reference Design](https://www.microchip.com/en-us/tools-resources/reference-designs/rgdb-miwi-iot-gateway-application-demonstration-application) | ![app-beta](https://img.shields.io/badge/application-production-green?style=plastic) |
+|     | [legato_quickstart](./apps/legato_quickstart/readme.md) | Legato Graphics Library Quickstart Examples | ![app-beta](https://img.shields.io/badge/application-production-green?style=plastic) |
 |     | [legato_quickstart_external_resources](./apps/legato_quickstart_ext_res/readme.md) | Legato Graphics Library Externally Stored Resources Example | ![app-beta](https://img.shields.io/badge/application-production-green?style=plastic) |
-|     | [legato_showcase_round](./apps/legato_showcase_round/readme.md) | Showcase Application for PIC32MZ DA Radial Graphics Board | ![app-beta](https://img.shields.io/badge/application-beta-orange?style=plastic) |
+|     | [legato_ext_res](./apps/legato_ext_res/readme.md) | Externally Stored Resources Example with built-in Flash Writer | ![app-beta](https://img.shields.io/badge/application-production-green?style=plastic) |
+|     | [legato_showcase_round](./apps/legato_showcase_round/readme.md) | Showcase Application for [RGDB MiWi IoT Gateway Application Reference Design](https://www.microchip.com/en-us/tools-resources/reference-designs/rgdb-miwi-iot-gateway-application-demonstration-application) | ![app-beta](https://img.shields.io/badge/application-production-green?style=plastic) |
 |     | [legato_video_player](./apps/legato_video_player/readme.md) | Video Player Example | ![app-beta](https://img.shields.io/badge/application-production-green?style=plastic) |
 |     | [legato_benchmark](./apps/legato_benchmark/readme.md) | Legato Graphics Library Performance Benchmarking Example | ![app-beta](https://img.shields.io/badge/application-production-green?style=plastic) |
 |     | [blank_quickstart](./apps/blank_quickstart/readme.md) | "Blank" Graphics Library Quickstart Examples | ![app-beta](https://img.shields.io/badge/application-production-green?style=plastic) |
 
+
+## LVGL Graphics application examples 
+
+The following applications are provided to demonstrate the ability for the Harmony Graphics Suite to support LVGL graphics library.
+
+| Category | Item | Description | Release Status |
+| --- | --- | ---- |---- |
+| apps | [lvgl_showcase](./apps/lvgl_showcase/readme.md) | LVGL library Music Player UI example | ![app-beta](https://img.shields.io/badge/application-beta-orange?style=plastic) |
 
 ____
 

@@ -89,6 +89,15 @@
 #define TM5000_BACKLIGHT_Get()               ((PORTD >> 0) & 0x1U)
 #define TM5000_BACKLIGHT_PIN                  GPIO_PIN_RD0
 
+/*** Macros for GLCD_DISP pin ***/
+#define GLCD_DISP_Set()               (LATHSET = (1U<<10))
+#define GLCD_DISP_Clear()             (LATHCLR = (1U<<10))
+#define GLCD_DISP_Toggle()            (LATHINV= (1U<<10))
+#define GLCD_DISP_OutputEnable()      (TRISHCLR = (1U<<10))
+#define GLCD_DISP_InputEnable()       (TRISHSET = (1U<<10))
+#define GLCD_DISP_Get()               ((PORTH >> 10) & 0x1U)
+#define GLCD_DISP_PIN                  GPIO_PIN_RH10
+
 
 // *****************************************************************************
 /* GPIO Port

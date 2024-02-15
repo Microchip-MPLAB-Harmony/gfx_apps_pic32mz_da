@@ -50,11 +50,20 @@
 #include <stdint.h>
 
 
+
 // *****************************************************************************
 // *****************************************************************************
 // Section: Handler Routines
 // *****************************************************************************
 // *****************************************************************************
+
+void CORE_TIMER_InterruptHandler( void );
+void DRV_USBHS_InterruptHandler( void );
+void DRV_USBHS_DMAInterruptHandler( void );
+void I2C2_BUS_InterruptHandler( void );
+void I2C2_MASTER_InterruptHandler( void );
+void SDHC_InterruptHandler( void );
+void GLCD_Interrupt_Handler( void );
 
 
 

@@ -31,6 +31,7 @@
 #define SYS_INP_MAX_LISTENERS        2  // max number of listeners
 #define SYS_INP_MAX_GENERAL_EVENTS   32 // max number of pending events
 
+
 // event type values
 enum
 {
@@ -342,6 +343,7 @@ int32_t SYS_INP_InjectMouseMove(uint16_t x, uint16_t y)
     
     return 0;
 }
+
 
 int32_t SYS_INP_InjectTouchDown(uint16_t idx, uint16_t x, uint16_t y)
 {

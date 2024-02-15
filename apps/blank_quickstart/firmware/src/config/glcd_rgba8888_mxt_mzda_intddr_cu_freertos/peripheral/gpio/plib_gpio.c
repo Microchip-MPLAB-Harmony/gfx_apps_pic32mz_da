@@ -42,6 +42,8 @@
 //DOM-IGNORE-END
 
 #include "plib_gpio.h"
+#include "interrupts.h"
+
 
 
 
@@ -78,8 +80,8 @@ void GPIO_Initialize ( void )
     /* PORTF Initialization */
     /* PORTG Initialization */
     /* PORTH Initialization */
-    LATH = 0x0U; /* Initial Latch Value */
-    TRISHCLR = 0x7U; /* Direction Control */
+    LATH = 0x400U; /* Initial Latch Value */
+    TRISHCLR = 0x407U; /* Direction Control */
     /* PORTJ Initialization */
     /* PORTK Initialization */
 

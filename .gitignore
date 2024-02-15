@@ -2,6 +2,7 @@
 *.o
 *.map
 *.d
+Gem*
 **/nbproject/private
 **/nbproject/Makefile-*
 **/nbproject/Package-*

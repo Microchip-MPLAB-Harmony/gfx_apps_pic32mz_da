@@ -1,0 +1,1161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="65">
+  <logicalFolder name="root" displayName="root" projectFiles="true">
+    <logicalFolder name="HeaderFiles"
+                   displayName="Header Files"
+                   projectFiles="true">
+      <logicalFolder name="f1" displayName="config" projectFiles="true">
+        <logicalFolder name="f1"
+                       displayName="glcd_rgb565_mxt_mzda_intddr_cu"
+                       projectFiles="true">
+          <logicalFolder name="f6" displayName="bsp" projectFiles="true">
+            <itemPath>../src/config/glcd_rgb565_mxt_mzda_intddr_cu/bsp/bsp.h</itemPath>
+          </logicalFolder>
+          <logicalFolder name="f3" displayName="driver" projectFiles="true">
+            <logicalFolder name="f2" displayName="i2c" projectFiles="true">
+              <itemPath>../src/config/glcd_rgb565_mxt_mzda_intddr_cu/driver/i2c/drv_i2c.h</itemPath>
+              <itemPath>../src/config/glcd_rgb565_mxt_mzda_intddr_cu/driver/i2c/drv_i2c_definitions.h</itemPath>
+            </logicalFolder>
+            <logicalFolder name="f3" displayName="input" projectFiles="true">
+              <itemPath>../src/config/glcd_rgb565_mxt_mzda_intddr_cu/driver/input/drv_maxtouch.h</itemPath>
+            </logicalFolder>
+            <logicalFolder name="f1" displayName="sdmmc" projectFiles="true">
+              <itemPath>../src/config/glcd_rgb565_mxt_mzda_intddr_cu/driver/sdmmc/drv_sdmmc.h</itemPath>
+              <itemPath>../src/config/glcd_rgb565_mxt_mzda_intddr_cu/driver/sdmmc/src/drv_sdmmc_local.h</itemPath>
+              <itemPath>../src/config/glcd_rgb565_mxt_mzda_intddr_cu/driver/sdmmc/drv_sdmmc_definitions.h</itemPath>
+              <itemPath>../src/config/glcd_rgb565_mxt_mzda_intddr_cu/driver/sdmmc/src/drv_sdmmc_file_system.h</itemPath>
+            </logicalFolder>
+            <itemPath>../src/config/glcd_rgb565_mxt_mzda_intddr_cu/driver/driver.h</itemPath>
+            <itemPath>../src/config/glcd_rgb565_mxt_mzda_intddr_cu/driver/driver_common.h</itemPath>
+          </logicalFolder>
+          <logicalFolder name="f2" displayName="gfx" projectFiles="true">
+            <logicalFolder name="f1" displayName="driver" projectFiles="true">
+              <logicalFolder name="f1" displayName="2dgpu" projectFiles="true">
+                <itemPath>../src/config/glcd_rgb565_mxt_mzda_intddr_cu/gfx/driver/processor/2dgpu/libnano2d.h</itemPath>
+              </logicalFolder>
+              <logicalFolder name="f2" displayName="glcd" projectFiles="true">
+                <itemPath>../src/config/glcd_rgb565_mxt_mzda_intddr_cu/gfx/driver/gfx_driver.h</itemPath>
+                <itemPath>../src/config/glcd_rgb565_mxt_mzda_intddr_cu/gfx/driver/controller/glcd/drv_gfx_glcd.h</itemPath>
+                <itemPath>../src/config/glcd_rgb565_mxt_mzda_intddr_cu/gfx/driver/controller/glcd/plib_glcd.h</itemPath>
+              </logicalFolder>
+            </logicalFolder>
+          </logicalFolder>
+          <logicalFolder name="f5" displayName="osal" projectFiles="true">
+            <itemPath>../src/config/glcd_rgb565_mxt_mzda_intddr_cu/osal/osal.h</itemPath>
+            <itemPath>../src/config/glcd_rgb565_mxt_mzda_intddr_cu/osal/osal_definitions.h</itemPath>
+            <itemPath>../src/config/glcd_rgb565_mxt_mzda_intddr_cu/osal/osal_impl_basic.h</itemPath>
+          </logicalFolder>
+          <logicalFolder name="f1" displayName="peripheral" projectFiles="true">
+            <logicalFolder name="f4" displayName="cache" projectFiles="true">
+              <itemPath>../src/config/glcd_rgb565_mxt_mzda_intddr_cu/peripheral/cache/plib_cache.h</itemPath>
+              <itemPath>../src/config/glcd_rgb565_mxt_mzda_intddr_cu/peripheral/cache/plib_cache_pic32mz.h</itemPath>
+            </logicalFolder>
+            <logicalFolder name="f2" displayName="clk" projectFiles="true">
+              <itemPath>../src/config/glcd_rgb565_mxt_mzda_intddr_cu/peripheral/clk/plib_clk.h</itemPath>
+            </logicalFolder>
+            <logicalFolder name="f6" displayName="coretimer" projectFiles="true">
+              <itemPath>../src/config/glcd_rgb565_mxt_mzda_intddr_cu/peripheral/coretimer/plib_coretimer.h</itemPath>
+            </logicalFolder>
+            <logicalFolder name="f9" displayName="ddr" projectFiles="true">
+              <itemPath>../src/config/glcd_rgb565_mxt_mzda_intddr_cu/peripheral/ddr/plib_ddr.h</itemPath>
+            </logicalFolder>
+            <logicalFolder name="f5" displayName="evic" projectFiles="true">
+              <itemPath>../src/config/glcd_rgb565_mxt_mzda_intddr_cu/peripheral/evic/plib_evic.h</itemPath>
+            </logicalFolder>
+            <logicalFolder name="f3" displayName="gpio" projectFiles="true">
+              <itemPath>../src/config/glcd_rgb565_mxt_mzda_intddr_cu/peripheral/gpio/plib_gpio.h</itemPath>
+            </logicalFolder>
+            <logicalFolder name="f7" displayName="i2c" projectFiles="true">
+              <logicalFolder name="f1" displayName="master" projectFiles="true">
+                <itemPath>../src/config/glcd_rgb565_mxt_mzda_intddr_cu/peripheral/i2c/master/plib_i2c_master_common.h</itemPath>
+                <itemPath>../src/config/glcd_rgb565_mxt_mzda_intddr_cu/peripheral/i2c/master/plib_i2c2_master.h</itemPath>
+              </logicalFolder>
+            </logicalFolder>
+            <logicalFolder name="f1" displayName="sdhc" projectFiles="true">
+              <itemPath>../src/config/glcd_rgb565_mxt_mzda_intddr_cu/peripheral/sdhc/plib_sdhc_common.h</itemPath>
+              <itemPath>../src/config/glcd_rgb565_mxt_mzda_intddr_cu/peripheral/sdhc/plib_sdhc.h</itemPath>
+            </logicalFolder>
+            <logicalFolder name="f8" displayName="uart" projectFiles="true">
+              <itemPath>../src/config/glcd_rgb565_mxt_mzda_intddr_cu/peripheral/uart/plib_uart_common.h</itemPath>
+              <itemPath>../src/config/glcd_rgb565_mxt_mzda_intddr_cu/peripheral/uart/plib_uart2.h</itemPath>
+            </logicalFolder>
+          </logicalFolder>
+          <logicalFolder name="f4" displayName="system" projectFiles="true">
+            <logicalFolder name="f5" displayName="cache" projectFiles="true">
+              <itemPath>../src/config/glcd_rgb565_mxt_mzda_intddr_cu/system/cache/sys_cache.h</itemPath>
+            </logicalFolder>
+            <logicalFolder name="f6" displayName="debug" projectFiles="true">
+              <itemPath>../src/config/glcd_rgb565_mxt_mzda_intddr_cu/system/debug/sys_debug.h</itemPath>
+            </logicalFolder>
+            <logicalFolder name="f3" displayName="fs" projectFiles="true">
+              <logicalFolder name="f1" displayName="fat_fs" projectFiles="true">
+                <logicalFolder name="f1" displayName="file_system" projectFiles="true">
+                  <itemPath>../src/config/glcd_rgb565_mxt_mzda_intddr_cu/system/fs/fat_fs/file_system/ff.h</itemPath>
+                  <itemPath>../src/config/glcd_rgb565_mxt_mzda_intddr_cu/system/fs/fat_fs/file_system/ffconf.h</itemPath>
+                </logicalFolder>
+                <logicalFolder name="f2" displayName="hardware_access" projectFiles="true">
+                  <itemPath>../src/config/glcd_rgb565_mxt_mzda_intddr_cu/system/fs/fat_fs/hardware_access/diskio.h</itemPath>
+                </logicalFolder>
+              </logicalFolder>
+              <itemPath>../src/config/glcd_rgb565_mxt_mzda_intddr_cu/system/fs/sys_fs.h</itemPath>
+              <itemPath>../src/config/glcd_rgb565_mxt_mzda_intddr_cu/system/fs/src/sys_fs_local.h</itemPath>
+              <itemPath>../src/config/glcd_rgb565_mxt_mzda_intddr_cu/system/fs/sys_fs_media_manager.h</itemPath>
+              <itemPath>../src/config/glcd_rgb565_mxt_mzda_intddr_cu/system/fs/src/sys_fs_media_manager_local.h</itemPath>
+              <itemPath>../src/config/glcd_rgb565_mxt_mzda_intddr_cu/system/fs/sys_fs_fat_interface.h</itemPath>
+            </logicalFolder>
+            <logicalFolder name="f2" displayName="input" projectFiles="true">
+              <itemPath>../src/config/glcd_rgb565_mxt_mzda_intddr_cu/system/input/sys_input.h</itemPath>
+              <itemPath>../src/config/glcd_rgb565_mxt_mzda_intddr_cu/system/input/sys_input_gesture.h</itemPath>
+              <itemPath>../src/config/glcd_rgb565_mxt_mzda_intddr_cu/system/input/sys_input_keyboard.h</itemPath>
+              <itemPath>../src/config/glcd_rgb565_mxt_mzda_intddr_cu/system/input/sys_input_listener.h</itemPath>
+              <itemPath>../src/config/glcd_rgb565_mxt_mzda_intddr_cu/system/input/sys_input_mouse.h</itemPath>
+              <itemPath>../src/config/glcd_rgb565_mxt_mzda_intddr_cu/system/input/sys_input_touch.h</itemPath>
+            </logicalFolder>
+            <logicalFolder name="f4" displayName="int" projectFiles="true">
+              <itemPath>../src/config/glcd_rgb565_mxt_mzda_intddr_cu/system/int/sys_int.h</itemPath>
+              <itemPath>../src/config/glcd_rgb565_mxt_mzda_intddr_cu/system/int/sys_int_mapping.h</itemPath>
+            </logicalFolder>
+            <logicalFolder name="f1" displayName="time" projectFiles="true">
+              <itemPath>../src/config/glcd_rgb565_mxt_mzda_intddr_cu/system/time/sys_time.h</itemPath>
+              <itemPath>../src/config/glcd_rgb565_mxt_mzda_intddr_cu/system/time/sys_time_definitions.h</itemPath>
+              <itemPath>../src/config/glcd_rgb565_mxt_mzda_intddr_cu/system/time/src/sys_time_local.h</itemPath>
+            </logicalFolder>
+            <itemPath>../src/config/glcd_rgb565_mxt_mzda_intddr_cu/system/system.h</itemPath>
+            <itemPath>../src/config/glcd_rgb565_mxt_mzda_intddr_cu/system/system_common.h</itemPath>
+            <itemPath>../src/config/glcd_rgb565_mxt_mzda_intddr_cu/system/system_module.h</itemPath>
+            <itemPath>../src/config/glcd_rgb565_mxt_mzda_intddr_cu/system/system_media.h</itemPath>
+          </logicalFolder>
+          <itemPath>../src/config/glcd_rgb565_mxt_mzda_intddr_cu/device_cache.h</itemPath>
+          <itemPath>../src/config/glcd_rgb565_mxt_mzda_intddr_cu/toolchain_specifics.h</itemPath>
+          <itemPath>../src/config/glcd_rgb565_mxt_mzda_intddr_cu/definitions.h</itemPath>
+          <itemPath>../src/config/glcd_rgb565_mxt_mzda_intddr_cu/interrupts.h</itemPath>
+          <itemPath>../src/config/glcd_rgb565_mxt_mzda_intddr_cu/device.h</itemPath>
+          <itemPath>../src/config/glcd_rgb565_mxt_mzda_intddr_cu/user.h</itemPath>
+          <itemPath>../src/config/glcd_rgb565_mxt_mzda_intddr_cu/configuration.h</itemPath>
+          <itemPath>../src/config/glcd_rgb565_mxt_mzda_intddr_cu/sys_tasks.h</itemPath>
+        </logicalFolder>
+      </logicalFolder>
+      <itemPath>../src/app_fs.h</itemPath>
+      <itemPath>../src/app_lvgl.h</itemPath>
+      <itemPath>../src/common.h</itemPath>
+      <itemPath>../src/lv_conf.h</itemPath>
+      <itemPath>../src/lv_ex_conf.h</itemPath>
+    </logicalFolder>
+    <logicalFolder name="LinkerScript"
+                   displayName="Linker Files"
+                   projectFiles="true">
+      <logicalFolder name="f1" displayName="config" projectFiles="true">
+        <logicalFolder name="f1"
+                       displayName="glcd_rgb565_mxt_mzda_intddr_cu"
+                       projectFiles="true">
+          <itemPath>../src/config/glcd_rgb565_mxt_mzda_intddr_cu/p32MZ2064DAR176.ld</itemPath>
+        </logicalFolder>
+      </logicalFolder>
+    </logicalFolder>
+    <logicalFolder name="SourceFiles"
+                   displayName="Source Files"
+                   projectFiles="true">
+      <logicalFolder name="f1" displayName="config" projectFiles="true">
+        <logicalFolder name="f1"
+                       displayName="glcd_rgb565_mxt_mzda_intddr_cu"
+                       projectFiles="true">
+          <logicalFolder name="f6" displayName="bsp" projectFiles="true">
+            <itemPath>../src/config/glcd_rgb565_mxt_mzda_intddr_cu/bsp/bsp.c</itemPath>
+          </logicalFolder>
+          <logicalFolder name="f3" displayName="driver" projectFiles="true">
+            <logicalFolder name="f2" displayName="i2c" projectFiles="true">
+              <itemPath>../src/config/glcd_rgb565_mxt_mzda_intddr_cu/driver/i2c/src/drv_i2c.c</itemPath>
+              <itemPath>../src/config/glcd_rgb565_mxt_mzda_intddr_cu/driver/i2c/src/drv_i2c_local.h</itemPath>
+            </logicalFolder>
+            <logicalFolder name="f3" displayName="input" projectFiles="true">
+              <itemPath>../src/config/glcd_rgb565_mxt_mzda_intddr_cu/driver/input/drv_maxtouch.c</itemPath>
+            </logicalFolder>
+            <logicalFolder name="f1" displayName="sdmmc" projectFiles="true">
+              <itemPath>../src/config/glcd_rgb565_mxt_mzda_intddr_cu/driver/sdmmc/src/drv_sdmmc_file_system.c</itemPath>
+              <itemPath>../src/config/glcd_rgb565_mxt_mzda_intddr_cu/driver/sdmmc/src/drv_sdmmc.c</itemPath>
+            </logicalFolder>
+          </logicalFolder>
+          <logicalFolder name="f2" displayName="gfx" projectFiles="true">
+            <logicalFolder name="f1" displayName="driver" projectFiles="true">
+              <logicalFolder name="f1" displayName="2dgpu" projectFiles="true">
+                <itemPath>../src/config/glcd_rgb565_mxt_mzda_intddr_cu/gfx/driver/processor/2dgpu/libnano2d.c</itemPath>
+              </logicalFolder>
+              <logicalFolder name="f2" displayName="glcd" projectFiles="true">
+                <itemPath>../src/config/glcd_rgb565_mxt_mzda_intddr_cu/gfx/driver/gfx_driver.c</itemPath>
+                <itemPath>../src/config/glcd_rgb565_mxt_mzda_intddr_cu/gfx/driver/controller/glcd/drv_gfx_glcd.c</itemPath>
+                <itemPath>../src/config/glcd_rgb565_mxt_mzda_intddr_cu/gfx/driver/controller/glcd/plib_glcd.c</itemPath>
+              </logicalFolder>
+            </logicalFolder>
+          </logicalFolder>
+          <logicalFolder name="f1" displayName="peripheral" projectFiles="true">
+            <logicalFolder name="f4" displayName="cache" projectFiles="true">
+              <itemPath>../src/config/glcd_rgb565_mxt_mzda_intddr_cu/peripheral/cache/plib_cache_local.h</itemPath>
+              <itemPath>../src/config/glcd_rgb565_mxt_mzda_intddr_cu/peripheral/cache/plib_cache.c</itemPath>
+              <itemPath>../src/config/glcd_rgb565_mxt_mzda_intddr_cu/peripheral/cache/plib_cache_pic32mz.S</itemPath>
+            </logicalFolder>
+            <logicalFolder name="f2" displayName="clk" projectFiles="true">
+              <itemPath>../src/config/glcd_rgb565_mxt_mzda_intddr_cu/peripheral/clk/plib_clk.c</itemPath>
+            </logicalFolder>
+            <logicalFolder name="f6" displayName="coretimer" projectFiles="true">
+              <itemPath>../src/config/glcd_rgb565_mxt_mzda_intddr_cu/peripheral/coretimer/plib_coretimer.c</itemPath>
+            </logicalFolder>
+            <logicalFolder name="f9" displayName="ddr" projectFiles="true">
+              <itemPath>../src/config/glcd_rgb565_mxt_mzda_intddr_cu/peripheral/ddr/plib_ddr.c</itemPath>
+            </logicalFolder>
+            <logicalFolder name="f5" displayName="evic" projectFiles="true">
+              <itemPath>../src/config/glcd_rgb565_mxt_mzda_intddr_cu/peripheral/evic/plib_evic.c</itemPath>
+            </logicalFolder>
+            <logicalFolder name="f3" displayName="gpio" projectFiles="true">
+              <itemPath>../src/config/glcd_rgb565_mxt_mzda_intddr_cu/peripheral/gpio/plib_gpio.c</itemPath>
+            </logicalFolder>
+            <logicalFolder name="f7" displayName="i2c" projectFiles="true">
+              <logicalFolder name="f1" displayName="master" projectFiles="true">
+                <itemPath>../src/config/glcd_rgb565_mxt_mzda_intddr_cu/peripheral/i2c/master/plib_i2c2_master.c</itemPath>
+              </logicalFolder>
+            </logicalFolder>
+            <logicalFolder name="f1" displayName="sdhc" projectFiles="true">
+              <itemPath>../src/config/glcd_rgb565_mxt_mzda_intddr_cu/peripheral/sdhc/plib_sdhc.c</itemPath>
+            </logicalFolder>
+            <logicalFolder name="f8" displayName="uart" projectFiles="true">
+              <itemPath>../src/config/glcd_rgb565_mxt_mzda_intddr_cu/peripheral/uart/plib_uart2.c</itemPath>
+            </logicalFolder>
+          </logicalFolder>
+          <logicalFolder name="f4" displayName="stdio" projectFiles="true">
+            <itemPath>../src/config/glcd_rgb565_mxt_mzda_intddr_cu/stdio/xc32_monitor.c</itemPath>
+          </logicalFolder>
+          <logicalFolder name="f5" displayName="system" projectFiles="true">
+            <logicalFolder name="f5" displayName="cache" projectFiles="true">
+              <itemPath>../src/config/glcd_rgb565_mxt_mzda_intddr_cu/system/cache/sys_cache.c</itemPath>
+            </logicalFolder>
+            <logicalFolder name="f3" displayName="fs" projectFiles="true">
+              <logicalFolder name="f1" displayName="fat_fs" projectFiles="true">
+                <logicalFolder name="f1" displayName="file_system" projectFiles="true">
+                  <itemPath>../src/config/glcd_rgb565_mxt_mzda_intddr_cu/system/fs/fat_fs/file_system/ff.c</itemPath>
+                  <itemPath>../src/config/glcd_rgb565_mxt_mzda_intddr_cu/system/fs/fat_fs/file_system/ffunicode.c</itemPath>
+                </logicalFolder>
+                <logicalFolder name="f2" displayName="hardware_access" projectFiles="true">
+                  <itemPath>../src/config/glcd_rgb565_mxt_mzda_intddr_cu/system/fs/fat_fs/hardware_access/diskio.c</itemPath>
+                </logicalFolder>
+              </logicalFolder>
+              <itemPath>../src/config/glcd_rgb565_mxt_mzda_intddr_cu/system/fs/src/sys_fs.c</itemPath>
+              <itemPath>../src/config/glcd_rgb565_mxt_mzda_intddr_cu/system/fs/src/sys_fs_media_manager.c</itemPath>
+              <itemPath>../src/config/glcd_rgb565_mxt_mzda_intddr_cu/system/fs/src/sys_fs_fat_interface.c</itemPath>
+            </logicalFolder>
+            <logicalFolder name="f2" displayName="input" projectFiles="true">
+              <itemPath>../src/config/glcd_rgb565_mxt_mzda_intddr_cu/system/input/sys_input.c</itemPath>
+              <itemPath>../src/config/glcd_rgb565_mxt_mzda_intddr_cu/system/input/sys_input_listener.c</itemPath>
+            </logicalFolder>
+            <logicalFolder name="f4" displayName="int" projectFiles="true">
+              <itemPath>../src/config/glcd_rgb565_mxt_mzda_intddr_cu/system/int/src/sys_int.c</itemPath>
+            </logicalFolder>
+            <logicalFolder name="f1" displayName="time" projectFiles="true">
+              <itemPath>../src/config/glcd_rgb565_mxt_mzda_intddr_cu/system/time/src/sys_time.c</itemPath>
+            </logicalFolder>
+          </logicalFolder>
+          <itemPath>../src/config/glcd_rgb565_mxt_mzda_intddr_cu/initialization.c</itemPath>
+          <itemPath>../src/config/glcd_rgb565_mxt_mzda_intddr_cu/interrupts.c</itemPath>
+          <itemPath>../src/config/glcd_rgb565_mxt_mzda_intddr_cu/exceptions.c</itemPath>
+          <itemPath>../src/config/glcd_rgb565_mxt_mzda_intddr_cu/exceptionsHandler.S</itemPath>
+          <itemPath>../src/config/glcd_rgb565_mxt_mzda_intddr_cu/tasks.c</itemPath>
+        </logicalFolder>
+      </logicalFolder>
+      <logicalFolder name="lv_examples" displayName="lv_examples" projectFiles="true">
+        <logicalFolder name="src" displayName="src" projectFiles="true">
+          <logicalFolder name="assets" displayName="assets" projectFiles="true">
+            <itemPath>../src/lv_examples/src/assets/img_cogwheel_alpha16.c</itemPath>
+            <itemPath>../src/lv_examples/src/assets/img_cogwheel_argb.c</itemPath>
+            <itemPath>../src/lv_examples/src/assets/img_cogwheel_chroma_keyed.c</itemPath>
+            <itemPath>../src/lv_examples/src/assets/img_cogwheel_indexed16.c</itemPath>
+            <itemPath>../src/lv_examples/src/assets/img_cogwheel_rgb.c</itemPath>
+            <itemPath>../src/lv_examples/src/assets/img_hand.c</itemPath>
+            <itemPath>../src/lv_examples/src/assets/lv_font_montserrat_12_compr_az.c</itemPath>
+            <itemPath>../src/lv_examples/src/assets/lv_font_montserrat_16_compr_az.c</itemPath>
+            <itemPath>../src/lv_examples/src/assets/lv_font_montserrat_28_compr_az.c</itemPath>
+          </logicalFolder>
+          <logicalFolder name="lv_demo_benchmark"
+                         displayName="lv_demo_benchmark"
+                         projectFiles="true">
+            <itemPath>../src/lv_examples/src/lv_demo_benchmark/lv_demo_benchmark.c</itemPath>
+          </logicalFolder>
+          <logicalFolder name="lv_demo_keypad_encoder"
+                         displayName="lv_demo_keypad_encoder"
+                         projectFiles="true">
+            <itemPath>../src/lv_examples/src/lv_demo_keypad_encoder/lv_demo_keypad_encoder.c</itemPath>
+          </logicalFolder>
+          <logicalFolder name="lv_demo_music"
+                         displayName="lv_demo_music"
+                         projectFiles="true">
+            <logicalFolder name="assets" displayName="assets" projectFiles="true">
+              <logicalFolder name="__pycache__" displayName="__pycache__" projectFiles="true">
+              </logicalFolder>
+              <itemPath>../src/lv_examples/src/lv_demo_music/assets/img_lv_demo_music_btn_list_pause.c</itemPath>
+              <itemPath>../src/lv_examples/src/lv_demo_music/assets/img_lv_demo_music_btn_list_play.c</itemPath>
+              <itemPath>../src/lv_examples/src/lv_demo_music/assets/img_lv_demo_music_btn_loop.c</itemPath>
+              <itemPath>../src/lv_examples/src/lv_demo_music/assets/img_lv_demo_music_btn_next.c</itemPath>
+              <itemPath>../src/lv_examples/src/lv_demo_music/assets/img_lv_demo_music_btn_pause.c</itemPath>
+              <itemPath>../src/lv_examples/src/lv_demo_music/assets/img_lv_demo_music_btn_play.c</itemPath>
+              <itemPath>../src/lv_examples/src/lv_demo_music/assets/img_lv_demo_music_btn_prev.c</itemPath>
+              <itemPath>../src/lv_examples/src/lv_demo_music/assets/img_lv_demo_music_btn_rnd.c</itemPath>
+              <itemPath>../src/lv_examples/src/lv_demo_music/assets/img_lv_demo_music_corner_left.c</itemPath>
+              <itemPath>../src/lv_examples/src/lv_demo_music/assets/img_lv_demo_music_corner_right.c</itemPath>
+              <itemPath>../src/lv_examples/src/lv_demo_music/assets/img_lv_demo_music_cover_1.c</itemPath>
+              <itemPath>../src/lv_examples/src/lv_demo_music/assets/img_lv_demo_music_cover_2.c</itemPath>
+              <itemPath>../src/lv_examples/src/lv_demo_music/assets/img_lv_demo_music_cover_3.c</itemPath>
+              <itemPath>../src/lv_examples/src/lv_demo_music/assets/img_lv_demo_music_icon_1.c</itemPath>
+              <itemPath>../src/lv_examples/src/lv_demo_music/assets/img_lv_demo_music_icon_2.c</itemPath>
+              <itemPath>../src/lv_examples/src/lv_demo_music/assets/img_lv_demo_music_icon_3.c</itemPath>
+              <itemPath>../src/lv_examples/src/lv_demo_music/assets/img_lv_demo_music_icon_4.c</itemPath>
+              <itemPath>../src/lv_examples/src/lv_demo_music/assets/img_lv_demo_music_list_border.c</itemPath>
+              <itemPath>../src/lv_examples/src/lv_demo_music/assets/img_lv_demo_music_logo.c</itemPath>
+              <itemPath>../src/lv_examples/src/lv_demo_music/assets/img_lv_demo_music_slider_knob.c</itemPath>
+              <itemPath>../src/lv_examples/src/lv_demo_music/assets/img_lv_demo_music_wave_bottom.c</itemPath>
+              <itemPath>../src/lv_examples/src/lv_demo_music/assets/img_lv_demo_music_wave_top.c</itemPath>
+              <itemPath>../src/lv_examples/src/lv_demo_music/assets/lv_demo_music_font_16_bold.c</itemPath>
+            </logicalFolder>
+            <itemPath>../src/lv_examples/src/lv_demo_music/lv_demo_music.c</itemPath>
+            <itemPath>../src/lv_examples/src/lv_demo_music/lv_demo_music_list.c</itemPath>
+            <itemPath>../src/lv_examples/src/lv_demo_music/lv_demo_music_main.c</itemPath>
+          </logicalFolder>
+          <logicalFolder name="lv_demo_printer"
+                         displayName="lv_demo_printer"
+                         projectFiles="true">
+            <logicalFolder name="images" displayName="images" projectFiles="true">
+              <itemPath>../src/lv_examples/src/lv_demo_printer/images/lv_demo_printer_icon_bright.c</itemPath>
+              <itemPath>../src/lv_examples/src/lv_demo_printer/images/lv_demo_printer_icon_eco.c</itemPath>
+              <itemPath>../src/lv_examples/src/lv_demo_printer/images/lv_demo_printer_icon_hue.c</itemPath>
+              <itemPath>../src/lv_examples/src/lv_demo_printer/images/lv_demo_printer_icon_pc.c</itemPath>
+              <itemPath>../src/lv_examples/src/lv_demo_printer/images/lv_demo_printer_icon_tel.c</itemPath>
+              <itemPath>../src/lv_examples/src/lv_demo_printer/images/lv_demo_printer_icon_wifi.c</itemPath>
+              <itemPath>../src/lv_examples/src/lv_demo_printer/images/lv_demo_printer_img_btn_bg_1.c</itemPath>
+              <itemPath>../src/lv_examples/src/lv_demo_printer/images/lv_demo_printer_img_btn_bg_2.c</itemPath>
+              <itemPath>../src/lv_examples/src/lv_demo_printer/images/lv_demo_printer_img_btn_bg_3.c</itemPath>
+              <itemPath>../src/lv_examples/src/lv_demo_printer/images/lv_demo_printer_img_btn_bg_4.c</itemPath>
+              <itemPath>../src/lv_examples/src/lv_demo_printer/images/lv_demo_printer_img_cloud.c</itemPath>
+              <itemPath>../src/lv_examples/src/lv_demo_printer/images/lv_demo_printer_img_copy.c</itemPath>
+              <itemPath>../src/lv_examples/src/lv_demo_printer/images/lv_demo_printer_img_internet.c</itemPath>
+              <itemPath>../src/lv_examples/src/lv_demo_printer/images/lv_demo_printer_img_mobile.c</itemPath>
+              <itemPath>../src/lv_examples/src/lv_demo_printer/images/lv_demo_printer_img_no_internet.c</itemPath>
+              <itemPath>../src/lv_examples/src/lv_demo_printer/images/lv_demo_printer_img_phone.c</itemPath>
+              <itemPath>../src/lv_examples/src/lv_demo_printer/images/lv_demo_printer_img_print.c</itemPath>
+              <itemPath>../src/lv_examples/src/lv_demo_printer/images/lv_demo_printer_img_printer2.c</itemPath>
+              <itemPath>../src/lv_examples/src/lv_demo_printer/images/lv_demo_printer_img_ready.c</itemPath>
+              <itemPath>../src/lv_examples/src/lv_demo_printer/images/lv_demo_printer_img_scan.c</itemPath>
+              <itemPath>../src/lv_examples/src/lv_demo_printer/images/lv_demo_printer_img_scan_example.c</itemPath>
+              <itemPath>../src/lv_examples/src/lv_demo_printer/images/lv_demo_printer_img_setup.c</itemPath>
+              <itemPath>../src/lv_examples/src/lv_demo_printer/images/lv_demo_printer_img_usb.c</itemPath>
+              <itemPath>../src/lv_examples/src/lv_demo_printer/images/lv_demo_printer_img_wave.c</itemPath>
+            </logicalFolder>
+            <itemPath>../src/lv_examples/src/lv_demo_printer/lv_demo_printer.c</itemPath>
+            <itemPath>../src/lv_examples/src/lv_demo_printer/lv_demo_printer_theme.c</itemPath>
+          </logicalFolder>
+          <logicalFolder name="lv_demo_stress"
+                         displayName="lv_demo_stress"
+                         projectFiles="true">
+            <itemPath>../src/lv_examples/src/lv_demo_stress/lv_demo_stress.c</itemPath>
+          </logicalFolder>
+          <logicalFolder name="lv_demo_widgets"
+                         displayName="lv_demo_widgets"
+                         projectFiles="true">
+            <itemPath>../src/lv_examples/src/lv_demo_widgets/lv_demo_widgets.c</itemPath>
+          </logicalFolder>
+          <logicalFolder name="lv_ex_get_started"
+                         displayName="lv_ex_get_started"
+                         projectFiles="true">
+            <itemPath>../src/lv_examples/src/lv_ex_get_started/lv_ex_get_started_1.c</itemPath>
+            <itemPath>../src/lv_examples/src/lv_ex_get_started/lv_ex_get_started_2.c</itemPath>
+            <itemPath>../src/lv_examples/src/lv_ex_get_started/lv_ex_get_started_3.c</itemPath>
+          </logicalFolder>
+          <logicalFolder name="lv_ex_style" displayName="lv_ex_style" projectFiles="true">
+            <itemPath>../src/lv_examples/src/lv_ex_style/lv_ex_style_1.c</itemPath>
+            <itemPath>../src/lv_examples/src/lv_ex_style/lv_ex_style_10.c</itemPath>
+            <itemPath>../src/lv_examples/src/lv_ex_style/lv_ex_style_11.c</itemPath>
+            <itemPath>../src/lv_examples/src/lv_ex_style/lv_ex_style_2.c</itemPath>
+            <itemPath>../src/lv_examples/src/lv_ex_style/lv_ex_style_3.c</itemPath>
+            <itemPath>../src/lv_examples/src/lv_ex_style/lv_ex_style_4.c</itemPath>
+            <itemPath>../src/lv_examples/src/lv_ex_style/lv_ex_style_5.c</itemPath>
+            <itemPath>../src/lv_examples/src/lv_ex_style/lv_ex_style_6.c</itemPath>
+            <itemPath>../src/lv_examples/src/lv_ex_style/lv_ex_style_7.c</itemPath>
+            <itemPath>../src/lv_examples/src/lv_ex_style/lv_ex_style_8.c</itemPath>
+            <itemPath>../src/lv_examples/src/lv_ex_style/lv_ex_style_9.c</itemPath>
+          </logicalFolder>
+          <logicalFolder name="lv_ex_widgets"
+                         displayName="lv_ex_widgets"
+                         projectFiles="true">
+            <logicalFolder name="lv_ex_arc" displayName="lv_ex_arc" projectFiles="true">
+              <itemPath>../src/lv_examples/src/lv_ex_widgets/lv_ex_arc/lv_ex_arc_1.c</itemPath>
+              <itemPath>../src/lv_examples/src/lv_ex_widgets/lv_ex_arc/lv_ex_arc_2.c</itemPath>
+            </logicalFolder>
+            <logicalFolder name="lv_ex_bar" displayName="lv_ex_bar" projectFiles="true">
+              <itemPath>../src/lv_examples/src/lv_ex_widgets/lv_ex_bar/lv_ex_bar_1.c</itemPath>
+            </logicalFolder>
+            <logicalFolder name="lv_ex_btn" displayName="lv_ex_btn" projectFiles="true">
+              <itemPath>../src/lv_examples/src/lv_ex_widgets/lv_ex_btn/lv_ex_btn_1.c</itemPath>
+              <itemPath>../src/lv_examples/src/lv_ex_widgets/lv_ex_btn/lv_ex_btn_2.c</itemPath>
+            </logicalFolder>
+            <logicalFolder name="lv_ex_btnmatrix"
+                           displayName="lv_ex_btnmatrix"
+                           projectFiles="true">
+              <itemPath>../src/lv_examples/src/lv_ex_widgets/lv_ex_btnmatrix/lv_ex_btnmatrix_1.c</itemPath>
+            </logicalFolder>
+            <logicalFolder name="lv_ex_calendar"
+                           displayName="lv_ex_calendar"
+                           projectFiles="true">
+              <itemPath>../src/lv_examples/src/lv_ex_widgets/lv_ex_calendar/lv_ex_calendar_1.c</itemPath>
+            </logicalFolder>
+            <logicalFolder name="lv_ex_canvas"
+                           displayName="lv_ex_canvas"
+                           projectFiles="true">
+              <itemPath>../src/lv_examples/src/lv_ex_widgets/lv_ex_canvas/lv_ex_canvas_1.c</itemPath>
+              <itemPath>../src/lv_examples/src/lv_ex_widgets/lv_ex_canvas/lv_ex_canvas_2.c</itemPath>
+            </logicalFolder>
+            <logicalFolder name="lv_ex_chart" displayName="lv_ex_chart" projectFiles="true">
+              <itemPath>../src/lv_examples/src/lv_ex_widgets/lv_ex_chart/lv_ex_chart_1.c</itemPath>
+              <itemPath>../src/lv_examples/src/lv_ex_widgets/lv_ex_chart/lv_ex_chart_2.c</itemPath>
+            </logicalFolder>
+            <logicalFolder name="lv_ex_checkbox"
+                           displayName="lv_ex_checkbox"
+                           projectFiles="true">
+              <itemPath>../src/lv_examples/src/lv_ex_widgets/lv_ex_checkbox/lv_ex_checkbox_1.c</itemPath>
+            </logicalFolder>
+            <logicalFolder name="lv_ex_cont" displayName="lv_ex_cont" projectFiles="true">
+              <itemPath>../src/lv_examples/src/lv_ex_widgets/lv_ex_cont/lv_ex_cont_1.c</itemPath>
+            </logicalFolder>
+            <logicalFolder name="lv_ex_cpicker"
+                           displayName="lv_ex_cpicker"
+                           projectFiles="true">
+              <itemPath>../src/lv_examples/src/lv_ex_widgets/lv_ex_cpicker/lv_ex_cpicker_1.c</itemPath>
+              <itemPath>../src/lv_examples/src/lv_ex_widgets/lv_ex_cpicker/lv_ex_cpicker_2.c</itemPath>
+            </logicalFolder>
+            <logicalFolder name="lv_ex_dropdown"
+                           displayName="lv_ex_dropdown"
+                           projectFiles="true">
+              <itemPath>../src/lv_examples/src/lv_ex_widgets/lv_ex_dropdown/lv_ex_dropdown_1.c</itemPath>
+              <itemPath>../src/lv_examples/src/lv_ex_widgets/lv_ex_dropdown/lv_ex_dropdown_2.c</itemPath>
+            </logicalFolder>
+            <logicalFolder name="lv_ex_gauge" displayName="lv_ex_gauge" projectFiles="true">
+              <itemPath>../src/lv_examples/src/lv_ex_widgets/lv_ex_gauge/lv_ex_gauge_1.c</itemPath>
+              <itemPath>../src/lv_examples/src/lv_ex_widgets/lv_ex_gauge/lv_ex_gauge_2.c</itemPath>
+            </logicalFolder>
+            <logicalFolder name="lv_ex_img" displayName="lv_ex_img" projectFiles="true">
+              <itemPath>../src/lv_examples/src/lv_ex_widgets/lv_ex_img/lv_ex_img_1.c</itemPath>
+              <itemPath>../src/lv_examples/src/lv_ex_widgets/lv_ex_img/lv_ex_img_2.c</itemPath>
+              <itemPath>../src/lv_examples/src/lv_ex_widgets/lv_ex_img/lv_ex_img_3.c</itemPath>
+            </logicalFolder>
+            <logicalFolder name="lv_ex_imgbtn"
+                           displayName="lv_ex_imgbtn"
+                           projectFiles="true">
+              <itemPath>../src/lv_examples/src/lv_ex_widgets/lv_ex_imgbtn/imgbtn_blue.c</itemPath>
+              <itemPath>../src/lv_examples/src/lv_ex_widgets/lv_ex_imgbtn/imgbtn_green.c</itemPath>
+              <itemPath>../src/lv_examples/src/lv_ex_widgets/lv_ex_imgbtn/lv_ex_imgbtn_1.c</itemPath>
+            </logicalFolder>
+            <logicalFolder name="lv_ex_keyboard"
+                           displayName="lv_ex_keyboard"
+                           projectFiles="true">
+              <itemPath>../src/lv_examples/src/lv_ex_widgets/lv_ex_keyboard/lv_ex_keyboard_1.c</itemPath>
+            </logicalFolder>
+            <logicalFolder name="lv_ex_label" displayName="lv_ex_label" projectFiles="true">
+              <itemPath>../src/lv_examples/src/lv_ex_widgets/lv_ex_label/lv_ex_label_1.c</itemPath>
+              <itemPath>../src/lv_examples/src/lv_ex_widgets/lv_ex_label/lv_ex_label_2.c</itemPath>
+              <itemPath>../src/lv_examples/src/lv_ex_widgets/lv_ex_label/lv_ex_label_3.c</itemPath>
+            </logicalFolder>
+            <logicalFolder name="lv_ex_led" displayName="lv_ex_led" projectFiles="true">
+              <itemPath>../src/lv_examples/src/lv_ex_widgets/lv_ex_led/lv_ex_led_1.c</itemPath>
+            </logicalFolder>
+            <logicalFolder name="lv_ex_line" displayName="lv_ex_line" projectFiles="true">
+              <itemPath>../src/lv_examples/src/lv_ex_widgets/lv_ex_line/lv_ex_line_1.c</itemPath>
+            </logicalFolder>
+            <logicalFolder name="lv_ex_linemeter"
+                           displayName="lv_ex_linemeter"
+                           projectFiles="true">
+              <itemPath>../src/lv_examples/src/lv_ex_widgets/lv_ex_linemeter/lv_ex_linemeter_1.c</itemPath>
+            </logicalFolder>
+            <logicalFolder name="lv_ex_list" displayName="lv_ex_list" projectFiles="true">
+              <itemPath>../src/lv_examples/src/lv_ex_widgets/lv_ex_list/lv_ex_list_1.c</itemPath>
+            </logicalFolder>
+            <logicalFolder name="lv_ex_msgbox"
+                           displayName="lv_ex_msgbox"
+                           projectFiles="true">
+              <itemPath>../src/lv_examples/src/lv_ex_widgets/lv_ex_msgbox/lv_ex_msgbox_1.c</itemPath>
+              <itemPath>../src/lv_examples/src/lv_ex_widgets/lv_ex_msgbox/lv_ex_msgbox_2.c</itemPath>
+            </logicalFolder>
+            <logicalFolder name="lv_ex_obj" displayName="lv_ex_obj" projectFiles="true">
+              <itemPath>../src/lv_examples/src/lv_ex_widgets/lv_ex_obj/lv_ex_obj_1.c</itemPath>
+            </logicalFolder>
+            <logicalFolder name="lv_ex_objmask"
+                           displayName="lv_ex_objmask"
+                           projectFiles="true">
+              <itemPath>../src/lv_examples/src/lv_ex_widgets/lv_ex_objmask/lv_ex_objmask_1.c</itemPath>
+              <itemPath>../src/lv_examples/src/lv_ex_widgets/lv_ex_objmask/lv_ex_objmask_2.c</itemPath>
+            </logicalFolder>
+            <logicalFolder name="lv_ex_page" displayName="lv_ex_page" projectFiles="true">
+              <itemPath>../src/lv_examples/src/lv_ex_widgets/lv_ex_page/lv_ex_page_1.c</itemPath>
+            </logicalFolder>
+            <logicalFolder name="lv_ex_roller"
+                           displayName="lv_ex_roller"
+                           projectFiles="true">
+              <itemPath>../src/lv_examples/src/lv_ex_widgets/lv_ex_roller/lv_ex_roller_1.c</itemPath>
+            </logicalFolder>
+            <logicalFolder name="lv_ex_slider"
+                           displayName="lv_ex_slider"
+                           projectFiles="true">
+              <itemPath>../src/lv_examples/src/lv_ex_widgets/lv_ex_slider/lv_ex_slider_1.c</itemPath>
+              <itemPath>../src/lv_examples/src/lv_ex_widgets/lv_ex_slider/lv_ex_slider_2.c</itemPath>
+            </logicalFolder>
+            <logicalFolder name="lv_ex_spinbox"
+                           displayName="lv_ex_spinbox"
+                           projectFiles="true">
+              <itemPath>../src/lv_examples/src/lv_ex_widgets/lv_ex_spinbox/lv_ex_spinbox_1.c</itemPath>
+            </logicalFolder>
+            <logicalFolder name="lv_ex_spinner"
+                           displayName="lv_ex_spinner"
+                           projectFiles="true">
+              <itemPath>../src/lv_examples/src/lv_ex_widgets/lv_ex_spinner/lv_ex_spinner_1.c</itemPath>
+            </logicalFolder>
+            <logicalFolder name="lv_ex_switch"
+                           displayName="lv_ex_switch"
+                           projectFiles="true">
+              <itemPath>../src/lv_examples/src/lv_ex_widgets/lv_ex_switch/lv_ex_switch_1.c</itemPath>
+            </logicalFolder>
+            <logicalFolder name="lv_ex_table" displayName="lv_ex_table" projectFiles="true">
+              <itemPath>../src/lv_examples/src/lv_ex_widgets/lv_ex_table/lv_ex_table_1.c</itemPath>
+            </logicalFolder>
+            <logicalFolder name="lv_ex_tabview"
+                           displayName="lv_ex_tabview"
+                           projectFiles="true">
+              <itemPath>../src/lv_examples/src/lv_ex_widgets/lv_ex_tabview/lv_ex_tabview_1.c</itemPath>
+            </logicalFolder>
+            <logicalFolder name="lv_ex_textarea"
+                           displayName="lv_ex_textarea"
+                           projectFiles="true">
+              <itemPath>../src/lv_examples/src/lv_ex_widgets/lv_ex_textarea/lv_ex_textarea_1.c</itemPath>
+              <itemPath>../src/lv_examples/src/lv_ex_widgets/lv_ex_textarea/lv_ex_textarea_2.c</itemPath>
+              <itemPath>../src/lv_examples/src/lv_ex_widgets/lv_ex_textarea/lv_ex_textarea_3.c</itemPath>
+            </logicalFolder>
+            <logicalFolder name="lv_ex_tileview"
+                           displayName="lv_ex_tileview"
+                           projectFiles="true">
+              <itemPath>../src/lv_examples/src/lv_ex_widgets/lv_ex_tileview/lv_ex_tileview_1.c</itemPath>
+            </logicalFolder>
+            <logicalFolder name="lv_ex_win" displayName="lv_ex_win" projectFiles="true">
+              <itemPath>../src/lv_examples/src/lv_ex_widgets/lv_ex_win/lv_ex_win_1.c</itemPath>
+            </logicalFolder>
+          </logicalFolder>
+        </logicalFolder>
+      </logicalFolder>
+      <logicalFolder name="lv_fs_if" displayName="lv_fs_if" projectFiles="true">
+        <itemPath>../src/lv_fs_if/lv_fs_fatfs.c</itemPath>
+        <itemPath>../src/lv_fs_if/lv_fs_if.c</itemPath>
+        <itemPath>../src/lv_fs_if/lv_fs_pc.c</itemPath>
+      </logicalFolder>
+      <logicalFolder name="lvgl" displayName="lvgl" projectFiles="true">
+        <logicalFolder name="src" displayName="src" projectFiles="true">
+          <logicalFolder name="lv_core" displayName="lv_core" projectFiles="true">
+            <itemPath>../src/lvgl/src/lv_core/lv_disp.c</itemPath>
+            <itemPath>../src/lvgl/src/lv_core/lv_group.c</itemPath>
+            <itemPath>../src/lvgl/src/lv_core/lv_indev.c</itemPath>
+            <itemPath>../src/lvgl/src/lv_core/lv_obj.c</itemPath>
+            <itemPath>../src/lvgl/src/lv_core/lv_refr.c</itemPath>
+            <itemPath>../src/lvgl/src/lv_core/lv_style.c</itemPath>
+          </logicalFolder>
+          <logicalFolder name="lv_draw" displayName="lv_draw" projectFiles="true">
+            <itemPath>../src/lvgl/src/lv_draw/lv_draw_arc.c</itemPath>
+            <itemPath>../src/lvgl/src/lv_draw/lv_draw_blend.c</itemPath>
+            <itemPath>../src/lvgl/src/lv_draw/lv_draw_img.c</itemPath>
+            <itemPath>../src/lvgl/src/lv_draw/lv_draw_label.c</itemPath>
+            <itemPath>../src/lvgl/src/lv_draw/lv_draw_line.c</itemPath>
+            <itemPath>../src/lvgl/src/lv_draw/lv_draw_mask.c</itemPath>
+            <itemPath>../src/lvgl/src/lv_draw/lv_draw_rect.c</itemPath>
+            <itemPath>../src/lvgl/src/lv_draw/lv_draw_triangle.c</itemPath>
+            <itemPath>../src/lvgl/src/lv_draw/lv_img_buf.c</itemPath>
+            <itemPath>../src/lvgl/src/lv_draw/lv_img_cache.c</itemPath>
+            <itemPath>../src/lvgl/src/lv_draw/lv_img_decoder.c</itemPath>
+          </logicalFolder>
+          <logicalFolder name="lv_font" displayName="lv_font" projectFiles="true">
+            <itemPath>../src/lvgl/src/lv_font/lv_font.c</itemPath>
+            <itemPath>../src/lvgl/src/lv_font/lv_font_dejavu_16_persian_hebrew.c</itemPath>
+            <itemPath>../src/lvgl/src/lv_font/lv_font_fmt_txt.c</itemPath>
+            <itemPath>../src/lvgl/src/lv_font/lv_font_loader.c</itemPath>
+            <itemPath>../src/lvgl/src/lv_font/lv_font_montserrat_10.c</itemPath>
+            <itemPath>../src/lvgl/src/lv_font/lv_font_montserrat_12.c</itemPath>
+            <itemPath>../src/lvgl/src/lv_font/lv_font_montserrat_12_subpx.c</itemPath>
+            <itemPath>../src/lvgl/src/lv_font/lv_font_montserrat_14.c</itemPath>
+            <itemPath>../src/lvgl/src/lv_font/lv_font_montserrat_16.c</itemPath>
+            <itemPath>../src/lvgl/src/lv_font/lv_font_montserrat_18.c</itemPath>
+            <itemPath>../src/lvgl/src/lv_font/lv_font_montserrat_20.c</itemPath>
+            <itemPath>../src/lvgl/src/lv_font/lv_font_montserrat_22.c</itemPath>
+            <itemPath>../src/lvgl/src/lv_font/lv_font_montserrat_24.c</itemPath>
+            <itemPath>../src/lvgl/src/lv_font/lv_font_montserrat_26.c</itemPath>
+            <itemPath>../src/lvgl/src/lv_font/lv_font_montserrat_28.c</itemPath>
+            <itemPath>../src/lvgl/src/lv_font/lv_font_montserrat_28_compressed.c</itemPath>
+            <itemPath>../src/lvgl/src/lv_font/lv_font_montserrat_30.c</itemPath>
+            <itemPath>../src/lvgl/src/lv_font/lv_font_montserrat_32.c</itemPath>
+            <itemPath>../src/lvgl/src/lv_font/lv_font_montserrat_34.c</itemPath>
+            <itemPath>../src/lvgl/src/lv_font/lv_font_montserrat_36.c</itemPath>
+            <itemPath>../src/lvgl/src/lv_font/lv_font_montserrat_38.c</itemPath>
+            <itemPath>../src/lvgl/src/lv_font/lv_font_montserrat_40.c</itemPath>
+            <itemPath>../src/lvgl/src/lv_font/lv_font_montserrat_42.c</itemPath>
+            <itemPath>../src/lvgl/src/lv_font/lv_font_montserrat_44.c</itemPath>
+            <itemPath>../src/lvgl/src/lv_font/lv_font_montserrat_46.c</itemPath>
+            <itemPath>../src/lvgl/src/lv_font/lv_font_montserrat_48.c</itemPath>
+            <itemPath>../src/lvgl/src/lv_font/lv_font_montserrat_8.c</itemPath>
+            <itemPath>../src/lvgl/src/lv_font/lv_font_simsun_16_cjk.c</itemPath>
+            <itemPath>../src/lvgl/src/lv_font/lv_font_unscii_16.c</itemPath>
+            <itemPath>../src/lvgl/src/lv_font/lv_font_unscii_8.c</itemPath>
+          </logicalFolder>
+          <logicalFolder name="lv_gpu" displayName="lv_gpu" projectFiles="true">
+            <itemPath>../src/lvgl/src/lv_gpu/lv_gpu_nxp_pxp.c</itemPath>
+            <itemPath>../src/lvgl/src/lv_gpu/lv_gpu_nxp_pxp_osa.c</itemPath>
+            <itemPath>../src/lvgl/src/lv_gpu/lv_gpu_nxp_vglite.c</itemPath>
+            <itemPath>../src/lvgl/src/lv_gpu/lv_gpu_stm32_dma2d.c</itemPath>
+          </logicalFolder>
+          <logicalFolder name="lv_hal" displayName="lv_hal" projectFiles="true">
+            <itemPath>../src/lvgl/src/lv_hal/lv_hal_disp.c</itemPath>
+            <itemPath>../src/lvgl/src/lv_hal/lv_hal_indev.c</itemPath>
+            <itemPath>../src/lvgl/src/lv_hal/lv_hal_tick.c</itemPath>
+          </logicalFolder>
+          <logicalFolder name="lv_misc" displayName="lv_misc" projectFiles="true">
+            <itemPath>../src/lvgl/src/lv_misc/lv_anim.c</itemPath>
+            <itemPath>../src/lvgl/src/lv_misc/lv_area.c</itemPath>
+            <itemPath>../src/lvgl/src/lv_misc/lv_async.c</itemPath>
+            <itemPath>../src/lvgl/src/lv_misc/lv_bidi.c</itemPath>
+            <itemPath>../src/lvgl/src/lv_misc/lv_color.c</itemPath>
+            <itemPath>../src/lvgl/src/lv_misc/lv_debug.c</itemPath>
+            <itemPath>../src/lvgl/src/lv_misc/lv_fs.c</itemPath>
+            <itemPath>../src/lvgl/src/lv_misc/lv_gc.c</itemPath>
+            <itemPath>../src/lvgl/src/lv_misc/lv_ll.c</itemPath>
+            <itemPath>../src/lvgl/src/lv_misc/lv_log.c</itemPath>
+            <itemPath>../src/lvgl/src/lv_misc/lv_math.c</itemPath>
+            <itemPath>../src/lvgl/src/lv_misc/lv_mem.c</itemPath>
+            <itemPath>../src/lvgl/src/lv_misc/lv_printf.c</itemPath>
+            <itemPath>../src/lvgl/src/lv_misc/lv_task.c</itemPath>
+            <itemPath>../src/lvgl/src/lv_misc/lv_templ.c</itemPath>
+            <itemPath>../src/lvgl/src/lv_misc/lv_txt.c</itemPath>
+            <itemPath>../src/lvgl/src/lv_misc/lv_txt_ap.c</itemPath>
+            <itemPath>../src/lvgl/src/lv_misc/lv_utils.c</itemPath>
+          </logicalFolder>
+          <logicalFolder name="lv_themes" displayName="lv_themes" projectFiles="true">
+            <itemPath>../src/lvgl/src/lv_themes/lv_theme.c</itemPath>
+            <itemPath>../src/lvgl/src/lv_themes/lv_theme_empty.c</itemPath>
+            <itemPath>../src/lvgl/src/lv_themes/lv_theme_material.c</itemPath>
+            <itemPath>../src/lvgl/src/lv_themes/lv_theme_mono.c</itemPath>
+            <itemPath>../src/lvgl/src/lv_themes/lv_theme_template.c</itemPath>
+          </logicalFolder>
+          <logicalFolder name="lv_widgets" displayName="lv_widgets" projectFiles="true">
+            <itemPath>../src/lvgl/src/lv_widgets/lv_arc.c</itemPath>
+            <itemPath>../src/lvgl/src/lv_widgets/lv_bar.c</itemPath>
+            <itemPath>../src/lvgl/src/lv_widgets/lv_btn.c</itemPath>
+            <itemPath>../src/lvgl/src/lv_widgets/lv_btnmatrix.c</itemPath>
+            <itemPath>../src/lvgl/src/lv_widgets/lv_calendar.c</itemPath>
+            <itemPath>../src/lvgl/src/lv_widgets/lv_canvas.c</itemPath>
+            <itemPath>../src/lvgl/src/lv_widgets/lv_chart.c</itemPath>
+            <itemPath>../src/lvgl/src/lv_widgets/lv_checkbox.c</itemPath>
+            <itemPath>../src/lvgl/src/lv_widgets/lv_cont.c</itemPath>
+            <itemPath>../src/lvgl/src/lv_widgets/lv_cpicker.c</itemPath>
+            <itemPath>../src/lvgl/src/lv_widgets/lv_dropdown.c</itemPath>
+            <itemPath>../src/lvgl/src/lv_widgets/lv_gauge.c</itemPath>
+            <itemPath>../src/lvgl/src/lv_widgets/lv_img.c</itemPath>
+            <itemPath>../src/lvgl/src/lv_widgets/lv_imgbtn.c</itemPath>
+            <itemPath>../src/lvgl/src/lv_widgets/lv_keyboard.c</itemPath>
+            <itemPath>../src/lvgl/src/lv_widgets/lv_label.c</itemPath>
+            <itemPath>../src/lvgl/src/lv_widgets/lv_led.c</itemPath>
+            <itemPath>../src/lvgl/src/lv_widgets/lv_line.c</itemPath>
+            <itemPath>../src/lvgl/src/lv_widgets/lv_linemeter.c</itemPath>
+            <itemPath>../src/lvgl/src/lv_widgets/lv_list.c</itemPath>
+            <itemPath>../src/lvgl/src/lv_widgets/lv_msgbox.c</itemPath>
+            <itemPath>../src/lvgl/src/lv_widgets/lv_objmask.c</itemPath>
+            <itemPath>../src/lvgl/src/lv_widgets/lv_objx_templ.c</itemPath>
+            <itemPath>../src/lvgl/src/lv_widgets/lv_page.c</itemPath>
+            <itemPath>../src/lvgl/src/lv_widgets/lv_roller.c</itemPath>
+            <itemPath>../src/lvgl/src/lv_widgets/lv_slider.c</itemPath>
+            <itemPath>../src/lvgl/src/lv_widgets/lv_spinbox.c</itemPath>
+            <itemPath>../src/lvgl/src/lv_widgets/lv_spinner.c</itemPath>
+            <itemPath>../src/lvgl/src/lv_widgets/lv_switch.c</itemPath>
+            <itemPath>../src/lvgl/src/lv_widgets/lv_table.c</itemPath>
+            <itemPath>../src/lvgl/src/lv_widgets/lv_tabview.c</itemPath>
+            <itemPath>../src/lvgl/src/lv_widgets/lv_textarea.c</itemPath>
+            <itemPath>../src/lvgl/src/lv_widgets/lv_tileview.c</itemPath>
+            <itemPath>../src/lvgl/src/lv_widgets/lv_win.c</itemPath>
+          </logicalFolder>
+        </logicalFolder>
+      </logicalFolder>
+      <itemPath>../src/main.c</itemPath>
+      <itemPath>../src/app_fs.c</itemPath>
+      <itemPath>../src/app_lvgl.c</itemPath>
+    </logicalFolder>
+    <logicalFolder name="ExternalFiles"
+                   displayName="Important Files"
+                   projectFiles="false">
+      <logicalFolder name="f1"
+                     displayName="glcd_rgb565_mxt_mzda_intddr_cu.mhc"
+                     projectFiles="true">
+        <itemPath>../src/config/glcd_rgb565_mxt_mzda_intddr_cu/glcd_rgb565_mxt_mzda_intddr_cu.mhc/BSP_PIC32MZ_DA_Curiosity.yml</itemPath>
+        <itemPath>../src/config/glcd_rgb565_mxt_mzda_intddr_cu/glcd_rgb565_mxt_mzda_intddr_cu.mhc/core.yml</itemPath>
+        <itemPath>../src/config/glcd_rgb565_mxt_mzda_intddr_cu/glcd_rgb565_mxt_mzda_intddr_cu.mhc/core_timer.yml</itemPath>
+        <itemPath>../src/config/glcd_rgb565_mxt_mzda_intddr_cu/glcd_rgb565_mxt_mzda_intddr_cu.mhc/ddr.yml</itemPath>
+        <itemPath>../src/config/glcd_rgb565_mxt_mzda_intddr_cu/glcd_rgb565_mxt_mzda_intddr_cu.mhc/dfp.yml</itemPath>
+        <itemPath>../src/config/glcd_rgb565_mxt_mzda_intddr_cu/glcd_rgb565_mxt_mzda_intddr_cu.mhc/drv_i2c.yml</itemPath>
+        <itemPath>../src/config/glcd_rgb565_mxt_mzda_intddr_cu/glcd_rgb565_mxt_mzda_intddr_cu.mhc/drv_sdmmc.yml</itemPath>
+        <itemPath>../src/config/glcd_rgb565_mxt_mzda_intddr_cu/glcd_rgb565_mxt_mzda_intddr_cu.mhc/gfx_disp_pdatm4301b_480x272.yml</itemPath>
+        <itemPath>../src/config/glcd_rgb565_mxt_mzda_intddr_cu/glcd_rgb565_mxt_mzda_intddr_cu.mhc/gfx_hal_le.yml</itemPath>
+        <itemPath>../src/config/glcd_rgb565_mxt_mzda_intddr_cu/glcd_rgb565_mxt_mzda_intddr_cu.mhc/gfx_maxtouch_controller.yml</itemPath>
+        <itemPath>../src/config/glcd_rgb565_mxt_mzda_intddr_cu/glcd_rgb565_mxt_mzda_intddr_cu.mhc/GraphSettings.yml</itemPath>
+        <itemPath>../src/config/glcd_rgb565_mxt_mzda_intddr_cu/glcd_rgb565_mxt_mzda_intddr_cu.mhc/HarmonyCore.yml</itemPath>
+        <itemPath>../src/config/glcd_rgb565_mxt_mzda_intddr_cu/glcd_rgb565_mxt_mzda_intddr_cu.mhc/i2c2.yml</itemPath>
+        <itemPath>../src/config/glcd_rgb565_mxt_mzda_intddr_cu/glcd_rgb565_mxt_mzda_intddr_cu.mhc/le_gfx_driver_2dgpu.yml</itemPath>
+        <itemPath>../src/config/glcd_rgb565_mxt_mzda_intddr_cu/glcd_rgb565_mxt_mzda_intddr_cu.mhc/le_gfx_driver_glcd.yml</itemPath>
+        <itemPath>../src/config/glcd_rgb565_mxt_mzda_intddr_cu/glcd_rgb565_mxt_mzda_intddr_cu.mhc/project.yml</itemPath>
+        <itemPath>../src/config/glcd_rgb565_mxt_mzda_intddr_cu/glcd_rgb565_mxt_mzda_intddr_cu.mhc/sdhc.yml</itemPath>
+        <itemPath>../src/config/glcd_rgb565_mxt_mzda_intddr_cu/glcd_rgb565_mxt_mzda_intddr_cu.mhc/settings.yml</itemPath>
+        <itemPath>../src/config/glcd_rgb565_mxt_mzda_intddr_cu/glcd_rgb565_mxt_mzda_intddr_cu.mhc/stdio.yml</itemPath>
+        <itemPath>../src/config/glcd_rgb565_mxt_mzda_intddr_cu/glcd_rgb565_mxt_mzda_intddr_cu.mhc/sys_fs.yml</itemPath>
+        <itemPath>../src/config/glcd_rgb565_mxt_mzda_intddr_cu/glcd_rgb565_mxt_mzda_intddr_cu.mhc/sys_input.yml</itemPath>
+        <itemPath>../src/config/glcd_rgb565_mxt_mzda_intddr_cu/glcd_rgb565_mxt_mzda_intddr_cu.mhc/sys_time.yml</itemPath>
+        <itemPath>../src/config/glcd_rgb565_mxt_mzda_intddr_cu/glcd_rgb565_mxt_mzda_intddr_cu.mhc/uart2.yml</itemPath>
+      </logicalFolder>
+      <itemPath>Makefile</itemPath>
+      <itemPath>../src/config/glcd_rgb565_mxt_mzda_intddr_cu/harmony-manifest-success.yml</itemPath>
+      <itemPath>lvgl_showcase_mzda_cu_wqvga.mc3</itemPath>
+    </logicalFolder>
+  </logicalFolder>
+  <sourceRootList>
+    <Elem>../src</Elem>
+  </sourceRootList>
+  <projectmakefile>Makefile</projectmakefile>
+  <confs>
+    <conf name="glcd_rgb565_mxt_mzda_intddr_cu" type="2">
+      <toolsSet>
+        <developmentServer>localhost</developmentServer>
+        <targetDevice>PIC32MZ2064DAR176</targetDevice>
+        <targetHeader></targetHeader>
+        <targetPluginBoard></targetPluginBoard>
+        <platformTool>pkob4hybrid</platformTool>
+        <languageToolchain>XC32</languageToolchain>
+        <languageToolchainVersion>4.35</languageToolchainVersion>
+        <platform>3</platform>
+      </toolsSet>
+      <packs>
+        <pack name="PIC32MZ-DA_DFP" vendor="Microchip" version="1.5.231"/>
+      </packs>
+      <ScriptingSettings>
+      </ScriptingSettings>
+      <compileType>
+        <linkerTool>
+          <linkerLibItems>
+            <linkerLibFileItem>../src/config/glcd_rgb565_mxt_mzda_intddr_cu/gfx/driver/processor/2dgpu/lib/libnano2d.a</linkerLibFileItem>
+          </linkerLibItems>
+        </linkerTool>
+        <archiverTool>
+        </archiverTool>
+        <loading>
+          <useAlternateLoadableFile>false</useAlternateLoadableFile>
+          <parseOnProdLoad>false</parseOnProdLoad>
+          <alternateLoadableFile></alternateLoadableFile>
+        </loading>
+        <subordinates>
+        </subordinates>
+      </compileType>
+      <makeCustomizationType>
+        <makeCustomizationPreStepEnabled>false</makeCustomizationPreStepEnabled>
+        <makeUseCleanTarget>false</makeUseCleanTarget>
+        <makeCustomizationPreStep></makeCustomizationPreStep>
+        <makeCustomizationPostStepEnabled>false</makeCustomizationPostStepEnabled>
+        <makeCustomizationPostStep></makeCustomizationPostStep>
+        <makeCustomizationPutChecksumInUserID>false</makeCustomizationPutChecksumInUserID>
+        <makeCustomizationEnableLongLines>false</makeCustomizationEnableLongLines>
+        <makeCustomizationNormalizeHexFile>false</makeCustomizationNormalizeHexFile>
+      </makeCustomizationType>
+      <C32>
+        <property key="additional-warnings" value="true"/>
+        <property key="addresss-attribute-use" value="false"/>
+        <property key="appendMe" value=""/>
+        <property key="enable-app-io" value="false"/>
+        <property key="enable-omit-frame-pointer" value="false"/>
+        <property key="enable-symbols" value="true"/>
+        <property key="enable-unroll-loops" value="false"/>
+        <property key="exclude-floating-point" value="false"/>
+        <property key="extra-include-directories"
+                  value="../src;../src/config/glcd_rgb565_mxt_mzda_intddr_cu;../src/config/glcd_rgb565_mxt_mzda_intddr_cu/system/fs/fat_fs/file_system;../src/config/glcd_rgb565_mxt_mzda_intddr_cu/system/fs/fat_fs/hardware_access;../src/packs/PIC32MZ2064DAR176_DFP"/>
+        <property key="generate-16-bit-code" value="false"/>
+        <property key="generate-micro-compressed-code" value="false"/>
+        <property key="isolate-each-function" value="true"/>
+        <property key="make-warnings-into-errors" value="true"/>
+        <property key="optimization-level" value="-O1"/>
+        <property key="place-data-into-section" value="false"/>
+        <property key="post-instruction-scheduling" value="default"/>
+        <property key="pre-instruction-scheduling" value="default"/>
+        <property key="preprocessor-macros" value=""/>
+        <property key="strict-ansi" value="false"/>
+        <property key="support-ansi" value="false"/>
+        <property key="tentative-definitions" value=""/>
+        <property key="toplevel-reordering" value=""/>
+        <property key="unaligned-access" value=""/>
+        <property key="use-cci" value="false"/>
+        <property key="use-iar" value="false"/>
+        <property key="use-indirect-calls" value="false"/>
+      </C32>
+      <C32-AR>
+        <property key="additional-options-chop-files" value="false"/>
+      </C32-AR>
+      <C32-AS>
+        <property key="assembler-symbols" value=""/>
+        <property key="enable-symbols" value="true"/>
+        <property key="exclude-floating-point-library" value="false"/>
+        <property key="expand-macros" value="false"/>
+        <property key="extra-include-directories-for-assembler" value=""/>
+        <property key="extra-include-directories-for-preprocessor" value=""/>
+        <property key="false-conditionals" value="false"/>
+        <property key="generate-16-bit-code" value="false"/>
+        <property key="generate-micro-compressed-code" value="false"/>
+        <property key="keep-locals" value="false"/>
+        <property key="list-assembly" value="false"/>
+        <property key="list-source" value="false"/>
+        <property key="list-symbols" value="false"/>
+        <property key="oXC32asm-list-to-file" value="false"/>
+        <property key="omit-debug-dirs" value="false"/>
+        <property key="omit-forms" value="false"/>
+        <property key="preprocessor-macros" value=""/>
+        <property key="warning-level" value=""/>
+      </C32-AS>
+      <C32-CO>
+        <property key="coverage-enable" value=""/>
+        <property key="stack-guidance" value="false"/>
+      </C32-CO>
+      <C32-LD>
+        <property key="additional-options-use-response-files" value="false"/>
+        <property key="additional-options-write-sla" value="false"/>
+        <property key="allocate-dinit" value="false"/>
+        <property key="appendMe" value=""/>
+        <property key="code-dinit" value="false"/>
+        <property key="ebase-addr" value=""/>
+        <property key="enable-check-sections" value="false"/>
+        <property key="exclude-floating-point-library" value="false"/>
+        <property key="exclude-standard-libraries" value="false"/>
+        <property key="extra-lib-directories" value=""/>
+        <property key="fill-flash-options-addr" value=""/>
+        <property key="fill-flash-options-const" value=""/>
+        <property key="fill-flash-options-how" value="0"/>
+        <property key="fill-flash-options-inc-const" value="1"/>
+        <property key="fill-flash-options-increment" value=""/>
+        <property key="fill-flash-options-seq" value=""/>
+        <property key="fill-flash-options-what" value="0"/>
+        <property key="generate-16-bit-code" value="false"/>
+        <property key="generate-cross-reference-file" value="false"/>
+        <property key="generate-micro-compressed-code" value="false"/>
+        <property key="heap-size" value="8192"/>
+        <property key="input-libraries" value=""/>
+        <property key="kseg-length" value=""/>
+        <property key="kseg-origin" value=""/>
+        <property key="linker-symbols" value=""/>
+        <property key="map-file" value="${DISTDIR}/${PROJECTNAME}.${IMAGE_TYPE}.map"/>
+        <property key="no-device-startup-code" value="true"/>
+        <property key="no-startup-files" value="false"/>
+        <property key="oXC32ld-extra-opts" value=""/>
+        <property key="optimization-level" value=""/>
+        <property key="preprocessor-macros" value=""/>
+        <property key="remove-unused-sections" value="true"/>
+        <property key="report-memory-usage" value="false"/>
+        <property key="serial-length" value=""/>
+        <property key="serial-origin" value=""/>
+        <property key="stack-size" value=""/>
+        <property key="symbol-stripping" value=""/>
+        <property key="trace-symbols" value=""/>
+        <property key="warn-section-align" value="false"/>
+      </C32-LD>
+      <C32CPP>
+        <property key="additional-warnings" value="false"/>
+        <property key="addresss-attribute-use" value="false"/>
+        <property key="appendMe" value=""/>
+        <property key="check-new" value="false"/>
+        <property key="eh-specs" value="true"/>
+        <property key="enable-app-io" value="false"/>
+        <property key="enable-omit-frame-pointer" value="false"/>
+        <property key="enable-symbols" value="true"/>
+        <property key="enable-unroll-loops" value="false"/>
+        <property key="exceptions" value="true"/>
+        <property key="exclude-floating-point" value="false"/>
+        <property key="extra-include-directories"
+                  value="../src;../src/config/glcd_rgb565_mxt_mzda_intddr_cu;../src/config/glcd_rgb565_mxt_mzda_intddr_cu/system/fs/fat_fs/file_system;../src/config/glcd_rgb565_mxt_mzda_intddr_cu/system/fs/fat_fs/hardware_access;../src/packs/PIC32MZ2064DAR176_DFP"/>
+        <property key="generate-16-bit-code" value="false"/>
+        <property key="generate-micro-compressed-code" value="false"/>
+        <property key="isolate-each-function" value="true"/>
+        <property key="make-warnings-into-errors" value="false"/>
+        <property key="optimization-level" value="-O1"/>
+        <property key="place-data-into-section" value="false"/>
+        <property key="post-instruction-scheduling" value="default"/>
+        <property key="pre-instruction-scheduling" value="default"/>
+        <property key="preprocessor-macros" value=""/>
+        <property key="rtti" value="true"/>
+        <property key="strict-ansi" value="false"/>
+        <property key="toplevel-reordering" value=""/>
+        <property key="unaligned-access" value=""/>
+        <property key="use-cci" value="false"/>
+        <property key="use-iar" value="false"/>
+        <property key="use-indirect-calls" value="false"/>
+      </C32CPP>
+      <C32Global>
+        <property key="common-include-directories" value=""/>
+        <property key="gp-relative-option" value=""/>
+        <property key="legacy-libc" value="false"/>
+        <property key="mdtcm" value=""/>
+        <property key="mitcm" value=""/>
+        <property key="mstacktcm" value="false"/>
+        <property key="omit-pack-options" value="1"/>
+        <property key="relaxed-math" value="false"/>
+        <property key="save-temps" value="false"/>
+        <property key="stack-smashing" value=""/>
+        <property key="wpo-lto" value="false"/>
+      </C32Global>
+      <Tool>
+        <property key="ADC" value="true"/>
+        <property key="AutoSelectMemRanges" value="auto"/>
+        <property key="CAN1" value="true"/>
+        <property key="CAN2" value="true"/>
+        <property key="CHANGE NOTICE A" value="true"/>
+        <property key="CHANGE NOTICE B" value="true"/>
+        <property key="CHANGE NOTICE C" value="true"/>
+        <property key="CHANGE NOTICE D" value="true"/>
+        <property key="CHANGE NOTICE E" value="true"/>
+        <property key="CHANGE NOTICE F" value="true"/>
+        <property key="CHANGE NOTICE G" value="true"/>
+        <property key="CHANGE NOTICE H" value="true"/>
+        <property key="CHANGE NOTICE J" value="true"/>
+        <property key="CHANGE NOTICE K" value="true"/>
+        <property key="COMPARATOR" value="true"/>
+        <property key="CTMU" value="true"/>
+        <property key="DMA" value="true"/>
+        <property key="ETHERNET CONTROLLER" value="true"/>
+        <property key="Freeze All Other Peripherals" value="true"/>
+        <property key="HLVD" value="true"/>
+        <property key="I2C 1" value="true"/>
+        <property key="I2C 2" value="true"/>
+        <property key="I2C 3" value="true"/>
+        <property key="I2C 4" value="true"/>
+        <property key="I2C 5" value="true"/>
+        <property key="INPUT CAPTURE 1" value="true"/>
+        <property key="INPUT CAPTURE 2" value="true"/>
+        <property key="INPUT CAPTURE 3" value="true"/>
+        <property key="INPUT CAPTURE 4" value="true"/>
+        <property key="INPUT CAPTURE 5" value="true"/>
+        <property key="INPUT CAPTURE 6" value="true"/>
+        <property key="INPUT CAPTURE 7" value="true"/>
+        <property key="INPUT CAPTURE 8" value="true"/>
+        <property key="INPUT CAPTURE 9" value="true"/>
+        <property key="INTERRUPT CONTROL" value="true"/>
+        <property key="OUTPUT COMPARE 1" value="true"/>
+        <property key="OUTPUT COMPARE 2" value="true"/>
+        <property key="OUTPUT COMPARE 3" value="true"/>
+        <property key="OUTPUT COMPARE 4" value="true"/>
+        <property key="OUTPUT COMPARE 5" value="true"/>
+        <property key="OUTPUT COMPARE 6" value="true"/>
+        <property key="OUTPUT COMPARE 7" value="true"/>
+        <property key="OUTPUT COMPARE 8" value="true"/>
+        <property key="OUTPUT COMPARE 9" value="true"/>
+        <property key="PARALLEL MASTER/SLAVE PORT" value="true"/>
+        <property key="REAL TIME CLOCK" value="true"/>
+        <property key="REFERENCE CLOCK1" value="true"/>
+        <property key="REFERENCE CLOCK2" value="true"/>
+        <property key="REFERENCE CLOCK3" value="true"/>
+        <property key="REFERENCE CLOCK4" value="true"/>
+        <property key="REFERENCE CLOCK5" value="true"/>
+        <property key="SPI/I2S 1" value="true"/>
+        <property key="SPI/I2S 2" value="true"/>
+        <property key="SPI/I2S 3" value="true"/>
+        <property key="SPI/I2S 4" value="true"/>
+        <property key="SPI/I2S 5" value="true"/>
+        <property key="SPI/I2S 6" value="true"/>
+        <property key="TIMER1" value="true"/>
+        <property key="TIMER2" value="true"/>
+        <property key="TIMER3" value="true"/>
+        <property key="TIMER4" value="true"/>
+        <property key="TIMER5" value="true"/>
+        <property key="TIMER6" value="true"/>
+        <property key="TIMER7" value="true"/>
+        <property key="TIMER8" value="true"/>
+        <property key="TIMER9" value="true"/>
+        <property key="ToolFirmwareFilePath"
+                  value="Press to browse for a specific firmware version"/>
+        <property key="ToolFirmwareOption.UpdateOptions"
+                  value="ToolFirmwareOption.UseLatest"/>
+        <property key="ToolFirmwareToolPack"
+                  value="Press to select which tool pack to use"/>
+        <property key="UART1" value="true"/>
+        <property key="UART2" value="true"/>
+        <property key="UART3" value="true"/>
+        <property key="UART4" value="true"/>
+        <property key="UART5" value="true"/>
+        <property key="UART6" value="true"/>
+        <property key="communication.interface" value=""/>
+        <property key="communication.interface.jtag" value="2wire"/>
+        <property key="communication.speed" value="${communication.speed.default}"/>
+        <property key="debugoptions.debug-startup" value="Use system settings"/>
+        <property key="debugoptions.reset-behaviour" value="Use system settings"/>
+        <property key="debugoptions.simultaneous.debug" value="false"/>
+        <property key="debugoptions.useswbreakpoints" value="false"/>
+        <property key="event.recorder.enabled" value="false"/>
+        <property key="event.recorder.scvd.files" value=""/>
+        <property key="freeze.timers" value="false"/>
+        <property key="lastid" value=""/>
+        <property key="memories.aux" value="false"/>
+        <property key="memories.bootflash" value="true"/>
+        <property key="memories.configurationmemory" value="true"/>
+        <property key="memories.configurationmemory2" value="true"/>
+        <property key="memories.dataflash" value="true"/>
+        <property key="memories.eeprom" value="true"/>
+        <property key="memories.exclude.configurationmemory" value="true"/>
+        <property key="memories.flashdata" value="true"/>
+        <property key="memories.id" value="true"/>
+        <property key="memories.instruction.ram.ranges"
+                  value="${memories.instruction.ram.ranges}"/>
+        <property key="memories.programmemory" value="true"/>
+        <property key="memories.programmemory.ranges" value="1d000000-1d1fffff"/>
+        <property key="memories.rww" value="true"/>
+        <property key="programoptions.donoteraseauxmem" value="false"/>
+        <property key="programoptions.eraseb4program" value="true"/>
+        <property key="programoptions.pgmentry.voltage" value="low"/>
+        <property key="programoptions.pgmspeed" value="Med"/>
+        <property key="programoptions.preservedataflash" value="false"/>
+        <property key="programoptions.preservedataflash.ranges"
+                  value="${memories.dataflash.default}"/>
+        <property key="programoptions.preserveeeprom" value="false"/>
+        <property key="programoptions.preserveeeprom.ranges" value=""/>
+        <property key="programoptions.preserveprogram.ranges" value=""/>
+        <property key="programoptions.preserveprogramrange" value="false"/>
+        <property key="programoptions.preserveuserid" value="false"/>
+        <property key="programoptions.program.otpconfig" value="false"/>
+        <property key="programoptions.programcalmem" value="false"/>
+        <property key="programoptions.programuserotp" value="false"/>
+        <property key="programoptions.testmodeentrymethod" value="VDDFirst"/>
+        <property key="toolpack.updateoptions"
+                  value="toolpack.updateoptions.uselatestoolpack"/>
+        <property key="toolpack.updateoptions.packversion"
+                  value="Press to select which tool pack to use"/>
+      </Tool>
+      <pkob4hybrid>
+        <property key="ADC" value="true"/>
+        <property key="AutoSelectMemRanges" value="auto"/>
+        <property key="CAN1" value="true"/>
+        <property key="CAN2" value="true"/>
+        <property key="CHANGE NOTICE A" value="true"/>
+        <property key="CHANGE NOTICE B" value="true"/>
+        <property key="CHANGE NOTICE C" value="true"/>
+        <property key="CHANGE NOTICE D" value="true"/>
+        <property key="CHANGE NOTICE E" value="true"/>
+        <property key="CHANGE NOTICE F" value="true"/>
+        <property key="CHANGE NOTICE G" value="true"/>
+        <property key="CHANGE NOTICE H" value="true"/>
+        <property key="CHANGE NOTICE J" value="true"/>
+        <property key="CHANGE NOTICE K" value="true"/>
+        <property key="COMPARATOR" value="true"/>
+        <property key="CTMU" value="true"/>
+        <property key="DMA" value="true"/>
+        <property key="ETHERNET CONTROLLER" value="true"/>
+        <property key="Freeze All Other Peripherals" value="true"/>
+        <property key="HLVD" value="true"/>
+        <property key="I2C 1" value="true"/>
+        <property key="I2C 2" value="true"/>
+        <property key="I2C 3" value="true"/>
+        <property key="I2C 4" value="true"/>
+        <property key="I2C 5" value="true"/>
+        <property key="INPUT CAPTURE 1" value="true"/>
+        <property key="INPUT CAPTURE 2" value="true"/>
+        <property key="INPUT CAPTURE 3" value="true"/>
+        <property key="INPUT CAPTURE 4" value="true"/>
+        <property key="INPUT CAPTURE 5" value="true"/>
+        <property key="INPUT CAPTURE 6" value="true"/>
+        <property key="INPUT CAPTURE 7" value="true"/>
+        <property key="INPUT CAPTURE 8" value="true"/>
+        <property key="INPUT CAPTURE 9" value="true"/>
+        <property key="INTERRUPT CONTROL" value="true"/>
+        <property key="OUTPUT COMPARE 1" value="true"/>
+        <property key="OUTPUT COMPARE 2" value="true"/>
+        <property key="OUTPUT COMPARE 3" value="true"/>
+        <property key="OUTPUT COMPARE 4" value="true"/>
+        <property key="OUTPUT COMPARE 5" value="true"/>
+        <property key="OUTPUT COMPARE 6" value="true"/>
+        <property key="OUTPUT COMPARE 7" value="true"/>
+        <property key="OUTPUT COMPARE 8" value="true"/>
+        <property key="OUTPUT COMPARE 9" value="true"/>
+        <property key="PARALLEL MASTER/SLAVE PORT" value="true"/>
+        <property key="REAL TIME CLOCK" value="true"/>
+        <property key="REFERENCE CLOCK1" value="true"/>
+        <property key="REFERENCE CLOCK2" value="true"/>
+        <property key="REFERENCE CLOCK3" value="true"/>
+        <property key="REFERENCE CLOCK4" value="true"/>
+        <property key="REFERENCE CLOCK5" value="true"/>
+        <property key="SPI/I2S 1" value="true"/>
+        <property key="SPI/I2S 2" value="true"/>
+        <property key="SPI/I2S 3" value="true"/>
+        <property key="SPI/I2S 4" value="true"/>
+        <property key="SPI/I2S 5" value="true"/>
+        <property key="SPI/I2S 6" value="true"/>
+        <property key="TIMER1" value="true"/>
+        <property key="TIMER2" value="true"/>
+        <property key="TIMER3" value="true"/>
+        <property key="TIMER4" value="true"/>
+        <property key="TIMER5" value="true"/>
+        <property key="TIMER6" value="true"/>
+        <property key="TIMER7" value="true"/>
+        <property key="TIMER8" value="true"/>
+        <property key="TIMER9" value="true"/>
+        <property key="ToolFirmwareFilePath"
+                  value="Press to browse for a specific firmware version"/>
+        <property key="ToolFirmwareOption.UpdateOptions"
+                  value="ToolFirmwareOption.UseLatest"/>
+        <property key="ToolFirmwareToolPack"
+                  value="Press to select which tool pack to use"/>
+        <property key="UART1" value="true"/>
+        <property key="UART2" value="true"/>
+        <property key="UART3" value="true"/>
+        <property key="UART4" value="true"/>
+        <property key="UART5" value="true"/>
+        <property key="UART6" value="true"/>
+        <property key="communication.interface" value=""/>
+        <property key="communication.interface.jtag" value="2wire"/>
+        <property key="communication.speed" value="${communication.speed.default}"/>
+        <property key="debugoptions.debug-startup" value="Use system settings"/>
+        <property key="debugoptions.reset-behaviour" value="Use system settings"/>
+        <property key="debugoptions.simultaneous.debug" value="false"/>
+        <property key="debugoptions.useswbreakpoints" value="false"/>
+        <property key="event.recorder.enabled" value="false"/>
+        <property key="event.recorder.scvd.files" value=""/>
+        <property key="freeze.timers" value="false"/>
+        <property key="lastid" value=""/>
+        <property key="memories.aux" value="false"/>
+        <property key="memories.bootflash" value="true"/>
+        <property key="memories.configurationmemory" value="true"/>
+        <property key="memories.configurationmemory2" value="true"/>
+        <property key="memories.dataflash" value="true"/>
+        <property key="memories.eeprom" value="true"/>
+        <property key="memories.exclude.configurationmemory" value="true"/>
+        <property key="memories.flashdata" value="true"/>
+        <property key="memories.id" value="true"/>
+        <property key="memories.instruction.ram.ranges"
+                  value="${memories.instruction.ram.ranges}"/>
+        <property key="memories.programmemory" value="true"/>
+        <property key="memories.programmemory.ranges" value="1d000000-1d1fffff"/>
+        <property key="programmerToGoFilePath"
+                  value="C:/microchip/harmony3/harmony_gfx_apps_pic32mz_da/apps/lvgl_showcase/firmware/lvgl_sc_mzda_cu_tm4301b.X/debug/glcd_rgb565_mxt_mzda_intddr_cu/lvgl_sc_mzda_cu_tm4301b_ptg"/>
+        <property key="programoptions.donoteraseauxmem" value="false"/>
+        <property key="programoptions.eraseb4program" value="true"/>
+        <property key="programoptions.pgmentry.voltage" value="low"/>
+        <property key="programoptions.pgmspeed" value="Med"/>
+        <property key="programoptions.preservedataflash" value="false"/>
+        <property key="programoptions.preservedataflash.ranges"
+                  value="${memories.dataflash.default}"/>
+        <property key="programoptions.preserveeeprom" value="false"/>
+        <property key="programoptions.preserveeeprom.ranges" value=""/>
+        <property key="programoptions.preserveprogram.ranges" value=""/>
+        <property key="programoptions.preserveprogramrange" value="false"/>
+        <property key="programoptions.preserveuserid" value="false"/>
+        <property key="programoptions.program.otpconfig" value="false"/>
+        <property key="programoptions.programcalmem" value="false"/>
+        <property key="programoptions.programuserotp" value="false"/>
+        <property key="programoptions.testmodeentrymethod" value="VDDFirst"/>
+        <property key="toolpack.updateoptions"
+                  value="toolpack.updateoptions.uselatestoolpack"/>
+        <property key="toolpack.updateoptions.packversion"
+                  value="Press to select which tool pack to use"/>
+      </pkob4hybrid>
+    </conf>
+  </confs>
+</configurationDescriptor>

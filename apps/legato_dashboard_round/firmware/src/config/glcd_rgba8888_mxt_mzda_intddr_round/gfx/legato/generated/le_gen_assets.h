@@ -1737,12 +1737,12 @@ extern leImage speedo_background;
 
 /*********************************
  * Legato Image Asset
- * Name:   mchp_circle
- * Size:   80x80 pixels
+ * Name:   mchp_logo2
+ * Size:   80x42 pixels
  * Type:   RGB Data
  * Format: RGBA_8888
  ***********************************/
-extern leImage mchp_circle;
+extern leImage mchp_logo2;
 
 /*****************************************************************************
  * Legato String Table

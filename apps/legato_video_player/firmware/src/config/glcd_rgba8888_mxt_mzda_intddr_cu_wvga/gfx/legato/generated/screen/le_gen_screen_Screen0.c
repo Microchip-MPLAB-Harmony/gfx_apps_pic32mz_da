@@ -399,7 +399,6 @@ leResult screenShow_Screen0(void)
     Screen0_FullScreenButton->fn->setBackgroundType(Screen0_FullScreenButton, LE_WIDGET_BACKGROUND_NONE);
     Screen0_FullScreenButton->fn->setBorderType(Screen0_FullScreenButton, LE_WIDGET_BORDER_NONE);
     Screen0_FullScreenButton->fn->setToggleable(Screen0_FullScreenButton, LE_TRUE);
-    Screen0_FullScreenButton->fn->setPressed(Screen0_FullScreenButton, LE_TRUE);
     Screen0_FullScreenButton->fn->setPressedImage(Screen0_FullScreenButton, (leImage*)&RectBig);
     Screen0_FullScreenButton->fn->setReleasedImage(Screen0_FullScreenButton, (leImage*)&RectSmall);
     Screen0_FullScreenButton->fn->setPressedEventCallback(Screen0_FullScreenButton, event_Screen0_FullScreenButton_OnPressed);

@@ -71,14 +71,23 @@
 #define BSP_MAXTOUCH_CHG_Get()               ((PORTH >> 14) & 0x1U)
 #define BSP_MAXTOUCH_CHG_PIN                  GPIO_PIN_RH14
 
-/*** Macros for GPIO_RD0 pin ***/
-#define GPIO_RD0_Set()               (LATDSET = (1U<<0))
-#define GPIO_RD0_Clear()             (LATDCLR = (1U<<0))
-#define GPIO_RD0_Toggle()            (LATDINV= (1U<<0))
-#define GPIO_RD0_OutputEnable()      (TRISDCLR = (1U<<0))
-#define GPIO_RD0_InputEnable()       (TRISDSET = (1U<<0))
-#define GPIO_RD0_Get()               ((PORTD >> 0) & 0x1U)
-#define GPIO_RD0_PIN                  GPIO_PIN_RD0
+/*** Macros for TM4301B_BACKLIGHT pin ***/
+#define TM4301B_BACKLIGHT_Set()               (LATDSET = (1U<<0))
+#define TM4301B_BACKLIGHT_Clear()             (LATDCLR = (1U<<0))
+#define TM4301B_BACKLIGHT_Toggle()            (LATDINV= (1U<<0))
+#define TM4301B_BACKLIGHT_OutputEnable()      (TRISDCLR = (1U<<0))
+#define TM4301B_BACKLIGHT_InputEnable()       (TRISDSET = (1U<<0))
+#define TM4301B_BACKLIGHT_Get()               ((PORTD >> 0) & 0x1U)
+#define TM4301B_BACKLIGHT_PIN                  GPIO_PIN_RD0
+
+/*** Macros for GLCD_DISP pin ***/
+#define GLCD_DISP_Set()               (LATHSET = (1U<<10))
+#define GLCD_DISP_Clear()             (LATHCLR = (1U<<10))
+#define GLCD_DISP_Toggle()            (LATHINV= (1U<<10))
+#define GLCD_DISP_OutputEnable()      (TRISHCLR = (1U<<10))
+#define GLCD_DISP_InputEnable()       (TRISHSET = (1U<<10))
+#define GLCD_DISP_Get()               ((PORTH >> 10) & 0x1U)
+#define GLCD_DISP_PIN                  GPIO_PIN_RH10
 
 
 // *****************************************************************************

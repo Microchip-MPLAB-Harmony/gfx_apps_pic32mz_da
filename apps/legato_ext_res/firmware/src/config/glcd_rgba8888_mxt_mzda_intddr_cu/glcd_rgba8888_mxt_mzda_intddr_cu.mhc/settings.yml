@@ -1,0 +1,14 @@
+configName: glcd_rgba8888_mxt_mzda_intddr_cu
+folderName: legato_x_r_mz_da_cu_tm4301b
+format_version: v1.0
+frameworkPath: ..\..\..\..\..\..\microchip\harmony3
+processor: PIC32MZ2064DAR176
+projectName: legato_x_r_mz_da_cu_tm4301b
+settings:
+  PackageFilter: bsp;core;core_apps_pic32mz_da;core_apps_sam_9x60;core_apps_sam_a5d2;core_apps_sam_e70_s70_v70_v71;csp;csp_apps_pic32mz_da;csp_apps_pic32mz_ef;csp_apps_sam_9x60;csp_apps_sam_a5d2;csp_apps_sam_e70_s70_v70_v71;Devices;dev_packs;gfx;gfx_apps_pic32mz_da;gfx_apps_pic32mz_ef;gfx_apps_sam_9x60;gfx_apps_sam_a5d2;gfx_apps_sam_c20_c21;gfx_apps_sam_d5x_e5x;gfx_apps_sam_e70_s70_v70_v71;gfx_apps_sam_l22;harmony-services;quick_docs;touch;usb;usb_apps_device;usb_apps_host
+  FORCE_OPTIMIZATION: 'false'
+  GENERATE_BACKUP: 'true'
+  TRUSTZONE: 'false'
+  CMSISPath: .\dev_packs\arm\CMSIS\5.8.0
+  MERGE_STRATEGY: USER_ALL
+  DFPPath: PIC32MZ-DA_DFP\1.4.118

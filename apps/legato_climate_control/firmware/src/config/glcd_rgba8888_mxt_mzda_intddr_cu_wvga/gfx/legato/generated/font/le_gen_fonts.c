@@ -304,6 +304,7 @@ leRasterFont TempLabelFont =
             3916, // data size
         },
         LE_RASTER_FONT,
+        0,
     },
     67,
     65,

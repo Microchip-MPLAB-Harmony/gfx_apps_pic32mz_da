@@ -130,6 +130,38 @@ leResult leGPU_DrawLine(int32_t x0,
     return res == GFX_SUCCESS ? LE_SUCCESS : LE_FAILURE;
 }
 
+leResult leGPU_ClearBuffer(lePixelBuffer* leBuf)
+{
+    gfxPixelBuffer buf;
+    gfxRect fillRect;
+    gfxResult res;
+
+    const gfxGraphicsProcessor* intf = leRenderer_GPUInterface();
+
+    if(intf == NULL || intf->fillRect == NULL)
+        return LE_FAILURE;
+
+    buf.pixel_count = leBuf->pixel_count;
+    buf.size.width = leBuf->size.width;
+    buf.size.height = leBuf->size.height;
+    buf.mode = _convertColorMode(leBuf->mode);
+    buf.buffer_length = leBuf->buffer_length;
+    buf.flags = 0;
+    buf.pixels = (gfxBuffer)leBuf->pixels;
+    buf.orientation = GFX_ORIENT_0;
+
+    fillRect.x = 0;
+    fillRect.y = 0;
+    fillRect.width = leBuf->size.width;
+    fillRect.height = leBuf->size.height;
+
+    res = intf->fillRect(&buf,
+                         &fillRect,
+                         0);
+
+    return res == GFX_SUCCESS ? LE_SUCCESS : LE_FAILURE;
+}
+
 leResult leGPU_FillRect(const leRect* rect,
                         leColor clr,
                         uint32_t a)
@@ -248,7 +280,7 @@ leResult leGPU_BlitBuffer(const lePixelBuffer* sourceBuffer,
     destBuf.pixels = (gfxBuffer)leBuf->pixels;
     destBuf.orientation = GPU_ORIENTATION;
 
-    leRenderer_GetClipRect(&frameRect);
+    leRenderer_GetFrameRect(&frameRect);
 
     gfxDestRect.x = destRect->x - frameRect.x;
     gfxDestRect.y = destRect->y - frameRect.y;
@@ -330,7 +362,7 @@ leResult leGPU_BlitStretchBuffer(const lePixelBuffer* sourceBuffer,
     destBuf.pixels = (gfxBuffer)leBuf->pixels;
     destBuf.orientation = GPU_ORIENTATION;
 
-    leRenderer_GetClipRect(&frameRect);
+    leRenderer_GetFrameRect(&frameRect);
 
     gfxDestRect.x = destRect->x - frameRect.x;
     gfxDestRect.y = destRect->y - frameRect.y;

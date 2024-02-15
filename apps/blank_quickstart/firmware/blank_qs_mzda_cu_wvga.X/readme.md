@@ -1,10 +1,10 @@
 
-![](../../../../docs/images/mhgs.png) blank\_quickstart\_mzda\_cu\_wvga.X
+![](../../../../images/mhgs.png) blank\_quickstart\_mzda\_cu\_wvga.X
 
 Defining the Architecture
 -------------------------
 
-![](../../../../docs/html/blank_qs_mzda_intddr_sk_meb2_wqvga_arch.png)
+![](../../../../images/blank_qs_mzda_intddr_sk_meb2_wqvga_arch.png)
 
 In this configuration, the application calls directly into Graphics LCD (GLCD) driver set up and initialization calls that configure the GLCD. After the initialization phase, the application transitions into the paint phase, where it draws an image to the frame buffer. The application uses a gfx_driver API to get the start address of the frame buffer in internal DDR and writes pixel data directly to the frame buffer memory address.
 
@@ -21,7 +21,7 @@ Creating the Project Graph
 
 The Project Graph diagram below shows the Harmony components that are included in this application. Lines between components are drawn to satisfy components that depend on a capability that another component provides.
 
-![](../../../../docs/html/blank_qs_mzda_cu_wvga_pg.png)
+![](../../../../images/blank_qs_mzda_cu_wvga_pg.png)
 
 Building the Application
 ------------------------
@@ -45,16 +45,18 @@ Configure the hardware as follows:
 -   Connect the ribbon cable from the WVGA display to the J2 connector on the the 24-bit Pass-through Card.
 -   Connect a USB cable from the host computer to the DEBUG USB port on the PIC32MZ DA Curiosity board. This USB connection is used for power, code download and debugging.
 
+**Note:** Ensure the Slider switch S1 in 24bit Passthrough Graphics Interface card is maintained at **Position 1**
+
 The final hardware setup should be:
 
-![](../../../../docs/html/legato_qs_mzda_cu_tm5000_conf1.png)
+![](../../../../images/legato_qs_mzda_cu_tm5000_conf1.png)
 
 Running the Demonstration
 -------------------------
 
 Once the board is powered on, the application will run and show the following image on the display panel.
 
-![](../../../../docs/html/blank_quickstart_wvga.png)
+![](../../../../images/blank_quickstart_wvga.png)
 
 * * * * *
 

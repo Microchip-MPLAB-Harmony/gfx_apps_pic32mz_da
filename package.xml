@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <Package name="gfx_apps_pic32mz_da">
     <Dependencies>
-        <Dependency name="gfx" version="v3.11.1"/>
-        <Dependency name="usb" version="v3.10.0"/>
+        <Dependency name="gfx" version="v3.14.0"/>
+        <Dependency name="usb" version="v3.11.0"/>
     </Dependencies>
 </Package>

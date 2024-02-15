@@ -1860,7 +1860,7 @@ int32_t Screen0_ProcessMain(void)
                 if (secDelayCount > UNLOCK_DELAY_SECS)
                 {
                     secDelayCount = 0;
-                    Screen0_MchpLogoImage->fn->setImage(Screen0_MchpLogoImage, &mchp_circle);
+                    Screen0_MchpLogoImage->fn->setImage(Screen0_MchpLogoImage, &mchp_logo2);
                     Screen0_HomeImageSequence->fn->setVisible(Screen0_HomeImageSequence, LE_TRUE);
                     Screen0_GestureLabelWidget->fn->setVisible(Screen0_GestureLabelWidget, LE_FALSE);
                     

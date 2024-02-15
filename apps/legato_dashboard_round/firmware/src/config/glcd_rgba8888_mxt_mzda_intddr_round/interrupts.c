@@ -48,10 +48,10 @@
 // Section: Included Files
 // *****************************************************************************
 // *****************************************************************************
-
 #include "configuration.h"
 #include "interrupts.h"
 #include "definitions.h"
+
 
 
 // *****************************************************************************
@@ -61,30 +61,39 @@
 // *****************************************************************************
 
 
-void CORE_TIMER_InterruptHandler( void );
-void TIMER_2_InterruptHandler( void );
-void SPI1_RX_InterruptHandler( void );
-void SPI1_TX_InterruptHandler( void );
-void UART1_FAULT_InterruptHandler( void );
-void UART1_RX_InterruptHandler( void );
-void UART1_TX_InterruptHandler( void );
-void I2C1_BUS_InterruptHandler( void );
-void I2C1_MASTER_InterruptHandler( void );
-void CHANGE_NOTICE_C_InterruptHandler( void );
-void CHANGE_NOTICE_K_InterruptHandler( void );
-void DRV_USBHS_InterruptHandler( void );
-void DRV_USBHS_DMAInterruptHandler( void );
-void I2C2_BUS_InterruptHandler( void );
-void I2C2_MASTER_InterruptHandler( void );
-void UART4_FAULT_InterruptHandler( void );
-void UART4_RX_InterruptHandler( void );
-void UART4_TX_InterruptHandler( void );
-void SDHC_InterruptHandler( void );
-void GLCD_Interrupt_Handler( void );
-
-
-
 /* All the handlers are defined here.  Each will call its PLIB-specific function. */
+// *****************************************************************************
+// *****************************************************************************
+// Section: System Interrupt Vector declarations
+// *****************************************************************************
+// *****************************************************************************
+void CORE_TIMER_Handler (void);
+void TIMER_2_Handler (void);
+void SPI1_RX_Handler (void);
+void SPI1_TX_Handler (void);
+void UART1_FAULT_Handler (void);
+void UART1_RX_Handler (void);
+void UART1_TX_Handler (void);
+void I2C1_BUS_Handler (void);
+void I2C1_MASTER_Handler (void);
+void CHANGE_NOTICE_C_Handler (void);
+void CHANGE_NOTICE_K_Handler (void);
+void USB_Handler (void);
+void USB_DMA_Handler (void);
+void I2C2_BUS_Handler (void);
+void I2C2_MASTER_Handler (void);
+void UART4_FAULT_Handler (void);
+void UART4_RX_Handler (void);
+void UART4_TX_Handler (void);
+void SDHC_Handler (void);
+void GLCD_Handler (void);
+
+
+// *****************************************************************************
+// *****************************************************************************
+// Section: System Interrupt Vector definitions
+// *****************************************************************************
+// *****************************************************************************
 void __ISR(_CORE_TIMER_VECTOR, ipl1SRS) CORE_TIMER_Handler (void)
 {
     CORE_TIMER_InterruptHandler();
